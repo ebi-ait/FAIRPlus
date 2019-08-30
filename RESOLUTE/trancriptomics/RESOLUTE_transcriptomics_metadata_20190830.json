@@ -1,0 +1,108 @@
+{
+    "contact": {
+        "full_name": "Vitaly Sedlyarov",
+        "first_name": "Vitaly",
+        "last_name": "Sedlyarov",
+        "country": "Austria",
+        "institution": "Research Center for Molecular Medicine of the Austrian Academy of Sciences",
+        "email": "VSedlyarov@cemm.oeaw.ac.at",
+        "address": "NA",
+        "person_role": "submitter"
+    },
+    "publication": {
+        "publication_name": "NA",
+        "pubmed_id": "NA",
+        "DOI": "NA"
+    },
+    "project": {
+        "project_abbreviation": "resolute",
+        "project_full_name": "Research Empowerment on Solute Carriers",
+        "project_description": "To trigger an escalation in the appreciation and intensity of research on solute carriers (SLCs) worldwide and to establish SLCs as a tractable target class for medical research and development.",
+        "project_website": "https://re-solute.eu",
+        "INSDC_project_accession": "NA",
+        "study_name": "Transcriptome of RESOLUTE parental cell lines",
+        "study_description": "To enable successful SLC function deorphanization we aimed to select minimal number of cell lines covering expression of as many SLCs as possible based on publicly available RNA-Seq dataset of 675 cell lines (Klijn C. et al,Nat. Biotechnol. 2015). ",
+        "study_summary": "we generated transcriptome profile for 7 cell line which will be used in course of RESOLUTE project. RNA-Seq based transcriptome profile of 321-N1 and Jump In T-REx HEK 293, to our knowledge, have not been published before. Transcriptome of the RESOLUTE cell lines would be interesting to SLC community as a minimal set of cell lines covering maximal number of expressed SLC (approx. 80%).",
+        "study_id": "NA"
+    },
+    "sample": {
+        "sample_name": "RS000F",
+        "organism": "human",
+        "taxon_id": 9606,
+        "genus_species": "homo sapiens",
+        "sex": "M",
+        "age": 57,
+        "disease_status": "NA",
+        "disease_stage": "NA",
+        "tissue": "liver",
+        "source_ref": "NA"
+    },
+    "cell_line": {
+        "strain": "HuH7",
+        "replicate": 3,
+        "cell_sample_title": "HuH-7-rep3",
+        "cellosaurus_id": "CVCL_0336",
+        "cell_line_source": "JCRB",
+        "culture_medium": "DMEM; 10 % FCS; Pen-Strep",
+        "cell_treatment": "NA",
+        "cell_line_qc": " tested for mycoplasma,STR profiling was performed for all cell lines to confirm identity.",
+        "cell_line_genotype": "WT"
+    },
+    "experiment": {
+        "RNA_isolation": {
+            "isolation_process": "Cells (1 x 106 ) were washed 1x with PBS and lysed directly on the dish with RLT buffer(Qiagen) supplemented with 0.143 M -Mercaptoethanol.RNA was isolated using RNeasy Mini Kit (Qiagen) including DNase Idigestion according to the manufacture\u2019s protocol.",
+            "RNA_isolation_QC_tools": "Bioanalyzer (Agilent)",
+            "RNA_isolation_QC_results": "high RNA integrity"
+        },
+        "library_prep": {
+            "library_prep_protocol": "NEBNext Ultra II Directional RNA Library Prep Kit for Illumina,together with rRNA depletion (NEB)"
+        },
+        "sequencing": {
+            "sequencing_instrument": "Illumina HiSeq 4000",
+            "read_length": "80bp"
+        },
+        "sequencing_QC": {
+            "sequencing_QC_tools": "FastQC",
+            "sequencing_QC_results": "all good",
+            "seuqencing_QC_action": "standard trimming and clipping of illumina adapters",
+            "sequencing_QC_action_tools": "cutadapt 1.18"
+        },
+        "alignment": {
+            "read_mapping_tools": "STAR 2.6.1a",
+            "read_mapping_model": "h38",
+            "alignment_algorithm": "STAR alignment"
+        },
+        "quantification": {
+            "transcript_counting_model": "ENSEMBL GRCh38 94",
+            "transcript_counting_tools": "Mix2",
+            "transcript_abundance_method": "pseudoalignemnt",
+            "transcript_abundance_model": "ENSEMBL GRCh38 94",
+            "transcript_abundance_tools": "kallisto 0.44.0"
+        },
+        "data_analysis": {
+            "data_analysis": "uniformly covered gene body, no 3-end bias, high correlation, agree with other results"
+        }
+    },
+    "sequencing_files": {
+        "file_name": "180927_J00151_0269_AH2C25BBXY_716_{SampleNr}_SXX_LXXX_R1_001.fastq",
+        "file_format": "fastq",
+        "data_creation_date": "2018.10.03"
+    },
+    "submission": {
+        "submission_title": "Transcriptome of RESOLUTE parental cell lines",
+        "submission_id": "NA",
+        "first_submit_date": "27 Nov 2018",
+        "update_date": "2019-09-91"
+    },
+    "accession_id": {
+        "bioproject_id": "PRJNA545487",
+        "sra_id": "SRS4847467",
+        "biosample_id": "SAMN11893684",
+        "geo_id": "NA"
+    },
+    "license": {
+        "license_exist": "Y",
+        "license_type": "CC BY 4.0",
+        "license_link": "http://creativecommons.org/licenses/by/4.0/"
+    }
+}
