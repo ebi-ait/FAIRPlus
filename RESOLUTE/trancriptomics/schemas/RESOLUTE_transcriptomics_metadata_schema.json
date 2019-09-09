@@ -1,0 +1,970 @@
+  1 {
+  2   "definitions": {},
+  3   "$schema": "http://json-schema.org/draft-07/schema#",
+  4   "$id": "http://example.com/root.json",
+  5   "type": "object",
+  6   "title": "The Root Schema",
+  7   "required": [
+  8     "contact",
+  9     "publication",
+ 10     "project",
+ 11     "sample",
+ 12     "cell_line",
+ 13     "experiment",
+ 14     "sequencing_files",
+ 15     "submission",
+ 16     "accession_id",
+ 17     "license"
+ 18   ],
+ 19   "properties": {
+ 20     "contact": {
+ 21       "$id": "#/properties/contact",
+ 22       "type": "object",
+ 23       "title": "",
+ 24       "required": [
+ 25         "full_name",
+ 26         "first_name",
+ 27         "last_name",
+ 28         "country",
+ 29         "institution",
+ 30         "email",
+ 31         "address",
+ 32         "person_role"
+ 33       ],
+ 34       "properties": {
+ 35         "full_name": {
+ 36           "$id": "#/properties/contact/properties/full_name",
+ 37           "type": "string",
+ 38           "title": "The Full_name Schema",
+ 39           "default": "",
+ 40           "examples": [
+ 41             "Vitaly Sedlyarov"
+ 42           ],
+ 43           "pattern": "^(.*)$"
+ 44         },
+ 45         "first_name": {
+ 46           "$id": "#/properties/contact/properties/first_name",
+ 47           "type": "string",
+ 48           "title": "The First_name Schema",
+ 49           "default": "",
+ 50           "examples": [
+ 51             "Vitaly"
+ 52           ],
+ 53           "pattern": "^(.*)$"
+ 54         },
+ 55         "last_name": {
+ 56           "$id": "#/properties/contact/properties/last_name",
+ 57           "type": "string",
+ 58           "title": "The Last_name Schema",
+ 59           "default": "",
+ 60           "examples": [
+ 61             "Sedlyarov"
+ 62           ],
+ 63           "pattern": "^(.*)$"
+ 64         },
+ 65         "country": {
+ 66           "$id": "#/properties/contact/properties/country",
+ 67           "type": "string",
+ 68           "title": "The Country Schema",
+ 69           "default": "",
+ 70           "examples": [
+ 71             "Austria"
+ 72           ],
+ 73           "pattern": "^(.*)$"
+ 74         },
+ 75         "institution": {
+ 76           "$id": "#/properties/contact/properties/institution",
+ 77           "type": "string",
+ 78           "title": "The Institution Schema",
+ 79           "default": "",
+ 80           "examples": [
+ 81             "Research Center for Molecular Medicine of the Austrian Academy of Sciences"
+ 82           ],
+ 83           "pattern": "^(.*)$"
+ 84         },
+ 85         "email": {
+ 86           "$id": "#/properties/contact/properties/email",
+ 87           "type": "string",
+ 88           "title": "The Email Schema",
+ 89           "default": "",
+ 90           "examples": [
+ 91             "VSedlyarov@cemm.oeaw.ac.at"
+ 92           ],
+ 93           "pattern": "^(.*)$"
+ 94         },
+ 95         "address": {
+ 96           "$id": "#/properties/contact/properties/address",
+ 97           "type": "string",
+ 98           "title": "The Address Schema",
+ 99           "default": "",
+100           "examples": [
+101             "NA"
+102           ],
+103           "pattern": "^(.*)$"
+104         },
+105         "person_role": {
+106           "$id": "#/properties/contact/properties/person_role",
+107           "type": "string",
+108           "title": "The Person_role Schema",
+109           "default": "",
+110           "examples": [
+111             "submitter"
+112           ],
+113           "pattern": "^(.*)$"
+114         }
+115       }
+116     },
+117     "publication": {
+118       "$id": "#/properties/publication",
+119       "type": "object",
+120       "title": "The Publication Schema",
+121       "required": [
+122         "publication_name",
+123         "pubmed_id",
+124         "DOI"
+125       ],
+126       "properties": {
+127         "publication_name": {
+128           "$id": "#/properties/publication/properties/publication_name",
+129           "type": "string",
+130           "title": "The Publication_name Schema",
+131           "default": "",
+132           "examples": [
+133             "NA"
+134           ],
+135           "pattern": "^(.*)$"
+136         },
+137         "pubmed_id": {
+138           "$id": "#/properties/publication/properties/pubmed_id",
+139           "type": "string",
+140           "title": "The Pubmed_id Schema",
+141           "default": "",
+142           "examples": [
+143             "NA"
+144           ],
+145           "pattern": "^(.*)$"
+146         },
+147         "DOI": {
+148           "$id": "#/properties/publication/properties/DOI",
+149           "type": "string",
+150           "title": "The Doi Schema",
+151           "default": "",
+152           "examples": [
+153             "NA"
+154           ],
+155           "pattern": "^(.*)$"
+156         }
+157       }
+158     },
+159     "project": {
+160       "$id": "#/properties/project",
+161       "type": "object",
+162       "title": "The Project Schema",
+163       "required": [
+164         "project_abbreviation",
+165         "project_full_name",
+166         "project_description",
+167         "project_website",
+168         "INSDC_project_accession",
+169         "study_name",
+170         "study_description",
+171         "study_summary",
+172         "study_id"
+173       ],
+174       "properties": {
+175         "project_abbreviation": {
+176           "$id": "#/properties/project/properties/project_abbreviation",
+177           "type": "string",
+178           "title": "The Project_abbreviation Schema",
+179           "default": "",
+180           "examples": [
+181             "resolute"
+182           ],
+183           "pattern": "^(.*)$"
+184         },
+185         "project_full_name": {
+186           "$id": "#/properties/project/properties/project_full_name",
+187           "type": "string",
+188           "title": "The Project_full_name Schema",
+189           "default": "",
+190           "examples": [
+191             "Research Empowerment on Solute Carriers"
+192           ],
+193           "pattern": "^(.*)$"
+194         },
+195         "project_description": {
+196           "$id": "#/properties/project/properties/project_description",
+197           "type": "string",
+198           "title": "The Project_description Schema",
+199           "default": "",
+200           "examples": [
+201             "To trigger an escalation in the appreciation and intensity of research on solute carriers (SLCs) worldwide and to establish SLCs as a tractable target class for medical research and development."
+202           ],
+203           "pattern": "^(.*)$"
+204         },
+205         "project_website": {
+206           "$id": "#/properties/project/properties/project_website",
+207           "type": "string",
+208           "title": "The Project_website Schema",
+209           "default": "",
+210           "examples": [
+211             "https://re-solute.eu"
+212           ],
+213           "pattern": "^(.*)$"
+214         },
+215         "INSDC_project_accession": {
+216           "$id": "#/properties/project/properties/INSDC_project_accession",
+217           "type": "string",
+218           "title": "The Insdc_project_accession Schema",
+219           "default": "",
+220           "examples": [
+221             "NA"
+222           ],
+223           "pattern": "^(.*)$"
+224         },
+225         "study_name": {
+226           "$id": "#/properties/project/properties/study_name",
+227           "type": "string",
+228           "title": "The Study_name Schema",
+229           "default": "",
+230           "examples": [
+231             "Transcriptome of RESOLUTE parental cell lines"
+232           ],
+233           "pattern": "^(.*)$"
+234         },
+235         "study_description": {
+236           "$id": "#/properties/project/properties/study_description",
+237           "type": "string",
+238           "title": "The Study_description Schema",
+239           "default": "",
+240           "examples": [
+241             "To enable successful SLC function deorphanization we aimed to select minimal number of cell lines covering expression of as many SLCs as possible based on publicly available RNA-Seq dataset of 675 cell lines (Klijn C. et al,Nat. Biotechnol. 2015). "
+242           ],
+243           "pattern": "^(.*)$"
+244         },
+245         "study_summary": {
+246           "$id": "#/properties/project/properties/study_summary",
+247           "type": "string",
+248           "title": "The Study_summary Schema",
+249           "default": "",
+250           "examples": [
+251             "we generated transcriptome profile for 7 cell line which will be used in course of RESOLUTE project. RNA-Seq based transcriptome profile of 321-N1 and Jump In T-REx HEK 293, to our knowledge, have not been published before. Transcriptome of the RESOLUTE cell lines would be interesting to SLC community as a minimal set of cell lines covering maximal number of expressed SLC (approx. 80%)."
+252           ],
+253           "pattern": "^(.*)$"
+254         },
+255         "study_id": {
+256           "$id": "#/properties/project/properties/study_id",
+257           "type": "string",
+258           "title": "The Study_id Schema",
+259           "default": "",
+260           "examples": [
+261             "NA"
+262           ],
+263           "pattern": "^(.*)$"
+264         }
+265       }
+266     },
+267     "sample": {
+268       "$id": "#/properties/sample",
+269       "type": "object",
+270       "title": "The Sample Schema",
+271       "required": [
+272         "sample_name",
+273         "organism",
+274         "taxon_id",
+275         "genus_species",
+276         "sex",
+277         "age",
+278         "disease_status",
+279         "disease_stage",
+280         "tissue",
+281         "source_ref"
+282       ],
+283       "properties": {
+284         "sample_name": {
+285           "$id": "#/properties/sample/properties/sample_name",
+286           "type": "string",
+287           "title": "The Sample_name Schema",
+288           "default": "",
+289           "examples": [
+290             "RS000F"
+291           ],
+292           "pattern": "^(.*)$"
+293         },
+294         "organism": {
+295           "$id": "#/properties/sample/properties/organism",
+296           "type": "string",
+297           "title": "The Organism Schema",
+298           "default": "",
+299           "examples": [
+300             "human"
+301           ],
+302           "pattern": "^(.*)$"
+303         },
+304         "taxon_id": {
+305           "$id": "#/properties/sample/properties/taxon_id",
+306           "type": "integer",
+307           "title": "The Taxon_id Schema",
+308           "default": 0,
+309           "examples": [
+310             9606
+311           ]
+312         },
+313         "genus_species": {
+314           "$id": "#/properties/sample/properties/genus_species",
+315           "type": "string",
+316           "title": "The Genus_species Schema",
+317           "default": "",
+318           "examples": [
+319             "homo sapiens"
+320           ],
+321           "pattern": "^(.*)$"
+322         },
+323         "sex": {
+324           "$id": "#/properties/sample/properties/sex",
+325           "type": "string",
+326           "title": "The Sex Schema",
+327           "default": "",
+328           "examples": [
+329             "M"
+330           ],
+331           "pattern": "^(.*)$"
+332         },
+333         "age": {
+334           "$id": "#/properties/sample/properties/age",
+335           "type": "integer",
+336           "title": "The Age Schema",
+337           "default": 0,
+338           "examples": [
+339             57
+340           ]
+341         },
+342         "disease_status": {
+343           "$id": "#/properties/sample/properties/disease_status",
+344           "type": "string",
+345           "title": "The Disease_status Schema",
+346           "default": "",
+347           "examples": [
+348             "NA"
+349           ],
+350           "pattern": "^(.*)$"
+351         },
+352         "disease_stage": {
+353           "$id": "#/properties/sample/properties/disease_stage",
+354           "type": "string",
+355           "title": "The Disease_stage Schema",
+356           "default": "",
+357           "examples": [
+358             "NA"
+359           ],
+360           "pattern": "^(.*)$"
+361         },
+362         "tissue": {
+363           "$id": "#/properties/sample/properties/tissue",
+364           "type": "string",
+365           "title": "The Tissue Schema",
+366           "default": "",
+367           "examples": [
+368             "liver"
+369           ],
+370           "pattern": "^(.*)$"
+371         },
+372         "source_ref": {
+373           "$id": "#/properties/sample/properties/source_ref",
+374           "type": "string",
+375           "title": "The Source_ref Schema",
+376           "default": "",
+377           "examples": [
+378             "NA"
+379           ],
+380           "pattern": "^(.*)$"
+381         }
+382       }
+383     },
+384     "cell_line": {
+385       "$id": "#/properties/cell_line",
+386       "type": "object",
+387       "title": "The Cell_line Schema",
+388       "required": [
+389         "strain",
+390         "replicate",
+391         "cell_sample_title",
+392         "cellosaurus_id",
+393         "cell_line_source",
+394         "culture_medium",
+395         "cell_treatment",
+396         "cell_line_qc",
+397         "cell_line_genotype"
+398       ],
+399       "properties": {
+400         "strain": {
+401           "$id": "#/properties/cell_line/properties/strain",
+402           "type": "string",
+403           "title": "The Strain Schema",
+404           "default": "",
+405           "examples": [
+406             "HuH7"
+407           ],
+408           "pattern": "^(.*)$"
+409         },
+410         "replicate": {
+411           "$id": "#/properties/cell_line/properties/replicate",
+412           "type": "integer",
+413           "title": "The Replicate Schema",
+414           "default": 0,
+415           "examples": [
+416             3
+417           ]
+418         },
+419         "cell_sample_title": {
+420           "$id": "#/properties/cell_line/properties/cell_sample_title",
+421           "type": "string",
+422           "title": "The Cell_sample_title Schema",
+423           "default": "",
+424           "examples": [
+425             "HuH-7-rep3"
+426           ],
+427           "pattern": "^(.*)$"
+428         },
+429         "cellosaurus_id": {
+430           "$id": "#/properties/cell_line/properties/cellosaurus_id",
+431           "type": "string",
+432           "title": "The Cellosaurus_id Schema",
+433           "default": "",
+434           "examples": [
+435             "CVCL_0336"
+436           ],
+437           "pattern": "^(.*)$"
+438         },
+439         "cell_line_source": {
+440           "$id": "#/properties/cell_line/properties/cell_line_source",
+441           "type": "string",
+442           "title": "The Cell_line_source Schema",
+443           "default": "",
+444           "examples": [
+445             "JCRB"
+446           ],
+447           "pattern": "^(.*)$"
+448         },
+449         "culture_medium": {
+450           "$id": "#/properties/cell_line/properties/culture_medium",
+451           "type": "string",
+452           "title": "The Culture_medium Schema",
+453           "default": "",
+454           "examples": [
+455             "DMEM; 10 % FCS; Pen-Strep"
+456           ],
+457           "pattern": "^(.*)$"
+458         },
+459         "cell_treatment": {
+460           "$id": "#/properties/cell_line/properties/cell_treatment",
+461           "type": "string",
+462           "title": "The Cell_treatment Schema",
+463           "default": "",
+464           "examples": [
+465             "NA"
+466           ],
+467           "pattern": "^(.*)$"
+468         },
+469         "cell_line_qc": {
+470           "$id": "#/properties/cell_line/properties/cell_line_qc",
+471           "type": "string",
+472           "title": "The Cell_line_qc Schema",
+473           "default": "",
+474           "examples": [
+475             " tested for mycoplasma,STR profiling was performed for all cell lines to confirm identity."
+476           ],
+477           "pattern": "^(.*)$"
+478         },
+479         "cell_line_genotype": {
+480           "$id": "#/properties/cell_line/properties/cell_line_genotype",
+481           "type": "string",
+482           "title": "The Cell_line_genotype Schema",
+483           "default": "",
+484           "examples": [
+485             "WT"
+486           ],
+487           "pattern": "^(.*)$"
+488         }
+489       }
+490     },
+491     "experiment": {
+492       "$id": "#/properties/experiment",
+493       "type": "object",
+494       "title": "The Experiment Schema",
+495       "required": [
+496         "RNA_isolation",
+497         "library_prep",
+498         "sequencing",
+499         "sequencing_QC",
+500         "alignment",
+501         "quantification",
+502         "data_analysis"
+503       ],
+504       "properties": {
+505         "RNA_isolation": {
+506           "$id": "#/properties/experiment/properties/RNA_isolation",
+507           "type": "object",
+508           "title": "The Rna_isolation Schema",
+509           "required": [
+510             "isolation_process",
+511             "RNA_isolation_QC_tools",
+512             "RNA_isolation_QC_results"
+513           ],
+514           "properties": {
+515             "isolation_process": {
+516               "$id": "#/properties/experiment/properties/RNA_isolation/properties/isolation_process",
+517               "type": "string",
+518               "title": "The Isolation_process Schema",
+519               "default": "",
+520               "examples": [
+521                 "Cells (1 x 106 ) were washed 1x with PBS and lysed directly on the dish with RLT buffer(Qiagen) supplemented with 0.143 M -Mercaptoethanol.RNA was isolated using RNeasy Mini Kit (Qiagen) including DNase Idigestion according to the manufacture’s protocol."
+522               ],
+523               "pattern": "^(.*)$"
+524             },
+525             "RNA_isolation_QC_tools": {
+526               "$id": "#/properties/experiment/properties/RNA_isolation/properties/RNA_isolation_QC_tools",
+527               "type": "string",
+528               "title": "The Rna_isolation_qc_tools Schema",
+529               "default": "",
+530               "examples": [
+531                 "Bioanalyzer (Agilent)"
+532               ],
+533               "pattern": "^(.*)$"
+534             },
+535             "RNA_isolation_QC_results": {
+536               "$id": "#/properties/experiment/properties/RNA_isolation/properties/RNA_isolation_QC_results",
+537               "type": "string",
+538               "title": "The Rna_isolation_qc_results Schema",
+539               "default": "",
+540               "examples": [
+541                 "high RNA integrity"
+542               ],
+543               "pattern": "^(.*)$"
+544             }
+545           }
+546         },
+547         "library_prep": {
+548           "$id": "#/properties/experiment/properties/library_prep",
+549           "type": "object",
+550           "title": "The Library_prep Schema",
+551           "required": [
+552             "library_prep_protocol"
+553           ],
+554           "properties": {
+555             "library_prep_protocol": {
+556               "$id": "#/properties/experiment/properties/library_prep/properties/library_prep_protocol",
+557               "type": "string",
+558               "title": "The Library_prep_protocol Schema",
+559               "default": "",
+560               "examples": [
+561                 "NEBNext Ultra II Directional RNA Library Prep Kit for Illumina,together with rRNA depletion (NEB)"
+562               ],
+563               "pattern": "^(.*)$"
+564             }
+565           }
+566         },
+567         "sequencing": {
+568           "$id": "#/properties/experiment/properties/sequencing",
+569           "type": "object",
+570           "title": "The Sequencing Schema",
+571           "required": [
+572             "sequencing_instrument",
+573             "read_length"
+574           ],
+575           "properties": {
+576             "sequencing_instrument": {
+577               "$id": "#/properties/experiment/properties/sequencing/properties/sequencing_instrument",
+578               "type": "string",
+579               "title": "The Sequencing_instrument Schema",
+580               "default": "",
+581               "examples": [
+582                 "Illumina HiSeq 4000"
+583               ],
+584               "pattern": "^(.*)$"
+585             },
+586             "read_length": {
+587               "$id": "#/properties/experiment/properties/sequencing/properties/read_length",
+588               "type": "string",
+589               "title": "The Read_length Schema",
+590               "default": "",
+591               "examples": [
+592                 "80bp"
+593               ],
+594               "pattern": "^(.*)$"
+595             }
+596           }
+597         },
+598         "sequencing_QC": {
+599           "$id": "#/properties/experiment/properties/sequencing_QC",
+600           "type": "object",
+601           "title": "The Sequencing_qc Schema",
+602           "required": [
+603             "sequencing_QC_tools",
+604             "sequencing_QC_results",
+605             "seuqencing_QC_action",
+606             "sequencing_QC_action_tools"
+607           ],
+608           "properties": {
+609             "sequencing_QC_tools": {
+610               "$id": "#/properties/experiment/properties/sequencing_QC/properties/sequencing_QC_tools",
+611               "type": "string",
+612               "title": "The Sequencing_qc_tools Schema",
+613               "default": "",
+614               "examples": [
+615                 "FastQC"
+616               ],
+617               "pattern": "^(.*)$"
+618             },
+619             "sequencing_QC_results": {
+620               "$id": "#/properties/experiment/properties/sequencing_QC/properties/sequencing_QC_results",
+621               "type": "string",
+622               "title": "The Sequencing_qc_results Schema",
+623               "default": "",
+624               "examples": [
+625                 "all good"
+626               ],
+627               "pattern": "^(.*)$"
+628             },
+629             "seuqencing_QC_action": {
+630               "$id": "#/properties/experiment/properties/sequencing_QC/properties/seuqencing_QC_action",
+631               "type": "string",
+632               "title": "The Seuqencing_qc_action Schema",
+633               "default": "",
+634               "examples": [
+635                 "standard trimming and clipping of illumina adapters"
+636               ],
+637               "pattern": "^(.*)$"
+638             },
+639             "sequencing_QC_action_tools": {
+640               "$id": "#/properties/experiment/properties/sequencing_QC/properties/sequencing_QC_action_tools",
+641               "type": "string",
+642               "title": "The Sequencing_qc_action_tools Schema",
+643               "default": "",
+644               "examples": [
+645                 "cutadapt 1.18"
+646               ],
+647               "pattern": "^(.*)$"
+648             }
+649           }
+650         },
+651         "alignment": {
+652           "$id": "#/properties/experiment/properties/alignment",
+653           "type": "object",
+654           "title": "The Alignment Schema",
+655           "required": [
+656             "read_mapping_tools",
+657             "read_mapping_model",
+658             "alignment_algorithm"
+659           ],
+660           "properties": {
+661             "read_mapping_tools": {
+662               "$id": "#/properties/experiment/properties/alignment/properties/read_mapping_tools",
+663               "type": "string",
+664               "title": "The Read_mapping_tools Schema",
+665               "default": "",
+666               "examples": [
+667                 "STAR 2.6.1a"
+668               ],
+669               "pattern": "^(.*)$"
+670             },
+671             "read_mapping_model": {
+672               "$id": "#/properties/experiment/properties/alignment/properties/read_mapping_model",
+673               "type": "string",
+674               "title": "The Read_mapping_model Schema",
+675               "default": "",
+676               "examples": [
+677                 "h38"
+678               ],
+679               "pattern": "^(.*)$"
+680             },
+681             "alignment_algorithm": {
+682               "$id": "#/properties/experiment/properties/alignment/properties/alignment_algorithm",
+683               "type": "string",
+684               "title": "The Alignment_algorithm Schema",
+685               "default": "",
+686               "examples": [
+687                 "STAR alignment"
+688               ],
+689               "pattern": "^(.*)$"
+690             }
+691           }
+692         },
+693         "quantification": {
+694           "$id": "#/properties/experiment/properties/quantification",
+695           "type": "object",
+696           "title": "The Quantification Schema",
+697           "required": [
+698             "transcript_counting_model",
+699             "transcript_counting_tools",
+700             "transcript_abundance_method",
+701             "transcript_abundance_model",
+702             "transcript_abundance_tools"
+703           ],
+704           "properties": {
+705             "transcript_counting_model": {
+706               "$id": "#/properties/experiment/properties/quantification/properties/transcript_counting_model",
+707               "type": "string",
+708               "title": "The Transcript_counting_model Schema",
+709               "default": "",
+710               "examples": [
+711                 "ENSEMBL GRCh38 94"
+712               ],
+713               "pattern": "^(.*)$"
+714             },
+715             "transcript_counting_tools": {
+716               "$id": "#/properties/experiment/properties/quantification/properties/transcript_counting_tools",
+717               "type": "string",
+718               "title": "The Transcript_counting_tools Schema",
+719               "default": "",
+720               "examples": [
+721                 "Mix2"
+722               ],
+723               "pattern": "^(.*)$"
+724             },
+725             "transcript_abundance_method": {
+726               "$id": "#/properties/experiment/properties/quantification/properties/transcript_abundance_method",
+727               "type": "string",
+728               "title": "The Transcript_abundance_method Schema",
+729               "default": "",
+730               "examples": [
+731                 "pseudoalignemnt"
+732               ],
+733               "pattern": "^(.*)$"
+734             },
+735             "transcript_abundance_model": {
+736               "$id": "#/properties/experiment/properties/quantification/properties/transcript_abundance_model",
+737               "type": "string",
+738               "title": "The Transcript_abundance_model Schema",
+739               "default": "",
+740               "examples": [
+741                 "ENSEMBL GRCh38 94"
+742               ],
+743               "pattern": "^(.*)$"
+744             },
+745             "transcript_abundance_tools": {
+746               "$id": "#/properties/experiment/properties/quantification/properties/transcript_abundance_tools",
+747               "type": "string",
+748               "title": "The Transcript_abundance_tools Schema",
+749               "default": "",
+750               "examples": [
+751                 "kallisto 0.44.0"
+752               ],
+753               "pattern": "^(.*)$"
+754             }
+755           }
+756         },
+757         "data_analysis": {
+758           "$id": "#/properties/experiment/properties/data_analysis",
+759           "type": "object",
+760           "title": "The Data_analysis Schema",
+761           "required": [
+762             "data_analysis"
+763           ],
+764           "properties": {
+765             "data_analysis": {
+766               "$id": "#/properties/experiment/properties/data_analysis/properties/data_analysis",
+767               "type": "string",
+768               "title": "The Data_analysis Schema",
+769               "default": "",
+770               "examples": [
+771                 "uniformly covered gene body, no 3-end bias, high correlation, agree with other results"
+772               ],
+773               "pattern": "^(.*)$"
+774             }
+775           }
+776         }
+777       }
+778     },
+779     "sequencing_files": {
+780       "$id": "#/properties/sequencing_files",
+781       "type": "object",
+782       "title": "The Sequencing_files Schema",
+783       "required": [
+784         "file_name",
+785         "file_format",
+786         "data_creation_date"
+787       ],
+788       "properties": {
+789         "file_name": {
+790           "$id": "#/properties/sequencing_files/properties/file_name",
+791           "type": "string",
+792           "title": "The File_name Schema",
+793           "default": "",
+794           "examples": [
+795             "180927_J00151_0269_AH2C25BBXY_716_{SampleNr}_SXX_LXXX_R1_001.fastq"
+796           ],
+797           "pattern": "^(.*)$"
+798         },
+799         "file_format": {
+800           "$id": "#/properties/sequencing_files/properties/file_format",
+801           "type": "string",
+802           "title": "The File_format Schema",
+803           "default": "",
+804           "examples": [
+805             "fastq"
+806           ],
+807           "pattern": "^(.*)$"
+808         },
+809         "data_creation_date": {
+810           "$id": "#/properties/sequencing_files/properties/data_creation_date",
+811           "type": "string",
+812           "title": "The Data_creation_date Schema",
+813           "default": "",
+814           "examples": [
+815             "2018.10.03"
+816           ],
+817           "pattern": "^(.*)$"
+818         }
+819       }
+820     },
+821     "submission": {
+822       "$id": "#/properties/submission",
+823       "type": "object",
+824       "title": "The Submission Schema",
+825       "required": [
+826         "submission_title",
+827         "submission_id",
+828         "first_submit_date",
+829         "update_date"
+830       ],
+831       "properties": {
+832         "submission_title": {
+833           "$id": "#/properties/submission/properties/submission_title",
+834           "type": "string",
+835           "title": "The Submission_title Schema",
+836           "default": "",
+837           "examples": [
+838             "Transcriptome of RESOLUTE parental cell lines"
+839           ],
+840           "pattern": "^(.*)$"
+841         },
+842         "submission_id": {
+843           "$id": "#/properties/submission/properties/submission_id",
+844           "type": "string",
+845           "title": "The Submission_id Schema",
+846           "default": "",
+847           "examples": [
+848             "NA"
+849           ],
+850           "pattern": "^(.*)$"
+851         },
+852         "first_submit_date": {
+853           "$id": "#/properties/submission/properties/first_submit_date",
+854           "type": "string",
+855           "title": "The First_submit_date Schema",
+856           "default": "",
+857           "examples": [
+858             "27 Nov 2018"
+859           ],
+860           "pattern": "^(.*)$"
+861         },
+862         "update_date": {
+863           "$id": "#/properties/submission/properties/update_date",
+864           "type": "string",
+865           "title": "The Update_date Schema",
+866           "default": "",
+867           "examples": [
+868             "2019-09-91"
+869           ],
+870           "pattern": "^(.*)$"
+871         }
+872       }
+873     },
+874     "accession_id": {
+875       "$id": "#/properties/accession_id",
+876       "type": "object",
+877       "title": "The Accession_id Schema",
+878       "required": [
+879         "bioproject_id",
+880         "sra_id",
+881         "biosample_id",
+882         "geo_id"
+883       ],
+884       "properties": {
+885         "bioproject_id": {
+886           "$id": "#/properties/accession_id/properties/bioproject_id",
+887           "type": "string",
+888           "title": "The Bioproject_id Schema",
+889           "default": "",
+890           "examples": [
+891             "PRJNA545487"
+892           ],
+893           "pattern": "^(.*)$"
+894         },
+895         "sra_id": {
+896           "$id": "#/properties/accession_id/properties/sra_id",
+897           "type": "string",
+898           "title": "The Sra_id Schema",
+899           "default": "",
+900           "examples": [
+901             "SRS4847467"
+902           ],
+903           "pattern": "^(.*)$"
+904         },
+905         "biosample_id": {
+906           "$id": "#/properties/accession_id/properties/biosample_id",
+907           "type": "string",
+908           "title": "The Biosample_id Schema",
+909           "default": "",
+910           "examples": [
+911             "SAMN11893684"
+912           ],
+913           "pattern": "^(.*)$"
+914         },
+915         "geo_id": {
+916           "$id": "#/properties/accession_id/properties/geo_id",
+917           "type": "string",
+918           "title": "The Geo_id Schema",
+919           "default": "",
+920           "examples": [
+921             "NA"
+922           ],
+923           "pattern": "^(.*)$"
+924         }
+925       }
+926     },
+927     "license": {
+928       "$id": "#/properties/license",
+929       "type": "object",
+930       "title": "The License Schema",
+931       "required": [
+932         "license_exist",
+933         "license_type",
+934         "license_link"
+935       ],
+936       "properties": {
+937         "license_exist": {
+938           "$id": "#/properties/license/properties/license_exist",
+939           "type": "string",
+940           "title": "The License_exist Schema",
+941           "default": "",
+942           "examples": [
+943             "Y"
+944           ],
+945           "pattern": "^(.*)$"
+946         },
+947         "license_type": {
+948           "$id": "#/properties/license/properties/license_type",
+949           "type": "string",
+950           "title": "The License_type Schema",
+951           "default": "",
+952           "examples": [
+953             "CC BY 4.0"
+954           ],
+955           "pattern": "^(.*)$"
+956         },
+957         "license_link": {
+958           "$id": "#/properties/license/properties/license_link",
+959           "type": "string",
+960           "title": "The License_link Schema",
+961           "default": "",
+962           "examples": [
+963             "http://creativecommons.org/licenses/by/4.0/"
+964           ],
+965           "pattern": "^(.*)$"
+966         }
+967       }
+968     }
+969   }
+970 }
