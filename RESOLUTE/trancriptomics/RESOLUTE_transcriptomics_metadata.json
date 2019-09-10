@@ -17,7 +17,6 @@
 		"DOI": "NA"
 	    	},
     	"license": {
-		"license_exist": "Y",
 		"license_type": "CC BY 4.0",
 		"license_link": "http://creativecommons.org/licenses/by/4.0/"
 	    	},
@@ -59,7 +58,6 @@
 	"sample": {
 		"sample_name": "HuH-7-rep3",
 		"organism": "human",
-		"taxon_id": 9606,
 		"genus_species": "homo sapiens",
 		"sex": "M",
 		"age": 57,
@@ -157,7 +155,8 @@
 		"conclusions": ["We generated transcriptome profile for 7 cell line which will be used in course of RESOLUTE project. RNA-Seq based transcriptome profile of 1321-N1 and Jump In T-REx HEK 293, to our knowledge, have not been published before. Transcriptome of the RESOLUTE cell lines would be interesting to SLC community as a minimal set of cell lines covering maximal number of expressed SLC (approx. 80%)."]
 		}
 	},
-	{"title":" Gene Expression analysis in parental cell lines",
+	{
+	"title":" Gene Expression analysis in parental cell lines",
 	"studyType": "Transcriptome Analysis",
 	"contacts":[{
 			"lastName": "Sedlyarov",
