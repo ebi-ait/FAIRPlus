@@ -4,14 +4,17 @@
 	"contacts": [{
 			"lastName": "Viollet",
 			"firstName": "Coralie"
+			
 		},
 		{
 			"lastName": "Sedlyarov",
-			"firstName": "Vitaly"
+			"firstName": "Vitaly",
+			"email":"VSedlyarov@cemm.oeaw.ac.at"
 		},
 		{
 			"lastName": "Goldmann",
-			"firstName": "Ulrich"
+			"firstName": "Ulrich",
+			"email":"UGoldmann@cemm.oeaw.ac.at"
 		},
 		{
 			"lastName": "Lackner",
@@ -48,12 +51,11 @@
 			{
 				"lastName": "Sedlyarov",
 				"firstName": "Vitaly",
+				"email":"VSedlyarov@cemm.oeaw.ac.at",
 				"affiliation": [{"name":"CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences"}]
 			}
 		],
-		
-		"conclusions": "RNA-seq reads of high quality in all samples",
-		"assays": {
+		"assays": [{
 			"sample_input": "cell line HuH-7",
 			"library_source": "TRANSCRIPTOMIC",
 			"library_layout": "SINGLE",
@@ -65,7 +67,7 @@
 			"data_output": {
 				"filename": "180927_J00151_0269_AH2C25BBXY_716_{SampleNr}_SXX_LXXX_R1_001.fastq",
 				"file_format": "fastq"
-			},
+			}}],
 			"protocols": [{
 					"name": "cell culture",
 					"protocol_description": "cell line origin: JCRB; Growthmedia: DMEM; 10 % FCS; Pen-Strep; tested for mycoplasma;STR profiling was performed for all cell lines to confirm identity",
@@ -111,10 +113,9 @@
 					}
 				}
 			],
-
-		"conclusions": ["We generated transcriptome profile for 7 cell line which will be used in course of RESOLUTE project. RNA-Seq based transcriptome profile of 1321-N1 and Jump In T-REx HEK 293, to our knowledge, have not been published before. Transcriptome of the RESOLUTE cell lines would be interesting to SLC community as a minimal set of cell lines covering maximal number of expressed SLC (approx. 80%)."]
+		"conclusions": "We generated transcriptome profile for 7 cell line which will be used in course of RESOLUTE project. RNA-Seq based transcriptome profile of 1321-N1 and Jump In T-REx HEK 293, to our knowledge, have not been published before. Transcriptome of the RESOLUTE cell lines would be interesting to SLC community as a minimal set of cell lines covering maximal number of expressed SLC (approx. 80%)."
 		}
-	}],
+	],
 	"acknowledges": [{
 		"name": "RESOLUTE – Research Empowerment on SOLUTE carriers"
 	}]
