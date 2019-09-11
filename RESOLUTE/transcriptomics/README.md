@@ -1,6 +1,6 @@
 # Extracting RESOLUTE transcriptomics metadata
 
-![Project Plan]((https://github.com/ebi-ait/FAIRPlus/blob/master/RESOLUTE/transcriptomics/project_plan.png)
+![Project Plan](https://github.com/ebi-ait/FAIRPlus/blob/master/RESOLUTE/transcriptomics/images/project_plan.png)
 
 Metadata in this directory is extracted from the RESOLUTE transcriptomics project relsease document. This directory provides relevant schemas and metadata files.
 
@@ -25,4 +25,4 @@ Different schemas used in the metadata extraction.
 
 Specific metadata schema for transcriptomics project. Part of FAIRPlus project.
 
-
+![Transcriptomics schema](https://github.com/ebi-ait/FAIRPlus/blob/master/RESOLUTE/transcriptomics/images/transcriptomics_schema.png)
