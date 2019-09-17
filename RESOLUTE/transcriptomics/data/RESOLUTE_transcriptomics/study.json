@@ -1,0 +1,74 @@
+{"studies": [
+		{
+		"title": "RNA-Seq measurements of 1parental cell lines",
+		"description": "Transcription profiling of 6 (+1) Resolute cell lines.",
+		"studyType": "RNASeq",
+		"contacts": [{
+				"lastName": "Viollet",
+				"firstName": "Coralie",
+				"affiliation": {"name":"Boehringer Ingelheim"}
+			},
+			{
+				"lastName": "Sedlyarov",
+				"firstName": "Vitaly",
+				"affiliation": {"name":"CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences"}			
+			}],
+		"assays": {
+			"sample_input": "cell line HuH-7",
+			"library_source": "TRANSCRIPTOMIC",
+			"library_layout": "SINGLE",
+			"library_strategy": "RNA-Seq",
+			"sequencing_platform": {
+				"platform": "Illumina",
+				"model": "Illumina HiSeq 4000"
+						},
+		"data_output": {
+				"filename": "180927_J00151_0269_AH2C25BBXY_716_{SampleNr}_SXX_LXXX_R1_001.fastq",
+				"file_format": "fastq"
+					},
+		"protocols": [{
+					"name": "cell culture",
+					"protocol_description": "cell line origin: JCRB; Growthmedia: DMEM; 10 % FCS; Pen-Strep; tested for mycoplasma;STR profiling was performed for all cell lines to confirm identity",
+					"protocol_type": "cell culture"
+				},
+				{
+					"name": "RNA isolation",
+					"protocol_description": "Cells (1 x 106 ) were washed 1x with PBS and lysed directly on the dish with RLT buffer (Qiagen) supplemented with 0.143 M -Mercaptoethanol.RNA was isolated using RNeasy Mini Kit (Qiagen) including DNase I digestion according to the manufacture’s protocol. RNA quality was accessed using Bioanalyzer (Agilent). All samples showed high RNA integrity, i.e. RIN 9.6  0.21 (mean  sd)",
+					"protocol_type": "RNA isolation"
+				},
+				{
+					"name": "library preparation",
+					"protocol_description": "mRNA-Seq libraries were prepared using NEBNext Ultra II Directional RNA Library Prep Kit for Illumina, together with rRNA depletion (NEB).",
+					"protocol_type": "library preparation"
+				},
+				{
+					"name": "data quality control",
+					"protocol_url": "FastQC, RNA-Seq reads of high quality in all samples. Standard trimming/clipping should be performed.",
+					"protocol_type": "data quality control"
+				}
+			],
+		"processed_data_file": [{
+					"analysis_type": "REFERENCE_ALIGNMENT",
+					"software": "STAR (2.6.1a)",
+					"input_files": "Raw reads in fastq.gz format from ‘1. RNA-Seq measurements of parental cell lines",
+					"reference_genome": "hg38 genome",
+					"output_files": [{
+							"filename": "{i}_sorted.bam i in 1:21",
+							"file_format": "bam"
+						},
+						{
+							"filename": "{i}_sorted.bai i in 1:21",
+							"file_format": "bai"
+						}]
+					},
+					{
+					"analysis_type": "REFERENCE_ALIGNMENT",
+					"software": "kallisto (0.44.0)",
+					"reference_genome": " ENSEMBL GRCh38 cDNA transcriptome",
+					"output_files": {
+						"filename": " {i}_abundance.tsv, {i}_abundance.h5 i in 1:21"
+					}
+					}],
+		"date": "2018-10-03",
+		"conclusions": "We generated transcriptome profile for 7 cell line which will be used in course of RESOLUTE project. RNA-Seq based transcriptome profile of 1321-N1 and Jump In T-REx HEK 293, to our knowledge, have not been published before. Transcriptome of the RESOLUTE cell lines would be interesting to SLC community as a minimal set of cell lines covering maximal number of expressed SLC (approx. 80%)."
+		}

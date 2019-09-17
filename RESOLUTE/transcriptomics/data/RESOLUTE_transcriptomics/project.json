@@ -1,0 +1,14 @@
+{
+	"project": {
+		"abbreviation": "RESOLUTE",
+		"name": "Research Empowerment on Solute Carriers",
+		"description": "To trigger an escalation in the appreciation and intensity of research on solute carriers (SLCs) worldwide and to establish SLCs as a tractable target class for medical research and development.",
+		"website": "https://re-solute.eu",
+		"INSDC_accession": "NA"
+		},
+	"study":{
+		"name": "Transcriptome of RESOLUTE parental cell lines",
+		"description": "To enable successful SLC function deorphanization we aimed to select minimal number of cell lines covering expression of as many SLCs as possible based on publicly available RNA-Seq dataset of 675 cell lines (Klijn C. et al,Nat. Biotechnol. 2015). ",
+		"summary": "we generated transcriptome profile for 7 cell line which will be used in course of RESOLUTE project. RNA-Seq based transcriptome profile of 321-N1 and Jump In T-REx HEK 293, to our knowledge, have not been published before. Transcriptome of the RESOLUTE cell lines would be interesting to SLC community as a minimal set of cell lines covering maximal number of expressed SLC (approx. 80%)."
+	}
+}

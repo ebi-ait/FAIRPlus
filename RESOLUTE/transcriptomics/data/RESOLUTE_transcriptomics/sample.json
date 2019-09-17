@@ -1,0 +1,13 @@
+{
+	"sample": {
+		"name": "HuH-7-rep3",
+		"organism": "human",
+		"species": "homo sapiens",
+		"sex": "M",
+		"age": 57,
+		"disease_status": "NA",
+		"disease_stage": "NA",
+		"tissue": "liver",
+		"source_ref": "NA"
+	}
+}

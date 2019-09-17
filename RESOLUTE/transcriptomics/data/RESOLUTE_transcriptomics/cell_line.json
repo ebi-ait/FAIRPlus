@@ -1,0 +1,13 @@
+{
+	"cell_line": {
+		"strain": "HuH7",
+		"replicate": 3,
+		"name": "HuH-7-rep3",
+		"ID": "CVCL_0336",
+		"source": "JCRB",
+		"culture": "DMEM; 10 % FCS; Pen-Strep",
+		"treatment": "NA",
+		"QC": " tested for mycoplasma,STR profiling was performed for all cell lines to confirm identity.",
+		"genotype": "WT"
+	}
+}
