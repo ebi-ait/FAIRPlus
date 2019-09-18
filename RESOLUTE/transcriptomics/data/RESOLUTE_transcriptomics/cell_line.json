@@ -7,7 +7,7 @@
 		"source": "JCRB",
 		"culture": "DMEM; 10 % FCS; Pen-Strep",
 		"treatment": "NA",
-		"QC": " tested for mycoplasma,STR profiling was performed for all cell lines to confirm identity.",
+		"additionalInfo": "Quality control tested for mycoplasma,STR profiling was performed for all cell lines to confirm identity.",
 		"genotype": "WT"
 	}
 }
