@@ -20,6 +20,9 @@ BSD_schema_file = "../schemas/biosamples_sample.json"
 sample_name = "HuH7-3"
 date = "2019-07-16T09:47:20.003Z"
 
+# TODO add external links section
+# TODO convert license to link format
+
 # Select metadata that needs to be submitted to biosamples
 BSD_lists = ["cell_line","contact","sample","license"]
 meta_files = []
