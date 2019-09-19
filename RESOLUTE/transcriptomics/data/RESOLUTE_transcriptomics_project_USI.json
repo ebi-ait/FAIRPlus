@@ -1,0 +1,108 @@
+{
+	"alias":"RESOLUTE transcriptomics",
+	"title":"RESOLUTE Transcriptome of RESOLUTE parental cell lines"
+	"description":"To enable successful SLC function deorphanization we aimed to select minimal number of cell lines covering expression of as many SLCs as possible based on publicly available RNA-Seq dataset of 675 cell lines (Klijn C. et al, Nat. Biotechnol. 2015). A set of 6 adherent human cell lines (HCT116, HuH-7, LS-180, MDA-MB-468, SK-MEL-28, 1321-N1) cumulatively covers expression of about 80 % of all SLCs (TPM  1). These cell lines will be used to generate SLC-knockout and SLC-overexpressing single cell clones. Additionally, Jump In T-REx HEK 293 cells will be used for generating SLC-overexpression cell lines.",
+  
+"required": ["alias", "title", "description", "releaseDate"],
+ 
+    "contacts": {
+	"orcid":"5432",
+	"firstName":"homer",
+	"middleInitials":"No",
+	"lastName":"simpsons"
+	"email":"chunkylover53@aol.com",
+	"roles":"nuclear safety inspector",
+	"address":"742 Evergreen Terrace",
+	"affiliation":"Sprinfield nuclear power plant"
+	"phone":"
+          "affiliation": {
+            "description": "The affiliation of the contact.",
+            "type": "string"
+          },
+          "phone": {
+            "description": "The phone number of the contact.",
+            "type": "string"
+          },
+          "fax": {
+            "description": "The fax number of the contact.",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "publications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "pubmedId": {
+            "description": "The identifier of the publication in the PubMed database",
+            "type": "string"
+          },
+          "doi": {
+            "description": "Digital Object Identifier (doi) of the publication",
+            "type": "string"
+          },
+          "articleTitle": {
+            "description": "The title of the article",
+            "type": "string"
+          },
+          "journalTitle": {
+            "description": "The title of the journal",
+            "type": "string"
+          },
+          "authors": {
+            "description": "The name of the authors of the publication",
+            "type": "string"
+          },
+          "journalIssn": {
+            "description": "The ISSN identifier of journal the publication has been published",
+            "type": "string"
+          },
+          "issue": {
+            "description": "The name of the issue the publication has been published",
+            "type": "string"
+          },
+          "year": {
+            "description": "The year that the publication has been published",
+            "type": "string"
+          },
+          "volume": {
+            "description": "The name of the volume the publication has been published",
+            "type": "string"
+          },
+          "pageInfo": {
+            "description": "The information of the page the publication has been published on",
+            "type": "string"
+          },
+          "publicationStatus" : {
+            "type": "string",
+            "enum": [ "Unknown", "InPreparation", "Submitted", "Published" ]
+          }
+        }
+      }
+    },
+    "releaseDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "projectRef": {
+      "description": "Reference to project.",
+      "$ref": "#/definitions/submittableRef"
+    }
+  },
+  "definitions": {
+    "submittableRef": {
+      "type": "object",
+      "properties": {
+        "alias": { "type": "string", "minLength": 1 },
+        "accession": { "type": "string", "minLength": 1 },
+        "team": { "type": "string", "minLength": 1 }
+      },
+      "anyOf": [
+        { "required": [ "alias", "team" ] },
+        { "required": [ "accession" ] }
+      ]
+    }
+  }
+}
