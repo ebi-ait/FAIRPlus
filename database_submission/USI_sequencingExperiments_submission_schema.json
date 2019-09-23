@@ -1,0 +1,439 @@
+{
+		"id": "sequencingExperiments",
+		"displayNameSingular": "Sequencing Experiment",
+		"displayNamePlural": "Sequencing Experiments",
+		"description": "Describes the sequencing of a biological sample using a sequencing instrument.",
+		"refRequirements": [{
+			"refClassName": "uk.ac.ebi.subs.data.component.StudyRef",
+			"dataTypeIdForReferencedDocument": "enaStudies"
+		}, {
+			"refClassName": "uk.ac.ebi.subs.data.component.SampleRef",
+			"dataTypeIdForReferencedDocument": "samples",
+			"additionalRequiredValidationAuthors": ["Ena", "Taxonomy"]
+		}],
+		"requiredValidationAuthors": ["Core", "Ena", "JsonSchema"],
+		"submittableClassName": "uk.ac.ebi.subs.repository.model.Assay",
+		"archive": "Ena",
+		"validationSchema": {
+			"#dollar#schema": "http://json-schema.org/draft-07/schema#",
+			"title": "Submissions Assay Schema",
+			"description": "ENA sequencing experiment schema",
+			"version": "1.0.0",
+			"author": "subs",
+			"type": "object",
+			"required": ["alias", "attributes"],
+			"properties": {
+				"alias": {
+					"description": "An unique identifier in a submission.",
+					"type": "string",
+					"minLength": 1
+				},
+				"title": {
+					"description": "Title of the submittable.",
+					"type": "string"
+				},
+				"description": {
+					"description": "More extensive free-form description.",
+					"type": "string"
+				},
+				"attributes": {
+					"description": "Attributes for describing a study.",
+					"type": "object",
+					"required": ["library_strategy", "library_source", "library_selection", "library_layout", "platform_type", "instrument_model", "design_description", "library_name"],
+					"patternProperties": {
+						"^#dot#*$": {
+							"type": "array",
+							"minItems": 1,
+							"items": {
+								"properties": {
+									"value": {
+										"type": "string",
+										"minLength": 1
+									},
+									"units": {
+										"type": "string",
+										"minLength": 1
+									},
+									"terms": {
+										"type": "array",
+										"items": {
+											"type": "object",
+											"properties": {
+												"url": {
+													"type": "string",
+													"format": "uri"
+												}
+											},
+											"required": ["url"]
+										}
+									}
+								},
+								"required": ["value"]
+							}
+						}
+					},
+					"properties": {
+						"library_strategy": {
+							"maxItems": 1,
+							"description": "Define the type of the library strategy",
+							"items": {
+								"type": "object",
+								"properties": {
+									"value": {
+										"enum": ["AMPLICON", "ATAC-seq", "Bisulfite-Seq", "ChIA-PET", "ChIP-Seq", "CLONE", "CLONEEND", "CTS", "DNase-Hypersensitivity", "EST", "FAIRE-seq", "FINISHING", "FL-cDNA", "Hi-C", "MBD-Seq", "MeDIP-Seq", "miRNA-Seq", "MNase-Seq", "MRE-Seq", "ncRNA-Seq", "OTHER", "POOLCLONE", "RAD-Seq", "RIP-Seq", "RNA-Seq", "SELEX", "ssRNA-seq", "Synthetic-Long-Read", "Targeted-Capture", "Tethered Chromatin Conformation Capture", "Tn-Seq", "VALIDATION", "WCS", "WGA", "WGS", "WXS"]
+									}
+								}
+							}
+						},
+						"library_source": {
+							"maxItems": 1,
+							"description": "Define the type of the library source",
+							"items": {
+								"type": "object",
+								"properties": {
+									"value": {
+										"enum": ["GENOMIC SINGLE CELL", "GENOMIC", "METAGENOMIC", "METATRANSCRIPTOMIC", "OTHER", "SYNTHETIC", "TRANSCRIPTOMIC SINGLE CELL", "TRANSCRIPTOMIC", "VIRAL RNA"]
+									}
+								}
+							}
+						},
+						"library_selection": {
+							"maxItems": 1,
+							"description": "Define the type of the library selection",
+							"items": {
+								"type": "object",
+								"properties": {
+									"value": {
+										"enum": ["5-methylcytidine antibody", "CAGE", "cDNA", "cDNA_oligo_dT", "cDNA_randomPriming", "ChIP", "ChIP-Seq", "DNase", "HMPR", "Hybrid Selection", "Inverse rRNA selection", "Inverse rRNA", "MBD2 protein methyl-CpG binding domain", "MDA", "MF", "MNase", "MSLL", "Oligo-dT", "other", "padlock probes capture method", "PCR", "PolyA", "RACE", "RANDOM PCR", "RANDOM", "Reduced Representation", "repeat fractionation", "Restriction Digest", "RT-PCR", "size fractionation", "unspecified"]
+									}
+								}
+							}
+						},
+						"library_layout": {
+							"maxItems": 1,
+							"description": "Define the type of the library layout",
+							"items": {
+								"type": "object",
+								"properties": {
+									"value": {
+										"enum": ["SINGLE", "PAIRED"]
+									}
+								}
+							}
+						},
+						"nominal_length": {
+							"description": "Define the paired nominal length.",
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"value": {
+										"pattern": "^\\d+$"
+									}
+								}
+							}
+						},
+						"nominal_sdev": {
+							"description": "Define the paired nominal standard deviation.",
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"value": {
+										"pattern": "^\\d+$"
+									}
+								}
+							}
+						}
+					},
+					"if": {
+						"properties": {
+							"library_layout": {
+								"items": {
+									"type": "object",
+									"properties": {
+										"value": {
+											"const": "PAIRED"
+										}
+									}
+								}
+							}
+						}
+					},
+					"then": {
+						"required": ["nominal_length", "nominal_sdev"]
+					},
+					"oneOf": [{
+						"properties": {
+							"platform_type": {
+								"items": {
+									"type": "object",
+									"properties": {
+										"value": {
+											"enum": ["LS454"]
+										}
+									}
+								}
+							},
+							"instrument_model": {
+								"items": {
+									"type": "object",
+									"properties": {
+										"value": {
+											"enum": ["454 GS 20", "454 GS FLX", "454 GS FLX+", "454 GS FLX Titanium", "454 GS Junior", "unspecified"]
+										}
+									}
+								}
+							}
+						}
+					}, {
+						"properties": {
+							"platform_type": {
+								"items": {
+									"type": "object",
+									"properties": {
+										"value": {
+											"enum": ["ILLUMINA"]
+										}
+									}
+								}
+							},
+							"instrument_model": {
+								"items": {
+									"type": "object",
+									"properties": {
+										"value": {
+											"enum": ["Illumina Genome Analyzer", "Illumina Genome Analyzer II", "Illumina Genome Analyzer IIx", "Illumina HiSeq 2500", "Illumina HiSeq 2000", "Illumina HiSeq 1500", "Illumina HiSeq 1000", "Illumina MiSeq", "Illumina HiScanSQ", "HiSeq X Ten", "NextSeq 500", "HiSeq X Five", "Illumina HiSeq 3000", "Illumina HiSeq 4000", "NextSeq 550", "unspecified"]
+										}
+									}
+								}
+							}
+						}
+					}, {
+						"properties": {
+							"platform_type": {
+								"items": {
+									"type": "object",
+									"properties": {
+										"value": {
+											"enum": ["HELICOS"]
+										}
+									}
+								}
+							},
+							"instrument_model": {
+								"items": {
+									"type": "object",
+									"properties": {
+										"value": {
+											"enum": ["Helicos HeliScope", "unspecified"]
+										}
+									}
+								}
+							}
+						}
+					}, {
+						"properties": {
+							"platform_type": {
+								"items": {
+									"type": "object",
+									"properties": {
+										"value": {
+											"enum": ["ABI_SOLID"]
+										}
+									}
+								}
+							},
+							"instrument_model": {
+								"items": {
+									"type": "object",
+									"properties": {
+										"value": {
+											"enum": ["AB SOLiD System 2.0", "AB SOLiD System 3.0", "AB SOLiD 3 Plus System", "AB SOLiD 4 System", "AB SOLiD 4hq System", "AB SOLiD PI System", "AB 5500 Genetic Analyzer", "AB 5500xl Genetic Analyzer", "AB 5500xl-W Genetic Analysis System", "unspecified"]
+										}
+									}
+								}
+							}
+						}
+					}, {
+						"properties": {
+							"platform_type": {
+								"items": {
+									"type": "object",
+									"properties": {
+										"value": {
+											"enum": ["COMPLETE_GENOMICS"]
+										}
+									}
+								}
+							},
+							"instrument_model": {
+								"items": {
+									"type": "object",
+									"properties": {
+										"value": {
+											"enum": ["Complete Genomics", "unspecified"]
+										}
+									}
+								}
+							}
+						}
+					}, {
+						"properties": {
+							"platform_type": {
+								"items": {
+									"type": "object",
+									"properties": {
+										"value": {
+											"enum": ["BGISEQ"]
+										}
+									}
+								}
+							},
+							"instrument_model": {
+								"items": {
+									"type": "object",
+									"properties": {
+										"value": {
+											"enum": ["BGISEQ-500"]
+										}
+									}
+								}
+							}
+						}
+					}, {
+						"properties": {
+							"platform_type": {
+								"items": {
+									"type": "object",
+									"properties": {
+										"value": {
+											"enum": ["OXFORD_NANOPORE"]
+										}
+									}
+								}
+							},
+							"instrument_model": {
+								"items": {
+									"type": "object",
+									"properties": {
+										"value": {
+											"enum": ["MinION", "GridION", "unspecified"]
+										}
+									}
+								}
+							}
+						}
+					}, {
+						"properties": {
+							"platform_type": {
+								"items": {
+									"type": "object",
+									"properties": {
+										"value": {
+											"enum": ["PACBIO_SMRT"]
+										}
+									}
+								}
+							},
+							"instrument_model": {
+								"items": {
+									"type": "object",
+									"properties": {
+										"value": {
+											"enum": ["PacBio RS", "PacBio RS II", "Sequel", "unspecified"]
+										}
+									}
+								}
+							}
+						}
+					}, {
+						"properties": {
+							"platform_type": {
+								"items": {
+									"type": "object",
+									"properties": {
+										"value": {
+											"enum": ["ION_TORRENT"]
+										}
+									}
+								}
+							},
+							"instrument_model": {
+								"items": {
+									"type": "object",
+									"properties": {
+										"value": {
+											"enum": ["Ion Torrent PGM", "Ion Torrent Proton", "unspecified"]
+										}
+									}
+								}
+							}
+						}
+					}, {
+						"properties": {
+							"platform_type": {
+								"items": {
+									"type": "object",
+									"properties": {
+										"value": {
+											"enum": ["CAPILLARY"]
+										}
+									}
+								}
+							},
+							"instrument_model": {
+								"items": {
+									"type": "object",
+									"properties": {
+										"value": {
+											"enum": ["AB 3730xL Genetic Analyzer", "AB 3730 Genetic Analyzer", "AB 3500xL Genetic Analyzer", "AB 3500 Genetic Analyzer", "AB 3130xL Genetic Analyzer", "AB 3130 Genetic Analyzer", "AB 310 Genetic Analyzer", "unspecified"]
+										}
+									}
+								}
+							}
+						}
+					}]
+				},
+				"studyRef": {
+					"description": "Reference to study.",
+					"#dollar#ref": "#/definitions/submittableRef"
+				},
+				"sampleUses": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"sampleRef": {
+								"#dollar#ref": "#/definitions/submittableRef"
+							}
+						}
+					}
+				}
+			},
+			"definitions": {
+				"submittableRef": {
+					"type": "object",
+					"properties": {
+						"alias": {
+							"type": "string",
+							"minLength": 1
+						},
+						"accession": {
+							"type": "string",
+							"minLength": 1
+						},
+						"team": {
+							"type": "string",
+							"minLength": 1
+						}
+					},
+					"anyOf": [{
+						"required": ["alias"]
+					}, {
+						"required": ["accession"]
+					}]
+				}
+			}
+		}
+	}

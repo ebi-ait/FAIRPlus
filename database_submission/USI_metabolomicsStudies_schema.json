@@ -1,0 +1,139 @@
+{
+		"id": "metabolomicsStudies",
+		"displayNameSingular": "MetaboLights Study",
+		"displayNamePlural": "MetaboLights Studies",
+		"description": "This data type describes the requirements for an metabolomics study.",
+		"refRequirements": [{
+			"refClassName": "uk.ac.ebi.subs.data.component.ProjectRef",
+			"dataTypeIdForReferencedDocument": "projects"
+		}, {
+			"refClassName": "uk.ac.ebi.subs.data.component.ProtocolRef",
+			"dataTypeIdForReferencedDocument": "metabolightsProtocols"
+		}],
+		"requiredValidationAuthors": ["Metabolights", "Core", "JsonSchema"],
+		"submittableClassName": "uk.ac.ebi.subs.repository.model.Study",
+		"archive": "Metabolights",
+		"validationSchema": {
+			"#dollar#schema": "http://json-schema.org/draft-07/schema#",
+			"#dollar#async": true,
+			"title": "MetaboLights Study Validation Schema",
+			"description": "Schema based on rules found in http://isa-specs.readthedocs.io/en/latest/isajson.html#study-schema-json",
+			"version": "1.2.0",
+			"author": "metabolights",
+			"type": "object",
+			"properties": {
+				"alias": {
+					"description": "An unique identifier in a submission.",
+					"type": "string",
+					"minLength": 1
+				},
+				"title": {
+					"description": "A title for the Study. Please use the same title as the first publication",
+					"type": "string",
+					"minLength": 8
+				},
+				"description": {
+					"description": "A brief description of the study aims. Please use the abstract of the publication",
+					"type": "string",
+					"minLength": 60
+				},
+				"attributes": {
+					"description": "Attributes that describe a study.",
+					"type": "object",
+					"properties": {
+						"factors": {
+							"description": "Experimental Factors that drive this study, e.g. Dose, Collection Time Point, Compound"
+						},
+						"studyDesignDescriptors": {
+							"description": "The type of study design being employed, Metabolomics/Metabonomics, Lipidomics, Metabolic Footprinting, Metabolic Fingerprinting, Targeted Profiling, Global Profiling."
+						},
+						"studyType": {
+							"description": "The type of technology Type used for the study. Example - Metabolomics_LCMS, Metabolomics_GCMS, Metabolomics_ImagingMS, Metabolomics_NMR, Metabolomics_ImagingNMR.",
+							"type": "array",
+							"maxItems": 1,
+							"items": {
+								"type": "object",
+								"properties": {
+									"value": {
+										"type": "string",
+										"enum": ["Metabolomics_LCMS", "Metabolomics_GCMS", "Metabolomics_ImagingMS", "Metabolomics_NMR", "Metabolomics_ImagingNMR"]
+									}
+								},
+								"required": ["value"]
+							}
+						}
+					},
+					"required": ["factors", "studyDesignDescriptors", "studyType"],
+					"patternProperties": {
+						"^#dot#*$": {
+							"type": "array",
+							"minItems": 1,
+							"items": {
+								"type": "object",
+								"properties": {
+									"value": {
+										"type": "string",
+										"minLength": 1
+									},
+									"units": {
+										"type": "string",
+										"minLength": 1
+									},
+									"terms": {
+										"type": "array",
+										"items": {
+											"type": "object",
+											"properties": {
+												"url": {
+													"type": "string",
+													"format": "uri"
+												}
+											},
+											"required": ["url"]
+										}
+									}
+								},
+								"required": ["value"]
+							}
+						}
+					}
+				},
+				"projectRef": {
+					"description": "Reference to project.",
+					"#dollar#ref": "#/definitions/submittableRef"
+				},
+				"protocolRefs": {
+					"description": "Reference(s) to protocol(s).",
+					"type": "array",
+					"items": {
+						"#dollar#ref": "#/definitions/submittableRef"
+					}
+				}
+			},
+			"definitions": {
+				"submittableRef": {
+					"type": "object",
+					"properties": {
+						"alias": {
+							"type": "string",
+							"minLength": 1
+						},
+						"accession": {
+							"type": "string",
+							"minLength": 1
+						},
+						"team": {
+							"type": "string",
+							"minLength": 1
+						}
+					},
+					"anyOf": [{
+						"required": ["alias", "team"]
+					}, {
+						"required": ["accession"]
+					}]
+				}
+			},
+			"required": ["alias", "attributes"]
+		}
+	}

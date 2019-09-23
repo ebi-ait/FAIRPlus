@@ -1,0 +1,44 @@
+{
+		"id": "metabolightsProtocols",
+		"displayNameSingular": "MetaboLights Protocol",
+		"displayNamePlural": "MetaboLights Protocols",
+		"description": "This data type describes the protocol requirements for a metabolomics study.",
+		"refRequirements": [],
+		"requiredValidationAuthors": ["Core"],
+		"submittableClassName": "uk.ac.ebi.subs.repository.model.Protocol",
+		"archive": "Metabolights",
+		"validationSchema": {
+			"#dollar#schema": "http://json-schema.org/draft-07/schema#",
+			"#dollar#async": true,
+			"title": "MetaboLights Study Protocols",
+			"description": "Protocols applied for the metabolomics study",
+			"type": "array",
+			"items": {
+				"#dollar#ref": "#/definitions/submittableRef"
+			},
+			"definitions": {
+				"submittableRef": {
+					"type": "object",
+					"properties": {
+						"alias": {
+							"type": "string",
+							"minLength": 1
+						},
+						"accession": {
+							"type": "string",
+							"minLength": 1
+						},
+						"team": {
+							"type": "string",
+							"minLength": 1
+						}
+					},
+					"anyOf": [{
+						"required": ["alias", "team"]
+					}, {
+						"required": ["accession"]
+					}]
+				}
+			}
+		}
+	}
