@@ -1,0 +1,73 @@
+{
+	"alias": "HuH-7-3",
+	"title": "HuH-7-rep3",
+	"description": "liver tumor hepatitis C",
+	"taxonId": 9606,
+	"taxon": "Homo sapiens",
+	"releaseDate": "2017-01-01",
+	"attributes": {
+		"cell line strain": [{
+			"value": "CVCL_0336",
+			"terms": [{
+				"url": "https://web.expasy.org/cellosaurus/CVCL_0336"
+			}]
+		}],
+		"cell line replicate": [{
+			"value": "3",
+			"terms": []
+		}],
+		"cell line source": [{
+			"value": "JCRB",
+			"terms": [{
+				"url": "https://cellbank.nibiohn.go.jp/~cellbank/en/search_res_det.cgi?ID=385"
+			}]
+		}],
+		"cell line culture": [{
+			"value": "DMEM; 10 % FCS; Pen-Strep",
+			"terms": []
+		}],
+		"cell line treatment": [{
+			"value": "NA",
+			"terms": []
+		}],
+		"cell line additionalInfo": [{
+			"value": "Quality control tested for mycoplasma,STR profiling was performed for all cell lines to confirm identity.",
+			"terms": []
+		}],
+		"cell line genotype": [{
+			"value": "WT",
+			"terms": []
+		}],
+		"sample sex": [{
+			"value": "M",
+			"terms": []
+		}],
+		"sample age": [{
+			"value": 57,
+			"terms": []
+		}],
+
+		"sample disease status": [{
+			"value": "NA",
+			"terms": []
+		}],
+		"sample disease stage": [{
+			"value": "NA",
+			"terms": []
+		}],
+		"sample tissue": [{
+			"value": "liver",
+			"terms": []
+		}],
+		"sample source ref": [{
+			"value": "NA",
+			"terms": []
+		}],
+		"license": [{
+			"value": "CC BY 4.0",
+			"terms": [{
+				"url": "http://creativecommons.org/licenses/by/4.0/"
+			}]
+		}]
+	}
+}
