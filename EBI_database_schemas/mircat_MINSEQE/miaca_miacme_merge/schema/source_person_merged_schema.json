@@ -1,0 +1,105 @@
+{
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/source_person_merged_schema.json",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "MIACA Source - corresponding to a person and their organization - MIACME person schema. A human being. merging",
+    "description": "Merge between the MIACA Source - corresponding to a person and their organization and the MIACME person schema. A human being.",
+    "type": "object",
+    "required": [
+        "ID",
+        "name",
+        "institution",
+        "department",
+        "address",
+        "city",
+        "country",
+        "email"
+    ],
+    "properties": {
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "type": "string",
+            "format": "uri"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "type": "string",
+            "enum": [
+                "SourcePerson"
+            ]
+        },
+        "ID": {
+            "description": "The source identifier",
+            "type": "string"
+        },
+        "name": {
+            "description": "name of the researcher working on the project.",
+            "type": "string",
+            "minLength": 1
+        },
+        "institution": {
+            "description": "name of the institution/affiliation the researcher is working at",
+            "type": "string",
+            "minLength": 1
+        },
+        "department": {
+            "description": "department in the institution",
+            "type": "string",
+            "minLength": 1
+        },
+        "address": {
+            "description": "address of the institution",
+            "type": "string",
+            "minLength": 1
+        },
+        "city": {
+            "description": "city the institution is placed",
+            "type": "string",
+            "minLength": 1
+        },
+        "country": {
+            "description": "country the city is placed",
+            "type": "string",
+            "minLength": 1
+        },
+        "email": {
+            "description": "email of the researcher",
+            "type": "string",
+            "minLength": 1
+        },
+        "identifierSource": {
+            "description": "Information about the organisation or namespace responsible for creating and maintaining the identifier.",
+            "type": "string"
+        },
+        "firstName": {
+            "description": "The given name.",
+            "type": "string"
+        },
+        "midInitials": {
+            "type": "string"
+        },
+        "phone": {
+            "type": "string"
+        },
+        "fax": {
+            "type": "string"
+        },
+        "roles": {
+            "description": "The roles assumed by the person. Ideally from a controlled vocabulary or ontology.",
+            "type": "string"
+        }
+    }
+}

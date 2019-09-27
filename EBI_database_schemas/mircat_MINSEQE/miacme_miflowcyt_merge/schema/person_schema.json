@@ -1,0 +1,81 @@
+{
+    "title": "MIACME person schema. A human being.",
+    "id": "https://w3id.org/mircat/miaca_miflowcyt_merge/schema/person_schema.json",
+    "version": "1.0",
+    "properties": {
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "lastName": {
+            "type": "string",
+            "description": "The family name."
+        },
+        "identifierSource": {
+            "type": "string",
+            "description": "Information about the organisation or namespace responsible for creating and maintaining the identifier."
+        },
+        "roles": {
+            "type": "string",
+            "description": "The roles assumed by the person. Ideally from a controlled vocabulary or ontology."
+        },
+        "@type": {
+            "type": "string",
+            "description": "The JSON-LD type",
+            "enum": [
+                "Person"
+            ]
+        },
+        "email": {
+            "type": "string",
+            "format": "email",
+            "description": "The email address."
+        },
+        "address": {
+            "type": "string"
+        },
+        "phone": {
+            "type": "string"
+        },
+        "midInitials": {
+            "type": "string"
+        },
+        "firstName": {
+            "type": "string",
+            "description": "The given name."
+        },
+        "identifier": {
+            "type": "string",
+            "description": "A persistent identifier of the person, it should be an ORCID."
+        },
+        "@id": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD identifier"
+        },
+        "fax": {
+            "type": "string"
+        },
+        "affiliation": {
+            "type": "array",
+            "description": "The organizations to which the person is associated with.",
+            "items": {
+                "$ref": "organization_merged_schema.json#"
+            }
+        }
+    },
+    "type": "object",
+    "additionalProperties": false,
+    "description": "JSON-schema representing a person in MIACME",
+    "$schema": "http://json-schema.org/draft-04/schema"
+}

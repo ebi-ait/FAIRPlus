@@ -1,0 +1,61 @@
+{
+  "id": "https://w3id.org/mircat/miacme/schema/treatment_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MIACME treatment schema",
+  "version": "1.0",
+  "description": "JSON-schema representing a treatment in MIACME.",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "enum": [
+        "Organization"
+      ]
+    },
+    "factor": {
+      "description": "The nature of the perturbation/intervention/treatment being applied to the biological system. An independent variable.",
+      "type": "string"
+    },
+    "factorValues": {
+      "description": "The set of values that the treatment will assume.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "description": "A specific value assumed by the factor.",
+             "anyOf" : [
+                { "$ref": "annotation_schema.json#"},
+                { "type": "string"},
+                { "type": "number"}
+                ]
+            },
+          "unit": {
+            "description": "The unit for the factor value.",
+            "$ref": "annotation_schema.json#"
+          }
+        }
+      }
+    }
+  }
+}

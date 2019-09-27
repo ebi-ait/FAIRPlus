@@ -1,0 +1,110 @@
+{
+    "title": "MIACA instrument schema - MIFlowCyt Instrument merging",
+    "provenance": {
+        "prov:wasAttributedTo": {
+            "prov:agent": "http://orcid.org/0000-0001-9853-5668",
+            "_comment": "an ORCID for now, need to check foaf:Person"
+        }
+    },
+    "properties": {
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "instrumentType": {
+            "type": "array",
+            "@type": {
+                "type": "string",
+                "enum": [
+                    "OpenCV"
+                ]
+            },
+            "description": "Instrument type, e.g. liquid handling robot, centrifuge, FACS, Plate Reader, etc. ",
+            "items": {
+                "$ref": "open_cv_schema.json#"
+            }
+        },
+        "instrumentName": {
+            "type": "string",
+            "@type": {
+                "type": "string",
+                "enum": [
+                    "instrumentName"
+                ]
+            },
+            "description": "Instrument name"
+        },
+        "vendor": {
+            "@type": {
+                "type": "string",
+                "enum": [
+                    "Organization",
+                    "Person"
+                ]
+            },
+            "description": "Details to the vendor or manufacturer, Contact details of the source of the reaction vessels, e.g. company",
+            "items": {
+                "$ref": "vendor_schema.json#"
+            }
+        },
+        "ID": {
+            "type": "string",
+            "description": "Instrument identifier as stored by the database"
+        },
+        "@id": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD identifier"
+        },
+        "instrumentModel": {
+            "type": "string",
+            "description": "Instrument name"
+        },
+        "@type": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD type"
+        },
+        "instrumentSpec": {
+            "type": "array",
+            "description": "e.g. objective lenses, numerical aperture, filters"
+        },
+        "manufacturer": {
+            "type": "string",
+            "description": "The instrument manufacturer shall be specified by stating its name (e.g., MIFlowCyt Cytometry Systems, Inc.). A URL pointing to manufacturer web pages may also be provided."
+        },
+        "configurationAndSettings": {
+            "properties": {
+                "flowCellAndFluidics": {
+                    "$ref": "flow_cell_schema.json"
+                },
+                "lightSources": {
+                    "type": "array",
+                    "description": "Each light source (e.g., laser) shall be described stating the following:",
+                    "items": {
+                        "$ref": "light_source_instrument_schema.json"
+                    }
+                }
+            },
+            "description": "The system and its configurations have significant impact on experimental results and as such the following shall be provided"
+        },
+        "other": {
+            "type": "string",
+            "description": "Additional relevant instrument details should be provided and may include machine-specific information such as information about automated agitation, temperature control, controlled volume dispensing, sampling from microtiter plates, auto-boost, auto-flush, etc. Other custom settings shall be provided if relevant and may include setting name, description, and value."
+        }
+    },
+    "type": "object",
+    "id": "https://w3id.org/mircat/miaca_miflowcyt_merge/schema/instrument_merged_schema.json",
+    "description": "Merge between the MIACA instrument schema and the MIFlowCyt Instrument",
+    "$schema": "http://json-schema.org/draft-04/schema"
+}

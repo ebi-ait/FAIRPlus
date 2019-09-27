@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ROOT request="PRJNA231971&amp;display=xml">
+<PROJECT accession="PRJNA231971" alias="PRJNA231971" center_name="GIS">
+     <IDENTIFIERS>
+          <PRIMARY_ID>PRJNA231971</PRIMARY_ID>
+          <SECONDARY_ID>SRP034614</SECONDARY_ID>
+          <SUBMITTER_ID namespace="GIS">PRJNA231971</SUBMITTER_ID>
+     </IDENTIFIERS>
+     <NAME>Dehalococcoides mccartyi</NAME>
+     <TITLE>Dehalococcoides mccartyi Transcriptome of three strains</TITLE>
+     <DESCRIPTION>Dehalococcoides mccartyi Transcriptome of three strains</DESCRIPTION>
+     <SUBMISSION_PROJECT>
+          <SEQUENCING_PROJECT/>
+          <ORGANISM>
+               <TAXON_ID>61435</TAXON_ID>
+               <SCIENTIFIC_NAME>Dehalococcoides mccartyi</SCIENTIFIC_NAME>
+          </ORGANISM>
+     </SUBMISSION_PROJECT>
+     <RELATED_PROJECTS>
+          <RELATED_PROJECT>
+               <PARENT_PROJECT accession="PRJNA35135"/>
+          </RELATED_PROJECT>
+     </RELATED_PROJECTS>
+     <PROJECT_LINKS>
+          <PROJECT_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SAMPLE</DB>
+                    <ID>SRS517212-SRS517214</ID>
+               </XREF_LINK>
+          </PROJECT_LINK>
+          <PROJECT_LINK>
+               <XREF_LINK>
+                    <DB>ENA-EXPERIMENT</DB>
+                    <ID>SRX396173-SRX396175</ID>
+               </XREF_LINK>
+          </PROJECT_LINK>
+          <PROJECT_LINK>
+               <XREF_LINK>
+                    <DB>ENA-RUN</DB>
+                    <ID>SRR1055187-SRR1055189</ID>
+               </XREF_LINK>
+          </PROJECT_LINK>
+          <PROJECT_LINK>
+               <XREF_LINK>
+                    <DB>ENA-FASTQ-FILES</DB>
+                    <ID><![CDATA[http://www.ebi.ac.uk/ena/data/warehouse/filereport?accession=PRJNA231971&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+               </XREF_LINK>
+          </PROJECT_LINK>
+          <PROJECT_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMITTED-FILES</DB>
+                    <ID><![CDATA[http://www.ebi.ac.uk/ena/data/warehouse/filereport?accession=PRJNA231971&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+               </XREF_LINK>
+          </PROJECT_LINK>
+     </PROJECT_LINKS>
+     <PROJECT_ATTRIBUTES>
+          <PROJECT_ATTRIBUTE>
+               <TAG>ENA-REFSEQ</TAG>
+               <VALUE>N</VALUE>
+          </PROJECT_ATTRIBUTE>
+          <PROJECT_ATTRIBUTE>
+               <TAG>PROJECT-ID</TAG>
+               <VALUE>231971</VALUE>
+          </PROJECT_ATTRIBUTE>
+          <PROJECT_ATTRIBUTE>
+               <TAG>NCBI-PROJECT-TYPE</TAG>
+               <VALUE>SUBMISSION</VALUE>
+          </PROJECT_ATTRIBUTE>
+          <PROJECT_ATTRIBUTE>
+               <TAG>ENA-FIRST-PUBLIC</TAG>
+               <VALUE>2014-07-04</VALUE>
+          </PROJECT_ATTRIBUTE>
+          <PROJECT_ATTRIBUTE>
+               <TAG>ENA-LAST-UPDATE</TAG>
+               <VALUE>2018-01-28</VALUE>
+          </PROJECT_ATTRIBUTE>
+     </PROJECT_ATTRIBUTES>
+</PROJECT>
+</ROOT>

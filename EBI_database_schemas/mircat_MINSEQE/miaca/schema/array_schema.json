@@ -1,0 +1,58 @@
+{
+  "id": "https://w3id.org/mircat/miaca/schema/array_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MIACA array JSON schema",
+  "description": "Description of array type and vessel.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "format": "uri"
+    },
+    "ID": {
+      "description": "The identifier of the array",
+      "type": "string"
+    },
+   "arraySupport": {
+     "description": "reference to a vesseltype",
+     "type": "string"
+   },
+   "xdim": {
+     "description": "column",
+     "type": "integer"
+   },
+   "ydim": {
+     "description": "row",
+     "type": "integer"
+   },
+   "number": {
+     "description": "number of feature/well if explicit",
+     "type": "integer"
+   },
+   "array":{
+     "description": "description of array type and vessel",
+     "$ref": "array_schema.json#"
+   }
+  }
+}

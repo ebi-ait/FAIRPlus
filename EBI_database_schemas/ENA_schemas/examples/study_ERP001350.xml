@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ROOT request="ERP001350&amp;display=xml">
+<STUDY accession="ERP001350" alias="Onchocerca_volvulus_transcriptomics-sc-2012-04-10T13:26:21Z-1982" center_name="Wellcome Sanger Institute">
+     <IDENTIFIERS>
+          <PRIMARY_ID>ERP001350</PRIMARY_ID>
+          <SECONDARY_ID>PRJEB2965</SECONDARY_ID>
+          <SUBMITTER_ID namespace="SC">Onchocerca_volvulus_transcriptomics-sc-2012-04-10T13:26:21Z-1982</SUBMITTER_ID>
+     </IDENTIFIERS>
+     <DESCRIPTOR>
+          <STUDY_TITLE>Onchocerca_volvulus_transcriptomics</STUDY_TITLE>
+          <STUDY_ABSTRACT>This data is part of a pre-publication release. For information on the proper use of pre-publication data shared by the Wellcome Trust Sanger Institute (including details of any publication moratoria), please see http://www.sanger.ac.uk/datasharing/ Onchocerca volvulus is a filarial nematode parasite of humans, causing Onchocerciasis, or River Blindness, which affects over 37 million people, mainly in Africa. It is a severely debilitating disease, which is transmitted to humans by black fly. This project aims to undertake high-throughput sequencing of Onchocerca volvulus transcriptome for de novo assembly of transcripts. The main objective of this project is to recognize genes expressed in given life stages.</STUDY_ABSTRACT>
+          <STUDY_DESCRIPTION>This data is part of a pre-publication release. For information on the proper use of pre-publication data shared by the Wellcome Trust Sanger Institute (including details of any publication moratoria), please see http://www.sanger.ac.uk/datasharing/ Onchocerca volvulus is a filarial nematode parasite of humans, causing Onchocerciasis, or River Blindness, which affects over 37 million people, mainly in Africa. It is a severely debilitating disease, which is transmitted to humans by black fly. This project aims to undertake high-throughput sequencing of Onchocerca volvulus transcriptome for de novo assembly of transcripts. The main objective of this project is to recognize genes expressed in given life stages.</STUDY_DESCRIPTION>
+          <CENTER_PROJECT_NAME>Onchocerca_volvulus_transcriptomics</CENTER_PROJECT_NAME>
+          <STUDY_TYPE existing_study_type="Transcriptome Analysis"/>
+     </DESCRIPTOR>
+     <STUDY_LINKS>
+          <STUDY_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SAMPLE</DB>
+                    <ID>ERS092575-ERS092577,ERS126284-ERS126287,ERS391927-ERS391929</ID>
+               </XREF_LINK>
+          </STUDY_LINK>
+          <STUDY_LINK>
+               <XREF_LINK>
+                    <DB>ENA-EXPERIMENT</DB>
+                    <ID>ERX200391-ERX200397,ERX450840-ERX450842,ERX529044-ERX529045</ID>
+               </XREF_LINK>
+          </STUDY_LINK>
+          <STUDY_LINK>
+               <XREF_LINK>
+                    <DB>ENA-RUN</DB>
+                    <ID>ERR225731-ERR225737,ERR485008-ERR485010,ERR570055-ERR570056</ID>
+               </XREF_LINK>
+          </STUDY_LINK>
+          <STUDY_LINK>
+               <XREF_LINK>
+                    <DB>ENA-ANALYSIS</DB>
+                    <ID>ERZ017093-ERZ017099</ID>
+               </XREF_LINK>
+          </STUDY_LINK>
+          <STUDY_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMISSION</DB>
+                    <ID>ERA118045</ID>
+               </XREF_LINK>
+          </STUDY_LINK>
+          <STUDY_LINK>
+               <XREF_LINK>
+                    <DB>ENA-FASTQ-FILES</DB>
+                    <ID><![CDATA[http://www.ebi.ac.uk/ena/data/warehouse/filereport?accession=ERP001350&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+               </XREF_LINK>
+          </STUDY_LINK>
+          <STUDY_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMITTED-FILES</DB>
+                    <ID><![CDATA[http://www.ebi.ac.uk/ena/data/warehouse/filereport?accession=ERP001350&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+               </XREF_LINK>
+          </STUDY_LINK>
+     </STUDY_LINKS>
+     <STUDY_ATTRIBUTES>
+          <STUDY_ATTRIBUTE>
+               <TAG>ENA-SPOT-COUNT</TAG>
+               <VALUE>291150221</VALUE>
+          </STUDY_ATTRIBUTE>
+          <STUDY_ATTRIBUTE>
+               <TAG>ENA-BASE-COUNT</TAG>
+               <VALUE>53944873500</VALUE>
+          </STUDY_ATTRIBUTE>
+          <STUDY_ATTRIBUTE>
+               <TAG>ENA-FIRST-PUBLIC</TAG>
+               <VALUE>2013-01-28</VALUE>
+          </STUDY_ATTRIBUTE>
+          <STUDY_ATTRIBUTE>
+               <TAG>ENA-LAST-UPDATE</TAG>
+               <VALUE>2013-07-19</VALUE>
+          </STUDY_ATTRIBUTE>
+          <STUDY_ATTRIBUTE>
+               <TAG>ArrayExpress</TAG>
+               <VALUE>E-ERAD-67</VALUE>
+          </STUDY_ATTRIBUTE>
+     </STUDY_ATTRIBUTES>
+</STUDY>
+</ROOT>

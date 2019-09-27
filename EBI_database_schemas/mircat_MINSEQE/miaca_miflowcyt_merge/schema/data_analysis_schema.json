@@ -1,0 +1,37 @@
+{
+    "title": "MIFlowCyt Data Analysis",
+    "properties": {
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "@type": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD type"
+        },
+        "@id": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD identifier"
+        },
+        "listModeDataFile": {
+            "type": "string",
+            "description": "The list-mode data files (e.g., FCS files [18]) shall be provided directly or details on how they may be requested shall be stated."
+        }
+    },
+    "type": "object",
+    "id": "https://w3id.org/mircat/miaca_miflowcyt_merge/schema/data_analysis_schema.json",
+    "description": "",
+    "$schema": "http://json-schema.org/draft-04/schema"
+}

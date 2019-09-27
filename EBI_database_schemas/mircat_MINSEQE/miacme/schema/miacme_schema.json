@@ -1,0 +1,39 @@
+{
+  "id": "https://w3id.org/mircat/miacme/schema/miacme_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "MIACME schema",
+  "version" : "1.0",
+  "description": "JSON-schema representing MIACME reporting guideline.",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "enum": [
+        "Miacme"
+      ]
+    },
+    "investigation": {
+      "$ref": "investigation_schema.json#"
+    }
+  }
+}

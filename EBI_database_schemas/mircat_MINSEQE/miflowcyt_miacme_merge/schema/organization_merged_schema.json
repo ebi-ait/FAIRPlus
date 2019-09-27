@@ -1,0 +1,82 @@
+{
+    "title": "MIFlowCyt Organzation - MIACME organization schema merging",
+    "properties": {
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "name": {
+            "type": "string",
+            "description": "Name of the organization."
+        },
+        "@id": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD identifier"
+        },
+        "@type": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD type"
+        },
+        "address": {
+            "properties": {
+                "city": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "country": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "zip": {
+                    "type": [
+                        "string",
+                        "number",
+                        "null"
+                    ]
+                },
+                "street": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "state": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "type": "object",
+            "description": "Address of the organization."
+        },
+        "identifierSource": {
+            "type": "string",
+            "description": "Information about the organisation or namespace responsible for minting the identifier."
+        },
+        "identifier": {
+            "type": "string",
+            "description": "Primary identifier for the organisation."
+        }
+    },
+    "type": "object",
+    "id": "https://w3id.org/mircat/miflowcyt_miacme_merge/schema/organization_merged_schema.json",
+    "description": "Merge between the MIFlowCyt Organzation and the MIACME organization schema",
+    "$schema": "http://json-schema.org/draft-04/schema"
+}

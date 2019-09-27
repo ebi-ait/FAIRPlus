@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ROOT request="download accessions">
+<EXPERIMENT accession="SRX396175" alias="CG5 Pure Transcriptomics" center_name="Genome Institute of Singapore" broker_name="NCBI">
+     <IDENTIFIERS>
+          <PRIMARY_ID>SRX396175</PRIMARY_ID>
+          <SUBMITTER_ID namespace="Genome Institute of Singapore">CG5 Pure Transcriptomics</SUBMITTER_ID>
+     </IDENTIFIERS>
+     <TITLE>Illumina HiSeq 2000 paired end sequencing; Transcriptomics of pure Dehalococcoides culture CG5</TITLE>
+     <STUDY_REF accession="SRP034614">
+          <IDENTIFIERS>
+               <PRIMARY_ID>SRP034614</PRIMARY_ID>
+               <EXTERNAL_ID namespace="BioProject">PRJNA231971</EXTERNAL_ID>
+          </IDENTIFIERS>
+     </STUDY_REF>
+     <DESIGN>
+          <DESIGN_DESCRIPTION/>
+          <SAMPLE_DESCRIPTOR accession="SRS517214">
+               <IDENTIFIERS>
+                    <PRIMARY_ID>SRS517214</PRIMARY_ID>
+                    <SUBMITTER_ID namespace="Genome Institute of Singapore">CG5-Transcriptomics</SUBMITTER_ID>
+               </IDENTIFIERS>
+          </SAMPLE_DESCRIPTOR>
+          <LIBRARY_DESCRIPTOR>
+               <LIBRARY_NAME/>
+               <LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY>
+               <LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE>
+               <LIBRARY_SELECTION>RANDOM</LIBRARY_SELECTION>
+               <LIBRARY_LAYOUT>
+                    <PAIRED NOMINAL_SDEV="0.0E0"/>
+               </LIBRARY_LAYOUT>
+          </LIBRARY_DESCRIPTOR>
+          <SPOT_DESCRIPTOR>
+               <SPOT_DECODE_SPEC>
+                    <SPOT_LENGTH>152</SPOT_LENGTH>
+                    <READ_SPEC>
+                         <READ_INDEX>0</READ_INDEX>
+                         <READ_CLASS>Application Read</READ_CLASS>
+                         <READ_TYPE>Forward</READ_TYPE>
+                         <BASE_COORD>1</BASE_COORD>
+                    </READ_SPEC>
+                    <READ_SPEC>
+                         <READ_INDEX>1</READ_INDEX>
+                         <READ_CLASS>Application Read</READ_CLASS>
+                         <READ_TYPE>Reverse</READ_TYPE>
+                         <BASE_COORD>77</BASE_COORD>
+                    </READ_SPEC>
+               </SPOT_DECODE_SPEC>
+          </SPOT_DESCRIPTOR>
+     </DESIGN>
+     <PLATFORM>
+          <ILLUMINA>
+               <INSTRUMENT_MODEL>Illumina HiSeq 2000</INSTRUMENT_MODEL>
+          </ILLUMINA>
+     </PLATFORM>
+     <PROCESSING/>
+     <EXPERIMENT_LINKS>
+          <EXPERIMENT_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SAMPLE</DB>
+                    <ID>SRS517214</ID>
+               </XREF_LINK>
+          </EXPERIMENT_LINK>
+          <EXPERIMENT_LINK>
+               <XREF_LINK>
+                    <DB>ENA-RUN</DB>
+                    <ID>SRR1055189</ID>
+               </XREF_LINK>
+          </EXPERIMENT_LINK>
+          <EXPERIMENT_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMISSION</DB>
+                    <ID>SRA121900</ID>
+               </XREF_LINK>
+          </EXPERIMENT_LINK>
+          <EXPERIMENT_LINK>
+               <XREF_LINK>
+                    <DB>ENA-FASTQ-FILES</DB>
+                    <ID><![CDATA[http://www.ebi.ac.uk/ena/data/warehouse/filereport?accession=SRX396175&result=read_run&fields=run_accession,fastq_ftp,fastq_md5,fastq_bytes]]></ID>
+               </XREF_LINK>
+          </EXPERIMENT_LINK>
+          <EXPERIMENT_LINK>
+               <XREF_LINK>
+                    <DB>ENA-SUBMITTED-FILES</DB>
+                    <ID><![CDATA[http://www.ebi.ac.uk/ena/data/warehouse/filereport?accession=SRX396175&result=read_run&fields=run_accession,submitted_ftp,submitted_md5,submitted_bytes,submitted_format]]></ID>
+               </XREF_LINK>
+          </EXPERIMENT_LINK>
+     </EXPERIMENT_LINKS>
+     <EXPERIMENT_ATTRIBUTES>
+          <EXPERIMENT_ATTRIBUTE>
+               <TAG>ENA-SPOT-COUNT</TAG>
+               <VALUE>11796166</VALUE>
+          </EXPERIMENT_ATTRIBUTE>
+          <EXPERIMENT_ATTRIBUTE>
+               <TAG>ENA-BASE-COUNT</TAG>
+               <VALUE>1793017232</VALUE>
+          </EXPERIMENT_ATTRIBUTE>
+     </EXPERIMENT_ATTRIBUTES>
+</EXPERIMENT>
+</ROOT>

@@ -1,0 +1,69 @@
+{
+    "id": "https://w3id.org/mircat/miaca_miacme_merge/schema/cell_line_schema.json",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "MIACA cell line schema",
+    "description": "Cell line used during the project. An element to describe the cell line used during the project.",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+        "cellLineIdentifier",
+        "cellLineName",
+        "species",
+        "tissue",
+        "reference",
+        "provider"
+    ],
+    "properties": {
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "type": "string",
+            "format": "uri"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "type": "string",
+            "format": "uri"
+        },
+        "ID": {
+            "type": "string"
+        },
+        "cellLineName": {
+            "description": "Description of the cell line used. (e.g. HeLa ATTC CCL2)",
+            "type": "string"
+        },
+        "cellSource": {
+            "description": "Information about the cellLine if not ATCC",
+            "$ref": "cell_source_schema.json#"
+        },
+        "passageNo": {
+            "description": "is the number of generation of a CellLine due to passaging and growing",
+            "type": "string"
+        },
+        "modifications": {
+            "description": "transgene/genetic manipulations, e.g. stably transfected, induced resistance",
+            "type": "string"
+        },
+        "validation": {
+            "description": "measures undertaken to validate cell line, e.g. DNA fingerprinting, genotyping, morphology testing",
+            "type": "string"
+        },
+        "lineQC": {
+            "description": "Mycoplasma test (Y/N) and other measures for quality control, e.g. virus testing",
+            "type": "string"
+        }
+    }
+}

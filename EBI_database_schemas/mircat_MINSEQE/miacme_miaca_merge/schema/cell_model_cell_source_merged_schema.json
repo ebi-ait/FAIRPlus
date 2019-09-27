@@ -1,0 +1,81 @@
+{
+    "title": "MIACME cell model schema - MIACA cell source schema merging",
+    "version": "1.0",
+    "required": [
+        "cellType",
+        "specificCellDetails",
+        "organism"
+    ],
+    "properties": {
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "@id": {
+            "type": "string",
+            "format": "uri",
+            "description": "The JSON-LD identifier"
+        },
+        "cellType": {
+            "type": "string",
+            "description": "The type of cell used in the experiment. For example: cell line, primary cell, endogenous cell."
+        },
+        "@type": {
+            "type": "string",
+            "description": "The JSON-LD type",
+            "enum": [
+                "CellModel"
+            ]
+        },
+        "specificCellDetails": {
+            "type": "string",
+            "description": "The specific details about the cell."
+        },
+        "organism": {
+            "type": "string",
+            "description": "The organism of origin of the cell."
+        },
+        "tissue": {
+            "description": "is a collection of interconnected cells that perform a similar function within an organism",
+            "$ref": "ontology_value_source_schema.json#"
+        },
+        "cellLineID": {
+            "type": "string",
+            "description": "Controlled vocabulary ID. Description of the cell line used. (e.g. HeLa ATTC CCL2)"
+        },
+        "source": {
+            "description": "contact details refering to the CellLine",
+            "$ref": "person_source_merged_schema.json#"
+        },
+        "reference": {
+            "type": "string",
+            "description": "reference to publication"
+        },
+        "organ": {
+            "description": "e.g. kidney",
+            "$ref": "ontology_value_source_schema.json#"
+        },
+        "provider": {
+            "type": "string",
+            "description": "e.g. ATCC"
+        },
+        "strain": {
+            "description": "a variant of a cellType",
+            "$ref": "ontology_value_source_schema.json#"
+        }
+    },
+    "type": "object",
+    "id": "https://w3id.org/mircat/miacme_miaca_merge/schema/cell_model_cell_source_merged_schema.json",
+    "description": "Merge between the MIACME cell model schema and the MIACA cell source schema",
+    "$schema": "http://json-schema.org/draft-04/schema"
+}

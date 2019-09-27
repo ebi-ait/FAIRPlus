@@ -1,0 +1,20 @@
+{
+    "@context": {
+        "obo": "http://purl.obolibrary.org/obo/",
+        "name": "obo:IAO_0000590",
+        "PrimaryContact": "obo:NCBITaxon_9606",
+        "@language": "en",
+        "emailAddress": "obo:IAO_0000429",
+        "phone": "sio:SIO_001324",
+        "sio": "http://semanticscience.org/resource/",
+        "address": "obo:IAO_0000422",
+        "fax": "sio:SIO_001321",
+        "midInitials": "sio:SIO_001318",
+        "identifier": "obo:IAO_0000578",
+        "firstName": "obo:IAO_0020016",
+        "identifierSource": "obo:OBI_0000245",
+        "affiliation": "obo:ERO_0000066",
+        "roles": "obo:OBI_0000202",
+        "PrimaryContactPersonMerged": "obo:NCBITaxon_9606"
+    }
+}
