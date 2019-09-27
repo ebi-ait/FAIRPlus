@@ -1,5 +1,5 @@
 {
-	"alias": "HuH-7-3",
+	"alias": "Sample-HuH-7-rep3",
 	"title": "HuH-7-rep3",
 	"description": "liver tumor hepatitis C",
 	"taxonId": 9606,
@@ -20,7 +20,8 @@
 		}],
 		"cell line culture": [{
 			"value": "DMEM; 10 % FCS; Pen-Strep",
-			"terms": [],
+			"terms": []
+		}],
 		"cell line treatment": [{
 			"value": "NA",
 			"terms": []
@@ -41,7 +42,6 @@
 			"value": 57,
 			"terms": []
 		}],
-
 		"sample disease status": [{
 			"value": "NA",
 			"terms": []

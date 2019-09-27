@@ -1,0 +1,10 @@
+{	
+	"alias":"sequencingRuns1",
+	"title":"sequencing output",
+	"files":[{
+		"name":"180927_J00151_0269_AH2C25BBXY_716_{SampleNr}_SXX_LXXX_R1_001",
+		"type":"fastq"
+		}
+		],
+	"assayRefs":"Sequencing1"
+}

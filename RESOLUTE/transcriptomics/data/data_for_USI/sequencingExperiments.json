@@ -1,0 +1,40 @@
+{
+	"alias": "Sequencing1",
+	"title": "RNA-Seq measurements of 1parental cell lines",
+	"description": "Transcription profiling of 6 (+1) Resolute cell lines",
+	"attributes": {
+		"library_strategy": [{
+			"value": "RNA-Seq",
+			"terms": []
+		}],
+		"library_source": [{
+			"value": "TRANSCRIPTOMIC",
+			"terms": []
+		}],
+		"library_selection": [{
+			"value": "other",
+			"terms": []
+		}],
+		"library_layout": [{
+			"value": "SINGLE",
+			"terms": []
+		}],
+		"platform_type": [{
+			"value": "ILLUMINA",
+			"terms": []
+		}],
+		"instrument_model": [{
+			"value": "Illumina HiSeq 4000",
+			"terms": []
+		}],
+		"read_length":[{
+			"value":"80",
+			"units":"bp"
+		}]
+	},
+	"studyRef": "study1-rnaSeq",
+	"sampleUses": {
+		"sampleRef": "Sample-HuH-7-rep3"
+	}
+
+}

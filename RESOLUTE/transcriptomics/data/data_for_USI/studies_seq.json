@@ -1,0 +1,32 @@
+{
+	"alias": "study1-rnaSeq",
+	"title": "RNA-Seq measurements of 1parental cell lines",
+	"description": "Transcription profiling of 6 (+1) Resolute cell lines.",
+	"attributes": {
+		"study_abstract": [{
+			"value": "To enable successful SLC function deorphanization we aimed to select minimal number of cell lines covering expression of as many SLCs as possible based on publicly available RNA-Seq dataset of 675 cell lines (Klijn C. et al,Nat. Biotechnol. 2015). We generated transcriptome profile for 7 cell line which will be used in course of RESOLUTE project. RNA-Seq based transcriptome profile of 321-N1 and Jump In T-REx HEK 293, to our knowledge, have not been published before. Transcriptome of the RESOLUTE cell lines would be interesting to SLC community as a minimal set of cell lines covering maximal number of expressed SLC (approx. 80%).",
+			"terms": []
+		}],
+		"study_type": [{
+			"value": "RNASeq",
+			"terms": []
+		}],
+		"contacts": [{
+				"lastName": "Viollet",
+				"firstName": "Coralie",
+				"affiliation": {
+					"name": "Boehringer Ingelheim"
+				}
+			},
+			{
+				"lastName": "Sedlyarov",
+				"firstName": "Vitaly",
+				"affiliation": {
+					"name": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences"
+				}
+			}
+		],
+		"projectRef": "RESOLUTE transcriptomics"
+
+	}
+}

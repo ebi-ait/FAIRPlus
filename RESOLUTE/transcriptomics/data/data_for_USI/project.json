@@ -2,48 +2,35 @@
 	"alias":"RESOLUTE transcriptomics",
 	"title":"RESOLUTE Transcriptome of RESOLUTE parental cell lines",
 	"description":"To enable successful SLC function deorphanization we aimed to select minimal number of cell lines covering expression of as many SLCs as possible based on publicly available RNA-Seq dataset of 675 cell lines (Klijn C. et al, Nat. Biotechnol. 2015). A set of 6 adherent human cell lines (HCT116, HuH-7, LS-180, MDA-MB-468, SK-MEL-28, 1321-N1) cumulatively covers expression of about 80 % of all SLCs (TPM  1). These cell lines will be used to generate SLC-knockout and SLC-overexpressing single cell clones. Additionally, Jump In T-REx HEK 293 cells will be used for generating SLC-overexpression cell lines.",  
-    "publications": [{
-      	"pubmedId":"NA",
-	"doi":"NA",
-        "articleTitle": "NA",
-        "journalTitle": "NA",
-        "authors": "NA",
-        "journalIssn": "NA",
-        "issue" : "NA",
-        "year": "NA",
-        "volume": "NA",
-        "pageInfo": "NA"
-    }],
-    "releaseDate": "2018-11-28",
-    "projectRef": {"accession":"https://re-solute.eu/"},
-    "contact": [{
-		"lastName": "Viollet",
-		"firstName": "Coralie"
-	}, {
-		"lastName": "Sedlyarov",
-		"firstName": "Vitaly"
-	}, {
-		"lastName": "Goldmann",
-		"firstName": "Ulrich"
-	}, {
-		"lastName": "Lackner",
-		"firstName": "Daniel",
-		"email": "dlackner@re-solute.eu",
-		"address": "Lazarettgasse 14, AKH BT 25.3 1090 Vienna, Austria",
-		"affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences",
-		"roles": "scientific project manager"
-	}, {
-		"lastName": "Superti-Furga",
-		"firstName": "Giulio",
-		"email": "gsuperti@cemm.oeaw.ac.at",
-		"affiliation": "Pfizer Ltd.",
-		"roles": "Academic Project coordinator"
-	}, {
-		"lastName": "Steppan",
-		"firstName": "Claire",
-		"email": "Claire.M.Steppan@pfizer.com",
-		"affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences",
-		"roles": "EFPIA Project Leader"
-	}]
-    }
+	"releaseDate": "2018-11-28",
+	"contacts": [{
+			"lastName": "Viollet",
+			"firstName": "Coralie",
+			"roles":"submitter"
+		}, {
+			"lastName": "Sedlyarov",
+			"firstName": "Vitaly",
+			"roles":"submitter"
+		}, {
+			"lastName": "Goldmann",
+			"firstName": "Ulrich",
+			"roles":"submitter"
+		}, {
+			"lastName": "Lackner",
+			"firstName": "Daniel",
+			"email": "dlackner@re-solute.eu",
+			"address": "Lazarettgasse 14, AKH BT 25.3 1090 Vienna, Austria",
+			"affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences"
+		}, {
+			"lastName": "Superti-Furga",
+			"firstName": "Giulio",
+			"email": "gsuperti@cemm.oeaw.ac.at",
+			"affiliation": "Pfizer Ltd."
+		}, {
+			"lastName": "Steppan",
+			"firstName": "Claire",
+			"email": "Claire.M.Steppan@pfizer.com",
+			"affiliation": "CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences"
+		}]
+}
  
