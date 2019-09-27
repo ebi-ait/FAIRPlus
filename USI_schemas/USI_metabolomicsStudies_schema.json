@@ -14,8 +14,8 @@
 		"submittableClassName": "uk.ac.ebi.subs.repository.model.Study",
 		"archive": "Metabolights",
 		"validationSchema": {
-			"#dollar#schema": "http://json-schema.org/draft-07/schema#",
-			"#dollar#async": true,
+			"$schema": "http://json-schema.org/draft-07/schema#",
+			"$async": true,
 			"title": "MetaboLights Study Validation Schema",
 			"description": "Schema based on rules found in http://isa-specs.readthedocs.io/en/latest/isajson.html#study-schema-json",
 			"version": "1.2.0",
@@ -65,7 +65,7 @@
 					},
 					"required": ["factors", "studyDesignDescriptors", "studyType"],
 					"patternProperties": {
-						"^#dot#*$": {
+						"^.*$": {
 							"type": "array",
 							"minItems": 1,
 							"items": {
@@ -100,13 +100,13 @@
 				},
 				"projectRef": {
 					"description": "Reference to project.",
-					"#dollar#ref": "#/definitions/submittableRef"
+					"$ref": "#/definitions/submittableRef"
 				},
 				"protocolRefs": {
 					"description": "Reference(s) to protocol(s).",
 					"type": "array",
 					"items": {
-						"#dollar#ref": "#/definitions/submittableRef"
+						"$ref": "#/definitions/submittableRef"
 					}
 				}
 			},

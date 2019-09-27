@@ -11,7 +11,7 @@
 		"submittableClassName": "uk.ac.ebi.subs.repository.model.AssayData",
 		"archive": "Metabolights",
 		"validationSchema": {
-			"#dollar#schema": "http://json-schema.org/draft-07/schema#",
+			"$schema": "http://json-schema.org/draft-07/schema#",
 			"title": "Submissions MetaboLights Assay Data Schema",
 			"description": "A base MetaboLights validation assay data schema",
 			"version": "1.0.0",
@@ -72,7 +72,7 @@
 					"type": "object",
 					"properties": {},
 					"patternProperties": {
-						"^#dot#*$": {
+						"^.*$": {
 							"type": "array",
 							"minItems": 1,
 							"items": {
@@ -108,7 +108,7 @@
 					"description": "Reference(s) to assay(s).",
 					"type": "array",
 					"items": {
-						"#dollar#ref": "#/definitions/submittableRef"
+						"$ref": "#/definitions/submittableRef"
 					}
 				}
 			},

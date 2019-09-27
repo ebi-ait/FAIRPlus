@@ -17,7 +17,7 @@
 		"submittableClassName": "uk.ac.ebi.subs.repository.model.Assay",
 		"archive": "Metabolights",
 		"validationSchema": {
-			"#dollar#schema": "http://json-schema.org/draft-07/schema#",
+			"$schema": "http://json-schema.org/draft-07/schema#",
 			"title": "MetaboLights Assay Validation Schema",
 			"description": "Schema based on rules found in http://isa-specs.readthedocs.io/en/latest/isajson.html#assay-schema-json",
 			"version": "1.0.0",
@@ -53,7 +53,7 @@
 					},
 					"required": ["technologyType", "measurementType", "technologyPlatform"],
 					"patternProperties": {
-						"^#dot#*$": {
+						"^.*$": {
 							"type": "array",
 							"minItems": 1,
 							"items": {
@@ -87,7 +87,7 @@
 				},
 				"studyRef": {
 					"description": "Reference to study.",
-					"#dollar#ref": "#/definitions/submittableRef"
+					"$ref": "#/definitions/submittableRef"
 				},
 				"protocolUses": {
 					"type": "array",
@@ -95,10 +95,10 @@
 						"type": "object",
 						"properties": {
 							"protocolRef": {
-								"#dollar#ref": "#/definitions/submittableRef"
+								"$ref": "#/definitions/submittableRef"
 							},
 							"attributes": {
-								"#dollar#ref": "#/definitions/attributes"
+								"$ref": "#/definitions/attributes"
 							}
 						}
 					}
@@ -109,10 +109,10 @@
 						"type": "object",
 						"properties": {
 							"sampleRef": {
-								"#dollar#ref": "#/definitions/submittableRef"
+								"$ref": "#/definitions/submittableRef"
 							},
 							"attributes": {
-								"#dollar#ref": "#/definitions/attributes"
+								"$ref": "#/definitions/attributes"
 							}
 						}
 					}
@@ -124,7 +124,7 @@
 					"type": "object",
 					"properties": {},
 					"patternProperties": {
-						"^#dot#*$": {
+						"^.*$": {
 							"type": "array",
 							"minItems": 1,
 							"items": {

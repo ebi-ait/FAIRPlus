@@ -9,8 +9,8 @@
 		"submittableClassName": "uk.ac.ebi.subs.repository.model.Project",
 		"archive": "BioStudies",
 		"validationSchema": {
-			"#dollar#schema": "http://json-schema.org/draft-07/schema#",
-			"#dollar#async": true,
+			"$schema": "http://json-schema.org/draft-07/schema#",
+			"$async": true,
 			"title": "Submissions Project Schema",
 			"description": "A base validation project schema",
 			"version": "1.0.0",
@@ -187,8 +187,8 @@
 		"submittableClassName": "uk.ac.ebi.subs.repository.model.Sample",
 		"archive": "BioSamples",
 		"validationSchema": {
-			"#dollar#schema": "http://json-schema.org/draft-07/schema#",
-			"#dollar#async": true,
+			"$schema": "http://json-schema.org/draft-07/schema#",
+			"$async": true,
 			"title": "Submissions Sample Schema",
 			"description": "A base validation sample schema",
 			"version": "1.0.0",
@@ -227,7 +227,7 @@
 					"type": "object",
 					"properties": {},
 					"patternProperties": {
-						"^#dot#*$": {
+						"^.*$": {
 							"type": "array",
 							"minItems": 1.0,
 							"items": {
@@ -305,7 +305,7 @@
 		"submittableClassName": "uk.ac.ebi.subs.repository.model.AssayData",
 		"archive": "Ena",
 		"validationSchema": {
-			"#dollar#schema": "http://json-schema.org/draft-07/schema#",
+			"$schema": "http://json-schema.org/draft-07/schema#",
 			"title": "Submissions Assay Data Schema",
 			"description": "A base validation assay data schema",
 			"version": "1.0.0",
@@ -366,7 +366,7 @@
 					"type": "object",
 					"properties": {},
 					"patternProperties": {
-						"^#dot#*$": {
+						"^.*$": {
 							"type": "array",
 							"minItems": 1,
 							"items": {
@@ -402,7 +402,7 @@
 					"description": "Reference(s) to assay(s).",
 					"type": "array",
 					"items": {
-						"#dollar#ref": "#/definitions/submittableRef"
+						"$ref": "#/definitions/submittableRef"
 					}
 				}
 			},
@@ -448,7 +448,7 @@
 		"submittableClassName": "uk.ac.ebi.subs.repository.model.Assay",
 		"archive": "Ena",
 		"validationSchema": {
-			"#dollar#schema": "http://json-schema.org/draft-07/schema#",
+			"$schema": "http://json-schema.org/draft-07/schema#",
 			"title": "Submissions Assay Schema",
 			"description": "ENA sequencing experiment schema",
 			"version": "1.0.0",
@@ -474,7 +474,7 @@
 					"type": "object",
 					"required": ["library_strategy", "library_source", "library_selection", "library_layout", "platform_type", "instrument_model", "design_description", "library_name"],
 					"patternProperties": {
-						"^#dot#*$": {
+						"^.*$": {
 							"type": "array",
 							"minItems": 1,
 							"items": {
@@ -830,7 +830,7 @@
 				},
 				"studyRef": {
 					"description": "Reference to study.",
-					"#dollar#ref": "#/definitions/submittableRef"
+					"$ref": "#/definitions/submittableRef"
 				},
 				"sampleUses": {
 					"type": "array",
@@ -838,7 +838,7 @@
 						"type": "object",
 						"properties": {
 							"sampleRef": {
-								"#dollar#ref": "#/definitions/submittableRef"
+								"$ref": "#/definitions/submittableRef"
 							}
 						}
 					}
@@ -882,8 +882,8 @@
 		"submittableClassName": "uk.ac.ebi.subs.repository.model.Study",
 		"archive": "Ena",
 		"validationSchema": {
-			"#dollar#schema": "http://json-schema.org/draft-07/schema#",
-			"#dollar#async": true,
+			"$schema": "http://json-schema.org/draft-07/schema#",
+			"$async": true,
 			"title": "Submissions Study Schema",
 			"description": "A base validation study schema",
 			"version": "1.0.0",
@@ -905,13 +905,13 @@
 				},
 				"projectRef": {
 					"description": "Reference to project.",
-					"#dollar#ref": "#/definitions/submittableRef"
+					"$ref": "#/definitions/submittableRef"
 				},
 				"protocolRefs": {
 					"description": "Reference(s) to protocol(s).",
 					"type": "array",
 					"items": {
-						"#dollar#ref": "#/definitions/submittableRef"
+						"$ref": "#/definitions/submittableRef"
 					}
 				},
 				"attributes": {
@@ -948,7 +948,7 @@
 						}
 					},
 					"patternProperties": {
-						"^#dot#*$": {
+						"^.*$": {
 							"type": "array",
 							"minItems": 1.0,
 							"items": {
@@ -1022,8 +1022,8 @@
 		"submittableClassName": "uk.ac.ebi.subs.repository.model.Analysis",
 		"archive": "Ena",
 		"validationSchema": {
-			"#dollar#schema": "http://json-schema.org/draft-07/schema#",
-			"#dollar#async": true,
+			"$schema": "http://json-schema.org/draft-07/schema#",
+			"$async": true,
 			"title": "EVA Sequence variation checklist",
 			"author": "USI",
 			"type": "object",
@@ -1048,14 +1048,14 @@
 					"minItems": 1.0,
 					"maxItems": 1.0,
 					"items": {
-						"#dollar#ref": "#/definitions/submittableRef"
+						"$ref": "#/definitions/submittableRef"
 					}
 				},
 				"sampleRefs": {
 					"type": "array",
 					"minItems": 1.0,
 					"items": {
-						"#dollar#ref": "#/definitions/submittableRef"
+						"$ref": "#/definitions/submittableRef"
 					}
 				},
 				"attributes": {
@@ -1067,14 +1067,14 @@
 						"required": ["assembly accession"]
 					}],
 					"patternProperties": {
-						"^#dot#*$": {
+						"^.*$": {
 							"minItems": 1.0,
 							"type": "array",
 							"items": {
 								"required": ["value"],
 								"properties": {
 									"terms": {
-										"#dollar#ref": "#/definitions/terms"
+										"$ref": "#/definitions/terms"
 									},
 									"value": {
 										"type": "string",
@@ -1241,8 +1241,8 @@
 		"submittableClassName": "uk.ac.ebi.subs.repository.model.Study",
 		"archive": "Metabolights",
 		"validationSchema": {
-			"#dollar#schema": "http://json-schema.org/draft-07/schema#",
-			"#dollar#async": true,
+			"$schema": "http://json-schema.org/draft-07/schema#",
+			"$async": true,
 			"title": "MetaboLights Study Validation Schema",
 			"description": "Schema based on rules found in http://isa-specs.readthedocs.io/en/latest/isajson.html#study-schema-json",
 			"version": "1.2.0",
@@ -1292,7 +1292,7 @@
 					},
 					"required": ["factors", "studyDesignDescriptors", "studyType"],
 					"patternProperties": {
-						"^#dot#*$": {
+						"^.*$": {
 							"type": "array",
 							"minItems": 1,
 							"items": {
@@ -1327,13 +1327,13 @@
 				},
 				"projectRef": {
 					"description": "Reference to project.",
-					"#dollar#ref": "#/definitions/submittableRef"
+					"$ref": "#/definitions/submittableRef"
 				},
 				"protocolRefs": {
 					"description": "Reference(s) to protocol(s).",
 					"type": "array",
 					"items": {
-						"#dollar#ref": "#/definitions/submittableRef"
+						"$ref": "#/definitions/submittableRef"
 					}
 				}
 			},
@@ -1373,13 +1373,13 @@
 		"submittableClassName": "uk.ac.ebi.subs.repository.model.Protocol",
 		"archive": "Metabolights",
 		"validationSchema": {
-			"#dollar#schema": "http://json-schema.org/draft-07/schema#",
-			"#dollar#async": true,
+			"$schema": "http://json-schema.org/draft-07/schema#",
+			"$async": true,
 			"title": "MetaboLights Study Protocols",
 			"description": "Protocols applied for the metabolomics study",
 			"type": "array",
 			"items": {
-				"#dollar#ref": "#/definitions/submittableRef"
+				"$ref": "#/definitions/submittableRef"
 			},
 			"definitions": {
 				"submittableRef": {
@@ -1425,7 +1425,7 @@
 		"submittableClassName": "uk.ac.ebi.subs.repository.model.Assay",
 		"archive": "Metabolights",
 		"validationSchema": {
-			"#dollar#schema": "http://json-schema.org/draft-07/schema#",
+			"$schema": "http://json-schema.org/draft-07/schema#",
 			"title": "MetaboLights Assay Validation Schema",
 			"description": "Schema based on rules found in http://isa-specs.readthedocs.io/en/latest/isajson.html#assay-schema-json",
 			"version": "1.0.0",
@@ -1461,7 +1461,7 @@
 					},
 					"required": ["technologyType", "measurementType", "technologyPlatform"],
 					"patternProperties": {
-						"^#dot#*$": {
+						"^.*$": {
 							"type": "array",
 							"minItems": 1,
 							"items": {
@@ -1495,7 +1495,7 @@
 				},
 				"studyRef": {
 					"description": "Reference to study.",
-					"#dollar#ref": "#/definitions/submittableRef"
+					"$ref": "#/definitions/submittableRef"
 				},
 				"protocolUses": {
 					"type": "array",
@@ -1503,10 +1503,10 @@
 						"type": "object",
 						"properties": {
 							"protocolRef": {
-								"#dollar#ref": "#/definitions/submittableRef"
+								"$ref": "#/definitions/submittableRef"
 							},
 							"attributes": {
-								"#dollar#ref": "#/definitions/attributes"
+								"$ref": "#/definitions/attributes"
 							}
 						}
 					}
@@ -1517,10 +1517,10 @@
 						"type": "object",
 						"properties": {
 							"sampleRef": {
-								"#dollar#ref": "#/definitions/submittableRef"
+								"$ref": "#/definitions/submittableRef"
 							},
 							"attributes": {
-								"#dollar#ref": "#/definitions/attributes"
+								"$ref": "#/definitions/attributes"
 							}
 						}
 					}
@@ -1532,7 +1532,7 @@
 					"type": "object",
 					"properties": {},
 					"patternProperties": {
-						"^#dot#*$": {
+						"^.*$": {
 							"type": "array",
 							"minItems": 1,
 							"items": {
@@ -1602,7 +1602,7 @@
 		"submittableClassName": "uk.ac.ebi.subs.repository.model.AssayData",
 		"archive": "Metabolights",
 		"validationSchema": {
-			"#dollar#schema": "http://json-schema.org/draft-07/schema#",
+			"$schema": "http://json-schema.org/draft-07/schema#",
 			"title": "Submissions MetaboLights Assay Data Schema",
 			"description": "A base MetaboLights validation assay data schema",
 			"version": "1.0.0",
@@ -1663,7 +1663,7 @@
 					"type": "object",
 					"properties": {},
 					"patternProperties": {
-						"^#dot#*$": {
+						"^.*$": {
 							"type": "array",
 							"minItems": 1,
 							"items": {
@@ -1699,7 +1699,7 @@
 					"description": "Reference(s) to assay(s).",
 					"type": "array",
 					"items": {
-						"#dollar#ref": "#/definitions/submittableRef"
+						"$ref": "#/definitions/submittableRef"
 					}
 				}
 			},

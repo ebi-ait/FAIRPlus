@@ -15,7 +15,7 @@
 		"submittableClassName": "uk.ac.ebi.subs.repository.model.Assay",
 		"archive": "Ena",
 		"validationSchema": {
-			"#dollar#schema": "http://json-schema.org/draft-07/schema#",
+			"$schema": "http://json-schema.org/draft-07/schema#",
 			"title": "Submissions Assay Schema",
 			"description": "ENA sequencing experiment schema",
 			"version": "1.0.0",
@@ -41,7 +41,7 @@
 					"type": "object",
 					"required": ["library_strategy", "library_source", "library_selection", "library_layout", "platform_type", "instrument_model", "design_description", "library_name"],
 					"patternProperties": {
-						"^#dot#*$": {
+						"^.*$": {
 							"type": "array",
 							"minItems": 1,
 							"items": {
@@ -397,7 +397,7 @@
 				},
 				"studyRef": {
 					"description": "Reference to study.",
-					"#dollar#ref": "#/definitions/submittableRef"
+					"$ref": "#/definitions/submittableRef"
 				},
 				"sampleUses": {
 					"type": "array",
@@ -405,7 +405,7 @@
 						"type": "object",
 						"properties": {
 							"sampleRef": {
-								"#dollar#ref": "#/definitions/submittableRef"
+								"$ref": "#/definitions/submittableRef"
 							}
 						}
 					}

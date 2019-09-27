@@ -8,13 +8,13 @@
 		"submittableClassName": "uk.ac.ebi.subs.repository.model.Protocol",
 		"archive": "Metabolights",
 		"validationSchema": {
-			"#dollar#schema": "http://json-schema.org/draft-07/schema#",
-			"#dollar#async": true,
+			"$schema": "http://json-schema.org/draft-07/schema#",
+			"$async": true,
 			"title": "MetaboLights Study Protocols",
 			"description": "Protocols applied for the metabolomics study",
 			"type": "array",
 			"items": {
-				"#dollar#ref": "#/definitions/submittableRef"
+				"$ref": "#/definitions/submittableRef"
 			},
 			"definitions": {
 				"submittableRef": {
