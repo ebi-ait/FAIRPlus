@@ -1,6 +1,3 @@
-[submodule "RESOLUTE/transcriptomics/schemas/USI_schemas"]
-	path = RESOLUTE/transcriptomics/schemas/USI_schemas
-	url = https://github.com/EMBL-EBI-SUBS/validation-schemas
 [submodule "RESOLUTE/transcriptomics/schemas/mircat_MINSEQE"]
 	path = RESOLUTE/transcriptomics/schemas/mircat_MINSEQE
 	url = https://github.com/FAIRsharing/mircat/
