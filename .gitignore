@@ -1,3 +1,5 @@
 temp*
 *.swp
 .Rhistory
+venv/
+.idea/
