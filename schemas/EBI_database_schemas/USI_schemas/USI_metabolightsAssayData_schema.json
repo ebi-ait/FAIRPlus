@@ -1,0 +1,140 @@
+{
+		"id": "metabolightsAssayData",
+		"displayNameSingular": "MetaboLights Assay Data",
+		"displayNamePlural": "MetaboLights Assay Data",
+		"description": "This data type describes the basic assay data requirements for a generic metabolomics assay. The required data includes raw, derived and processed files and the file formats vary for specific techniques-  LC-MS, LC-DAD, GC-MS, GCxGC-MS, GC-FID, DI-MS, FIA-MS, CE-MS, MALDI-MS, MSImaging, NMR",
+		"refRequirements": [{
+			"refClassName": "uk.ac.ebi.subs.data.component.AssayRef",
+			"dataTypeIdForReferencedDocument": "metabolomicsAssays"
+		}],
+		"requiredValidationAuthors": ["Core", "Metabolights", "JsonSchema", "FileReference"],
+		"submittableClassName": "uk.ac.ebi.subs.repository.model.AssayData",
+		"archive": "Metabolights",
+		"validationSchema": {
+			"$schema": "http://json-schema.org/draft-07/schema#",
+			"title": "Submissions MetaboLights Assay Data Schema",
+			"description": "A base MetaboLights validation assay data schema",
+			"version": "1.0.0",
+			"author": "metabolights",
+			"type": "object",
+			"required": ["alias", "files"],
+			"properties": {
+				"alias": {
+					"description": "An unique identifier in a submission.",
+					"type": "string",
+					"minLength": 1
+				},
+				"title": {
+					"description": "Title of the submittable.",
+					"type": "string"
+				},
+				"description": {
+					"description": "More extensive free-form description.",
+					"type": "string"
+				},
+				"files": {
+					"description": "The list of the associated files.",
+					"type": "array",
+					"items": {
+						"type": "object",
+						"required": ["name", "type"],
+						"properties": {
+							"name": {
+								"description": "The name of the file.",
+								"type": "string"
+							},
+							"checksum": {
+								"description": "The calculated checksum of the file.",
+								"type": "string"
+							},
+							"checksum_method": {
+								"description": "The method type of the checksum calculation.",
+								"type": "string"
+							},
+							"type": {
+								"description": "The type of the file.",
+								"type": "string",
+								"enum": ["bam", "cram", "fastq"]
+							},
+							"unencryptedChecksum": {
+								"description": "The unencrypted checksum of the file.",
+								"type": "string"
+							},
+							"label": {
+								"description": "The label of the file.",
+								"type": "string"
+							}
+						}
+					}
+				},
+				"attributes": {
+					"description": "Attributes for describing a submittable.",
+					"type": "object",
+					"properties": {},
+					"patternProperties": {
+						"^.*$": {
+							"type": "array",
+							"minItems": 1,
+							"items": {
+								"properties": {
+									"value": {
+										"type": "string",
+										"minLength": 1
+									},
+									"units": {
+										"type": "string",
+										"minLength": 1
+									},
+									"terms": {
+										"type": "array",
+										"items": {
+											"type": "object",
+											"properties": {
+												"url": {
+													"type": "string",
+													"format": "uri"
+												}
+											},
+											"required": ["url"]
+										}
+									}
+								},
+								"required": ["value"]
+							}
+						}
+					}
+				},
+				"assayRefs": {
+					"description": "Reference(s) to assay(s).",
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/submittableRef"
+					}
+				}
+			},
+			"definitions": {
+				"submittableRef": {
+					"type": "object",
+					"properties": {
+						"alias": {
+							"type": "string",
+							"minLength": 1
+						},
+						"accession": {
+							"type": "string",
+							"minLength": 1
+						},
+						"team": {
+							"type": "string",
+							"minLength": 1
+						}
+					},
+					"anyOf": [{
+						"required": ["alias", "team"]
+					}, {
+						"required": ["accession"]
+					}]
+				}
+			}
+		}
+	}
