@@ -1,0 +1,1107 @@
+1: OT364-PD3D
+Identifiers: BioSample: SAMEA104200158; SRA: ERS1859176
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT364-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:49Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859176"
+    /sample name="ERS1859176"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200158	ID: 9749343
+
+2: OT352-PD3D
+Identifiers: BioSample: SAMEA104200157; SRA: ERS1859175
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT352-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:49Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859175"
+    /sample name="ERS1859175"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200157	ID: 9749342
+
+3: OT351-PD3D
+Identifiers: BioSample: SAMEA104200156; SRA: ERS1859174
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT351-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:49Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859174"
+    /sample name="ERS1859174"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200156	ID: 9749341
+
+4: OT347-M-tu
+Identifiers: BioSample: SAMEA104200155; SRA: ERS1859173
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT347-M-tu"
+    /description="IonTorrent PGM AmpliSeq CHP, tumor sample"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:49Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859173"
+    /sample name="ERS1859173"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200155	ID: 9749340
+
+5: OT347-M03-PD3D
+Identifiers: BioSample: SAMEA104200154; SRA: ERS1859172
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT347-M03-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:48Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859172"
+    /sample name="ERS1859172"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200154	ID: 9749339
+
+6: OT347-M02-PD3D
+Identifiers: BioSample: SAMEA104200153; SRA: ERS1859171
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT347-M02-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:48Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859171"
+    /sample name="ERS1859171"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200153	ID: 9749338
+
+7: OT347-M01-PD3D
+Identifiers: BioSample: SAMEA104200152; SRA: ERS1859170
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT347-M01-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:48Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859170"
+    /sample name="ERS1859170"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200152	ID: 9749337
+
+8: OT330-tu
+Identifiers: BioSample: SAMEA104200151; SRA: ERS1859169
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT330-tu"
+    /description="IonTorrent PGM AmpliSeq CHP, tumor sample"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:48Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859169"
+    /sample name="ERS1859169"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200151	ID: 9749336
+
+9: OT330-PD3D
+Identifiers: BioSample: SAMEA104200150; SRA: ERS1859168
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT330-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:48Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859168"
+    /sample name="ERS1859168"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200150	ID: 9749335
+
+10: OT327-PD3D
+Identifiers: BioSample: SAMEA104200149; SRA: ERS1859167
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT327-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:48Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859167"
+    /sample name="ERS1859167"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200149	ID: 9749334
+
+11: OT326-tu
+Identifiers: BioSample: SAMEA104200148; SRA: ERS1859166
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT326-tu"
+    /description="IonTorrent PGM AmpliSeq CHP, tumor sample"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:48Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859166"
+    /sample name="ERS1859166"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200148	ID: 9749333
+
+12: OT326-PD3D
+Identifiers: BioSample: SAMEA104200147; SRA: ERS1859165
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT326-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:48Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859165"
+    /sample name="ERS1859165"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200147	ID: 9749332
+
+13: OT323-PD3D
+Identifiers: BioSample: SAMEA104200146; SRA: ERS1859164
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT323-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:48Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859164"
+    /sample name="ERS1859164"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200146	ID: 9749331
+
+14: OT319-PD3D
+Identifiers: BioSample: SAMEA104200145; SRA: ERS1859163
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT319-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:47Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859163"
+    /sample name="ERS1859163"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200145	ID: 9749330
+
+15: OT315-tu
+Identifiers: BioSample: SAMEA104200144; SRA: ERS1859162
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT315-tu"
+    /description="IonTorrent PGM AmpliSeq CHP, tumor sample"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:47Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859162"
+    /sample name="ERS1859162"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200144	ID: 9749329
+
+16: OT315-PD3D
+Identifiers: BioSample: SAMEA104200143; SRA: ERS1859161
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT315-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:47Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859161"
+    /sample name="ERS1859161"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200143	ID: 9749328
+
+17: OT302-tu
+Identifiers: BioSample: SAMEA104200142; SRA: ERS1859160
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT302-tu"
+    /description="IonTorrent PGM AmpliSeq CHP, tumor sample"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:47Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859160"
+    /sample name="ERS1859160"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200142	ID: 9749327
+
+18: OT302-PD3D
+Identifiers: BioSample: SAMEA104200141; SRA: ERS1859159
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT302-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:47Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859159"
+    /sample name="ERS1859159"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200141	ID: 9749326
+
+19: OT300-PD3D
+Identifiers: BioSample: SAMEA104200140; SRA: ERS1859158
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT300-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:47Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859158"
+    /sample name="ERS1859158"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200140	ID: 9749325
+
+20: OT299-tu
+Identifiers: BioSample: SAMEA104200139; SRA: ERS1859157
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT299-tu"
+    /description="IonTorrent PGM AmpliSeq CHP, tumor sample"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:47Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859157"
+    /sample name="ERS1859157"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200139	ID: 9749324
+
+21: OT299-PD3D
+Identifiers: BioSample: SAMEA104200138; SRA: ERS1859156
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT299-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:47Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859156"
+    /sample name="ERS1859156"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200138	ID: 9749323
+
+22: OT292-PD3D
+Identifiers: BioSample: SAMEA104200137; SRA: ERS1859155
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT292-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:47Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859155"
+    /sample name="ERS1859155"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200137	ID: 9749322
+
+23: OT288-tu
+Identifiers: BioSample: SAMEA104200136; SRA: ERS1859154
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT288-tu"
+    /description="IonTorrent PGM AmpliSeq CHP, tumor sample"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:46Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859154"
+    /sample name="ERS1859154"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200136	ID: 9749321
+
+24: OT288-PD3D
+Identifiers: BioSample: SAMEA104200135; SRA: ERS1859153
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT288-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:46Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859153"
+    /sample name="ERS1859153"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200135	ID: 9749320
+
+25: OT287-tu
+Identifiers: BioSample: SAMEA104200134; SRA: ERS1859152
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT287-tu"
+    /description="IonTorrent PGM AmpliSeq CHP, tumor sample"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:46Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859152"
+    /sample name="ERS1859152"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200134	ID: 9749319
+
+26: OT287-PD3D
+Identifiers: BioSample: SAMEA104200133; SRA: ERS1859151
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT287-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:46Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859151"
+    /sample name="ERS1859151"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200133	ID: 9749318
+
+27: OT281-tu
+Identifiers: BioSample: SAMEA104200132; SRA: ERS1859150
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT281-tu"
+    /description="IonTorrent PGM AmpliSeq CHP, tumor sample"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:46Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859150"
+    /sample name="ERS1859150"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200132	ID: 9749317
+
+28: OT281-PD3D
+Identifiers: BioSample: SAMEA104200131; SRA: ERS1859149
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT281-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:46Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859149"
+    /sample name="ERS1859149"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200131	ID: 9749316
+
+29: OT278-tu
+Identifiers: BioSample: SAMEA104200130; SRA: ERS1859148
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT278-tu"
+    /description="IonTorrent PGM AmpliSeq CHP, tumor sample"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:46Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859148"
+    /sample name="ERS1859148"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200130	ID: 9749315
+
+30: OT278-PD3D
+Identifiers: BioSample: SAMEA104200129; SRA: ERS1859147
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT278-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:46Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859147"
+    /sample name="ERS1859147"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200129	ID: 9749314
+
+31: OT276-PD3D
+Identifiers: BioSample: SAMEA104200128; SRA: ERS1859146
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT276-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:46Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859146"
+    /sample name="ERS1859146"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200128	ID: 9749313
+
+32: OT261-tu
+Identifiers: BioSample: SAMEA104200127; SRA: ERS1859145
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT261-tu"
+    /description="IonTorrent PGM AmpliSeq CHP, tumor sample"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:45Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859145"
+    /sample name="ERS1859145"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200127	ID: 9749312
+
+33: OT261-PD3D
+Identifiers: BioSample: SAMEA104200126; SRA: ERS1859144
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT261-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:45Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859144"
+    /sample name="ERS1859144"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200126	ID: 9749311
+
+34: OT250-PD3D
+Identifiers: BioSample: SAMEA104200125; SRA: ERS1859143
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT250-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:45Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859143"
+    /sample name="ERS1859143"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200125	ID: 9749310
+
+35: OT239-PD3D
+Identifiers: BioSample: SAMEA104200124; SRA: ERS1859142
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT239-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:45Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859142"
+    /sample name="ERS1859142"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200124	ID: 9749309
+
+36: OT238-PD3D
+Identifiers: BioSample: SAMEA104200123; SRA: ERS1859141
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT238-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:45Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859141"
+    /sample name="ERS1859141"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200123	ID: 9749308
+
+37: OT234-tu
+Identifiers: BioSample: SAMEA104200122; SRA: ERS1859140
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT234-tu"
+    /description="IonTorrent PGM AmpliSeq CHP, tumor sample"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:45Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859140"
+    /sample name="ERS1859140"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200122	ID: 9749307
+
+38: OT234-PD3D
+Identifiers: BioSample: SAMEA104200121; SRA: ERS1859139
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT234-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:45Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859139"
+    /sample name="ERS1859139"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200121	ID: 9749306
+
+39: OT227-tu
+Identifiers: BioSample: SAMEA104200120; SRA: ERS1859138
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT227-tu"
+    /description="IonTorrent PGM AmpliSeq CHP, tumor sample"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:45Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859138"
+    /sample name="ERS1859138"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200120	ID: 9749305
+
+40: OT227-PD3D
+Identifiers: BioSample: SAMEA104200119; SRA: ERS1859137
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT227-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:44Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859137"
+    /sample name="ERS1859137"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200119	ID: 9749304
+
+41: OT216-tu
+Identifiers: BioSample: SAMEA104200118; SRA: ERS1859136
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT216-tu"
+    /description="IonTorrent PGM AmpliSeq CHP, tumor sample"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:44Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859136"
+    /sample name="ERS1859136"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200118	ID: 9749303
+
+42: OT216-PD3D
+Identifiers: BioSample: SAMEA104200117; SRA: ERS1859135
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT216-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:44Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859135"
+    /sample name="ERS1859135"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200117	ID: 9749302
+
+43: OT212-PD3D
+Identifiers: BioSample: SAMEA104200116; SRA: ERS1859134
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT212-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:44Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859134"
+    /sample name="ERS1859134"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200116	ID: 9749301
+
+44: OT209-P-tu
+Identifiers: BioSample: SAMEA104200115; SRA: ERS1859133
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT209-P-tu"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:44Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859133"
+    /sample name="ERS1859133"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200115	ID: 9749300
+
+45: OT209-P-PD3D
+Identifiers: BioSample: SAMEA104200114; SRA: ERS1859132
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT209-P-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:44Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859132"
+    /sample name="ERS1859132"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200114	ID: 9749299
+
+46: OT209-M-tu
+Identifiers: BioSample: SAMEA104200113; SRA: ERS1859131
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT209-M-tu"
+    /description="IonTorrent PGM AmpliSeq CHP, tumor sample"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:44Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859131"
+    /sample name="ERS1859131"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200113	ID: 9749298
+
+47: OT209-M-PD3D
+Identifiers: BioSample: SAMEA104200112; SRA: ERS1859130
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT209-M-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:44Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859130"
+    /sample name="ERS1859130"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200112	ID: 9749297
+
+48: OT190-PD3D
+Identifiers: BioSample: SAMEA104200111; SRA: ERS1859129
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT190-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:44Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859129"
+    /sample name="ERS1859129"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200111	ID: 9749296
+
+49: OT170-tu
+Identifiers: BioSample: SAMEA104200110; SRA: ERS1859128
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT170-tu"
+    /description="IonTorrent PGM AmpliSeq CHP, tumor sample"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:43Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859128"
+    /sample name="ERS1859128"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200110	ID: 9749295
+
+50: OT170-PD3D
+Identifiers: BioSample: SAMEA104200109; SRA: ERS1859127
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT170-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:43Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859127"
+    /sample name="ERS1859127"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200109	ID: 9749294
+
+
+51: OT163-PD3D
+Identifiers: BioSample: SAMEA104200108; SRA: ERS1859126
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT163-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:43Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859126"
+    /sample name="ERS1859126"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200108	ID: 9749293
+
+52: OT162-tu
+Identifiers: BioSample: SAMEA104200107; SRA: ERS1859125
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT162-tu"
+    /description="IonTorrent PGM AmpliSeq CHP, tumor sample"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:43Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859125"
+    /sample name="ERS1859125"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200107	ID: 9749292
+
+53: OT162-PD3D
+Identifiers: BioSample: SAMEA104200106; SRA: ERS1859124
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT162-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:43Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859124"
+    /sample name="ERS1859124"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200106	ID: 9749291
+
+54: OT161-tu
+Identifiers: BioSample: SAMEA104200105; SRA: ERS1859123
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT161-tu"
+    /description="IonTorrent PGM AmpliSeq CHP, tumor sample"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:43Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859123"
+    /sample name="ERS1859123"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200105	ID: 9749290
+
+55: OT161-PDX-PD3D
+Identifiers: BioSample: SAMEA104200104; SRA: ERS1859122
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT161-PDX-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:43Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859122"
+    /sample name="ERS1859122"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200104	ID: 9749289
+
+56: OT159-tu
+Identifiers: BioSample: SAMEA104200103; SRA: ERS1859121
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT159-tu"
+    /description="IonTorrent PGM AmpliSeq CHP, tumor sample"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:43Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859121"
+    /sample name="ERS1859121"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200103	ID: 9749288
+
+57: OT159-PD3D
+Identifiers: BioSample: SAMEA104200102; SRA: ERS1859120
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT159-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:42Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859120"
+    /sample name="ERS1859120"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200102	ID: 9749287
+
+58: OT155-PDX-PD3D
+Identifiers: BioSample: SAMEA104200101; SRA: ERS1859119
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT155-PDX-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:42Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859119"
+    /sample name="ERS1859119"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200101	ID: 9749286
+
+59: OT152-PD3D
+Identifiers: BioSample: SAMEA104200100; SRA: ERS1859118
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT152-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:42Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859118"
+    /sample name="ERS1859118"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200100	ID: 9749285
+
+60: OT151-tu
+Identifiers: BioSample: SAMEA104200099; SRA: ERS1859117
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT151-tu"
+    /description="IonTorrent PGM AmpliSeq CHP, tumor sample"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:42Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859117"
+    /sample name="ERS1859117"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200099	ID: 9749284
+
+61: OT151-PD3D-PDX-PD3D
+Identifiers: BioSample: SAMEA104200098; SRA: ERS1859116
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT151-PD3D-PDX-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:42Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859116"
+    /sample name="ERS1859116"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200098	ID: 9749283
+
+62: OT151-PD3D
+Identifiers: BioSample: SAMEA104200097; SRA: ERS1859115
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT151-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:42Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859115"
+    /sample name="ERS1859115"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200097	ID: 9749282
+
+63: OT116-PDX-PD3D
+Identifiers: BioSample: SAMEA104200096; SRA: ERS1859114
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT116-PDX-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:42Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859114"
+    /sample name="ERS1859114"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200096	ID: 9749281
+
+64: OT114X-PDX-PD3D
+Identifiers: BioSample: SAMEA104200095; SRA: ERS1859113
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT114X-PDX-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:42Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859113"
+    /sample name="ERS1859113"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200095	ID: 9749280
+
+65: OT108-PDX-PD3D
+Identifiers: BioSample: SAMEA104200094; SRA: ERS1859112
+Organism: Homo sapiens
+Attributes:
+    /Alias="OT108-PDX-PD3D"
+    /description="IonTorrent PGM AmpliSeq CHP, PD3D culture"
+    /ENA checklist="ERC000011"
+    /INSDC center alias="Charite Universitaetsmedizin Berlin"
+    /INSDC center name="Charite Universitaetsmedizin Berlin"
+    /INSDC first public="2018-07-30T17:02:48Z"
+    /INSDC last update="2017-08-04T18:49:41Z"
+    /INSDC status="public"
+    /SRA accession="ERS1859112"
+    /sample name="ERS1859112"
+    /Title="OncoTrack PD3D cultures and tumor samples panel sequencing"
+Accession: SAMEA104200094	ID: 9749279
+
+

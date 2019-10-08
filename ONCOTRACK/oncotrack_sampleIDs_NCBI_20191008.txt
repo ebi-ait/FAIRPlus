@@ -1,0 +1,325 @@
+
+1. OT364-PD3D
+Identifiers:	BioSample: SAMEA104200158; SRA: ERS1859176
+Organism:	Homo sapiens
+Accession: SAMEA104200158	ID: 9749343
+
+2. OT352-PD3D
+Identifiers:	BioSample: SAMEA104200157; SRA: ERS1859175
+Organism:	Homo sapiens
+Accession: SAMEA104200157	ID: 9749342
+
+3. OT351-PD3D
+Identifiers:	BioSample: SAMEA104200156; SRA: ERS1859174
+Organism:	Homo sapiens
+Accession: SAMEA104200156	ID: 9749341
+
+4. OT347-M-tu
+Identifiers:	BioSample: SAMEA104200155; SRA: ERS1859173
+Organism:	Homo sapiens
+Accession: SAMEA104200155	ID: 9749340
+
+5. OT347-M03-PD3D
+Identifiers:	BioSample: SAMEA104200154; SRA: ERS1859172
+Organism:	Homo sapiens
+Accession: SAMEA104200154	ID: 9749339
+
+6. OT347-M02-PD3D
+Identifiers:	BioSample: SAMEA104200153; SRA: ERS1859171
+Organism:	Homo sapiens
+Accession: SAMEA104200153	ID: 9749338
+
+7. OT347-M01-PD3D
+Identifiers:	BioSample: SAMEA104200152; SRA: ERS1859170
+Organism:	Homo sapiens
+Accession: SAMEA104200152	ID: 9749337
+
+8. OT330-tu
+Identifiers:	BioSample: SAMEA104200151; SRA: ERS1859169
+Organism:	Homo sapiens
+Accession: SAMEA104200151	ID: 9749336
+
+9. OT330-PD3D
+Identifiers:	BioSample: SAMEA104200150; SRA: ERS1859168
+Organism:	Homo sapiens
+Accession: SAMEA104200150	ID: 9749335
+
+10. OT327-PD3D
+Identifiers:	BioSample: SAMEA104200149; SRA: ERS1859167
+Organism:	Homo sapiens
+Accession: SAMEA104200149	ID: 9749334
+
+11. OT326-tu
+Identifiers:	BioSample: SAMEA104200148; SRA: ERS1859166
+Organism:	Homo sapiens
+Accession: SAMEA104200148	ID: 9749333
+
+12. OT326-PD3D
+Identifiers:	BioSample: SAMEA104200147; SRA: ERS1859165
+Organism:	Homo sapiens
+Accession: SAMEA104200147	ID: 9749332
+
+13. OT323-PD3D
+Identifiers:	BioSample: SAMEA104200146; SRA: ERS1859164
+Organism:	Homo sapiens
+Accession: SAMEA104200146	ID: 9749331
+
+14. OT319-PD3D
+Identifiers:	BioSample: SAMEA104200145; SRA: ERS1859163
+Organism:	Homo sapiens
+Accession: SAMEA104200145	ID: 9749330
+
+15. OT315-tu
+Identifiers:	BioSample: SAMEA104200144; SRA: ERS1859162
+Organism:	Homo sapiens
+Accession: SAMEA104200144	ID: 9749329
+
+16. OT315-PD3D
+Identifiers:	BioSample: SAMEA104200143; SRA: ERS1859161
+Organism:	Homo sapiens
+Accession: SAMEA104200143	ID: 9749328
+
+17. OT302-tu
+Identifiers:	BioSample: SAMEA104200142; SRA: ERS1859160
+Organism:	Homo sapiens
+Accession: SAMEA104200142	ID: 9749327
+
+18. OT302-PD3D
+Identifiers:	BioSample: SAMEA104200141; SRA: ERS1859159
+Organism:	Homo sapiens
+Accession: SAMEA104200141	ID: 9749326
+
+19. OT300-PD3D
+Identifiers:	BioSample: SAMEA104200140; SRA: ERS1859158
+Organism:	Homo sapiens
+Accession: SAMEA104200140	ID: 9749325
+
+20. OT299-tu
+Identifiers:	BioSample: SAMEA104200139; SRA: ERS1859157
+Organism:	Homo sapiens
+Accession: SAMEA104200139	ID: 9749324
+
+21. OT299-PD3D
+Identifiers:	BioSample: SAMEA104200138; SRA: ERS1859156
+Organism:	Homo sapiens
+Accession: SAMEA104200138	ID: 9749323
+
+22. OT292-PD3D
+Identifiers:	BioSample: SAMEA104200137; SRA: ERS1859155
+Organism:	Homo sapiens
+Accession: SAMEA104200137	ID: 9749322
+
+23. OT288-tu
+Identifiers:	BioSample: SAMEA104200136; SRA: ERS1859154
+Organism:	Homo sapiens
+Accession: SAMEA104200136	ID: 9749321
+
+24. OT288-PD3D
+Identifiers:	BioSample: SAMEA104200135; SRA: ERS1859153
+Organism:	Homo sapiens
+Accession: SAMEA104200135	ID: 9749320
+
+25. OT287-tu
+Identifiers:	BioSample: SAMEA104200134; SRA: ERS1859152
+Organism:	Homo sapiens
+Accession: SAMEA104200134	ID: 9749319
+
+26. OT287-PD3D
+Identifiers:	BioSample: SAMEA104200133; SRA: ERS1859151
+Organism:	Homo sapiens
+Accession: SAMEA104200133	ID: 9749318
+
+27. OT281-tu
+Identifiers:	BioSample: SAMEA104200132; SRA: ERS1859150
+Organism:	Homo sapiens
+Accession: SAMEA104200132	ID: 9749317
+
+28. OT281-PD3D
+Identifiers:	BioSample: SAMEA104200131; SRA: ERS1859149
+Organism:	Homo sapiens
+Accession: SAMEA104200131	ID: 9749316
+
+29. OT278-tu
+Identifiers:	BioSample: SAMEA104200130; SRA: ERS1859148
+Organism:	Homo sapiens
+Accession: SAMEA104200130	ID: 9749315
+
+30. OT278-PD3D
+Identifiers:	BioSample: SAMEA104200129; SRA: ERS1859147
+Organism:	Homo sapiens
+Accession: SAMEA104200129	ID: 9749314
+
+31. OT276-PD3D
+Identifiers:	BioSample: SAMEA104200128; SRA: ERS1859146
+Organism:	Homo sapiens
+Accession: SAMEA104200128	ID: 9749313
+
+32. OT261-tu
+Identifiers:	BioSample: SAMEA104200127; SRA: ERS1859145
+Organism:	Homo sapiens
+Accession: SAMEA104200127	ID: 9749312
+
+33. OT261-PD3D
+Identifiers:	BioSample: SAMEA104200126; SRA: ERS1859144
+Organism:	Homo sapiens
+Accession: SAMEA104200126	ID: 9749311
+
+34. OT250-PD3D
+Identifiers:	BioSample: SAMEA104200125; SRA: ERS1859143
+Organism:	Homo sapiens
+Accession: SAMEA104200125	ID: 9749310
+
+35. OT239-PD3D
+Identifiers:	BioSample: SAMEA104200124; SRA: ERS1859142
+Organism:	Homo sapiens
+Accession: SAMEA104200124	ID: 9749309
+
+36. OT238-PD3D
+Identifiers:	BioSample: SAMEA104200123; SRA: ERS1859141
+Organism:	Homo sapiens
+Accession: SAMEA104200123	ID: 9749308
+
+37. OT234-tu
+Identifiers:	BioSample: SAMEA104200122; SRA: ERS1859140
+Organism:	Homo sapiens
+Accession: SAMEA104200122	ID: 9749307
+
+38. OT234-PD3D
+Identifiers:	BioSample: SAMEA104200121; SRA: ERS1859139
+Organism:	Homo sapiens
+Accession: SAMEA104200121	ID: 9749306
+
+39. OT227-tu
+Identifiers:	BioSample: SAMEA104200120; SRA: ERS1859138
+Organism:	Homo sapiens
+Accession: SAMEA104200120	ID: 9749305
+
+40. OT227-PD3D
+Identifiers:	BioSample: SAMEA104200119; SRA: ERS1859137
+Organism:	Homo sapiens
+Accession: SAMEA104200119	ID: 9749304
+
+41. OT216-tu
+Identifiers:	BioSample: SAMEA104200118; SRA: ERS1859136
+Organism:	Homo sapiens
+Accession: SAMEA104200118	ID: 9749303
+
+42. OT216-PD3D
+Identifiers:	BioSample: SAMEA104200117; SRA: ERS1859135
+Organism:	Homo sapiens
+Accession: SAMEA104200117	ID: 9749302
+
+43. OT212-PD3D
+Identifiers:	BioSample: SAMEA104200116; SRA: ERS1859134
+Organism:	Homo sapiens
+Accession: SAMEA104200116	ID: 9749301
+
+44. OT209-P-tu
+Identifiers:	BioSample: SAMEA104200115; SRA: ERS1859133
+Organism:	Homo sapiens
+Accession: SAMEA104200115	ID: 9749300
+
+45. OT209-P-PD3D
+Identifiers:	BioSample: SAMEA104200114; SRA: ERS1859132
+Organism:	Homo sapiens
+Accession: SAMEA104200114	ID: 9749299
+
+46. OT209-M-tu
+Identifiers:	BioSample: SAMEA104200113; SRA: ERS1859131
+Organism:	Homo sapiens
+Accession: SAMEA104200113	ID: 9749298
+
+47. OT209-M-PD3D
+Identifiers:	BioSample: SAMEA104200112; SRA: ERS1859130
+Organism:	Homo sapiens
+Accession: SAMEA104200112	ID: 9749297
+
+48. OT190-PD3D
+Identifiers:	BioSample: SAMEA104200111; SRA: ERS1859129
+Organism:	Homo sapiens
+Accession: SAMEA104200111	ID: 9749296
+
+49. OT170-tu
+Identifiers:	BioSample: SAMEA104200110; SRA: ERS1859128
+Organism:	Homo sapiens
+Accession: SAMEA104200110	ID: 9749295
+
+50. OT170-PD3D
+Identifiers:	BioSample: SAMEA104200109; SRA: ERS1859127
+Organism:	Homo sapiens
+Accession: SAMEA104200109	ID: 9749294
+
+51. OT163-PD3D
+Identifiers:	BioSample: SAMEA104200108; SRA: ERS1859126
+Organism:	Homo sapiens
+Accession: SAMEA104200108	ID: 9749293
+
+52. OT162-tu
+Identifiers:	BioSample: SAMEA104200107; SRA: ERS1859125
+Organism:	Homo sapiens
+Accession: SAMEA104200107	ID: 9749292
+
+53. OT162-PD3D
+Identifiers:	BioSample: SAMEA104200106; SRA: ERS1859124
+Organism:	Homo sapiens
+Accession: SAMEA104200106	ID: 9749291
+
+54. OT161-tu
+Identifiers:	BioSample: SAMEA104200105; SRA: ERS1859123
+Organism:	Homo sapiens
+Accession: SAMEA104200105	ID: 9749290
+
+55. OT161-PDX-PD3D
+Identifiers:	BioSample: SAMEA104200104; SRA: ERS1859122
+Organism:	Homo sapiens
+Accession: SAMEA104200104	ID: 9749289
+
+56. OT159-tu
+Identifiers:	BioSample: SAMEA104200103; SRA: ERS1859121
+Organism:	Homo sapiens
+Accession: SAMEA104200103	ID: 9749288
+
+57. OT159-PD3D
+Identifiers:	BioSample: SAMEA104200102; SRA: ERS1859120
+Organism:	Homo sapiens
+Accession: SAMEA104200102	ID: 9749287
+
+58. OT155-PDX-PD3D
+Identifiers:	BioSample: SAMEA104200101; SRA: ERS1859119
+Organism:	Homo sapiens
+Accession: SAMEA104200101	ID: 9749286
+
+59. OT152-PD3D
+Identifiers:	BioSample: SAMEA104200100; SRA: ERS1859118
+Organism:	Homo sapiens
+Accession: SAMEA104200100	ID: 9749285
+
+60. OT151-tu
+Identifiers:	BioSample: SAMEA104200099; SRA: ERS1859117
+Organism:	Homo sapiens
+Accession: SAMEA104200099	ID: 9749284
+
+61. OT151-PD3D-PDX-PD3D
+Identifiers:	BioSample: SAMEA104200098; SRA: ERS1859116
+Organism:	Homo sapiens
+Accession: SAMEA104200098	ID: 9749283
+
+62. OT151-PD3D
+Identifiers:	BioSample: SAMEA104200097; SRA: ERS1859115
+Organism:	Homo sapiens
+Accession: SAMEA104200097	ID: 9749282
+
+63. OT116-PDX-PD3D
+Identifiers:	BioSample: SAMEA104200096; SRA: ERS1859114
+Organism:	Homo sapiens
+Accession: SAMEA104200096	ID: 9749281
+
+64. OT114X-PDX-PD3D
+Identifiers:	BioSample: SAMEA104200095; SRA: ERS1859113
+Organism:	Homo sapiens
+Accession: SAMEA104200095	ID: 9749280
+
+65. OT108-PDX-PD3D
+Identifiers:	BioSample: SAMEA104200094; SRA: ERS1859112
+Organism:	Homo sapiens
+Accession: SAMEA104200094	ID: 9749279

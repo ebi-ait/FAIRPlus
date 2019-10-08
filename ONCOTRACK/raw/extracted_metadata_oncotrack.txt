@@ -1,0 +1,43 @@
+
+This work is licensed under a Creative Commons Attribution 4.0
+International License. The images or other third party material in this article are included in the article’s Creative Commons license, unless indicated otherwise in the credit line; if the material is not included under the Creative Commons license, users will need to obtain permission from the license holder to reproduce the material. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+
+
+Patients: 
+	In this study we included patients with colorectal cancer aged between 18 and 100 years. The only exclusion criterium has been infectious diseases. Samples were stored according to the current GCP guidelines. Informed consent was obtained from all human subjects included in the study. The study was approved by the local Institutional Review Board of Charite ́ University Medicine (Charite ́ Ethics Cie: Charite ́platz 1, 10117 Berlin, Germany) (EA 1/069/11) and the ethics committee of the Medical University of Graz (Ethic commission of the Medical University of Graz, Auenbruggerplatz 2, 8036 Graz, Austria), confirmed by the ethics committee of the St John of God Hospital Graz (23-015 ex 10/11).
+
+Nucleic acid preparations:
+	Nucleic acid preparations were performed either using the AllPrep DNA/RNA/Protein Mini Kit (Qiagen, 80004) or the AllPrep DNA/ RNA/miRNA Universal Kit (Qiagen, 80224). DNA extraction from blood was carried out using the QIAamp DNA Blood Maxi Kit 10 (Qiagen, 51192). Con- centrations were determined on Qubit Fluorometer. RNA integrity was evaluated with Bioanalyzer 2100 (Agilent, Palo Alto, CA).
+
+Targeted sequencing: 
+	Targeted sequencing libraries were prepared with the TruSeq Custom Amplicon Kit (Illumina, FC-130-1001) and Index Kit (Illumina, FC-130-1003) following the True Seq Custom Amplicon Low Input Library Prep protocol (October 2015). TruSeq Custom Amplicon panels were designed with Illuminas DesignStudio. Paired-end (PE) libraries were sequenced on Miseq PE 151 dual Index.
+
+Mutation validation with Sanger sequencing:
+	PCR primers are listed in Supplementary Table 3. PCR products were purified and processed by Sanger sequencing (Eurofins MWG Operon).
+
+Microsatellite status:
+	Microsatellite status was analysed using the five mono- morphic markers BAT25, BAT26, NR21, NR24 and NR27. Pentaplex PCR reac- tions were performed using the primers given in Supplementary Table 4. PCR reactions and capillary electrophoresis were performed by Eurofins Genomics GmbH (Germany).
+
+Whole genome sequencing:
+	High coverage WGS libraries were prepared with the TruSeq DNA Sample Prep v2 kit (Illumina, set A: FC-121-2001; set B: FC-121- 2002) following the Illumina Low Throughput (LT) Protocol (August 2011). Paired-end libraries were sequenced on HiSeq 2,000/2,500 instruments with v3 chemistry using 2 􏰂 101 bp reads to 􏰂 50 coverage. For low coverage, WGS libraries were prepared using Nextera Rapid Capture Exome and Expanded Exome Kit (Illumina, FC-140-1006), but omitting the exome enrichment step. Paired-end libraries were sequenced (2 􏰂 51 bp) on HiSeq 2,000/2,500 instruments with v3 chemistry to 􏰂 1 coverage.
+
+Whole exome sequencing:
+	WES was carried out on either SOLiD or Illumina platforms. SOLiD libraries were prepared either with Sure Select XT Human All Exon 50 MB (Agilent Technologies, 5190-0407) or with SureSelect Human All Exon V4 (Agilent Technologies, 5190-4631). Sequencing was carried out either on SOLiD 5500 in Frag75/ECC mode or on SOLiD Wildfire in Frag50/ECC runs using single-end mode. For Illumina, libraries were prepared with Nextera Rapid Capture Exome and Expanded Exome Kits (Illumina, FC-140-1006). Paired-end libraries (2 􏰂 51 bp) were sequenced on HiSeq 2000/2500 instruments with v3 chemistry.
+
+Whole transcriptome sequencing:
+	RNAseq libraries were prepared using either TruSeq RNA Sample Prep Kit v2 (Illumina, set A: RS-122-2001; set B: RS-122- 2002) with modifications preserving strand-specific information60 or TruSeq Stranded mRNA Sample Prep Kit (Illumina, set A: RS-122-2101; set B: RS-122- 2102). For ten total RNA samples we used the Ribo-Zero Magnetic Gold Kit (Epicentre, MRZG12324). Sequencing (2 􏰂 51 bp) was performed on HiSeq 2000/ 2500 instruments with v3 chemistry.
+
+DNA data processing:
+	DNA reads were aligned to the human reference genome hg19 using BWA (bwa0.7.7-r441-mem for 75/101 bp, bwa0.5.9-r16-aln for 51 bp reads). For xenograft samples, the human and mouse DNA reads were deconvo- luted after mapping to references from human hg19 and mouse mm9 genome versions.
+
+Copy number variants:
+	Copy number variants were estimated using the BICSeq algorithm61 and the read coverage data of tumour versus normal pairs. We inferred ploidy using the B allele frequencies of heterozygous germline variants. For low coverage WGS without matching blood data we used as a proxy an electronic pool of six sex-matched normal samples.
+
+Somatic SNVs:
+	Somatic SNVs were detected using established pipelines based on VarScan2 combined with RNAseq data and functional annotation of the variants based on Ensembl v.70. Somatic indels were detected using SAMtools and Dindel62.
+
+RNA data processing:
+	RNA reads were aligned to hg19 using BWA and SAM- tools. Mapped reads were annotated using Ensembl v70. Gene expression levels were quantified in reads per kilobase of exon per million mapped reads (RPKM).
+
+Gene fusions:
+	Gene fusions were detected by RNAseq using deFuse (v0.5.0) and TopHat2-Fusion (v2.0.3). High-confidence events were selected and subjected to visual inspection. Fusion transcripts were annotated on Ensembl gene annotation v62. For validation, 50 ng of total RNAs were reverse transcribed and fused tran- scripts were amplified using the dART 1-Step RT-PCR Kit (EURx #E0803-02) using primers located upstream and downstream of the transcript breakpoints (Supplementary Data 4). RT-PCR products were purified and processed by capillary Sanger sequencing (Eurofins MWG Operon).

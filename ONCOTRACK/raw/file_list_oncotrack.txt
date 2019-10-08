@@ -1,0 +1,17 @@
+ncomms14262-3.xlsx:	Clinical data of the OT cohort
+ncomms14262-4.xlsx:	Copy Number Variations (CNVs) in the OT cohort
+ncomms14262-5.xlsx:	Combined list of alterations in the OT cohort
+ncomms14262-6.xlsx:	List of identified gene fusions in the OT cohort
+ncomms14262-7.xlsx:	List of deleted genes in the OT cohort
+ncomms14262-8.xlsx:	Discordant SNVs and indels in matched patient and model pairs
+ncomms14262-9.xlsx:	Comparison of mutations between 5 PDX derived from 150_MET2
+ncomms14262-10.xlsx:	Summary of SciClone clonality analysis
+ncomms14262-11.xlsx:	Assignment of OT samples to molecular groups
+ncomms14262-12.xlsx:	Gene signatures used for the classification of OT primary tumour samples and models
+ncomms14262-13.xlsx:	Functional annotation of the OT_NMF and OT_C clusters
+ncomms14262-14.xlsx:	Values of mean pattern matrices and enrichment scores (ES) of single sample gene set enrichment analysis (ssGSEA)
+ncomms14262-15.xlsx:	Expression values of differentially expressed genes in 151_MET_CELL1 Wnt -negative, -low, -high sorted fractions and unsorted cells
+ncomms14262-16.xlsx:	Drug sensitivity data
+ncomms14262-17.xlsx:	Gene signatures related to drug sensitivity in patient derived models
+ncomms14262-18.xlsx:	Classification of responders and non-responders for 5-FU treatment
+ncomms14262-19.xlsx:	Classification of responders and non-responders for cetuximab treatment
