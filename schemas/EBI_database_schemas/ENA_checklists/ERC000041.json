@@ -1,0 +1,415 @@
+{
+  "_id": "ERC000041",
+  "description": "Minimum information to standardise metadata related to samples used in GMI PT (Global Microbial Identifier Proficiency Test). A checklist for reporting metadata of GMI PT samples associated with molecular data. This minimum metadata standard was developed by the COMPARE platform and can be used for submission of sample metadata derived from Campylobacter coli, Campylobacter jejuni, Listeria monocytogenes, Klebsiella pneumoniae, Salmonella enterica, Escherichia coli and Staphylococcus aureus.",
+  "dataTypeId": "samples",
+  "displayName": "ENA Global Microbial Identifier Proficiency Test (GMI PT) checklist",
+  "spreadsheetTemplate": {
+    "columnCaptures": {
+      "alias": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "required": true,
+        "fieldType": "String",
+        "fieldName": "alias"
+      },
+      "title": {
+        "fieldName": "title",
+        "fieldType": "String",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "required": true
+      },
+      "description": {
+        "fieldType": "String",
+        "fieldName": "description",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "required": false
+      },
+      "release date": {
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldType": "String",
+        "fieldName": "releaseDate"
+      },
+      "taxon": {
+        "fieldType": "String",
+        "fieldName": "taxon",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "required": true
+      },
+      "taxon id": {
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "taxonId",
+        "fieldType": "IntegerNumber"
+      },
+      "nucleic acid extraction": {
+        "allowUnits": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "description": "Link to a literature reference, electronic resource or a standard operating procedure (SOP)"
+      },
+      "library construction method": {
+        "description": "Library construction method used for clone libraries",
+        "allowUnits": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "protocol": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "allowUnits": false,
+        "description": "The laboratory method used to reveal the presence of the sample sequenced in the experiment."
+      },
+      "instrument for DNA concentration measurement": {
+        "description": "Name/type of instrument used to measure the DNA concentration (ng/µl) prior to library preparation",
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "allowTerms": false
+      },
+      "read quality filter": {
+        "description": "Programme used to filter reads quality before conducting the analysis",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "DNA concentration": {
+        "description": "DNA concentration used for sequencing in ng/µl",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "allowTerms": false
+      },
+      "collection_date": {
+        "allowUnits": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "description": "date that the specimen was collected"
+      },
+      "isolation_source": {
+        "description": "describes the physical, environmental and/or local geographical source of the biological sample from which the sample was derived",
+        "allowUnits": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "geographic location (country and/or sea)": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "The geographical origin of the sample as defined by the country or sea. Country or sea names should be chosen from the INSDC country list (http://insdc.org/country.html)."
+      },
+      "geographic location (region and locality)": {
+        "description": "The geographical origin of the sample as defined by the specific region name followed by the locality name.",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "amount or size of sample collected": {
+        "description": "Amount or size of sample (volume, mass or area) that was collected",
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "allowTerms": false
+      },
+      "sample storage duration": {
+        "allowTerms": false,
+        "allowUnits": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "duration for which sample was stored"
+      },
+      "sample storage temperature": {
+        "description": "temperature at which sample was stored, e.g. -80",
+        "allowTerms": false,
+        "allowUnits": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "sample storage location": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "location at which sample was stored, usually name of a specific freezer/room"
+      },
+      "sampling time point": {
+        "allowUnits": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "sample transportation temperature": {
+        "allowUnits": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "description": "transportation temperature from sample site to storage"
+      },
+      "sample transportation date": {
+        "allowTerms": false,
+        "allowUnits": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "transportation/shipping date of the sample. Format:YYYY-MM-DD"
+      },
+      "sample transportation time": {
+        "description": "transportation time from sample site to storage",
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "allowTerms": false
+      },
+      "receipt date": {
+        "description": "Date on which the sample was received. Format:YYYY-MM-DD. Please provide the highest precision possible. If the sample was received by the institution and not collected, the 'receipt date' must be provided instead. Either the 'collection date' or 'receipt date' must be provided. If available, provide both dates.",
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "allowTerms": false
+      },
+      "links to additional analysis": {
+        "description": "link to additional analysis results performed on the sample",
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "allowTerms": false
+      },
+      "isolate": {
+        "allowTerms": false,
+        "allowUnits": false,
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "individual isolate from which the sample was obtained"
+      },
+      "sub_species": {
+        "description": "name of sub-species of organism from which sample was obtained",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "Further Details": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "Reference details related to a sample in form of an URI."
+      }
+    },
+    "defaultCapture": {
+      "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+      "required": false,
+      "allowTerms": false,
+      "allowUnits": false
+    }
+  },
+  "validationSchema": {
+    "author": "ENA",
+    "id": "ERC000041",
+    "title": "ENA Global Microbial Identifier Proficiency Test (GMI PT) checklist",
+    "required": [
+      "attributes"
+    ],
+    "version": "1.0.0",
+    "properties": {
+      "attributes": {
+        "properties": {
+          "receipt date": {
+            "maxItems": 1,
+            "description": "Date on which the sample was received. Format:YYYY-MM-DD. Please provide the highest precision possible. If the sample was received by the institution and not collected, the 'receipt date' must be provided instead. Either the 'collection date' or 'receipt date' must be provided. If available, provide both dates.",
+            "items": {}
+          },
+          "read quality filter": {
+            "description": "Programme used to filter reads quality before conducting the analysis",
+            "items": {}
+          },
+          "sample transportation time": {
+            "items": {},
+            "maxItems": 1,
+            "description": "transportation time from sample site to storage"
+          },
+          "amount or size of sample collected": {
+            "maxItems": 1,
+            "description": "Amount or size of sample (volume, mass or area) that was collected",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "protocol": {
+            "description": "The laboratory method used to reveal the presence of the sample sequenced in the experiment.",
+            "maxItems": 1,
+            "items": {}
+          },
+          "geographic location (region and locality)": {
+            "description": "The geographical origin of the sample as defined by the specific region name followed by the locality name.",
+            "maxItems": 1,
+            "items": {}
+          },
+          "DNA concentration": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "DNA concentration used for sequencing in ng/µl",
+            "maxItems": 1
+          },
+          "nucleic acid extraction": {
+            "items": {},
+            "maxItems": 1,
+            "description": "Link to a literature reference, electronic resource or a standard operating procedure (SOP)"
+          },
+          "library construction method": {
+            "maxItems": 1,
+            "description": "Library construction method used for clone libraries",
+            "items": {}
+          },
+          "geographic location (country and/or sea)": {
+            "items": {},
+            "description": "The geographical origin of the sample as defined by the country or sea. Country or sea names should be chosen from the INSDC country list (http://insdc.org/country.html).",
+            "maxItems": 1
+          },
+          "sub_species": {
+            "items": {},
+            "description": "name of sub-species of organism from which sample was obtained",
+            "maxItems": 1
+          },
+          "sample storage duration": {
+            "maxItems": 1,
+            "description": "duration for which sample was stored",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "instrument for DNA concentration measurement": {
+            "description": "Name/type of instrument used to measure the DNA concentration (ng/µl) prior to library preparation",
+            "maxItems": 1,
+            "items": {}
+          },
+          "links to additional analysis": {
+            "items": {},
+            "description": "link to additional analysis results performed on the sample"
+          },
+          "Further Details": {
+            "items": {},
+            "description": "Reference details related to a sample in form of an URI."
+          },
+          "collection_date": {
+            "items": {},
+            "description": "date that the specimen was collected",
+            "maxItems": 1
+          },
+          "sample storage location": {
+            "maxItems": 1,
+            "description": "location at which sample was stored, usually name of a specific freezer/room",
+            "items": {}
+          },
+          "sample transportation temperature": {
+            "maxItems": 1,
+            "description": "transportation temperature from sample site to storage",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "isolation_source": {
+            "maxItems": 1,
+            "description": "describes the physical, environmental and/or local geographical source of the biological sample from which the sample was derived",
+            "items": {}
+          },
+          "sampling time point": {
+            "description": null,
+            "maxItems": 1,
+            "items": {}
+          },
+          "isolate": {
+            "maxItems": 1,
+            "description": "individual isolate from which the sample was obtained",
+            "items": {}
+          },
+          "sample storage temperature": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "temperature at which sample was stored, e.g. -80",
+            "maxItems": 1
+          },
+          "sample transportation date": {
+            "description": "transportation/shipping date of the sample. Format:YYYY-MM-DD",
+            "maxItems": 1,
+            "items": {}
+          }
+        }
+      }
+    },
+    "description": "Minimum information to standardise metadata related to samples used in GMI PT (Global Microbial Identifier Proficiency Test). A checklist for reporting metadata of GMI PT samples associated with molecular data. This minimum metadata standard was developed by the COMPARE platform and can be used for submission of sample metadata derived from Campylobacter coli, Campylobacter jejuni, Listeria monocytogenes, Klebsiella pneumoniae, Salmonella enterica, Escherichia coli and Staphylococcus aureus.",
+    "#dollar#schema": "http://json-schema.org/draft-07/schema#",
+    "definitions": {
+      "terms": {
+        "type": "array",
+        "items": {
+          "properties": {
+            "url": {
+              "format": "uri",
+              "type": "string"
+            }
+          },
+          "required": [
+            "url"
+          ],
+          "type": "object"
+        }
+      },
+      "properties": {
+        "attributes": {
+          "type": "object",
+          "required": [],
+          "description": "Attributes for describing a sample.",
+          "patternProperties": {
+            "^.*$": {
+              "#dollar#ref": "#/definitions/attribute"
+            }
+          },
+          "properties": {}
+        }
+      },
+      "attribute": {
+        "type": "array",
+        "items": {
+          "properties": {
+            "value": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "terms": {
+              "#dollar#ref": "#/definitions/terms"
+            },
+            "units": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "value"
+          ]
+        },
+        "minItems": 1
+      }
+    },
+    "#dollar#async": true,
+    "type": "object"
+  }
+}

@@ -1,0 +1,391 @@
+{
+  "_id": "ERC000040",
+  "description": "Minimum information required for reporting samples associated with the UniEuk EukBank initiative. This checklist aims to capture contextual metadata associated with V4 18S SSU rRNA molecular data.",
+  "dataTypeId": "samples",
+  "displayName": "UniEuk_EukBank",
+  "spreadsheetTemplate": {
+    "defaultCapture": {
+      "required": false,
+      "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+      "allowTerms": false,
+      "allowUnits": false
+    },
+    "columnCaptures": {
+      "alias": {
+        "fieldType": "String",
+        "fieldName": "alias",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "required": true
+      },
+      "title": {
+        "fieldType": "String",
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "title"
+      },
+      "description": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "required": false,
+        "fieldName": "description",
+        "fieldType": "String"
+      },
+      "release date": {
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "releaseDate",
+        "fieldType": "String"
+      },
+      "taxon": {
+        "fieldType": "String",
+        "fieldName": "taxon",
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture"
+      },
+      "taxon id": {
+        "fieldType": "IntegerNumber",
+        "fieldName": "taxonId",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "required": true
+      },
+      "Size Fraction Lower Threshold": {
+        "allowTerms": false,
+        "allowUnits": false,
+        "description": "SAMPLE_PROTOCOL_Size-Fraction_Lower-Threshold_(µm) indicates the lower size threshold. Materials smaller than the size threshold are excluded from the sample. Example: 0.22 µm",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "Size Fraction Upper Threshold": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "SAMPLE_PROTOCOL_Size-Fraction_Upper-Threshold_(µm) indicates the upper size threshold. Materials larger than the size threshold are excluded from the sample.Example: 1.6 µm",
+        "allowUnits": false,
+        "allowTerms": false
+      },
+      "target gene": {
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Targeted gene or locus name for marker gene studies",
+        "allowUnits": false,
+        "allowTerms": false
+      },
+      "target subfragment": {
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "Name of subfragment of a gene or locus. Important to e.g. identify special regions on marker genes like V6 on 16S rRNA",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": true
+      },
+      "pcr primers": {
+        "required": true,
+        "description": "PCR primers that were used to amplify the sequence of the targeted gene, locus or subfragment. This field should contain all the primers used for a single PCR reaction if multiple forward or reverse primers are present in a single PCR reaction. The primer sequence should be reported in uppercase letters",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "allowUnits": false
+      },
+      "isolation_source": {
+        "description": "describes the physical, environmental and/or local geographical source of the biological sample from which the sample was derived",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false
+      },
+      "collected_by": {
+        "allowTerms": false,
+        "allowUnits": false,
+        "description": "name of persons or institute who collected the specimen",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "collection date": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "The date of sampling, either as an instance (single point in time) or interval. In case no exact time is available, the date/time can be right truncated i.e. all of these are valid ISO8601 compliant times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008.",
+        "required": true,
+        "allowTerms": false,
+        "allowUnits": false
+      },
+      "geographic location (altitude)": {
+        "required": false,
+        "description": "The altitude of the sample is the vertical distance between Earth's surface above Sea Level and the sampled position in the air.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "allowTerms": false
+      },
+      "geographic location (country and/or sea)": {
+        "allowTerms": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "The geographical origin of the sample as defined by the country or sea. Country or sea names should be chosen from the INSDC country list (http://insdc.org/country.html).",
+        "required": true
+      },
+      "geographic location (latitude)": {
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system"
+      },
+      "geographic location (longitude)": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system",
+        "required": true,
+        "allowTerms": false,
+        "allowUnits": false
+      },
+      "geographic location (region and locality)": {
+        "allowTerms": false,
+        "allowUnits": false,
+        "required": false,
+        "description": "The geographical origin of the sample as defined by the specific region name followed by the locality name.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "geographic location (depth)": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Depth is defined as the vertical distance below surface, e.g. for sediment or soil samples depth is measured from sediment or soil surface, respectivly. Depth can be reported as an interval for subsurface samples.",
+        "allowTerms": false,
+        "allowUnits": false
+      },
+      "environment (biome)": {
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Biomes are defined based on factors such as plant structures, leaf types, plant spacing, and other factors like climate. Biome should be treated as the descriptor of the broad ecological context of a sample. Examples include: desert, taiga, deciduous woodland, or coral reef. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO"
+      },
+      "environment (feature)": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO",
+        "required": true,
+        "allowTerms": false,
+        "allowUnits": false
+      },
+      "environment (material)": {
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "The environmental material level refers to the material that was displaced by the sample, or material in which a sample was embedded, prior to the sampling event. Environmental material terms are generally mass nouns. Examples include: air, soil, or water. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO",
+        "allowUnits": false,
+        "allowTerms": false
+      },
+      "sample collection device or method": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "The method or deviced employed for collecting the sample",
+        "required": false,
+        "allowUnits": false,
+        "allowTerms": false
+      },
+      "environmental_sample": {
+        "allowTerms": false,
+        "allowUnits": false,
+        "required": true,
+        "description": "identifies sequences derived by direct molecular isolation from a bulk environmental DNA sample (by PCR with or without subsequent cloning of the product, DGGE, or other anonymous methods) with no reliable identification of the source organism",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "Salinity": {
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Salinity of water at the time of taking the sample. Format: ##.#, SDN:P02::PSAL, SDN:P06::UGKG for PSU. Example: 39.1 psu."
+      },
+      "Further Details": {
+        "allowTerms": false,
+        "allowUnits": false,
+        "description": "Reference details related to a sample in form of an URI.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      }
+    }
+  },
+  "validationSchema": {
+    "type": "object",
+    "required": [
+      "attributes"
+    ],
+    "author": "ENA",
+    "#dollar#schema": "http://json-schema.org/draft-07/schema#",
+    "#dollar#async": true,
+    "description": "Minimum information required for reporting samples associated with the UniEuk EukBank initiative. This checklist aims to capture contextual metadata associated with V4 18S SSU rRNA molecular data.",
+    "definitions": {
+      "attribute": {
+        "minItems": 1,
+        "type": "array",
+        "items": {
+          "required": [
+            "value"
+          ],
+          "properties": {
+            "units": {
+              "type": "string",
+              "minLength": 1
+            },
+            "value": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "terms": {
+              "#dollar#ref": "#/definitions/terms"
+            }
+          }
+        }
+      },
+      "terms": {
+        "type": "array",
+        "items": {
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "uri"
+            }
+          },
+          "type": "object",
+          "required": [
+            "url"
+          ]
+        }
+      },
+      "properties": {
+        "attributes": {
+          "patternProperties": {
+            "^.*$": {
+              "#dollar#ref": "#/definitions/attribute"
+            }
+          },
+          "type": "object",
+          "description": "Attributes for describing a sample.",
+          "required": [],
+          "properties": {}
+        }
+      }
+    },
+    "properties": {
+      "attributes": {
+        "properties": {
+          "environment (material)": {
+            "maxItems": 1,
+            "items": {},
+            "description": "The environmental material level refers to the material that was displaced by the sample, or material in which a sample was embedded, prior to the sampling event. Environmental material terms are generally mass nouns. Examples include: air, soil, or water. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO"
+          },
+          "Salinity": {
+            "maxItems": 1,
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "Salinity of water at the time of taking the sample. Format: ##.#, SDN:P02::PSAL, SDN:P06::UGKG for PSU. Example: 39.1 psu."
+          },
+          "environment (biome)": {
+            "items": {},
+            "description": "Biomes are defined based on factors such as plant structures, leaf types, plant spacing, and other factors like climate. Biome should be treated as the descriptor of the broad ecological context of a sample. Examples include: desert, taiga, deciduous woodland, or coral reef. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO",
+            "maxItems": 1
+          },
+          "collected_by": {
+            "description": "name of persons or institute who collected the specimen",
+            "items": {}
+          },
+          "geographic location (latitude)": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system",
+            "maxItems": 1
+          },
+          "environment (feature)": {
+            "description": "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO",
+            "items": {},
+            "maxItems": 1
+          },
+          "Further Details": {
+            "items": {},
+            "description": "Reference details related to a sample in form of an URI."
+          },
+          "geographic location (country and/or sea)": {
+            "items": {},
+            "description": "The geographical origin of the sample as defined by the country or sea. Country or sea names should be chosen from the INSDC country list (http://insdc.org/country.html).",
+            "maxItems": 1
+          },
+          "target subfragment": {
+            "items": {},
+            "description": "Name of subfragment of a gene or locus. Important to e.g. identify special regions on marker genes like V6 on 16S rRNA",
+            "maxItems": 1
+          },
+          "sample collection device or method": {
+            "items": {},
+            "description": "The method or deviced employed for collecting the sample"
+          },
+          "Size Fraction Lower Threshold": {
+            "maxItems": 1,
+            "description": "SAMPLE_PROTOCOL_Size-Fraction_Lower-Threshold_(µm) indicates the lower size threshold. Materials smaller than the size threshold are excluded from the sample. Example: 0.22 µm",
+            "items": {}
+          },
+          "geographic location (altitude)": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "The altitude of the sample is the vertical distance between Earth's surface above Sea Level and the sampled position in the air.",
+            "maxItems": 1
+          },
+          "collection date": {
+            "maxItems": 1,
+            "description": "The date of sampling, either as an instance (single point in time) or interval. In case no exact time is available, the date/time can be right truncated i.e. all of these are valid ISO8601 compliant times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008.",
+            "items": {}
+          },
+          "geographic location (longitude)": {
+            "description": "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system",
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "maxItems": 1
+          },
+          "Size Fraction Upper Threshold": {
+            "maxItems": 1,
+            "description": "SAMPLE_PROTOCOL_Size-Fraction_Upper-Threshold_(µm) indicates the upper size threshold. Materials larger than the size threshold are excluded from the sample.Example: 1.6 µm",
+            "items": {}
+          },
+          "isolation_source": {
+            "items": {},
+            "description": "describes the physical, environmental and/or local geographical source of the biological sample from which the sample was derived",
+            "maxItems": 1
+          },
+          "environmental_sample": {
+            "maxItems": 1,
+            "items": {},
+            "description": "identifies sequences derived by direct molecular isolation from a bulk environmental DNA sample (by PCR with or without subsequent cloning of the product, DGGE, or other anonymous methods) with no reliable identification of the source organism"
+          },
+          "pcr primers": {
+            "items": {},
+            "description": "PCR primers that were used to amplify the sequence of the targeted gene, locus or subfragment. This field should contain all the primers used for a single PCR reaction if multiple forward or reverse primers are present in a single PCR reaction. The primer sequence should be reported in uppercase letters"
+          },
+          "geographic location (depth)": {
+            "description": "Depth is defined as the vertical distance below surface, e.g. for sediment or soil samples depth is measured from sediment or soil surface, respectivly. Depth can be reported as an interval for subsurface samples.",
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "maxItems": 1
+          },
+          "target gene": {
+            "description": "Targeted gene or locus name for marker gene studies",
+            "items": {},
+            "maxItems": 1
+          },
+          "geographic location (region and locality)": {
+            "items": {},
+            "description": "The geographical origin of the sample as defined by the specific region name followed by the locality name.",
+            "maxItems": 1
+          }
+        }
+      }
+    },
+    "version": "1.0.0",
+    "id": "ERC000040",
+    "title": "ENA UniEuk_EukBank Checklist"
+  }
+}

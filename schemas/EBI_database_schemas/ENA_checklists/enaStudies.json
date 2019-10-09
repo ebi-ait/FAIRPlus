@@ -1,0 +1,52 @@
+{
+  "_id": "enaStudies",
+  "dataTypeId": "enaStudies",
+  "displayName": "ENA/EVA Studies",
+  "description": "checklist for ENA/EVA studies",
+  "spreadsheetTemplate": {
+    "columnCaptures": {
+      "alias": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "alias",
+        "fieldType": "String",
+        "required": false
+      },
+      "title": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "title",
+        "fieldType": "String",
+        "required": false
+      },
+      "project alias": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.RefCapture",
+        "refKey": "projectRef",
+        "required": true,
+        "asList": false
+      },
+      "study_type": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "allowTerms": false
+      },
+      "study_abstract": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": true,
+        "allowUnits": false,
+        "allowTerms": false
+      },
+      "description": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "description",
+        "fieldType": "String",
+        "required": false
+      }
+    },
+    "defaultCapture": {
+      "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+      "required": false,
+      "allowUnits": true,
+      "allowTerms": true
+    }
+  }
+}

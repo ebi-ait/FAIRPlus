@@ -1,0 +1,107 @@
+{
+  "_id": "defaultEnaSequencingExperiments",
+  "dataTypeId": "sequencingExperiments",
+  "displayName": "Sequencing Experiments",
+  "description": "",
+  "spreadsheetTemplate": {
+    "columnCaptures": {
+      "alias": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "alias",
+        "fieldType": "String",
+        "required": false
+      },
+      "title": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "title",
+        "fieldType": "String",
+        "required": true
+      },
+      "description": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "description",
+        "fieldType": "String",
+        "required": false
+      },
+      "study alias": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.RefCapture",
+        "refKey": "studyRef",
+        "required": true,
+        "asList": false
+      },
+      "sample alias": {
+        "key": "sampleUses",
+        "refKey": "sampleRef",
+        "required": true,
+        "attributeCaptures": {},
+        "_class": "uk.ac.ebi.subs.repository.model.templates.RefAndAttributeCapture"
+      },
+      "library_strategy": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": true,
+        "allowUnits": false,
+        "allowTerms": false
+      },
+      "library_source": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": true,
+        "allowUnits": false,
+        "allowTerms": false
+      },
+      "library_selection": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": true,
+        "allowUnits": false,
+        "allowTerms": false
+      },
+      "library_layout": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": true,
+        "allowUnits": false,
+        "allowTerms": false
+      },
+      "nominal_length": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": true,
+        "allowUnits": false,
+        "allowTerms": false
+      },
+      "nominal_sdev": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": true,
+        "allowUnits": false,
+        "allowTerms": false
+      },
+      "platform_type": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": true,
+        "allowUnits": false,
+        "allowTerms": false
+      },
+      "instrument_model": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": true,
+        "allowUnits": false,
+        "allowTerms": false
+      },
+      "design_description": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": true,
+        "allowUnits": false,
+        "allowTerms": false
+      },
+      "library_name": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": true,
+        "allowUnits": false,
+        "allowTerms": false
+      }
+    },
+    "defaultCapture": {
+      "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+      "required": false,
+      "allowUnits": true,
+      "allowTerms": true
+    }
+  }
+}

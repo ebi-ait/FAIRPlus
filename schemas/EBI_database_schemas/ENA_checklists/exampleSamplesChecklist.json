@@ -1,0 +1,58 @@
+{
+  "_id": "exampleSamplesChecklist",
+  "dataTypeId": "samples",
+  "displayName": "Sample Checklist",
+  "description": "data requirement for samples",
+  "validationSchema": {},
+  "spreadsheetTemplate": {
+    "columnCaptures": {
+      "alias": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "alias",
+        "fieldType": "String",
+        "required": true
+      },
+      "title": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "title",
+        "fieldType": "String",
+        "required": true
+      },
+      "description": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "description",
+        "fieldType": "String",
+        "required": false
+      },
+      "release date": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.DateFieldCapture",
+        "fieldName": "releaseDate",
+        "required": true
+      },
+      "taxon": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "taxon",
+        "fieldType": "String",
+        "required": false
+      },
+      "taxon id": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "taxonId",
+        "fieldType": "IntegerNumber",
+        "required": false
+      },
+      "related sample alias": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.SampleRelationshipCapture",
+        "allowRelationshipNature": true,
+        "required": false
+      }
+    },
+    "defaultCapture": {
+      "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+      "required": false,
+      "allowUnits": true,
+      "allowTerms": true
+    },
+    "version": 0
+  }
+}

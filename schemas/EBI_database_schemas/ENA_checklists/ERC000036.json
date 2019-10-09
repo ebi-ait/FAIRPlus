@@ -1,0 +1,421 @@
+{
+  "_id": "ERC000036",
+  "validationSchema": {
+    "#dollar#async": true,
+    "#dollar#schema": "http://json-schema.org/draft-07/schema#",
+    "title": "ENA sewage checklist",
+    "definitions": {
+      "attribute": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "required": [
+            "value"
+          ],
+          "properties": {
+            "units": {
+              "type": "string",
+              "minLength": 1
+            },
+            "value": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "terms": {
+              "#dollar#ref": "#/definitions/terms"
+            }
+          }
+        }
+      },
+      "terms": {
+        "items": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "format": "uri",
+              "type": "string"
+            }
+          },
+          "required": [
+            "url"
+          ]
+        },
+        "type": "array"
+      },
+      "properties": {
+        "attributes": {
+          "description": "Attributes for describing a sample.",
+          "patternProperties": {
+            "^.*$": {
+              "#dollar#ref": "#/definitions/attribute"
+            }
+          },
+          "properties": {},
+          "type": "object",
+          "required": []
+        }
+      }
+    },
+    "description": "Minimum information about sewage samples. A checklist for reporting of sewage surveillance samples associated with sequence data from metagenomic sequencing projects. This minimum metadata standard was developed by the COMPARE platform.",
+    "properties": {
+      "attributes": {
+        "properties": {
+          "sampling time point": {
+            "items": {},
+            "maxItems": 1,
+            "description": null
+          },
+          "receipt date": {
+            "maxItems": 1,
+            "items": {},
+            "description": "Date on which the sample was received. Format:YYYY-MM-DD. Please provide the highest precision possible. If the sample was received by the institution and not collected, the 'receipt date' must be provided instead. Either the 'collection date' or 'receipt date' must be provided. If available, provide both dates."
+          },
+          "area of sampling site": {
+            "description": "Please indicate if there are specific facilities in the area covered by the sewage sample. For example: farming, slaughterhouse(s), industry, hospital(s) or any other facility.",
+            "items": {}
+          },
+          "amount or size of sample collected": {
+            "description": "Amount or size of sample (volume, mass or area) that was collected",
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "maxItems": 1
+          },
+          "sample transportation date": {
+            "description": "transportation/shipping date of the sample. Format:YYYY-MM-DD",
+            "items": {}
+          },
+          "sample transportation time": {
+            "description": "transportation time from sample site to storage",
+            "items": {}
+          },
+          "population size of the catchment area": {
+            "maxItems": 1,
+            "items": {},
+            "description": "Refers to the number of people living in the area covered by the sewage system."
+          },
+          "geographic location (latitude)": {
+            "description": "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system",
+            "maxItems": 1,
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "sample transportation temperature": {
+            "maxItems": 1,
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "transportation temperature from sample site to storage"
+          },
+          "collection date": {
+            "description": "The date of sampling, either as an instance (single point in time) or interval. In case no exact time is available, the date/time can be right truncated i.e. all of these are valid ISO8601 compliant times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008.",
+            "items": {},
+            "maxItems": 1
+          },
+          "sample storage duration": {
+            "description": "duration for which sample was stored",
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "maxItems": 1
+          },
+          "geographic location (region and locality)": {
+            "description": "The geographical origin of the sample as defined by the specific region name followed by the locality name.",
+            "items": {},
+            "maxItems": 1
+          },
+          "sample storage location": {
+            "description": "location at which sample was stored, usually name of a specific freezer/room",
+            "maxItems": 1,
+            "items": {}
+          },
+          "geographic location (country and/or sea)": {
+            "description": "The geographical origin of the sample as defined by the country or sea. Country or sea names should be chosen from the INSDC country list (http://insdc.org/country.html).",
+            "items": {},
+            "maxItems": 1
+          },
+          "sample storage temperature": {
+            "maxItems": 1,
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "temperature at which sample was stored, e.g. -80"
+          },
+          "sewage type": {
+            "description": "Type of sewage based on origin: wastewater treatment plant (municipal or industrial), open sewer line, river, stream, stagnant pool, or other.",
+            "maxItems": 1,
+            "items": {}
+          },
+          "temperature": {
+            "maxItems": 1,
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "temperature of the sample at time of sampling"
+          },
+          "investigation type": {
+            "description": "Nucleic Acid Sequence Report is the root element of all MIxS compliant reports as standardised by Genomic Standards Consortium",
+            "maxItems": 1,
+            "items": {}
+          },
+          "geographic location (longitude)": {
+            "description": "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system",
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "maxItems": 1
+          },
+          "nucleic acid extraction": {
+            "items": {},
+            "description": "Link to a literature reference, electronic resource or a standard operating procedure (SOP)"
+          },
+          "size of the catchment area": {
+            "maxItems": 1,
+            "items": {},
+            "description": "Refers to the size of the area that is drained by the sampled sewage system in square km."
+          },
+          "nucleic acid amplification": {
+            "description": "Link to a literature reference, electronic resource or a standard operating procedure (SOP)",
+            "items": {}
+          },
+          "name of the sampling site": {
+            "items": {},
+            "maxItems": 1,
+            "description": "Refers to the name of the site/station where data/sample collection is performed."
+          }
+        }
+      }
+    },
+    "type": "object",
+    "version": "1.0.0",
+    "id": "ERC000036",
+    "required": [
+      "attributes"
+    ],
+    "author": "ENA"
+  },
+  "description": "Minimum information about sewage samples. A checklist for reporting of sewage surveillance samples associated with sequence data from metagenomic sequencing projects. This minimum metadata standard was developed by the COMPARE platform.",
+  "displayName": "ENA sewage checklist",
+  "dataTypeId": "samples",
+  "spreadsheetTemplate": {
+    "columnCaptures": {
+      "alias": {
+        "required": true,
+        "fieldName": "alias",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldType": "String"
+      },
+      "title": {
+        "required": true,
+        "fieldName": "title",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldType": "String"
+      },
+      "description": {
+        "required": false,
+        "fieldType": "String",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "description"
+      },
+      "release date": {
+        "fieldType": "String",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "releaseDate",
+        "required": true
+      },
+      "taxon": {
+        "required": true,
+        "fieldType": "String",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "taxon"
+      },
+      "taxon id": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "taxonId",
+        "fieldType": "IntegerNumber",
+        "required": true
+      },
+      "name of the sampling site": {
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false,
+        "description": "Refers to the name of the site/station where data/sample collection is performed.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "investigation type": {
+        "required": true,
+        "allowTerms": false,
+        "description": "Nucleic Acid Sequence Report is the root element of all MIxS compliant reports as standardised by Genomic Standards Consortium",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false
+      },
+      "nucleic acid extraction": {
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Link to a literature reference, electronic resource or a standard operating procedure (SOP)",
+        "allowTerms": false,
+        "required": false
+      },
+      "nucleic acid amplification": {
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Link to a literature reference, electronic resource or a standard operating procedure (SOP)",
+        "allowUnits": false,
+        "required": false
+      },
+      "collection date": {
+        "required": true,
+        "allowTerms": false,
+        "allowUnits": false,
+        "description": "The date of sampling, either as an instance (single point in time) or interval. In case no exact time is available, the date/time can be right truncated i.e. all of these are valid ISO8601 compliant times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "geographic location (country and/or sea)": {
+        "required": true,
+        "description": "The geographical origin of the sample as defined by the country or sea. Country or sea names should be chosen from the INSDC country list (http://insdc.org/country.html).",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "allowTerms": false
+      },
+      "geographic location (latitude)": {
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system",
+        "allowUnits": false,
+        "required": false
+      },
+      "geographic location (longitude)": {
+        "required": false,
+        "description": "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "allowTerms": false
+      },
+      "geographic location (region and locality)": {
+        "allowTerms": false,
+        "description": "The geographical origin of the sample as defined by the specific region name followed by the locality name.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "required": false
+      },
+      "amount or size of sample collected": {
+        "description": "Amount or size of sample (volume, mass or area) that was collected",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false
+      },
+      "sample storage duration": {
+        "required": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "duration for which sample was stored",
+        "allowUnits": false
+      },
+      "sample storage temperature": {
+        "required": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "temperature at which sample was stored, e.g. -80",
+        "allowUnits": false
+      },
+      "sample storage location": {
+        "allowTerms": false,
+        "allowUnits": false,
+        "description": "location at which sample was stored, usually name of a specific freezer/room",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "sampling time point": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false
+      },
+      "sample transportation temperature": {
+        "required": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "transportation temperature from sample site to storage",
+        "allowTerms": false
+      },
+      "sample transportation date": {
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "transportation/shipping date of the sample. Format:YYYY-MM-DD"
+      },
+      "sample transportation time": {
+        "required": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "transportation time from sample site to storage",
+        "allowUnits": false
+      },
+      "receipt date": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Date on which the sample was received. Format:YYYY-MM-DD. Please provide the highest precision possible. If the sample was received by the institution and not collected, the 'receipt date' must be provided instead. Either the 'collection date' or 'receipt date' must be provided. If available, provide both dates.",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false
+      },
+      "sewage type": {
+        "allowTerms": false,
+        "description": "Type of sewage based on origin: wastewater treatment plant (municipal or industrial), open sewer line, river, stream, stagnant pool, or other.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "required": true
+      },
+      "temperature": {
+        "allowTerms": false,
+        "allowUnits": false,
+        "description": "temperature of the sample at time of sampling",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "area of sampling site": {
+        "required": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Please indicate if there are specific facilities in the area covered by the sewage sample. For example: farming, slaughterhouse(s), industry, hospital(s) or any other facility.",
+        "allowTerms": false
+      },
+      "size of the catchment area": {
+        "allowUnits": false,
+        "description": "Refers to the size of the area that is drained by the sampled sewage system in square km.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "required": false
+      },
+      "population size of the catchment area": {
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Refers to the number of people living in the area covered by the sewage system.",
+        "allowTerms": false,
+        "required": false
+      }
+    },
+    "defaultCapture": {
+      "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+      "allowUnits": false,
+      "allowTerms": false,
+      "required": false
+    }
+  }
+}

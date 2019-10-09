@@ -1,0 +1,391 @@
+{
+  "_id": "ERC000043",
+  "dataTypeId": "samples",
+  "validationSchema": {
+    "required": [
+      "attributes"
+    ],
+    "type": "object",
+    "#dollar#schema": "http://json-schema.org/draft-07/schema#",
+    "id": "ERC000043",
+    "definitions": {
+      "terms": {
+        "type": "array",
+        "items": {
+          "required": [
+            "url"
+          ],
+          "type": "object",
+          "properties": {
+            "url": {
+              "format": "uri",
+              "type": "string"
+            }
+          }
+        }
+      },
+      "attribute": {
+        "type": "array",
+        "items": {
+          "required": [
+            "value"
+          ],
+          "properties": {
+            "value": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "terms": {
+              "#dollar#ref": "#/definitions/terms"
+            },
+            "units": {
+              "minLength": 1,
+              "type": "string"
+            }
+          }
+        },
+        "minItems": 1
+      },
+      "properties": {
+        "attributes": {
+          "patternProperties": {
+            "^.*$": {
+              "#dollar#ref": "#/definitions/attribute"
+            }
+          },
+          "type": "object",
+          "required": [],
+          "description": "Attributes for describing a sample.",
+          "properties": {}
+        }
+      }
+    },
+    "properties": {
+      "attributes": {
+        "properties": {
+          "geographic location (country and/or sea)": {
+            "description": "The geographical origin of the sample as defined by the country or sea. Country or sea names should be chosen from the INSDC country list (http://insdc.org/country.html).",
+            "maxItems": 1,
+            "items": {}
+          },
+          "amount or size of sample collected": {
+            "description": "Amount or size of sample (volume, mass or area) that was collected",
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "maxItems": 1
+          },
+          "sample collection device or method": {
+            "items": {},
+            "description": "The method or deviced employed for collecting the sample"
+          },
+          "sample storage duration": {
+            "description": "duration for which sample was stored",
+            "maxItems": 1,
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "light intensity": {
+            "description": "measurement of light intensity",
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "maxItems": 1
+          },
+          "Further Details": {
+            "items": {},
+            "description": "Reference details related to a sample in form of an URI."
+          },
+          "geographic location (latitude)": {
+            "maxItems": 1,
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system"
+          },
+          "culture_collection": {
+            "items": {},
+            "description": "institution code and identifier for the culture from which the sample was obtained, with optional collection code."
+          },
+          "Depth": {
+            "description": "The distance below the surface of the water at which a measurement was made or a sample was collected. Format: ####.##, Positive below the sea surface. SDN:P06:46:ULAA for m. Example: 14.71",
+            "maxItems": 1,
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "collected_by": {
+            "items": {},
+            "description": "name of persons or institute who collected the specimen"
+          },
+          "Temperature": {
+            "description": "Temperature of water at the time of taking the sample. Format: ##.####, SDN:P02:75:TEMP, SDN:P06:46:UPAA for °C. Example: 17.7122.",
+            "maxItems": 1,
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "geographic location (longitude)": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "maxItems": 1,
+            "description": "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system"
+          },
+          "collection date": {
+            "items": {},
+            "description": "The date of sampling, either as an instance (single point in time) or interval. In case no exact time is available, the date/time can be right truncated i.e. all of these are valid ISO8601 compliant times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008."
+          },
+          "isolation and growth condition": {
+            "items": {},
+            "description": "Publication reference in the form of pubmed ID (pmid), digital object identifier (doi) or url for isolation and growth condition specifications of the organism/material. Mandatory for MIGS and MIMARKS Specimen."
+          },
+          "strain": {
+            "description": "Name of the strain from which the sample was obtained.",
+            "items": {},
+            "maxItems": 1
+          },
+          "sample storage temperature": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "maxItems": 1,
+            "description": "temperature at which sample was stored, e.g. -80"
+          },
+          "growth condition": {
+            "description": "A role that a material entity can play which enables particular conditions used to grow organisms or parts of the organism. This includes isolated environments such as cultures and open environments such as field studies.",
+            "items": {}
+          },
+          "pH": {
+            "description": "pH measurement",
+            "items": {},
+            "maxItems": 1
+          },
+          "sample storage conditions": {
+            "description": "Conditions at which sample was stored, usually storage temperature, duration and location",
+            "items": {}
+          },
+          "Salinity": {
+            "maxItems": 1,
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "Salinity of water at the time of taking the sample. Format: ##.#, SDN:P02::PSAL, SDN:P06::UGKG for PSU. Example: 39.1 psu."
+          }
+        }
+      }
+    },
+    "title": "ENA Marine Microalgae Checklist",
+    "version": "1.0.0",
+    "description": "Marine microalgae contextual information. The checklist has been developed in collaboration with EMBRIC Project partners and is suitable for reporting metadata related to environmental samples and those in culture collections.",
+    "author": "ENA",
+    "#dollar#async": true
+  },
+  "spreadsheetTemplate": {
+    "defaultCapture": {
+      "required": false,
+      "allowUnits": false,
+      "allowTerms": false,
+      "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+    },
+    "columnCaptures": {
+      "alias": {
+        "fieldName": "alias",
+        "fieldType": "String",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "required": true
+      },
+      "title": {
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "title",
+        "fieldType": "String"
+      },
+      "description": {
+        "required": false,
+        "fieldName": "description",
+        "fieldType": "String",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture"
+      },
+      "release date": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "releaseDate",
+        "fieldType": "String",
+        "required": true
+      },
+      "taxon": {
+        "required": true,
+        "fieldType": "String",
+        "fieldName": "taxon",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture"
+      },
+      "taxon id": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "taxonId",
+        "fieldType": "IntegerNumber",
+        "required": true
+      },
+      "Depth": {
+        "allowUnits": false,
+        "required": false,
+        "description": "The distance below the surface of the water at which a measurement was made or a sample was collected. Format: ####.##, Positive below the sea surface. SDN:P06:46:ULAA for m. Example: 14.71",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false
+      },
+      "collected_by": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "name of persons or institute who collected the specimen",
+        "allowTerms": false,
+        "required": false,
+        "allowUnits": false
+      },
+      "collection date": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "The date of sampling, either as an instance (single point in time) or interval. In case no exact time is available, the date/time can be right truncated i.e. all of these are valid ISO8601 compliant times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008.",
+        "allowTerms": false,
+        "required": false,
+        "allowUnits": false
+      },
+      "geographic location (country and/or sea)": {
+        "allowUnits": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "The geographical origin of the sample as defined by the country or sea. Country or sea names should be chosen from the INSDC country list (http://insdc.org/country.html).",
+        "allowTerms": false
+      },
+      "geographic location (latitude)": {
+        "required": false,
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "geographic location (longitude)": {
+        "description": "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "allowUnits": false,
+        "required": false
+      },
+      "sample collection device or method": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "The method or deviced employed for collecting the sample",
+        "allowTerms": false,
+        "required": false,
+        "allowUnits": false
+      },
+      "isolation and growth condition": {
+        "allowTerms": false,
+        "description": "Publication reference in the form of pubmed ID (pmid), digital object identifier (doi) or url for isolation and growth condition specifications of the organism/material. Mandatory for MIGS and MIMARKS Specimen.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false
+      },
+      "amount or size of sample collected": {
+        "allowUnits": false,
+        "required": false,
+        "allowTerms": false,
+        "description": "Amount or size of sample (volume, mass or area) that was collected",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "sample storage duration": {
+        "required": false,
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "duration for which sample was stored",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "sample storage temperature": {
+        "allowUnits": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "temperature at which sample was stored, e.g. -80",
+        "allowTerms": false
+      },
+      "growth condition": {
+        "allowUnits": false,
+        "required": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "A role that a material entity can play which enables particular conditions used to grow organisms or parts of the organism. This includes isolated environments such as cultures and open environments such as field studies."
+      },
+      "Temperature": {
+        "required": false,
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "Temperature of water at the time of taking the sample. Format: ##.####, SDN:P02:75:TEMP, SDN:P06:46:UPAA for °C. Example: 17.7122.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "Salinity": {
+        "required": false,
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "Salinity of water at the time of taking the sample. Format: ##.#, SDN:P02::PSAL, SDN:P06::UGKG for PSU. Example: 39.1 psu.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "sample storage conditions": {
+        "required": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Conditions at which sample was stored, usually storage temperature, duration and location",
+        "allowTerms": false
+      },
+      "light intensity": {
+        "description": "measurement of light intensity",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "allowUnits": false,
+        "required": false
+      },
+      "pH": {
+        "allowTerms": false,
+        "description": "pH measurement",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false
+      },
+      "culture_collection": {
+        "allowUnits": false,
+        "required": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "institution code and identifier for the culture from which the sample was obtained, with optional collection code."
+      },
+      "strain": {
+        "description": "Name of the strain from which the sample was obtained.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "allowUnits": false,
+        "required": true
+      },
+      "Further Details": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Reference details related to a sample in form of an URI.",
+        "allowTerms": false,
+        "allowUnits": false,
+        "required": false
+      }
+    }
+  },
+  "displayName": "ENA Marine Microalgae Checklist",
+  "description": "Marine microalgae contextual information. The checklist has been developed in collaboration with EMBRIC Project partners and is suitable for reporting metadata related to environmental samples and those in culture collections."
+}

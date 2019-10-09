@@ -1,0 +1,784 @@
+{
+  "_id": "ERC000032",
+  "displayName": "ENA Influenza virus reporting standard checklist",
+  "spreadsheetTemplate": {
+    "defaultCapture": {
+      "allowTerms": false,
+      "required": false,
+      "allowUnits": false,
+      "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+    },
+    "columnCaptures": {
+      "alias": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "alias",
+        "fieldType": "String",
+        "required": true
+      },
+      "title": {
+        "required": true,
+        "fieldType": "String",
+        "fieldName": "title",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture"
+      },
+      "description": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "description",
+        "fieldType": "String",
+        "required": false
+      },
+      "release date": {
+        "fieldName": "releaseDate",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "required": true,
+        "fieldType": "String"
+      },
+      "taxon": {
+        "required": true,
+        "fieldType": "String",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "taxon"
+      },
+      "taxon id": {
+        "required": true,
+        "fieldType": "IntegerNumber",
+        "fieldName": "taxonId",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture"
+      },
+      "number of inoculated individuals": {
+        "allowTerms": false,
+        "required": false,
+        "allowUnits": false,
+        "description": "Number of host individuals inoculated for the experiment.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "inoculation route": {
+        "description": "Brief description of the protocol inoculation route.",
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowTerms": false
+      },
+      "inoculation dose": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "description": "Dose used for the inoculoation experiment.",
+        "allowTerms": false,
+        "required": false
+      },
+      "inoculation stock availability": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Is the virus stock used for the inoculation available?",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false
+      },
+      "subject exposure": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "description": "Exposure of the subject to infected human or animals, such as poultry, wild bird or swine. If multiple exposures are applicable, please state them separated by semicolon. Example: poultry; wild bird",
+        "allowTerms": false,
+        "required": false
+      },
+      "subject exposure duration": {
+        "required": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "description": "Duration of the exposure of the subject to an infected human or animal. If multiple exposures are applicable, please state their duration in the same order in which you reported the exposure in the field 'subject exposure'. Example: 1 day; 0.33 days"
+      },
+      "type exposure": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "description": "Setting within which the subject is exposed to animals, such as farm, slaughterhouse, food preparation. If multiple exposures are applicable, please state their type in the same order in which you reported the exposure in the field 'subject exposure'. Example: backyard flock; confined animal feeding operation",
+        "required": false,
+        "allowTerms": false
+      },
+      "personal protective equipment": {
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false,
+        "description": "Use of personal protective equipment, such as gloves, gowns, during any type of exposure. Example: mask",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "hospitalisation": {
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false,
+        "description": "Was the subject confined to a hospital as a result of virus infection or problems occurring secondary to virus infection?",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "antiviral treatment": {
+        "allowTerms": false,
+        "required": false,
+        "allowUnits": false,
+        "description": "Antiviral treatment used for this subject, such as Zanamavir Oseltamivir, Amantadine. Example: Rimantadine",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "antiviral treatment initiation": {
+        "allowUnits": false,
+        "description": "Initiation of antiviral treatment after onset of clinical symptoms in days. Example: 2.5",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "required": false
+      },
+      "antiviral treatment dosage": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "description": "Dosage of the treatment taken by the subject. Example: 0.05 mg",
+        "required": false,
+        "allowTerms": false
+      },
+      "antiviral treatment duration": {
+        "description": "Duration of antiviral treatment after onset of clinical symptoms in days.Example: 5",
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "required": false
+      },
+      "influenza vaccination type": {
+        "allowTerms": false,
+        "required": false,
+        "description": "Influenza vaccinations that have been administered to the subject over the last year. Example: 2009 H1N1 Flumist",
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "influenza vaccination date": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "description": "Date that the influenza vaccination was administered to the subject over the past year. Format: YYYY-MM-DD. Example: 2007-05-12",
+        "required": false,
+        "allowTerms": false
+      },
+      "source of vaccination information": {
+        "allowTerms": false,
+        "required": false,
+        "allowUnits": false,
+        "description": "Designation of information related to vaccination history as self reported or documented.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "vaccine lot number": {
+        "required": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Lot number of the vaccine.",
+        "allowUnits": false
+      },
+      "vaccine manufacturer": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Manufacturer of the vaccine.",
+        "allowUnits": false,
+        "required": false,
+        "allowTerms": false
+      },
+      "vaccine dosage": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Dosage of the vaccine taken by the subject. Example: 0.05 mL",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false
+      },
+      "influenza-like illness at the time of sample collection": {
+        "description": "Is the subject at the time of sample collection considered to have influenza like illness?",
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowTerms": false
+      },
+      "illness onset date": {
+        "allowUnits": false,
+        "description": "Date the subject showed an onset of symptoms. Format: YYYY-MM-DD. Example: 2011-10-20",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "required": false
+      },
+      "illness duration": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "The number of days the illness lasted. Example: 4",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false
+      },
+      "illness symptoms": {
+        "allowTerms": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "The symptoms that have been reported in relation to the illness, such as cough, diarrhea, fever, headache, malaise, myalgia, nausea, runny_nose, shortness_of_breath, sore_throat. If multiple exposures are applicable, please state them separated by semicolon.",
+        "allowUnits": false
+      },
+      "collection date": {
+        "required": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "description": "The date of sampling, either as an instance (single point in time) or interval. In case no exact time is available, the date/time can be right truncated i.e. all of these are valid ISO8601 compliant times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008."
+      },
+      "geographic location (country and/or sea)": {
+        "required": true,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "The geographical origin of the sample as defined by the country or sea. Country or sea names should be chosen from the INSDC country list (http://insdc.org/country.html).",
+        "allowUnits": false
+      },
+      "geographic location (latitude)": {
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false,
+        "description": "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "geographic location (longitude)": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false
+      },
+      "geographic location (region and locality)": {
+        "description": "The geographical origin of the sample as defined by the specific region name followed by the locality name.",
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "required": false
+      },
+      "sample capture status": {
+        "required": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "description": "Reason for the sample collection."
+      },
+      "host disease outcome": {
+        "allowTerms": false,
+        "required": false,
+        "allowUnits": false,
+        "description": "Disease outcome in the host.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "host common name": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "description": "common name of the host, e.g. human",
+        "required": true,
+        "allowTerms": false
+      },
+      "host subject id": {
+        "required": true,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "a unique identifier by which each subject can be referred to, de-identified, e.g. #131",
+        "allowUnits": false
+      },
+      "host age": {
+        "required": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "age of host at the time of sampling; relevant scale depends on species and study, e.g. could be seconds for amoebae or centuries for trees",
+        "allowUnits": false
+      },
+      "host health state": {
+        "required": true,
+        "allowTerms": false,
+        "allowUnits": false,
+        "description": "Health status of the host at the time of sample collection.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "host sex": {
+        "required": true,
+        "allowTerms": false,
+        "allowUnits": false,
+        "description": "Gender or sex of the host.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "host scientific name": {
+        "required": true,
+        "allowTerms": false,
+        "description": "Scientific name of the natural (as opposed to laboratory) host to the organism from which sample was obtained.",
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "influenza test method": {
+        "allowTerms": false,
+        "required": true,
+        "allowUnits": false,
+        "description": "Method by which the current assessment of a sample as flu positive/negative is made. If multiple test were performed, please state them separated by semicolon. Example: RT-PCR; antigen ELISA",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "influenza test result": {
+        "description": "Classification of a sample as flu positive or negative based on the test performed and reported. If multiple tests were performed, please state the results in the same order in which you reported the tests in the field 'influenza test method'. Format: P(ositive)/N(egative). Example: P; P",
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": true,
+        "allowTerms": false
+      },
+      "other pathogens tested": {
+        "allowUnits": false,
+        "description": "Classification of pathogenic organisms other than influenza virus tested in the current assessment of a sample. If multiple tests were performed, please state them separated by semicolon. If no other pathogens test was performed, please state 'none'. Example: Newcastle",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "required": true
+      },
+      "other pathogens test result": {
+        "allowTerms": false,
+        "required": true,
+        "description": "Classification of a sample as positive or negative based on the test performed and reported. If tests for multiple pathogenic organisms were performed, please state the results in the same order in which you reported the tests in the field 'other pathogens tested'. Format: P(ositive)/N(egative)/not applicable. Example: N",
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "influenza virus type": {
+        "required": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "description": "One of the three influenza virus classification types."
+      },
+      "virus identifier": {
+        "allowUnits": false,
+        "description": "Unique laboratory identifier assigned to the virus by the investigator. Strain name is not sufficient since it might not be unique due to various passsages of the same virus. Format: up to 50 alphanumeric characters",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "required": false
+      },
+      "influenza strain unique number": {
+        "description": "Unique number of the strain which is reported as a part of the influenza strain name, such as A/chicken/Fujian/411/2002(HxN1). Format: integer number, Example: 411",
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "required": false
+      },
+      "WHO/OIE/FAO clade (required for HPAI H5N1 viruses)": {
+        "allowUnits": false,
+        "description": "WHO/OIE/FAO clade should be included for highly pathogenic H5N1 viruses. Example: 2.2",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowTerms": false
+      },
+      "lineage:swl (required for H1N1 viruses)": {
+        "allowTerms": false,
+        "required": false,
+        "description": "Does the H1N1 influenza virus originate from a swine-like outbreak (as opposed to a seasonal flu)?",
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "collector name": {
+        "allowTerms": false,
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "description": "Name of the person who collected the specimen. Example: John Smith"
+      },
+      "collecting institution": {
+        "allowTerms": false,
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "description": "Name of the institution to which the person collecting the specimen belongs. Format: Institute Name, Institute Address"
+      },
+      "receipt date": {
+        "required": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "description": "Date on which the sample was received. Format:YYYY-MM-DD. Please provide the highest precision possible. If the sample was received by the institution and not collected, the 'receipt date' must be provided instead. Either the 'collection date' or 'receipt date' must be provided. If available, provide both dates."
+      },
+      "sample storage conditions": {
+        "required": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Conditions at which sample was stored, usually storage temperature, duration and location",
+        "allowUnits": false
+      },
+      "definition for seropositive sample": {
+        "description": "The cut off value used by an investigatior in determining that a sample was seropositive.",
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "required": false
+      },
+      "meaning of cut off value": {
+        "allowUnits": false,
+        "description": "Description helping to explain what the cut off value means.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "required": false
+      },
+      "serotype (required for a seropositive sample)": {
+        "description": "Serological variety of a species characterised by its antigenic properties. For Influenza, HA subtype should be the letter H followed by a number between 1-16 unless novel subtype is identified and the NA subtype should be the letter N followed by a number between 1-9 unless novel subtype is identified. If only one of the subtypes have been tested then use the format H5Nx or HxN1. Example: H1N1",
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowTerms": false
+      },
+      "strain": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Name of the strain from which the sample was obtained.",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false
+      },
+      "host habitat": {
+        "description": "Natural habitat of the avian or mammalian host.",
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "required": false
+      },
+      "isolation source host-associated": {
+        "required": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "description": "Name of host tissue or organ sampled for analysis. Example: tracheal tissue"
+      },
+      "host description": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "description": "Other descriptive information relating to the host.",
+        "required": false,
+        "allowTerms": false
+      },
+      "gravidity": {
+        "allowUnits": false,
+        "description": "Whether or not the subject is gravid. If so, report date due or date post-conception and specify which of these two dates is being reported.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowTerms": false
+      },
+      "host behaviour": {
+        "allowUnits": false,
+        "description": "Natural behaviour of the host.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowTerms": false
+      },
+      "isolation source non-host-associated": {
+        "description": "Describes the physical, environmental and/or local geographical source of the biological sample from which the sample was derived. Example: soil",
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowTerms": false
+      }
+    }
+  },
+  "dataTypeId": "samples",
+  "validationSchema": {
+    "required": [
+      "attributes"
+    ],
+    "title": "ENA Influenza virus reporting standard checklist",
+    "author": "ENA",
+    "type": "object",
+    "properties": {
+      "attributes": {
+        "properties": {
+          "illness duration": {
+            "items": {},
+            "description": "The number of days the illness lasted. Example: 4"
+          },
+          "antiviral treatment duration": {
+            "items": {},
+            "description": "Duration of antiviral treatment after onset of clinical symptoms in days.Example: 5"
+          },
+          "geographic location (latitude)": {
+            "description": "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "vaccine manufacturer": {
+            "items": {},
+            "description": "Manufacturer of the vaccine."
+          },
+          "collection date": {
+            "items": {},
+            "description": "The date of sampling, either as an instance (single point in time) or interval. In case no exact time is available, the date/time can be right truncated i.e. all of these are valid ISO8601 compliant times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008."
+          },
+          "isolation source non-host-associated": {
+            "items": {},
+            "description": "Describes the physical, environmental and/or local geographical source of the biological sample from which the sample was derived. Example: soil"
+          },
+          "other pathogens test result": {
+            "description": "Classification of a sample as positive or negative based on the test performed and reported. If tests for multiple pathogenic organisms were performed, please state the results in the same order in which you reported the tests in the field 'other pathogens tested'. Format: P(ositive)/N(egative)/not applicable. Example: N",
+            "items": {}
+          },
+          "sample storage conditions": {
+            "items": {},
+            "description": "Conditions at which sample was stored, usually storage temperature, duration and location"
+          },
+          "geographic location (region and locality)": {
+            "description": "The geographical origin of the sample as defined by the specific region name followed by the locality name.",
+            "items": {}
+          },
+          "illness onset date": {
+            "description": "Date the subject showed an onset of symptoms. Format: YYYY-MM-DD. Example: 2011-10-20",
+            "items": {}
+          },
+          "host subject id": {
+            "description": "a unique identifier by which each subject can be referred to, de-identified, e.g. #131",
+            "items": {}
+          },
+          "antiviral treatment initiation": {
+            "description": "Initiation of antiviral treatment after onset of clinical symptoms in days. Example: 2.5",
+            "items": {}
+          },
+          "personal protective equipment": {
+            "items": {},
+            "description": "Use of personal protective equipment, such as gloves, gowns, during any type of exposure. Example: mask"
+          },
+          "antiviral treatment": {
+            "items": {},
+            "description": "Antiviral treatment used for this subject, such as Zanamavir Oseltamivir, Amantadine. Example: Rimantadine"
+          },
+          "isolation source host-associated": {
+            "items": {},
+            "description": "Name of host tissue or organ sampled for analysis. Example: tracheal tissue"
+          },
+          "WHO/OIE/FAO clade (required for HPAI H5N1 viruses)": {
+            "description": "WHO/OIE/FAO clade should be included for highly pathogenic H5N1 viruses. Example: 2.2",
+            "items": {}
+          },
+          "meaning of cut off value": {
+            "description": "Description helping to explain what the cut off value means.",
+            "items": {}
+          },
+          "vaccine dosage": {
+            "description": "Dosage of the vaccine taken by the subject. Example: 0.05 mL",
+            "items": {}
+          },
+          "host description": {
+            "description": "Other descriptive information relating to the host.",
+            "items": {}
+          },
+          "collecting institution": {
+            "description": "Name of the institution to which the person collecting the specimen belongs. Format: Institute Name, Institute Address",
+            "items": {}
+          },
+          "receipt date": {
+            "items": {},
+            "description": "Date on which the sample was received. Format:YYYY-MM-DD. Please provide the highest precision possible. If the sample was received by the institution and not collected, the 'receipt date' must be provided instead. Either the 'collection date' or 'receipt date' must be provided. If available, provide both dates."
+          },
+          "influenza test result": {
+            "items": {},
+            "description": "Classification of a sample as flu positive or negative based on the test performed and reported. If multiple tests were performed, please state the results in the same order in which you reported the tests in the field 'influenza test method'. Format: P(ositive)/N(egative). Example: P; P"
+          },
+          "geographic location (country and/or sea)": {
+            "description": "The geographical origin of the sample as defined by the country or sea. Country or sea names should be chosen from the INSDC country list (http://insdc.org/country.html).",
+            "items": {}
+          },
+          "host common name": {
+            "items": {},
+            "description": "common name of the host, e.g. human"
+          },
+          "host sex": {
+            "description": "Gender or sex of the host.",
+            "items": {}
+          },
+          "influenza vaccination date": {
+            "items": {},
+            "description": "Date that the influenza vaccination was administered to the subject over the past year. Format: YYYY-MM-DD. Example: 2007-05-12"
+          },
+          "host age": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "age of host at the time of sampling; relevant scale depends on species and study, e.g. could be seconds for amoebae or centuries for trees"
+          },
+          "hospitalisation": {
+            "items": {},
+            "description": "Was the subject confined to a hospital as a result of virus infection or problems occurring secondary to virus infection?"
+          },
+          "source of vaccination information": {
+            "items": {},
+            "description": "Designation of information related to vaccination history as self reported or documented."
+          },
+          "host health state": {
+            "items": {},
+            "description": "Health status of the host at the time of sample collection."
+          },
+          "antiviral treatment dosage": {
+            "items": {},
+            "description": "Dosage of the treatment taken by the subject. Example: 0.05 mg"
+          },
+          "influenza-like illness at the time of sample collection": {
+            "items": {},
+            "description": "Is the subject at the time of sample collection considered to have influenza like illness?"
+          },
+          "virus identifier": {
+            "description": "Unique laboratory identifier assigned to the virus by the investigator. Strain name is not sufficient since it might not be unique due to various passsages of the same virus. Format: up to 50 alphanumeric characters",
+            "items": {}
+          },
+          "host disease outcome": {
+            "items": {},
+            "description": "Disease outcome in the host."
+          },
+          "influenza strain unique number": {
+            "items": {},
+            "description": "Unique number of the strain which is reported as a part of the influenza strain name, such as A/chicken/Fujian/411/2002(HxN1). Format: integer number, Example: 411"
+          },
+          "host scientific name": {
+            "items": {},
+            "description": "Scientific name of the natural (as opposed to laboratory) host to the organism from which sample was obtained."
+          },
+          "influenza vaccination type": {
+            "items": {},
+            "description": "Influenza vaccinations that have been administered to the subject over the last year. Example: 2009 H1N1 Flumist"
+          },
+          "vaccine lot number": {
+            "description": "Lot number of the vaccine.",
+            "items": {}
+          },
+          "subject exposure duration": {
+            "items": {},
+            "description": "Duration of the exposure of the subject to an infected human or animal. If multiple exposures are applicable, please state their duration in the same order in which you reported the exposure in the field 'subject exposure'. Example: 1 day; 0.33 days"
+          },
+          "host habitat": {
+            "description": "Natural habitat of the avian or mammalian host.",
+            "items": {}
+          },
+          "inoculation dose": {
+            "items": {},
+            "description": "Dose used for the inoculoation experiment."
+          },
+          "geographic location (longitude)": {
+            "description": "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "number of inoculated individuals": {
+            "items": {},
+            "description": "Number of host individuals inoculated for the experiment."
+          },
+          "serotype (required for a seropositive sample)": {
+            "description": "Serological variety of a species characterised by its antigenic properties. For Influenza, HA subtype should be the letter H followed by a number between 1-16 unless novel subtype is identified and the NA subtype should be the letter N followed by a number between 1-9 unless novel subtype is identified. If only one of the subtypes have been tested then use the format H5Nx or HxN1. Example: H1N1",
+            "items": {}
+          },
+          "inoculation stock availability": {
+            "description": "Is the virus stock used for the inoculation available?",
+            "items": {}
+          },
+          "sample capture status": {
+            "items": {},
+            "description": "Reason for the sample collection."
+          },
+          "influenza virus type": {
+            "items": {},
+            "description": "One of the three influenza virus classification types."
+          },
+          "collector name": {
+            "items": {},
+            "description": "Name of the person who collected the specimen. Example: John Smith"
+          },
+          "definition for seropositive sample": {
+            "items": {},
+            "description": "The cut off value used by an investigatior in determining that a sample was seropositive."
+          },
+          "other pathogens tested": {
+            "description": "Classification of pathogenic organisms other than influenza virus tested in the current assessment of a sample. If multiple tests were performed, please state them separated by semicolon. If no other pathogens test was performed, please state 'none'. Example: Newcastle",
+            "items": {}
+          },
+          "gravidity": {
+            "description": "Whether or not the subject is gravid. If so, report date due or date post-conception and specify which of these two dates is being reported.",
+            "items": {}
+          },
+          "host behaviour": {
+            "items": {},
+            "description": "Natural behaviour of the host."
+          },
+          "lineage:swl (required for H1N1 viruses)": {
+            "items": {},
+            "description": "Does the H1N1 influenza virus originate from a swine-like outbreak (as opposed to a seasonal flu)?"
+          },
+          "illness symptoms": {
+            "items": {},
+            "description": "The symptoms that have been reported in relation to the illness, such as cough, diarrhea, fever, headache, malaise, myalgia, nausea, runny_nose, shortness_of_breath, sore_throat. If multiple exposures are applicable, please state them separated by semicolon."
+          },
+          "inoculation route": {
+            "description": "Brief description of the protocol inoculation route.",
+            "items": {}
+          },
+          "type exposure": {
+            "description": "Setting within which the subject is exposed to animals, such as farm, slaughterhouse, food preparation. If multiple exposures are applicable, please state their type in the same order in which you reported the exposure in the field 'subject exposure'. Example: backyard flock; confined animal feeding operation",
+            "items": {}
+          },
+          "influenza test method": {
+            "description": "Method by which the current assessment of a sample as flu positive/negative is made. If multiple test were performed, please state them separated by semicolon. Example: RT-PCR; antigen ELISA",
+            "items": {}
+          },
+          "strain": {
+            "description": "Name of the strain from which the sample was obtained.",
+            "items": {}
+          },
+          "subject exposure": {
+            "items": {},
+            "description": "Exposure of the subject to infected human or animals, such as poultry, wild bird or swine. If multiple exposures are applicable, please state them separated by semicolon. Example: poultry; wild bird"
+          }
+        }
+      }
+    },
+    "#dollar#schema": "http://json-schema.org/draft-07/schema#",
+    "definitions": {
+      "terms": {
+        "type": "array",
+        "items": {
+          "properties": {
+            "url": {
+              "format": "uri",
+              "type": "string"
+            }
+          },
+          "required": [
+            "url"
+          ],
+          "type": "object"
+        }
+      },
+      "attribute": {
+        "items": {
+          "properties": {
+            "terms": {
+              "#dollar#ref": "#/definitions/terms"
+            },
+            "units": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "value": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "value"
+          ]
+        },
+        "minItems": 1,
+        "type": "array"
+      },
+      "properties": {
+        "attributes": {
+          "properties": {},
+          "description": "Attributes for describing a sample.",
+          "required": [],
+          "type": "object",
+          "patternProperties": {
+            "^.*$": {
+              "#dollar#ref": "#/definitions/attribute"
+            }
+          }
+        }
+      }
+    },
+    "version": "1.0.0",
+    "description": "Minimum information about an Influenza virus sample. A checklist for reporting metadata of Influenza virus samples associated with genomic data. This minimum metadata standard supports submission of avian, human and mammalian surveillance data as well as serology and viruse isolate information (where available). The ENA Influenza sample checklist is based on standards in use at the Influenza Research Database.",
+    "#dollar#async": true,
+    "id": "ERC000032"
+  },
+  "description": "Minimum information about an Influenza virus sample. A checklist for reporting metadata of Influenza virus samples associated with genomic data. This minimum metadata standard supports submission of avian, human and mammalian surveillance data as well as serology and viruse isolate information (where available). The ENA Influenza sample checklist is based on standards in use at the Influenza Research Database."
+}

@@ -1,0 +1,219 @@
+{
+  "_id": "ERC000045",
+  "spreadsheetTemplate": {
+    "defaultCapture": {
+      "allowTerms": false,
+      "required": false,
+      "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+      "allowUnits": false
+    },
+    "columnCaptures": {
+      "alias": {
+        "fieldName": "alias",
+        "fieldType": "String",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "required": true
+      },
+      "title": {
+        "fieldName": "title",
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldType": "String"
+      },
+      "description": {
+        "fieldName": "description",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldType": "String",
+        "required": false
+      },
+      "release date": {
+        "fieldType": "String",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "required": true,
+        "fieldName": "releaseDate"
+      },
+      "taxon": {
+        "fieldName": "taxon",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldType": "String",
+        "required": true
+      },
+      "taxon id": {
+        "fieldType": "IntegerNumber",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "required": true,
+        "fieldName": "taxonId"
+      },
+      "collection_date": {
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "allowUnits": false,
+        "description": "date that the specimen was collected"
+      },
+      "isolation_source": {
+        "allowTerms": false,
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "describes the physical, environmental and/or local geographical source of the biological sample from which the sample was derived",
+        "allowUnits": false
+      },
+      "collected_by": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "allowUnits": false,
+        "description": "name of persons or institute who collected the specimen"
+      },
+      "geographic location (country and/or sea)": {
+        "description": "The geographical origin of the sample as defined by the country or sea. Country or sea names should be chosen from the INSDC country list (http://insdc.org/country.html).",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "geographic location (region and locality)": {
+        "allowUnits": false,
+        "description": "The geographical origin of the sample as defined by the specific region name followed by the locality name.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowTerms": false
+      },
+      "receipt date": {
+        "description": "Date on which the sample was received. Format:YYYY-MM-DD. Please provide the highest precision possible. If the sample was received by the institution and not collected, the 'receipt date' must be provided instead. Either the 'collection date' or 'receipt date' must be provided. If available, provide both dates.",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "isolate": {
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "allowUnits": false,
+        "description": "individual isolate from which the sample was obtained"
+      },
+      "serotype": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false,
+        "description": "serological variety of a species characterized by its antigenic properties"
+      }
+    }
+  },
+  "displayName": "COMPARE-ECDC-EFSA pilot food-associated reporting standard",
+  "dataTypeId": "samples",
+  "validationSchema": {
+    "description": "A checklist for reporting metadata of food-borne pathogen samples for the COMPARE-ECDC-EFSA reporting system.",
+    "#dollar#async": true,
+    "version": "1.0.0",
+    "id": "ERC000045",
+    "title": "COMPARE-ECDC-EFSA pilot food-associated reporting standard",
+    "author": "ENA",
+    "properties": {
+      "attributes": {
+        "properties": {
+          "isolation_source": {
+            "maxItems": 1,
+            "items": {},
+            "description": "describes the physical, environmental and/or local geographical source of the biological sample from which the sample was derived"
+          },
+          "geographic location (region and locality)": {
+            "description": "The geographical origin of the sample as defined by the specific region name followed by the locality name.",
+            "maxItems": 1,
+            "items": {}
+          },
+          "serotype": {
+            "maxItems": 1,
+            "items": {},
+            "description": "serological variety of a species characterized by its antigenic properties"
+          },
+          "collection_date": {
+            "description": "date that the specimen was collected",
+            "items": {},
+            "maxItems": 1
+          },
+          "isolate": {
+            "description": "individual isolate from which the sample was obtained",
+            "items": {},
+            "maxItems": 1
+          },
+          "geographic location (country and/or sea)": {
+            "description": "The geographical origin of the sample as defined by the country or sea. Country or sea names should be chosen from the INSDC country list (http://insdc.org/country.html).",
+            "maxItems": 1,
+            "items": {}
+          },
+          "receipt date": {
+            "maxItems": 1,
+            "items": {},
+            "description": "Date on which the sample was received. Format:YYYY-MM-DD. Please provide the highest precision possible. If the sample was received by the institution and not collected, the 'receipt date' must be provided instead. Either the 'collection date' or 'receipt date' must be provided. If available, provide both dates."
+          },
+          "collected_by": {
+            "maxItems": 1,
+            "items": {},
+            "description": "name of persons or institute who collected the specimen"
+          }
+        }
+      }
+    },
+    "type": "object",
+    "required": [
+      "attributes"
+    ],
+    "#dollar#schema": "http://json-schema.org/draft-07/schema#",
+    "definitions": {
+      "terms": {
+        "items": {
+          "required": [
+            "url"
+          ],
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "uri"
+            }
+          },
+          "type": "object"
+        },
+        "type": "array"
+      },
+      "properties": {
+        "attributes": {
+          "patternProperties": {
+            "^.*$": {
+              "#dollar#ref": "#/definitions/attribute"
+            }
+          },
+          "description": "Attributes for describing a sample.",
+          "required": [],
+          "type": "object",
+          "properties": {}
+        }
+      },
+      "attribute": {
+        "minItems": 1,
+        "items": {
+          "properties": {
+            "value": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "units": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "terms": {
+              "#dollar#ref": "#/definitions/terms"
+            }
+          },
+          "required": [
+            "value"
+          ]
+        },
+        "type": "array"
+      }
+    }
+  },
+  "description": "A checklist for reporting metadata of food-borne pathogen samples for the COMPARE-ECDC-EFSA reporting system."
+}

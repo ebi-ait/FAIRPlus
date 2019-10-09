@@ -1,0 +1,1609 @@
+{
+  "_id": "ERC000019",
+  "displayName": "GSC MIxS microbial mat biolfilm",
+  "dataTypeId": "samples",
+  "validationSchema": {
+    "id": "ERC000019",
+    "#dollar#schema": "http://json-schema.org/draft-07/schema#",
+    "title": "GSC MIxS microbial mat biolfilm",
+    "properties": {
+      "attributes": {
+        "properties": {
+          "nitrite": {
+            "description": "concentration of nitrite",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "dissolved hydrogen": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "concentration of dissolved hydrogen"
+          },
+          "sequencing method": {
+            "description": "Sequencing method used; e.g. Sanger, pyrosequencing, ABI-solid",
+            "items": {}
+          },
+          "phospholipid fatty acid": {
+            "description": "concentration of phospholipid fatty acids; can include multiple values",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "carbon/nitrogen ratio": {
+            "description": "ratio of amount or concentrations of carbon to nitrogen",
+            "items": {}
+          },
+          "alkalinity": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "alkalinity, the ability of a solution to neutralize acids to the equivalence point of carbonate or bicarbonate"
+          },
+          "specific host": {
+            "description": "If there is a host involved, please provide its taxid (or environmental if not actually isolated from the dead or alive host - i.e. pathogen could be isolated from a swipe of a bench etc) and report whether it is a laboratory or natural host). From this we can calculate any number of groupings of hosts (e.g. animal vs plant, all fish hosts, etc)",
+            "items": {}
+          },
+          "subspecific genetic lineage": {
+            "items": {},
+            "description": "This should provide further information about the genetic distinctness of this lineage by recording additional information i.e biovar, serovar, serotype, biovar, or any relevant genetic typing schemes like Group I plasmid. It can also contain alternative taxonomic information"
+          },
+          "miscellaneous parameter": {
+            "items": {},
+            "description": "Any other measurement performed or parameter collected, that is not listed here"
+          },
+          "health or disease status of specific host": {
+            "description": "Health or disease status of specific host at time of collection. This field accepts PATO (v 2013-10-28) terms, for a browser please see http://purl.bioontology.org/ontology/PATO",
+            "items": {}
+          },
+          "geographic location (country and/or sea)": {
+            "items": {},
+            "description": "The geographical origin of the sample as defined by the country or sea. Country or sea names should be chosen from the INSDC country list (http://insdc.org/country.html)."
+          },
+          "number of replicons": {
+            "description": "Reports the number of replicons in a nuclear genome of eukaryotes, in the genome of a bacterium or archaea or the number of segments in a segmented virus. Always applied to the haploid chromosome count of a eukaryote. Mandatory for MIGS of eukaryotes, bacteria, archaea and segmented virus.",
+            "items": {}
+          },
+          "bishomohopanol": {
+            "description": "concentration of bishomohopanol",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "investigation type": {
+            "items": {},
+            "description": "Nucleic Acid Sequence Report is the root element of all MIxS compliant reports as standardised by Genomic Standards Consortium"
+          },
+          "diether lipids": {
+            "description": "concentration of diether lipids; can include multiple types of diether lipids",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "chlorophyll": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "concentration of chlorophyll"
+          },
+          "ploidy": {
+            "items": {},
+            "description": "The ploidy level of the genome (e.g. allopolyploid, haploid, diploid, triploid, tetraploid). It has implications for the downstream study of duplicated gene and regions of the genomes (and perhaps for difficulties in assembly). For terms, please select terms listed under class ploidy (PATO:001374) of Phenotypic Quality Ontology (PATO), and for a browser of PATO (v 2013-10-28) please refer to http://purl.bioontology.org/ontology/PATO. Mandatory for MIGS of eukaryotes."
+          },
+          "source material identifiers": {
+            "description": "A unique identifier assigned to a material sample (as defined by http://rs.tdwg.org/dwc/terms/materialSampleID, and as opposed to a particular digital record of a material sample) used for extracting nucleic acids, and subsequent sequencing. The identifier can refer either to the original material collected or to any derived sub-samples. The INSDC qualifiers /specimen_voucher, /bio_material, or /culture_collection may or may not share the same value as the source_mat_id field. For instance, the /specimen_voucher qualifier and source_mat_id may both contain 'UAM:Herps:14' , referring to both the specimen voucher and sampled tissue with the same identifier. However, the /culture_collection qualifier may refer to a value from an initial culture (e.g. ATCC:11775) while source_mat_id would refer to an identifier from some derived culture from which the nucleic acids were extracted (e.g. xatc123 or ark:/2154/R2).",
+            "items": {}
+          },
+          "sulfate": {
+            "description": "concentration of sulfate",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "turbidity": {
+            "description": "turbidity measurement",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "organism count": {
+            "description": "total count of any organism per gram or volume of sample, should include name of organism followed by count; can include multiple organism counts",
+            "items": {}
+          },
+          "annotation source": {
+            "items": {},
+            "description": "For cases where annotation was provided by a community jamboree or model organism database rather than by a specific submitter"
+          },
+          "chemical administration": {
+            "description": "list of chemical compounds administered to the host or site where sampling occurred, and when (e.g. antibiotics, N fertilizer, air filter); can include multiple compounds. For Chemical Entities of Biological Interest ontology (CHEBI) (v111), please see http://purl.bioontology.org/ontology/CHEBI",
+            "items": {}
+          },
+          "library reads sequenced": {
+            "items": {},
+            "description": "Total number of clones sequenced from the library"
+          },
+          "sample material processing": {
+            "description": "Any processing applied to the sample during or after retrieving the sample from environment. This field accepts OBI, for a browser of OBI (v 2013-10-25) terms please see http://purl.bioontology.org/ontology/OBI",
+            "items": {}
+          },
+          "sample storage location": {
+            "description": "location at which sample was stored, usually name of a specific freezer/room",
+            "items": {}
+          },
+          "nucleic acid amplification": {
+            "description": "Link to a literature reference, electronic resource or a standard operating procedure (SOP)",
+            "items": {}
+          },
+          "sample collection device or method": {
+            "description": "The method or deviced employed for collecting the sample",
+            "items": {}
+          },
+          "organic nitrogen": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "concentration of organic nitrogen"
+          },
+          "ammonium": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "concentration of ammonium"
+          },
+          "aminopeptidase activity": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "measurement of aminopeptidase activity"
+          },
+          "sulfide": {
+            "description": "concentration of sulfide",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "sample storage duration": {
+            "description": "duration for which sample was stored",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "geographic location (depth)": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "Depth is defined as the vertical distance below surface, e.g. for sediment or soil samples depth is measured from sediment or soil surface, respectivly. Depth can be reported as an interval for subsurface samples."
+          },
+          "library vector": {
+            "items": {},
+            "description": "Cloning vector type(s) used in construction of libraries"
+          },
+          "water content": {
+            "description": "water content measurement",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "temperature": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "temperature of the sample at time of sampling"
+          },
+          "environment (feature)": {
+            "items": {},
+            "description": "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO"
+          },
+          "environment (material)": {
+            "items": {},
+            "description": "The environmental material level refers to the material that was displaced by the sample, or material in which a sample was embedded, prior to the sampling event. Environmental material terms are generally mass nouns. Examples include: air, soil, or water. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO"
+          },
+          "experimental factor": {
+            "items": {},
+            "description": "Experimental factors are essentially the variable aspects of an experiment design which can be used to describe an experiment, or set of experiments, in an increasingly detailed manner. This field accepts ontology terms from Experimental Factor Ontology (EFO) and/or Ontology for Biomedical Investigations (OBI). For a browser of EFO (v 2.43) terms, please see http://purl.bioontology.org/ontology/EFO; for a browser of OBI (v 2013-10-25) terms please see http://purl.bioontology.org/ontology/OBI"
+          },
+          "relationship to oxygen": {
+            "items": {},
+            "description": "Is this organism an aerobe, anaerobe? Please note that aerobic and anaerobic are valid descriptors for microbial environments"
+          },
+          "geographic location (elevation)": {
+            "description": "The elevation of the sampling site as measured by the vertical distance from mean sea level.",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "trophic level": {
+            "items": {},
+            "description": "Trophic levels are the feeding position in a food chain. Microbes can be a range of producers (e.g. chemolithotroph)"
+          },
+          "mean peak friction velocity": {
+            "description": "measurement of mean peak friction velocity",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "pcr conditions": {
+            "items": {},
+            "description": "Description of reaction conditions and components for PCR in the form of 'initial denaturation:94degC_1.5min; annealing=...'"
+          },
+          "magnesium": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "concentration of magnesium"
+          },
+          "salinity": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "salinity measurement"
+          },
+          "perturbation": {
+            "description": "type of perturbation, e.g. chemical administration, physical disturbance, etc., coupled with time that perturbation occurred; can include multiple perturbation types",
+            "items": {}
+          },
+          "dissolved oxygen": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "concentration of dissolved oxygen"
+          },
+          "adapters": {
+            "description": "Adapters provide priming sequences for both amplification and sequencing of the sample-library fragments. Both adapters should be reported; in uppercase letters",
+            "items": {}
+          },
+          "alkyl diethers": {
+            "description": "concentration of alkyl diethers",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "observed biotic relationship": {
+            "items": {},
+            "description": "Is it free-living or in a host and if the latter what type of relationship is observed"
+          },
+          "mean friction velocity": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "measurement of mean friction velocity"
+          },
+          "total nitrogen": {
+            "description": "total nitrogen content of the sample",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "n-alkanes": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "concentration of n-alkanes; can include multiple n-alkanes"
+          },
+          "multiplex identifiers": {
+            "description": "Molecular barcodes, called Multiplex Identifiers (MIDs), that are used to specifically tag unique samples in a sequencing run. Sequence should be reported in uppercase letters",
+            "items": {}
+          },
+          "dissolved carbon dioxide": {
+            "description": "concentration of dissolved carbon dioxide",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "microbial mat/biofilm environmental package": {
+            "items": {},
+            "description": "MIGS/MIMS/MIMARKS extension for reporting of measurements and observations obtained from one or more of the environments where the sample was obtained. All environmental packages listed here are further defined in separate subtables. By giving the name of the environmental package, a selection of fields can be made from the subtables and can be reported"
+          },
+          "redox potential": {
+            "description": "redox potential, measured relative to a hydrogen cell, indicating oxidation or reduction potential",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "calcium": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "concentration of calcium"
+          },
+          "biomass": {
+            "description": "amount of biomass; should include the name for the part of biomass measured, e.g. microbial, total. can include multiple measurements",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "extrachromosomal elements": {
+            "description": "Do plasmids exist of significant phenotypic consequence (e.g. ones that determine virulence or antibiotic resistance). Megaplasmids? Other plasmids (borrelia has 15+ plasmids).",
+            "items": {}
+          },
+          "library construction method": {
+            "items": {},
+            "description": "Library construction method used for clone libraries"
+          },
+          "methane": {
+            "description": "methane (gas) amount or concentration at the time of sampling",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "target gene": {
+            "items": {},
+            "description": "Targeted gene or locus name for marker gene studies"
+          },
+          "reference for biomaterial": {
+            "items": {},
+            "description": "Primary publication if isolated before genome publication; otherwise, primary genome report. Mandatory for MIGS of bacteria and archaea."
+          },
+          "target subfragment": {
+            "description": "Name of subfragment of a gene or locus. Important to e.g. identify special regions on marker genes like V6 on 16S rRNA",
+            "items": {}
+          },
+          "organic carbon": {
+            "description": "concentration of organic carbon",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "glucosidase activity": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "measurement of glucosidase activity"
+          },
+          "finishing strategy": {
+            "description": "Was the genome project intended to produce a complete or draft genome, Coverage, the fold coverage of the sequencing expressed as 2x, 3x, 18x etc, and how many contigs were produced for the genome. Mandatory for MIGS of eukaryote, bacteria and archaea.",
+            "items": {}
+          },
+          "bacterial carbon production": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "measurement of bacterial carbon production"
+          },
+          "nitrate": {
+            "description": "concentration of nitrate",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "phaeopigments": {
+            "description": "concentration of phaeopigments; can include multiple phaeopigments",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "potassium": {
+            "description": "concentration of potassium",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "estimated size": {
+            "items": {},
+            "description": "The estimated size of the genome (in bp) prior to sequencing. Of particular importance in the sequencing of (eukaryotic) genome which could remain in draft form for a long or unspecified period. Mandatory for MIGS of eukaryotes."
+          },
+          "dissolved organic nitrogen": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "dissolved organic nitrogen concentration measured as; total dissolved nitrogen - NH4 - NO3 - NO2"
+          },
+          "nucleic acid extraction": {
+            "description": "Link to a literature reference, electronic resource or a standard operating procedure (SOP)",
+            "items": {}
+          },
+          "collection date": {
+            "items": {},
+            "description": "The date of sampling, either as an instance (single point in time) or interval. In case no exact time is available, the date/time can be right truncated i.e. all of these are valid ISO8601 compliant times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008."
+          },
+          "phosphate": {
+            "description": "concentration of phosphate",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "chloride": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "concentration of chloride"
+          },
+          "pH": {
+            "description": "pH measurement",
+            "items": {}
+          },
+          "bromide": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "concentration of bromide"
+          },
+          "library screening strategy": {
+            "items": {},
+            "description": "Specific enrichment or screening methods applied before and/or after creating clone libraries in order to select a specific group of sequences"
+          },
+          "particulate organic carbon": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "concentration of particulate organic carbon"
+          },
+          "relevant standard operating procedures": {
+            "description": "Standard operating procedures used in assembly and/or annotation of genomes, metagenomes or environmental sequences",
+            "items": {}
+          },
+          "oxygenation status of sample": {
+            "items": {},
+            "description": "oxygenation status of sample"
+          },
+          "encoded traits": {
+            "items": {},
+            "description": "Should include key traits like antibiotic resistance or xenobiotic degradation phenotypes for plasmids, converting genes for phage"
+          },
+          "pressure": {
+            "description": "pressure to which the sample is subject, in atmospheres",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "total carbon": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "total carbon content"
+          },
+          "silicate": {
+            "description": "concentration of silicate",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "petroleum hydrocarbon": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "concentration of petroleum hydrocarbon"
+          },
+          "chimera check": {
+            "description": "A chimeric sequence, or chimera for short, is a sequence comprised of two or more phylogenetically distinct parent sequences. Chimeras are usually PCR artifacts thought to occur when a prematurely terminated amplicon reanneals to a foreign DNA strand and is copied to completion in the following PCR cycles. The point at which the chimeric sequence changes from one parent to the next is called the breakpoint or conversion point",
+            "items": {}
+          },
+          "isolation and growth condition": {
+            "items": {},
+            "description": "Publication reference in the form of pubmed ID (pmid), digital object identifier (doi) or url for isolation and growth condition specifications of the organism/material. Mandatory for MIGS and MIMARKS Specimen."
+          },
+          "dissolved organic carbon": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "concentration of dissolved organic carbon"
+          },
+          "sodium": {
+            "description": "sodium concentration",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "geographic location (latitude)": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system"
+          },
+          "project name": {
+            "items": {},
+            "description": "Name of the project within which the sequencing was organized"
+          },
+          "geographic location (longitude)": {
+            "description": "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "nitrogen": {
+            "description": "concentration of nitrogen (total)",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "pcr primers": {
+            "items": {},
+            "description": "PCR primers that were used to amplify the sequence of the targeted gene, locus or subfragment. This field should contain all the primers used for a single PCR reaction if multiple forward or reverse primers are present in a single PCR reaction. The primer sequence should be reported in uppercase letters"
+          },
+          "environment (biome)": {
+            "description": "Biomes are defined based on factors such as plant structures, leaf types, plant spacing, and other factors like climate. Biome should be treated as the descriptor of the broad ecological context of a sample. Examples include: desert, taiga, deciduous woodland, or coral reef. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO",
+            "items": {}
+          },
+          "relevant electronic resources": {
+            "items": {},
+            "description": "-"
+          },
+          "sample volume or weight for DNA extraction": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "Volume (mL) or weight (g) of sample processed for DNA extraction"
+          },
+          "known pathogenicity": {
+            "items": {},
+            "description": "To what is the entity pathogenic, for instance plant, fungi, bacteria"
+          },
+          "geographic location (altitude)": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "The altitude of the sample is the vertical distance between Earth's surface above Sea Level and the sampled position in the air."
+          },
+          "total organic carbon": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "Definition for soil: total organic C content of the soil units of g C/kg soil. Definition otherwise: total organic carbon content"
+          },
+          "geographic location (region and locality)": {
+            "items": {},
+            "description": "The geographical origin of the sample as defined by the specific region name followed by the locality name."
+          },
+          "sample storage temperature": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "temperature at which sample was stored, e.g. -80"
+          },
+          "dissolved inorganic carbon": {
+            "description": "dissolved inorganic carbon concentration",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "propagation": {
+            "description": "This field is specific to different taxa. For plants: sexual/asexual, for phages: lytic/lysogenic, for plasmids: incompatibility group (Note: there is the strong opinion to name phage propagation obligately lytic or temperate, therefore we also give this choice. Mandatory for MIGS of eukaryotes, plasmids and viruses.",
+            "items": {}
+          },
+          "library size": {
+            "description": "Total number of clones in the library prepared for the project",
+            "items": {}
+          },
+          "organic matter": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "concentration of organic matter"
+          },
+          "sequence quality check": {
+            "items": {},
+            "description": "Indicate if the sequence has been called by automatic systems (none) or undergone a manual editing procedure (e.g. by inspecting the raw data or chromatograms). Applied only for sequences that are not submitted to SRA or DRA"
+          },
+          "amount or size of sample collected": {
+            "description": "Amount or size of sample (volume, mass or area) that was collected",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "description": "Genomic Standards Consortium package extension for reporting of measurements and observations obtained from the environment where the sample was obtained. By choosing the environmental package, a selection of fields can be made from a relevant subsets of the GSC terms.",
+    "author": "ENA",
+    "type": "object",
+    "definitions": {
+      "terms": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "format": "uri",
+              "type": "string"
+            }
+          },
+          "required": [
+            "url"
+          ]
+        }
+      },
+      "properties": {
+        "attributes": {
+          "properties": {},
+          "required": [],
+          "patternProperties": {
+            "^.*$": {
+              "#dollar#ref": "#/definitions/attribute"
+            }
+          },
+          "description": "Attributes for describing a sample.",
+          "type": "object"
+        }
+      },
+      "attribute": {
+        "items": {
+          "properties": {
+            "value": {
+              "type": "string",
+              "minLength": 1
+            },
+            "terms": {
+              "#dollar#ref": "#/definitions/terms"
+            },
+            "units": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "value"
+          ]
+        },
+        "minItems": 1,
+        "type": "array"
+      }
+    },
+    "version": "1.0.0",
+    "required": [
+      "attributes"
+    ],
+    "#dollar#async": true
+  },
+  "spreadsheetTemplate": {
+    "defaultCapture": {
+      "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+      "required": false,
+      "allowUnits": false,
+      "allowTerms": false
+    },
+    "columnCaptures": {
+      "alias": {
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldType": "String",
+        "fieldName": "alias"
+      },
+      "title": {
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldType": "String",
+        "fieldName": "title"
+      },
+      "description": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "required": false,
+        "fieldType": "String",
+        "fieldName": "description"
+      },
+      "release date": {
+        "fieldName": "releaseDate",
+        "fieldType": "String",
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture"
+      },
+      "taxon": {
+        "fieldName": "taxon",
+        "fieldType": "String",
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture"
+      },
+      "taxon id": {
+        "fieldType": "IntegerNumber",
+        "fieldName": "taxonId",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "required": true
+      },
+      "investigation type": {
+        "allowTerms": false,
+        "description": "Nucleic Acid Sequence Report is the root element of all MIxS compliant reports as standardised by Genomic Standards Consortium",
+        "allowUnits": false,
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "project name": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": true,
+        "allowUnits": false,
+        "description": "Name of the project within which the sequencing was organized",
+        "allowTerms": false
+      },
+      "experimental factor": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "description": "Experimental factors are essentially the variable aspects of an experiment design which can be used to describe an experiment, or set of experiments, in an increasingly detailed manner. This field accepts ontology terms from Experimental Factor Ontology (EFO) and/or Ontology for Biomedical Investigations (OBI). For a browser of EFO (v 2.43) terms, please see http://purl.bioontology.org/ontology/EFO; for a browser of OBI (v 2013-10-25) terms please see http://purl.bioontology.org/ontology/OBI",
+        "allowTerms": false
+      },
+      "ploidy": {
+        "allowUnits": false,
+        "description": "The ploidy level of the genome (e.g. allopolyploid, haploid, diploid, triploid, tetraploid). It has implications for the downstream study of duplicated gene and regions of the genomes (and perhaps for difficulties in assembly). For terms, please select terms listed under class ploidy (PATO:001374) of Phenotypic Quality Ontology (PATO), and for a browser of PATO (v 2013-10-28) please refer to http://purl.bioontology.org/ontology/PATO. Mandatory for MIGS of eukaryotes.",
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "number of replicons": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Reports the number of replicons in a nuclear genome of eukaryotes, in the genome of a bacterium or archaea or the number of segments in a segmented virus. Always applied to the haploid chromosome count of a eukaryote. Mandatory for MIGS of eukaryotes, bacteria, archaea and segmented virus.",
+        "allowTerms": false,
+        "allowUnits": false
+      },
+      "extrachromosomal elements": {
+        "allowUnits": false,
+        "description": "Do plasmids exist of significant phenotypic consequence (e.g. ones that determine virulence or antibiotic resistance). Megaplasmids? Other plasmids (borrelia has 15+ plasmids).",
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "estimated size": {
+        "allowUnits": false,
+        "description": "The estimated size of the genome (in bp) prior to sequencing. Of particular importance in the sequencing of (eukaryotic) genome which could remain in draft form for a long or unspecified period. Mandatory for MIGS of eukaryotes.",
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "reference for biomaterial": {
+        "allowTerms": false,
+        "description": "Primary publication if isolated before genome publication; otherwise, primary genome report. Mandatory for MIGS of bacteria and archaea.",
+        "allowUnits": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "finishing strategy": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "description": "Was the genome project intended to produce a complete or draft genome, Coverage, the fold coverage of the sequencing expressed as 2x, 3x, 18x etc, and how many contigs were produced for the genome. Mandatory for MIGS of eukaryote, bacteria and archaea.",
+        "allowUnits": false
+      },
+      "annotation source": {
+        "allowTerms": false,
+        "description": "For cases where annotation was provided by a community jamboree or model organism database rather than by a specific submitter",
+        "allowUnits": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "sample volume or weight for DNA extraction": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "Volume (mL) or weight (g) of sample processed for DNA extraction"
+      },
+      "nucleic acid extraction": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "description": "Link to a literature reference, electronic resource or a standard operating procedure (SOP)",
+        "allowUnits": false
+      },
+      "nucleic acid amplification": {
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "Link to a literature reference, electronic resource or a standard operating procedure (SOP)",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "library size": {
+        "description": "Total number of clones in the library prepared for the project",
+        "allowTerms": false,
+        "allowUnits": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "library reads sequenced": {
+        "allowUnits": false,
+        "description": "Total number of clones sequenced from the library",
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "library construction method": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "Library construction method used for clone libraries"
+      },
+      "library vector": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Cloning vector type(s) used in construction of libraries",
+        "allowTerms": false,
+        "allowUnits": false
+      },
+      "library screening strategy": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "description": "Specific enrichment or screening methods applied before and/or after creating clone libraries in order to select a specific group of sequences",
+        "allowTerms": false
+      },
+      "target gene": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "description": "Targeted gene or locus name for marker gene studies",
+        "allowTerms": false
+      },
+      "target subfragment": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Name of subfragment of a gene or locus. Important to e.g. identify special regions on marker genes like V6 on 16S rRNA",
+        "allowTerms": false,
+        "allowUnits": false
+      },
+      "pcr primers": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "description": "PCR primers that were used to amplify the sequence of the targeted gene, locus or subfragment. This field should contain all the primers used for a single PCR reaction if multiple forward or reverse primers are present in a single PCR reaction. The primer sequence should be reported in uppercase letters",
+        "allowTerms": false
+      },
+      "multiplex identifiers": {
+        "description": "Molecular barcodes, called Multiplex Identifiers (MIDs), that are used to specifically tag unique samples in a sequencing run. Sequence should be reported in uppercase letters",
+        "allowTerms": false,
+        "allowUnits": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "adapters": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "Adapters provide priming sequences for both amplification and sequencing of the sample-library fragments. Both adapters should be reported; in uppercase letters"
+      },
+      "pcr conditions": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "description": "Description of reaction conditions and components for PCR in the form of 'initial denaturation:94degC_1.5min; annealing=...'",
+        "allowUnits": false
+      },
+      "sequencing method": {
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "Sequencing method used; e.g. Sanger, pyrosequencing, ABI-solid",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": true
+      },
+      "sequence quality check": {
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "Indicate if the sequence has been called by automatic systems (none) or undergone a manual editing procedure (e.g. by inspecting the raw data or chromatograms). Applied only for sequences that are not submitted to SRA or DRA",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "chimera check": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "description": "A chimeric sequence, or chimera for short, is a sequence comprised of two or more phylogenetically distinct parent sequences. Chimeras are usually PCR artifacts thought to occur when a prematurely terminated amplicon reanneals to a foreign DNA strand and is copied to completion in the following PCR cycles. The point at which the chimeric sequence changes from one parent to the next is called the breakpoint or conversion point",
+        "allowTerms": false
+      },
+      "relevant electronic resources": {
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "-",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "relevant standard operating procedures": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "description": "Standard operating procedures used in assembly and/or annotation of genomes, metagenomes or environmental sequences",
+        "allowUnits": false
+      },
+      "collection date": {
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "description": "The date of sampling, either as an instance (single point in time) or interval. In case no exact time is available, the date/time can be right truncated i.e. all of these are valid ISO8601 compliant times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008.",
+        "allowUnits": false
+      },
+      "geographic location (altitude)": {
+        "description": "The altitude of the sample is the vertical distance between Earth's surface above Sea Level and the sampled position in the air.",
+        "allowTerms": false,
+        "allowUnits": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "geographic location (country and/or sea)": {
+        "allowTerms": false,
+        "description": "The geographical origin of the sample as defined by the country or sea. Country or sea names should be chosen from the INSDC country list (http://insdc.org/country.html).",
+        "allowUnits": false,
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "geographic location (latitude)": {
+        "description": "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system",
+        "allowTerms": false,
+        "allowUnits": false,
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "geographic location (longitude)": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": true,
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system"
+      },
+      "geographic location (region and locality)": {
+        "allowTerms": false,
+        "description": "The geographical origin of the sample as defined by the specific region name followed by the locality name.",
+        "allowUnits": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "microbial mat/biofilm environmental package": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": true,
+        "allowUnits": false,
+        "description": "MIGS/MIMS/MIMARKS extension for reporting of measurements and observations obtained from one or more of the environments where the sample was obtained. All environmental packages listed here are further defined in separate subtables. By giving the name of the environmental package, a selection of fields can be made from the subtables and can be reported",
+        "allowTerms": false
+      },
+      "geographic location (depth)": {
+        "allowTerms": false,
+        "description": "Depth is defined as the vertical distance below surface, e.g. for sediment or soil samples depth is measured from sediment or soil surface, respectivly. Depth can be reported as an interval for subsurface samples.",
+        "allowUnits": false,
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "environment (biome)": {
+        "description": "Biomes are defined based on factors such as plant structures, leaf types, plant spacing, and other factors like climate. Biome should be treated as the descriptor of the broad ecological context of a sample. Examples include: desert, taiga, deciduous woodland, or coral reef. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO",
+        "allowTerms": false,
+        "allowUnits": false,
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "environment (feature)": {
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO",
+        "allowTerms": false,
+        "allowUnits": false
+      },
+      "environment (material)": {
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "The environmental material level refers to the material that was displaced by the sample, or material in which a sample was embedded, prior to the sampling event. Environmental material terms are generally mass nouns. Examples include: air, soil, or water. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": true
+      },
+      "geographic location (elevation)": {
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "The elevation of the sampling site as measured by the vertical distance from mean sea level.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": true
+      },
+      "source material identifiers": {
+        "allowTerms": false,
+        "description": "A unique identifier assigned to a material sample (as defined by http://rs.tdwg.org/dwc/terms/materialSampleID, and as opposed to a particular digital record of a material sample) used for extracting nucleic acids, and subsequent sequencing. The identifier can refer either to the original material collected or to any derived sub-samples. The INSDC qualifiers /specimen_voucher, /bio_material, or /culture_collection may or may not share the same value as the source_mat_id field. For instance, the /specimen_voucher qualifier and source_mat_id may both contain 'UAM:Herps:14' , referring to both the specimen voucher and sampled tissue with the same identifier. However, the /culture_collection qualifier may refer to a value from an initial culture (e.g. ATCC:11775) while source_mat_id would refer to an identifier from some derived culture from which the nucleic acids were extracted (e.g. xatc123 or ark:/2154/R2).",
+        "allowUnits": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "sample collection device or method": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "description": "The method or deviced employed for collecting the sample",
+        "allowUnits": false
+      },
+      "sample material processing": {
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "Any processing applied to the sample during or after retrieving the sample from environment. This field accepts OBI, for a browser of OBI (v 2013-10-25) terms please see http://purl.bioontology.org/ontology/OBI",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "isolation and growth condition": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "description": "Publication reference in the form of pubmed ID (pmid), digital object identifier (doi) or url for isolation and growth condition specifications of the organism/material. Mandatory for MIGS and MIMARKS Specimen.",
+        "allowTerms": false
+      },
+      "propagation": {
+        "allowUnits": false,
+        "description": "This field is specific to different taxa. For plants: sexual/asexual, for phages: lytic/lysogenic, for plasmids: incompatibility group (Note: there is the strong opinion to name phage propagation obligately lytic or temperate, therefore we also give this choice. Mandatory for MIGS of eukaryotes, plasmids and viruses.",
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "amount or size of sample collected": {
+        "allowUnits": false,
+        "description": "Amount or size of sample (volume, mass or area) that was collected",
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "biomass": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "description": "amount of biomass; should include the name for the part of biomass measured, e.g. microbial, total. can include multiple measurements",
+        "allowTerms": false
+      },
+      "oxygenation status of sample": {
+        "description": "oxygenation status of sample",
+        "allowTerms": false,
+        "allowUnits": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "organism count": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "total count of any organism per gram or volume of sample, should include name of organism followed by count; can include multiple organism counts"
+      },
+      "sample storage duration": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "duration for which sample was stored",
+        "allowTerms": false,
+        "allowUnits": false
+      },
+      "sample storage temperature": {
+        "allowUnits": false,
+        "description": "temperature at which sample was stored, e.g. -80",
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "sample storage location": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "location at which sample was stored, usually name of a specific freezer/room"
+      },
+      "specific host": {
+        "allowUnits": false,
+        "description": "If there is a host involved, please provide its taxid (or environmental if not actually isolated from the dead or alive host - i.e. pathogen could be isolated from a swipe of a bench etc) and report whether it is a laboratory or natural host). From this we can calculate any number of groupings of hosts (e.g. animal vs plant, all fish hosts, etc)",
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "health or disease status of specific host": {
+        "allowUnits": false,
+        "description": "Health or disease status of specific host at time of collection. This field accepts PATO (v 2013-10-28) terms, for a browser please see http://purl.bioontology.org/ontology/PATO",
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "alkalinity": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "alkalinity, the ability of a solution to neutralize acids to the equivalence point of carbonate or bicarbonate"
+      },
+      "mean friction velocity": {
+        "allowTerms": false,
+        "description": "measurement of mean friction velocity",
+        "allowUnits": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "mean peak friction velocity": {
+        "allowUnits": false,
+        "description": "measurement of mean peak friction velocity",
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "pressure": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "pressure to which the sample is subject, in atmospheres",
+        "allowTerms": false,
+        "allowUnits": false
+      },
+      "temperature": {
+        "allowUnits": false,
+        "description": "temperature of the sample at time of sampling",
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "turbidity": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "description": "turbidity measurement",
+        "allowUnits": false
+      },
+      "pH": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "pH measurement"
+      },
+      "alkyl diethers": {
+        "allowUnits": false,
+        "description": "concentration of alkyl diethers",
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "aminopeptidase activity": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "measurement of aminopeptidase activity",
+        "allowTerms": false,
+        "allowUnits": false
+      },
+      "ammonium": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "description": "concentration of ammonium",
+        "allowUnits": false
+      },
+      "bacterial carbon production": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "description": "measurement of bacterial carbon production",
+        "allowTerms": false
+      },
+      "bishomohopanol": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "description": "concentration of bishomohopanol",
+        "allowTerms": false
+      },
+      "bromide": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "description": "concentration of bromide",
+        "allowTerms": false
+      },
+      "calcium": {
+        "allowUnits": false,
+        "description": "concentration of calcium",
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "carbon/nitrogen ratio": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "ratio of amount or concentrations of carbon to nitrogen",
+        "allowTerms": false,
+        "allowUnits": false
+      },
+      "chloride": {
+        "description": "concentration of chloride",
+        "allowTerms": false,
+        "allowUnits": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "chlorophyll": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "description": "concentration of chlorophyll",
+        "allowUnits": false
+      },
+      "diether lipids": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "concentration of diether lipids; can include multiple types of diether lipids"
+      },
+      "dissolved carbon dioxide": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "description": "concentration of dissolved carbon dioxide",
+        "allowUnits": false
+      },
+      "dissolved hydrogen": {
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "concentration of dissolved hydrogen",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "dissolved inorganic carbon": {
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "dissolved inorganic carbon concentration",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "dissolved organic carbon": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "description": "concentration of dissolved organic carbon",
+        "allowUnits": false
+      },
+      "dissolved organic nitrogen": {
+        "description": "dissolved organic nitrogen concentration measured as; total dissolved nitrogen - NH4 - NO3 - NO2",
+        "allowTerms": false,
+        "allowUnits": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "methane": {
+        "allowUnits": false,
+        "description": "methane (gas) amount or concentration at the time of sampling",
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "dissolved oxygen": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "description": "concentration of dissolved oxygen",
+        "allowUnits": false
+      },
+      "glucosidase activity": {
+        "allowUnits": false,
+        "description": "measurement of glucosidase activity",
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "magnesium": {
+        "description": "concentration of magnesium",
+        "allowTerms": false,
+        "allowUnits": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "n-alkanes": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "description": "concentration of n-alkanes; can include multiple n-alkanes",
+        "allowTerms": false
+      },
+      "nitrate": {
+        "description": "concentration of nitrate",
+        "allowTerms": false,
+        "allowUnits": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "nitrite": {
+        "allowUnits": false,
+        "description": "concentration of nitrite",
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "nitrogen": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "description": "concentration of nitrogen (total)",
+        "allowTerms": false
+      },
+      "organic carbon": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "concentration of organic carbon"
+      },
+      "organic matter": {
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "concentration of organic matter",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "organic nitrogen": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "concentration of organic nitrogen"
+      },
+      "particulate organic carbon": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "concentration of particulate organic carbon"
+      },
+      "petroleum hydrocarbon": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "concentration of petroleum hydrocarbon",
+        "allowTerms": false,
+        "allowUnits": false
+      },
+      "phaeopigments": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "concentration of phaeopigments; can include multiple phaeopigments"
+      },
+      "phosphate": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "description": "concentration of phosphate",
+        "allowUnits": false
+      },
+      "phospholipid fatty acid": {
+        "allowTerms": false,
+        "description": "concentration of phospholipid fatty acids; can include multiple values",
+        "allowUnits": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "potassium": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "concentration of potassium",
+        "allowTerms": false,
+        "allowUnits": false
+      },
+      "redox potential": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "redox potential, measured relative to a hydrogen cell, indicating oxidation or reduction potential"
+      },
+      "salinity": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "salinity measurement",
+        "allowTerms": false,
+        "allowUnits": false
+      },
+      "total carbon": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "total carbon content"
+      },
+      "silicate": {
+        "allowTerms": false,
+        "description": "concentration of silicate",
+        "allowUnits": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "sodium": {
+        "description": "sodium concentration",
+        "allowTerms": false,
+        "allowUnits": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "total organic carbon": {
+        "allowTerms": false,
+        "description": "Definition for soil: total organic C content of the soil units of g C/kg soil. Definition otherwise: total organic carbon content",
+        "allowUnits": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "water content": {
+        "allowUnits": false,
+        "description": "water content measurement",
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "sulfate": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "concentration of sulfate",
+        "allowTerms": false,
+        "allowUnits": false
+      },
+      "sulfide": {
+        "allowTerms": false,
+        "description": "concentration of sulfide",
+        "allowUnits": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "total nitrogen": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "total nitrogen content of the sample"
+      },
+      "miscellaneous parameter": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "Any other measurement performed or parameter collected, that is not listed here"
+      },
+      "subspecific genetic lineage": {
+        "allowTerms": false,
+        "description": "This should provide further information about the genetic distinctness of this lineage by recording additional information i.e biovar, serovar, serotype, biovar, or any relevant genetic typing schemes like Group I plasmid. It can also contain alternative taxonomic information",
+        "allowUnits": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "observed biotic relationship": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "description": "Is it free-living or in a host and if the latter what type of relationship is observed",
+        "allowUnits": false
+      },
+      "trophic level": {
+        "allowUnits": false,
+        "description": "Trophic levels are the feeding position in a food chain. Microbes can be a range of producers (e.g. chemolithotroph)",
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "relationship to oxygen": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Is this organism an aerobe, anaerobe? Please note that aerobic and anaerobic are valid descriptors for microbial environments",
+        "allowTerms": false,
+        "allowUnits": false
+      },
+      "known pathogenicity": {
+        "allowUnits": false,
+        "description": "To what is the entity pathogenic, for instance plant, fungi, bacteria",
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "encoded traits": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Should include key traits like antibiotic resistance or xenobiotic degradation phenotypes for plasmids, converting genes for phage",
+        "allowTerms": false,
+        "allowUnits": false
+      },
+      "chemical administration": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "list of chemical compounds administered to the host or site where sampling occurred, and when (e.g. antibiotics, N fertilizer, air filter); can include multiple compounds. For Chemical Entities of Biological Interest ontology (CHEBI) (v111), please see http://purl.bioontology.org/ontology/CHEBI",
+        "allowTerms": false,
+        "allowUnits": false
+      },
+      "perturbation": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "description": "type of perturbation, e.g. chemical administration, physical disturbance, etc., coupled with time that perturbation occurred; can include multiple perturbation types",
+        "allowUnits": false
+      }
+    }
+  },
+  "description": "Genomic Standards Consortium package extension for reporting of measurements and observations obtained from the environment where the sample was obtained. By choosing the environmental package, a selection of fields can be made from a relevant subsets of the GSC terms."
+}

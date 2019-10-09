@@ -1,0 +1,321 @@
+{
+  "_id": "ERC000044",
+  "spreadsheetTemplate": {
+    "columnCaptures": {
+      "alias": {
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "alias",
+        "fieldType": "String"
+      },
+      "title": {
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "title",
+        "fieldType": "String"
+      },
+      "description": {
+        "fieldType": "String",
+        "fieldName": "description",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "required": false
+      },
+      "release date": {
+        "fieldName": "releaseDate",
+        "fieldType": "String",
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture"
+      },
+      "taxon": {
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "taxon",
+        "fieldType": "String"
+      },
+      "taxon id": {
+        "fieldType": "IntegerNumber",
+        "fieldName": "taxonId",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "required": true
+      },
+      "subject exposure": {
+        "required": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Exposure of the subject to infected human or animals, such as poultry, wild bird or swine. If multiple exposures are applicable, please state them separated by semicolon. Example: poultry; wild bird",
+        "allowUnits": false
+      },
+      "subject exposure duration": {
+        "allowUnits": false,
+        "description": "Duration of the exposure of the subject to an infected human or animal. If multiple exposures are applicable, please state their duration in the same order in which you reported the exposure in the field 'subject exposure'. Example: 1 day; 0.33 days",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "required": false
+      },
+      "travel-relation": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Designates the relation of the main diagnosis to the patient's travel.",
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false
+      },
+      "clinical setting": {
+        "allowUnits": false,
+        "required": false,
+        "allowTerms": false,
+        "description": "The timing of the clinic visit in relation to travel.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "country of travel": {
+        "allowUnits": false,
+        "description": "The name of the country of patient's travel.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowTerms": false
+      },
+      "collection_date": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "date that the specimen was collected",
+        "required": true,
+        "allowTerms": false,
+        "allowUnits": false
+      },
+      "collected_by": {
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "name of persons or institute who collected the specimen",
+        "required": true,
+        "allowTerms": false
+      },
+      "geographic location (country and/or sea)": {
+        "allowUnits": false,
+        "required": true,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "The geographical origin of the sample as defined by the country or sea. Country or sea names should be chosen from the INSDC country list (http://insdc.org/country.html)."
+      },
+      "geographic location (region and locality)": {
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false,
+        "description": "The geographical origin of the sample as defined by the specific region name followed by the locality name.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "host disease status": {
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "list of diseases with which the host has been diagnosed; can include multiple diagnoses. The value of the field depends on host; for humans the terms should be chosen from DO (Disease Ontology) at http://www.disease-ontology.org, other hosts are free text",
+        "allowTerms": false,
+        "required": false
+      },
+      "host disease outcome": {
+        "allowUnits": false,
+        "required": false,
+        "allowTerms": false,
+        "description": "Disease outcome in the host.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "host scientific name": {
+        "description": "Scientific name of the natural (as opposed to laboratory) host to the organism from which sample was obtained.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": true,
+        "allowTerms": false,
+        "allowUnits": false
+      },
+      "isolate": {
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": true,
+        "description": "individual isolate from which the sample was obtained",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "sub_type": {
+        "required": false,
+        "allowTerms": false,
+        "description": "name of sub-type of organism from which sample was obtained",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false
+      },
+      "serovar": {
+        "allowUnits": false,
+        "description": "serological variety of a species (usually a prokaryote) characterized by its antigenic properties",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowTerms": false
+      },
+      "serovar_in-silico": {
+        "allowUnits": false,
+        "description": "serological variety of a species characterized by its antigenic properties derived by in silico prediction",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "required": false
+      },
+      "isolation source host-associated": {
+        "allowTerms": false,
+        "required": false,
+        "description": "Name of host tissue or organ sampled for analysis. Example: tracheal tissue",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false
+      }
+    },
+    "defaultCapture": {
+      "allowTerms": false,
+      "required": false,
+      "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+      "allowUnits": false
+    }
+  },
+  "displayName": "COMPARE-ECDC-EFSA pilot human-associated reporting standard",
+  "description": "A checklist for reporting metadata of human-associated pathogen samples for the COMPARE-ECDC-EFSA reporting system.",
+  "validationSchema": {
+    "description": "A checklist for reporting metadata of human-associated pathogen samples for the COMPARE-ECDC-EFSA reporting system.",
+    "type": "object",
+    "definitions": {
+      "terms": {
+        "items": {
+          "type": "object",
+          "required": [
+            "url"
+          ],
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "uri"
+            }
+          }
+        },
+        "type": "array"
+      },
+      "attribute": {
+        "minItems": 1,
+        "type": "array",
+        "items": {
+          "required": [
+            "value"
+          ],
+          "properties": {
+            "value": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "terms": {
+              "#dollar#ref": "#/definitions/terms"
+            },
+            "units": {
+              "minLength": 1,
+              "type": "string"
+            }
+          }
+        }
+      },
+      "properties": {
+        "attributes": {
+          "patternProperties": {
+            "^.*$": {
+              "#dollar#ref": "#/definitions/attribute"
+            }
+          },
+          "description": "Attributes for describing a sample.",
+          "type": "object",
+          "required": [],
+          "properties": {}
+        }
+      }
+    },
+    "title": "COMPARE-ECDC-EFSA pilot human-associated reporting standard",
+    "id": "ERC000044",
+    "properties": {
+      "attributes": {
+        "properties": {
+          "subject exposure duration": {
+            "items": {},
+            "description": "Duration of the exposure of the subject to an infected human or animal. If multiple exposures are applicable, please state their duration in the same order in which you reported the exposure in the field 'subject exposure'. Example: 1 day; 0.33 days"
+          },
+          "collected_by": {
+            "description": "name of persons or institute who collected the specimen",
+            "maxItems": 1,
+            "items": {}
+          },
+          "geographic location (region and locality)": {
+            "description": "The geographical origin of the sample as defined by the specific region name followed by the locality name.",
+            "items": {},
+            "maxItems": 1
+          },
+          "subject exposure": {
+            "items": {},
+            "description": "Exposure of the subject to infected human or animals, such as poultry, wild bird or swine. If multiple exposures are applicable, please state them separated by semicolon. Example: poultry; wild bird"
+          },
+          "country of travel": {
+            "items": {},
+            "description": "The name of the country of patient's travel."
+          },
+          "geographic location (country and/or sea)": {
+            "maxItems": 1,
+            "items": {},
+            "description": "The geographical origin of the sample as defined by the country or sea. Country or sea names should be chosen from the INSDC country list (http://insdc.org/country.html)."
+          },
+          "host disease status": {
+            "description": "list of diseases with which the host has been diagnosed; can include multiple diagnoses. The value of the field depends on host; for humans the terms should be chosen from DO (Disease Ontology) at http://www.disease-ontology.org, other hosts are free text",
+            "items": {}
+          },
+          "travel-relation": {
+            "items": {},
+            "description": "Designates the relation of the main diagnosis to the patient's travel."
+          },
+          "isolation source host-associated": {
+            "items": {},
+            "maxItems": 1,
+            "description": "Name of host tissue or organ sampled for analysis. Example: tracheal tissue"
+          },
+          "collection_date": {
+            "items": {},
+            "maxItems": 1,
+            "description": "date that the specimen was collected"
+          },
+          "serovar_in-silico": {
+            "maxItems": 1,
+            "items": {},
+            "description": "serological variety of a species characterized by its antigenic properties derived by in silico prediction"
+          },
+          "clinical setting": {
+            "description": "The timing of the clinic visit in relation to travel.",
+            "items": {}
+          },
+          "isolate": {
+            "description": "individual isolate from which the sample was obtained",
+            "maxItems": 1,
+            "items": {}
+          },
+          "host disease outcome": {
+            "items": {},
+            "maxItems": 1,
+            "description": "Disease outcome in the host."
+          },
+          "host scientific name": {
+            "description": "Scientific name of the natural (as opposed to laboratory) host to the organism from which sample was obtained.",
+            "items": {},
+            "maxItems": 1
+          },
+          "sub_type": {
+            "items": {},
+            "maxItems": 1,
+            "description": "name of sub-type of organism from which sample was obtained"
+          },
+          "serovar": {
+            "items": {},
+            "maxItems": 1,
+            "description": "serological variety of a species (usually a prokaryote) characterized by its antigenic properties"
+          }
+        }
+      }
+    },
+    "required": [
+      "attributes"
+    ],
+    "version": "1.0.0",
+    "#dollar#async": true,
+    "#dollar#schema": "http://json-schema.org/draft-07/schema#",
+    "author": "ENA"
+  },
+  "dataTypeId": "samples"
+}

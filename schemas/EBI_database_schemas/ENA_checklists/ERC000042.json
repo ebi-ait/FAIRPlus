@@ -1,0 +1,262 @@
+{
+  "_id": "ERC000042",
+  "displayName": "ENA RNA-Seq Checklist",
+  "spreadsheetTemplate": {
+    "columnCaptures": {
+      "alias": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "required": true,
+        "fieldType": "String",
+        "fieldName": "alias"
+      },
+      "title": {
+        "fieldType": "String",
+        "fieldName": "title",
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture"
+      },
+      "description": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "required": false,
+        "fieldType": "String",
+        "fieldName": "description"
+      },
+      "release date": {
+        "fieldType": "String",
+        "fieldName": "releaseDate",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "required": true
+      },
+      "taxon": {
+        "fieldName": "taxon",
+        "fieldType": "String",
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture"
+      },
+      "taxon id": {
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldType": "IntegerNumber",
+        "fieldName": "taxonId"
+      },
+      "dev_stage": {
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "if the sample was obtained from an organism in a specific developmental stage, it is specified with this qualifier",
+        "allowUnits": false,
+        "allowTerms": false
+      },
+      "tissue_type": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": true,
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "tissue type from which the sample was obtained"
+      },
+      "organism part": {
+        "allowTerms": false,
+        "allowUnits": false,
+        "description": "The part of organism's anatomy or substance arising from an organism from which the biomaterial was derived, excludes cells.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": true
+      },
+      "project name": {
+        "description": "Name of the project within which the sequencing was organized",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "storage conditions (fresh/frozen/other)": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false,
+        "description": "explain how and for how long the soil sample was stored before DNA extraction."
+      },
+      "sample disease status": {
+        "description": "list of diseases with which the subject has been diagnosed at the time of sample collection; can include multiple diagnoses; the value of the field depends on subject; e.g. Charcoal rot (Macrophomina phaseolina), Late wilt (Cephalosporium maydis)",
+        "allowTerms": false,
+        "allowUnits": false,
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "sample disease stage": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false,
+        "description": "stage of the disease at the time of sample collection, e.g. inoculation, penetration, infection, growth and reproduction, dissemination of pathogen"
+      },
+      "receipt date": {
+        "allowUnits": false,
+        "allowTerms": false,
+        "description": "Date on which the sample was received. Format:YYYY-MM-DD. Please provide the highest precision possible. If the sample was received by the institution and not collected, the 'receipt date' must be provided instead. Either the 'collection date' or 'receipt date' must be provided. If available, provide both dates.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false
+      },
+      "gender": {
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Sex",
+        "allowUnits": false,
+        "allowTerms": false
+      },
+      "disease_site": {
+        "description": "Affected organ",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "cell_line": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "cell line from which the sample was obtained",
+        "allowUnits": false,
+        "allowTerms": false
+      },
+      "strain": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Name of the strain from which the sample was obtained.",
+        "allowUnits": false,
+        "allowTerms": false
+      }
+    },
+    "defaultCapture": {
+      "allowTerms": false,
+      "allowUnits": false,
+      "required": false,
+      "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+    }
+  },
+  "description": "Minimum information to standardise metadata related to samples used in RNA seq experiments. Useful for downstream services to select RNA-Seq read data for appropriate alignment processing and display. Also useful for external users to select RNA-Seq read files, their alignments, and structured metadata describing the source material.",
+  "dataTypeId": "samples",
+  "validationSchema": {
+    "definitions": {
+      "attribute": {
+        "items": {
+          "required": [
+            "value"
+          ],
+          "properties": {
+            "value": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "terms": {
+              "#dollar#ref": "#/definitions/terms"
+            },
+            "units": {
+              "minLength": 1,
+              "type": "string"
+            }
+          }
+        },
+        "type": "array",
+        "minItems": 1
+      },
+      "terms": {
+        "items": {
+          "required": [
+            "url"
+          ],
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "uri"
+            }
+          }
+        },
+        "type": "array"
+      },
+      "properties": {
+        "attributes": {
+          "properties": {},
+          "type": "object",
+          "patternProperties": {
+            "^.*$": {
+              "#dollar#ref": "#/definitions/attribute"
+            }
+          },
+          "description": "Attributes for describing a sample.",
+          "required": []
+        }
+      }
+    },
+    "version": "1.0.0",
+    "required": [
+      "attributes"
+    ],
+    "author": "ENA",
+    "id": "ERC000042",
+    "description": "Minimum information to standardise metadata related to samples used in RNA seq experiments. Useful for downstream services to select RNA-Seq read data for appropriate alignment processing and display. Also useful for external users to select RNA-Seq read files, their alignments, and structured metadata describing the source material.",
+    "type": "object",
+    "#dollar#async": true,
+    "properties": {
+      "attributes": {
+        "properties": {
+          "project name": {
+            "items": {},
+            "description": "Name of the project within which the sequencing was organized",
+            "maxItems": 1
+          },
+          "cell_line": {
+            "items": {},
+            "maxItems": 1,
+            "description": "cell line from which the sample was obtained"
+          },
+          "organism part": {
+            "items": {},
+            "maxItems": 1,
+            "description": "The part of organism's anatomy or substance arising from an organism from which the biomaterial was derived, excludes cells."
+          },
+          "receipt date": {
+            "description": "Date on which the sample was received. Format:YYYY-MM-DD. Please provide the highest precision possible. If the sample was received by the institution and not collected, the 'receipt date' must be provided instead. Either the 'collection date' or 'receipt date' must be provided. If available, provide both dates.",
+            "items": {}
+          },
+          "dev_stage": {
+            "items": {},
+            "description": "if the sample was obtained from an organism in a specific developmental stage, it is specified with this qualifier",
+            "maxItems": 1
+          },
+          "sample disease status": {
+            "description": "list of diseases with which the subject has been diagnosed at the time of sample collection; can include multiple diagnoses; the value of the field depends on subject; e.g. Charcoal rot (Macrophomina phaseolina), Late wilt (Cephalosporium maydis)",
+            "items": {}
+          },
+          "storage conditions (fresh/frozen/other)": {
+            "items": {},
+            "description": "explain how and for how long the soil sample was stored before DNA extraction."
+          },
+          "disease_site": {
+            "items": {},
+            "description": "Affected organ"
+          },
+          "strain": {
+            "items": {},
+            "description": "Name of the strain from which the sample was obtained.",
+            "maxItems": 1
+          },
+          "tissue_type": {
+            "maxItems": 1,
+            "description": "tissue type from which the sample was obtained",
+            "items": {}
+          },
+          "sample disease stage": {
+            "description": "stage of the disease at the time of sample collection, e.g. inoculation, penetration, infection, growth and reproduction, dissemination of pathogen",
+            "items": {}
+          },
+          "gender": {
+            "description": "Sex",
+            "maxItems": 1,
+            "items": {}
+          }
+        }
+      }
+    },
+    "title": "ENA RNA-Seq Checklist",
+    "#dollar#schema": "http://json-schema.org/draft-07/schema#"
+  }
+}

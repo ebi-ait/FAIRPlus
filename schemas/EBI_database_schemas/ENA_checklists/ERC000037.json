@@ -1,0 +1,1318 @@
+{
+  "_id": "ERC000037",
+  "description": "ENA implementation of plant specimen contextual information associated with molecular data. The checklist has been developed in collaboration with the NCBI-GenBank and iPlant data resources under the umbrella of the Genomic Standards Consortium.",
+  "validationSchema": {
+    "description": "ENA implementation of plant specimen contextual information associated with molecular data. The checklist has been developed in collaboration with the NCBI-GenBank and iPlant data resources under the umbrella of the Genomic Standards Consortium.",
+    "properties": {
+      "attributes": {
+        "properties": {
+          "sample material processing": {
+            "description": "Any processing applied to the sample during or after retrieving the sample from environment. This field accepts OBI, for a browser of OBI (v 2013-10-25) terms please see http://purl.bioontology.org/ontology/OBI",
+            "items": {}
+          },
+          "biotic regimen": {
+            "items": {},
+            "description": "information about treatment involving use of biotic factors, such as bacteria, viruses or fungi"
+          },
+          "rooting medium regulators": {
+            "maxItems": 1,
+            "items": {},
+            "description": "growth regulators in the culture rooting medium, such as cytokinins, auxins, gybberellins, abscisic acid; e.g. 0.5mg/L NAA"
+          },
+          "soil_taxonomic/local classification method": {
+            "maxItems": 1,
+            "items": {},
+            "description": "reference or method used in determining the local soil classification"
+          },
+          "growth hormone regimen": {
+            "description": "information about treatment involving use of growth hormones; should include the name of growth hormone, amount administered, treatment duration, interval and total experimental duration; can include multiple growth hormone regimens",
+            "items": {}
+          },
+          "biological status": {
+            "description": "the level of genome modification; controlled vocabulary: wild, natural, semi-natural, inbred line, breeder's line, hybrid, clonal selection, mutant",
+            "items": {},
+            "maxItems": 1
+          },
+          "pesticide regimen": {
+            "items": {},
+            "description": "information about treatment involving use of insecticides; should include the name of pesticide, amount administered, treatment duration, interval and total experimental duration; can include multiple pesticide regimens"
+          },
+          "sample disease status": {
+            "description": "list of diseases with which the subject has been diagnosed at the time of sample collection; can include multiple diagnoses; the value of the field depends on subject; e.g. Charcoal rot (Macrophomina phaseolina), Late wilt (Cephalosporium maydis)",
+            "items": {}
+          },
+          "subspecific genetic lineage name": {
+            "maxItems": 1,
+            "items": {},
+            "description": "name of the infraspecific rank, e.g ecotype Col-0"
+          },
+          "geographic location (elevation)": {
+            "maxItems": 1,
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "The elevation of the sampling site as measured by the vertical distance from mean sea level."
+          },
+          "ploidy": {
+            "description": "The ploidy level of the genome (e.g. allopolyploid, haploid, diploid, triploid, tetraploid). It has implications for the downstream study of duplicated gene and regions of the genomes (and perhaps for difficulties in assembly). For terms, please select terms listed under class ploidy (PATO:001374) of Phenotypic Quality Ontology (PATO), and for a browser of PATO (v 2013-10-28) please refer to http://purl.bioontology.org/ontology/PATO. Mandatory for MIGS of eukaryotes.",
+            "items": {},
+            "maxItems": 1
+          },
+          "ancestral data": {
+            "description": "information about either pedigree or other description of ancestral information (e.g. parental variety in case of mutant or selection), e.g. A/3*B (meaning [(A x B) x B] x B)",
+            "items": {}
+          },
+          "salt regimen": {
+            "items": {},
+            "description": "information about treatment involving use of salts as supplement to liquid and soil growth media; should include the name of salt, amount administered, treatment duration, interval and total experimental duration; can include multiple salt regimens"
+          },
+          "plant structure": {
+            "description": "name of plant structure that the sample was obtained from; for Plant Ontology (PO) terms see http://purl.bioontology.org/ontology/PO, e.g. petiole epidermis (PO_0000051); if an individual flower is sampled the sex of it can be recorded here",
+            "maxItems": 1,
+            "items": {}
+          },
+          "light regimen": {
+            "items": {},
+            "description": "information about treatment involving an exposure to light, this includes both light intensity and quality"
+          },
+          "fungicide regimen": {
+            "items": {},
+            "description": "information about treatment involving use of fungicides; should include the name of fungicide, amount administered, treatment duration, interval and total experimental duration; can include multiple fungicide regimens"
+          },
+          "environment (feature)": {
+            "items": {},
+            "description": "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO"
+          },
+          "sample collection device or method": {
+            "maxItems": 1,
+            "items": {},
+            "description": "The method or deviced employed for collecting the sample"
+          },
+          "texture method": {
+            "description": "reference or method used in determining soil texture",
+            "items": {},
+            "maxItems": 1
+          },
+          "soil pH": {
+            "items": {},
+            "maxItems": 1,
+            "description": "pH measurement of the soil; e.g. 6.2"
+          },
+          "standing water regimen": {
+            "description": "treatment involving an exposure to standing water during a plant's life span, types can be flood water or standing water; can include multiple regimens",
+            "items": {}
+          },
+          "geographic location (depth)": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "maxItems": 1,
+            "description": "Depth is defined as the vertical distance below surface, e.g. for sediment or soil samples depth is measured from sediment or soil surface, respectivly. Depth can be reported as an interval for subsurface samples."
+          },
+          "propagation": {
+            "items": {},
+            "description": "This field is specific to different taxa. For plants: sexual/asexual, for phages: lytic/lysogenic, for plasmids: incompatibility group (Note: there is the strong opinion to name phage propagation obligately lytic or temperate, therefore we also give this choice. Mandatory for MIGS of eukaryotes, plasmids and viruses."
+          },
+          "extrachromosomal elements": {
+            "items": {},
+            "description": "Do plasmids exist of significant phenotypic consequence (e.g. ones that determine virulence or antibiotic resistance). Megaplasmids? Other plasmids (borrelia has 15+ plasmids)."
+          },
+          "chemical mutagen": {
+            "items": {},
+            "description": "treatment involving use of mutagens; should include the name of mutagen, amount administered, treatment duration, interval and total experimental duration; can include multiple mutagen regimens"
+          },
+          "pH regimen": {
+            "items": {},
+            "description": "information about treatment involving exposure of plants to varying levels of pH of the growth media; can include multiple regimen"
+          },
+          "organism phenotype": {
+            "description": "most relevant phenotypic traits of the subject; for Phenotypic quality Ontology (PATO) (v 2013-10-28) terms, please see http://purl.bioontology.org/ontology/PATO, e.g. bifurcated (PATO_0001784); terms from Trait Ontology (TO), Plant Ontology (PO) or Crop Ontology (CO) are also accepted; include name/method/scale for each trait; can include multiple traits",
+            "items": {}
+          },
+          "geographic location (longitude)": {
+            "description": "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system",
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "maxItems": 1
+          },
+          "rooting medium macronutrients": {
+            "items": {},
+            "maxItems": 1,
+            "description": "measurement of the culture rooting medium macronutrients (N,P, K, Ca, Mg, S); e.g. KH2PO4 (170mg/L)"
+          },
+          "plant growth medium": {
+            "maxItems": 1,
+            "items": {},
+            "description": "specification of the media for growing the plants or tissue cultured samples, e.g. soil, aeroponic, hydroponic, in vitro solid culture medium, in vitro liquid culture medium, recommended value is a specific value from EO:plant growth medium or other controlled vocabulary"
+          },
+          "sample storage temperature": {
+            "description": "temperature at which sample was stored, e.g. -80",
+            "maxItems": 1,
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "rooting medium carbon": {
+            "items": {},
+            "maxItems": 1,
+            "description": "source of organic carbon in the culture rooting medium; e.g. sucrose"
+          },
+          "sample disease stage": {
+            "description": "stage of the disease at the time of sample collection, e.g. inoculation, penetration, infection, growth and reproduction, dissemination of pathogen",
+            "maxItems": 1,
+            "items": {}
+          },
+          "estimated size": {
+            "maxItems": 1,
+            "items": {},
+            "description": "The estimated size of the genome (in bp) prior to sequencing. Of particular importance in the sequencing of (eukaryotic) genome which could remain in draft form for a long or unspecified period. Mandatory for MIGS of eukaryotes."
+          },
+          "rooting medium pH": {
+            "maxItems": 1,
+            "items": {},
+            "description": "pH measurement of the culture rooting medium; e.g. 5.5"
+          },
+          "water temperature regimen": {
+            "items": {},
+            "description": "information about treatment involving an exposure to water with varying degree of temperature; can include multiple regimens"
+          },
+          "soil_taxonomic/FAO classification": {
+            "maxItems": 1,
+            "items": {},
+            "description": "soil classification from the FAO World Reference Database for Soil Resources"
+          },
+          "collected_by": {
+            "description": "name of persons or institute who collected the specimen",
+            "items": {}
+          },
+          "identified_by": {
+            "description": "name of the expert who identified the specimen taxonomically",
+            "items": {}
+          },
+          "gaseous environment": {
+            "items": {},
+            "description": "use of conditions with differing gaseous environments; should include the name of gaseous compound, amount administered, treatment duration, interval and total experimental duration; can include multiple gaseous environment regimens"
+          },
+          "sampled age": {
+            "items": {},
+            "maxItems": 1,
+            "description": "age of subject at the time of sample collection; relevant scale depends on species and study; e.g. 2 weeks old"
+          },
+          "sample length": {
+            "items": {},
+            "maxItems": 1,
+            "description": "length of subject at the time of sampling, if different from the height; e.g. 2m"
+          },
+          "environment (biome)": {
+            "description": "Biomes are defined based on factors such as plant structures, leaf types, plant spacing, and other factors like climate. Biome should be treated as the descriptor of the broad ecological context of a sample. Examples include: desert, taiga, deciduous woodland, or coral reef. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO",
+            "maxItems": 1,
+            "items": {}
+          },
+          "rooting conditions": {
+            "description": "relevant rooting conditions, such as field plot size, sowing density, container dimensions, number of plants per container",
+            "items": {}
+          },
+          "plant developmental stage": {
+            "description": "developmental stage at the time of sample collection; for Plant Ontology (PO) (v 20) terms, see http://purl.bioontology.org/ontology/PO, e.g. hypocotyl emergence stage (PO_0007043)",
+            "maxItems": 1,
+            "items": {}
+          },
+          "mineral nutrient regimen": {
+            "description": "information about treatment involving the use of mineral supplements; should include the name of mineral nutrient, amount administered, treatment duration, interval and total experimental duration; can include multiple mineral nutrient regimens",
+            "items": {}
+          },
+          "isolation and growth condition": {
+            "items": {},
+            "maxItems": 1,
+            "description": "Publication reference in the form of pubmed ID (pmid), digital object identifier (doi) or url for isolation and growth condition specifications of the organism/material. Mandatory for MIGS and MIMARKS Specimen."
+          },
+          "biotic relationship": {
+            "description": "free text description of relationship(s) between the subject organism and other organism(s) it is associate with, e.g., parasite on species X; mutualist with species Y, the target organism is the subject of the relationship, and the other organism(s) is the object",
+            "items": {},
+            "maxItems": 1
+          },
+          "rooting medium organic supplements": {
+            "description": "organic supplements of the culture rooting medium, such as vitaimins, amino acids, organic acids, antibiotics activated charcoal; e.g. Nicotinic acid (0.5mg/L)",
+            "maxItems": 1,
+            "items": {}
+          },
+          "radiation regimen": {
+            "items": {},
+            "description": "information about treatment involving exposure of plant or a plant part to a particular radiation regimen; should include the radiation type, amount or intensity administered, treatment duration, interval and total experimental duration; can include multiple radiation regimens"
+          },
+          "fertilizer regimen": {
+            "items": {},
+            "description": "information about treatment involving the use of fertilizers; should include the name fertilizer, amount administered, treatment duration, interval and total experimental duration; can include multiple fertilizer regimens"
+          },
+          "soil_taxonomic/local classification": {
+            "maxItems": 1,
+            "items": {},
+            "description": "soil classification based on local soil classification system"
+          },
+          "sample capture status": {
+            "description": "Reason for the sample collection.",
+            "maxItems": 1,
+            "items": {}
+          },
+          "culture rooting medium": {
+            "description": "name or reference for the hydroponic or in vitro culture rooting medium, can be a name of a commonly used medium or reference to a specific medium; e.g. Murashige and Skoog medium, if the medium has not been formally published, use the rooting medium descriptors",
+            "maxItems": 1,
+            "items": {}
+          },
+          "sample height": {
+            "description": "height of subject at the time of sampling, if different from the length; e.g. 0.75m",
+            "maxItems": 1,
+            "items": {}
+          },
+          "plant treatment": {
+            "description": "ontology term(s) that describes the plant treatment or relevant environmental conditions, recommend use of Plant Environment Ontology (EO) or other ontology, such as XEML Environment Ontology (XEO) or Crop Ontology (CO), more specific fields in the treatment section can be used in addition to or in place of this field",
+            "items": {}
+          },
+          "genetic modification": {
+            "items": {},
+            "description": "A genetic modification of the genome of an organism which may occur naturally by spontaneous mutation, or be introduced by some experimental means. Examples of genetic modification include specification of a transgene or the gene knocked-out or details of transient transfection."
+          },
+          "source material description": {
+            "description": "further information to clarify the nature of the specimen or population used that is not collected elsewhere, e.g. if source was derived from accessioned stock, describe how it links to the original material",
+            "maxItems": 1,
+            "items": {}
+          },
+          "sample storage location": {
+            "items": {},
+            "maxItems": 1,
+            "description": "location at which sample was stored, usually name of a specific freezer/room"
+          },
+          "geographic location (altitude)": {
+            "maxItems": 1,
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "The altitude of the sample is the vertical distance between Earth's surface above Sea Level and the sampled position in the air."
+          },
+          "growth facility": {
+            "description": "type of facility where the sampled plant was grown",
+            "items": {}
+          },
+          "watering regimen": {
+            "items": {},
+            "description": "information about treatment involving an exposure to watering frequencies; can include multiple regimens"
+          },
+          "soil type method": {
+            "description": "reference or method used in determining soil series name or other lower-level classification",
+            "maxItems": 1,
+            "items": {}
+          },
+          "geographic location (latitude)": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "maxItems": 1,
+            "description": "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system"
+          },
+          "climate environment": {
+            "items": {},
+            "description": "treatment involving an exposure to a particular climate; can include multiple climates"
+          },
+          "source material identifiers": {
+            "items": {},
+            "description": "A unique identifier assigned to a material sample (as defined by http://rs.tdwg.org/dwc/terms/materialSampleID, and as opposed to a particular digital record of a material sample) used for extracting nucleic acids, and subsequent sequencing. The identifier can refer either to the original material collected or to any derived sub-samples. The INSDC qualifiers /specimen_voucher, /bio_material, or /culture_collection may or may not share the same value as the source_mat_id field. For instance, the /specimen_voucher qualifier and source_mat_id may both contain 'UAM:Herps:14' , referring to both the specimen voucher and sampled tissue with the same identifier. However, the /culture_collection qualifier may refer to a value from an initial culture (e.g. ATCC:11775) while source_mat_id would refer to an identifier from some derived culture from which the nucleic acids were extracted (e.g. xatc123 or ark:/2154/R2)."
+          },
+          "sample health state": {
+            "description": "health status of the subject at the time of sample collection",
+            "maxItems": 1,
+            "items": {}
+          },
+          "sample storage duration": {
+            "maxItems": 1,
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "duration for which sample was stored"
+          },
+          "growth habit": {
+            "items": {},
+            "maxItems": 1,
+            "description": "characteristic shape, appearance or growth form of a plant species"
+          },
+          "chemical administration": {
+            "items": {},
+            "description": "list of chemical compounds administered to the host or site where sampling occurred, and when (e.g. antibiotics, N fertilizer, air filter); can include multiple compounds. For Chemical Entities of Biological Interest ontology (CHEBI) (v111), please see http://purl.bioontology.org/ontology/CHEBI"
+          },
+          "gravity": {
+            "description": "information about treatment involving use of gravity factor to study various types of responses in presence, absence or modified levels of gravity; can include multiple treatments",
+            "items": {}
+          },
+          "plant sex": {
+            "description": "sex of the reproductive parts on the whole plant, e.g. pistilate, staminate, monoecieous, hermaphrodite",
+            "maxItems": 1,
+            "items": {}
+          },
+          "rooting medium solidifier": {
+            "maxItems": 1,
+            "items": {},
+            "description": "specification of the solidifying agent in the culture rooting medium; e.g. agar"
+          },
+          "sampling time point": {
+            "items": {},
+            "description": null
+          },
+          "number of replicons": {
+            "description": "Reports the number of replicons in a nuclear genome of eukaryotes, in the genome of a bacterium or archaea or the number of segments in a segmented virus. Always applied to the haploid chromosome count of a eukaryote. Mandatory for MIGS of eukaryotes, bacteria, archaea and segmented virus.",
+            "items": {},
+            "maxItems": 1
+          },
+          "geographic location (country and/or sea)": {
+            "description": "The geographical origin of the sample as defined by the country or sea. Country or sea names should be chosen from the INSDC country list (http://insdc.org/country.html).",
+            "items": {},
+            "maxItems": 1
+          },
+          "texture": {
+            "description": "the relative proportion of different grain sizes of mineral particles in a soil, as described using a standard system; express as % sand (50 um to 2 mm), silt (2 um to 50 um), and clay (<2 um) with textural name (e.g., silty clay loam) optional.",
+            "maxItems": 1,
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "amount or size of sample collected": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "maxItems": 1,
+            "description": "Amount or size of sample (volume, mass or area) that was collected"
+          },
+          "humidity regimen": {
+            "items": {},
+            "description": "information about treatment involving an exposure to varying degree of humidity; information about treatment involving use of growth hormones; should include amount of humidity administered, treatment duration, interval and total experimental duration; can include multiple regimens"
+          },
+          "sample volume or weight for DNA extraction": {
+            "description": "Volume (mL) or weight (g) of sample processed for DNA extraction",
+            "maxItems": 1,
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "rooting medium micronutrients": {
+            "items": {},
+            "maxItems": 1,
+            "description": "measurement of the culture rooting medium micronutrients (Fe, Mn, Zn, B, Cu, Mo); e.g. H3BO3 (6.2mg/L)"
+          },
+          "perturbation": {
+            "description": "type of perturbation, e.g. chemical administration, physical disturbance, etc., coupled with time that perturbation occurred; can include multiple perturbation types",
+            "items": {}
+          },
+          "mechanical damage": {
+            "description": "information about any mechanical damage exerted on the plant; can include multiple damages and sites",
+            "items": {}
+          },
+          "seasonal environment": {
+            "maxItems": 1,
+            "items": {},
+            "description": "treatment involving an exposure to a particular season (e.g. winter, summer, rabi, rainy etc.)"
+          },
+          "herbicide regimen": {
+            "items": {},
+            "description": "information about treatment involving use of herbicides; information about treatment involving use of growth hormones; should include the name of herbicide, amount administered, treatment duration, interval and total experimental duration; can include multiple regimens"
+          },
+          "antibiotic regimen": {
+            "items": {},
+            "description": "information about treatment involving antibiotic administration; should include the name of antibiotic, amount administered, treatment duration, interval and total experimental duration; can include multiple antibiotic regimens"
+          },
+          "genotype": {
+            "items": {},
+            "description": "name or code for genotype of organism"
+          },
+          "sample phenotype": {
+            "items": {},
+            "description": "phenotype of the plant from which the sample was obtained, such as colour of corolla, fruit diameter, circular leaf shape; Plant Trait Ontology (TO), Phenotypic Quality Ontology (PATO), or other ontology is recommended; e.g. stem epidermis colour (TO:1000018)"
+          },
+          "non-mineral nutrient regimen": {
+            "description": "information about treatment involving the exposure of plant to non-mineral nutrient such as oxygen, hydrogen or carbon; should include the name of non-mineral nutrient, amount administered, treatment duration, interval and total experimental duration; can include multiple non-mineral nutrient regimens",
+            "items": {}
+          },
+          "air temperature regimen": {
+            "description": "information about treatment involving an exposure to varying temperatures; should include the temperature, treatment duration, interval and total experimental duration; can include different temperature regimens",
+            "items": {}
+          },
+          "sample dry mass": {
+            "items": {},
+            "maxItems": 1,
+            "description": "measurement of dry mass at the time of sample collection; e.g. 0.05g"
+          },
+          "collection date": {
+            "items": {},
+            "maxItems": 1,
+            "description": "The date of sampling, either as an instance (single point in time) or interval. In case no exact time is available, the date/time can be right truncated i.e. all of these are valid ISO8601 compliant times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008."
+          },
+          "drainage classification": {
+            "maxItems": 1,
+            "items": {},
+            "description": "drainage classification from a standard system such as the USDA system"
+          },
+          "geographic location (region and locality)": {
+            "items": {},
+            "maxItems": 1,
+            "description": "The geographical origin of the sample as defined by the specific region name followed by the locality name."
+          },
+          "rainfall regimen": {
+            "items": {},
+            "description": "information about treatment involving an exposure to a given amount of rainfall; can include multiple regimens"
+          },
+          "organism common name": {
+            "items": {},
+            "description": "common name of the subject organism, e.g. maize"
+          },
+          "soil water content": {
+            "maxItems": 1,
+            "items": {},
+            "description": "water content measurement; e.g. 13.6%"
+          },
+          "soil type": {
+            "description": "soil series name or other lower-level classification",
+            "items": {},
+            "maxItems": 1
+          },
+          "sample wet mass": {
+            "description": "measurement of wet mass at the time of sample collection; e.g. 0.23 g",
+            "maxItems": 1,
+            "items": {}
+          },
+          "subspecific genetic lineage rank": {
+            "maxItems": 1,
+            "items": {},
+            "description": "further information about the genetic distinctness of this lineage by recording additional information i.e. variety, cultivar, ecotype, inbred line,; it can also contain alternative taxonomic information"
+          }
+        }
+      }
+    },
+    "type": "object",
+    "#dollar#async": true,
+    "definitions": {
+      "properties": {
+        "attributes": {
+          "patternProperties": {
+            "^.*$": {
+              "#dollar#ref": "#/definitions/attribute"
+            }
+          },
+          "description": "Attributes for describing a sample.",
+          "properties": {},
+          "type": "object",
+          "required": []
+        }
+      },
+      "terms": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "url"
+          ],
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "uri"
+            }
+          }
+        }
+      },
+      "attribute": {
+        "items": {
+          "required": [
+            "value"
+          ],
+          "properties": {
+            "terms": {
+              "#dollar#ref": "#/definitions/terms"
+            },
+            "units": {
+              "type": "string",
+              "minLength": 1
+            },
+            "value": {
+              "minLength": 1,
+              "type": "string"
+            }
+          }
+        },
+        "type": "array",
+        "minItems": 1
+      }
+    },
+    "id": "ERC000037",
+    "version": "1.0.0",
+    "#dollar#schema": "http://json-schema.org/draft-07/schema#",
+    "required": [
+      "attributes"
+    ],
+    "title": "ENA Plant Sample Checklist",
+    "author": "ENA"
+  },
+  "displayName": "Plant Sample Checklist",
+  "spreadsheetTemplate": {
+    "columnCaptures": {
+      "alias": {
+        "fieldName": "alias",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldType": "String",
+        "required": true
+      },
+      "title": {
+        "required": true,
+        "fieldType": "String",
+        "fieldName": "title",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture"
+      },
+      "description": {
+        "required": false,
+        "fieldType": "String",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "description"
+      },
+      "release date": {
+        "fieldName": "releaseDate",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "required": true,
+        "fieldType": "String"
+      },
+      "taxon": {
+        "fieldName": "taxon",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "required": true,
+        "fieldType": "String"
+      },
+      "taxon id": {
+        "fieldType": "IntegerNumber",
+        "required": true,
+        "fieldName": "taxonId",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture"
+      },
+      "ploidy": {
+        "description": "The ploidy level of the genome (e.g. allopolyploid, haploid, diploid, triploid, tetraploid). It has implications for the downstream study of duplicated gene and regions of the genomes (and perhaps for difficulties in assembly). For terms, please select terms listed under class ploidy (PATO:001374) of Phenotypic Quality Ontology (PATO), and for a browser of PATO (v 2013-10-28) please refer to http://purl.bioontology.org/ontology/PATO. Mandatory for MIGS of eukaryotes.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "required": false,
+        "allowTerms": false
+      },
+      "number of replicons": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "required": false,
+        "allowTerms": false,
+        "description": "Reports the number of replicons in a nuclear genome of eukaryotes, in the genome of a bacterium or archaea or the number of segments in a segmented virus. Always applied to the haploid chromosome count of a eukaryote. Mandatory for MIGS of eukaryotes, bacteria, archaea and segmented virus."
+      },
+      "extrachromosomal elements": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "required": false,
+        "allowTerms": false,
+        "description": "Do plasmids exist of significant phenotypic consequence (e.g. ones that determine virulence or antibiotic resistance). Megaplasmids? Other plasmids (borrelia has 15+ plasmids)."
+      },
+      "estimated size": {
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "The estimated size of the genome (in bp) prior to sequencing. Of particular importance in the sequencing of (eukaryotic) genome which could remain in draft form for a long or unspecified period. Mandatory for MIGS of eukaryotes."
+      },
+      "sample volume or weight for DNA extraction": {
+        "description": "Volume (mL) or weight (g) of sample processed for DNA extraction",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "required": false,
+        "allowTerms": false
+      },
+      "collected_by": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "required": false,
+        "allowTerms": false,
+        "description": "name of persons or institute who collected the specimen"
+      },
+      "collection date": {
+        "description": "The date of sampling, either as an instance (single point in time) or interval. In case no exact time is available, the date/time can be right truncated i.e. all of these are valid ISO8601 compliant times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10; 2008-01-23; 2008-01; 2008.",
+        "required": true,
+        "allowTerms": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "geographic location (altitude)": {
+        "description": "The altitude of the sample is the vertical distance between Earth's surface above Sea Level and the sampled position in the air.",
+        "allowTerms": false,
+        "required": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "geographic location (country and/or sea)": {
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "required": true,
+        "description": "The geographical origin of the sample as defined by the country or sea. Country or sea names should be chosen from the INSDC country list (http://insdc.org/country.html)."
+      },
+      "geographic location (latitude)": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": true,
+        "description": "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system"
+      },
+      "geographic location (longitude)": {
+        "description": "The geographical origin of the sample as defined by latitude and longitude. The values should be reported in decimal degrees and in WGS84 system",
+        "allowTerms": false,
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false
+      },
+      "geographic location (region and locality)": {
+        "description": "The geographical origin of the sample as defined by the specific region name followed by the locality name.",
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "required": false
+      },
+      "identified_by": {
+        "description": "name of the expert who identified the specimen taxonomically",
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "geographic location (depth)": {
+        "allowTerms": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "description": "Depth is defined as the vertical distance below surface, e.g. for sediment or soil samples depth is measured from sediment or soil surface, respectivly. Depth can be reported as an interval for subsurface samples."
+      },
+      "environment (biome)": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false,
+        "description": "Biomes are defined based on factors such as plant structures, leaf types, plant spacing, and other factors like climate. Biome should be treated as the descriptor of the broad ecological context of a sample. Examples include: desert, taiga, deciduous woodland, or coral reef. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO"
+      },
+      "environment (feature)": {
+        "required": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "description": "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO"
+      },
+      "geographic location (elevation)": {
+        "description": "The elevation of the sampling site as measured by the vertical distance from mean sea level.",
+        "allowTerms": false,
+        "required": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "source material identifiers": {
+        "description": "A unique identifier assigned to a material sample (as defined by http://rs.tdwg.org/dwc/terms/materialSampleID, and as opposed to a particular digital record of a material sample) used for extracting nucleic acids, and subsequent sequencing. The identifier can refer either to the original material collected or to any derived sub-samples. The INSDC qualifiers /specimen_voucher, /bio_material, or /culture_collection may or may not share the same value as the source_mat_id field. For instance, the /specimen_voucher qualifier and source_mat_id may both contain 'UAM:Herps:14' , referring to both the specimen voucher and sampled tissue with the same identifier. However, the /culture_collection qualifier may refer to a value from an initial culture (e.g. ATCC:11775) while source_mat_id would refer to an identifier from some derived culture from which the nucleic acids were extracted (e.g. xatc123 or ark:/2154/R2).",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false
+      },
+      "sample collection device or method": {
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "The method or deviced employed for collecting the sample"
+      },
+      "sample material processing": {
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Any processing applied to the sample during or after retrieving the sample from environment. This field accepts OBI, for a browser of OBI (v 2013-10-25) terms please see http://purl.bioontology.org/ontology/OBI"
+      },
+      "isolation and growth condition": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "required": true,
+        "allowTerms": false,
+        "description": "Publication reference in the form of pubmed ID (pmid), digital object identifier (doi) or url for isolation and growth condition specifications of the organism/material. Mandatory for MIGS and MIMARKS Specimen."
+      },
+      "propagation": {
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "This field is specific to different taxa. For plants: sexual/asexual, for phages: lytic/lysogenic, for plasmids: incompatibility group (Note: there is the strong opinion to name phage propagation obligately lytic or temperate, therefore we also give this choice. Mandatory for MIGS of eukaryotes, plasmids and viruses."
+      },
+      "amount or size of sample collected": {
+        "description": "Amount or size of sample (volume, mass or area) that was collected",
+        "allowTerms": false,
+        "required": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "sample storage duration": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "required": false,
+        "allowTerms": false,
+        "description": "duration for which sample was stored"
+      },
+      "sample storage temperature": {
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "required": false,
+        "description": "temperature at which sample was stored, e.g. -80"
+      },
+      "sample storage location": {
+        "required": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "description": "location at which sample was stored, usually name of a specific freezer/room"
+      },
+      "sampling time point": {
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowTerms": false
+      },
+      "plant structure": {
+        "required": true,
+        "allowTerms": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "name of plant structure that the sample was obtained from; for Plant Ontology (PO) terms see http://purl.bioontology.org/ontology/PO, e.g. petiole epidermis (PO_0000051); if an individual flower is sampled the sex of it can be recorded here"
+      },
+      "plant developmental stage": {
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "required": true,
+        "description": "developmental stage at the time of sample collection; for Plant Ontology (PO) (v 20) terms, see http://purl.bioontology.org/ontology/PO, e.g. hypocotyl emergence stage (PO_0007043)"
+      },
+      "sampled age": {
+        "description": "age of subject at the time of sample collection; relevant scale depends on species and study; e.g. 2 weeks old",
+        "allowTerms": false,
+        "required": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "sample phenotype": {
+        "allowTerms": false,
+        "required": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "phenotype of the plant from which the sample was obtained, such as colour of corolla, fruit diameter, circular leaf shape; Plant Trait Ontology (TO), Phenotypic Quality Ontology (PATO), or other ontology is recommended; e.g. stem epidermis colour (TO:1000018)"
+      },
+      "sample health state": {
+        "description": "health status of the subject at the time of sample collection",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "required": false,
+        "allowTerms": false
+      },
+      "sample disease status": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "required": false,
+        "allowTerms": false,
+        "description": "list of diseases with which the subject has been diagnosed at the time of sample collection; can include multiple diagnoses; the value of the field depends on subject; e.g. Charcoal rot (Macrophomina phaseolina), Late wilt (Cephalosporium maydis)"
+      },
+      "sample disease stage": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "required": false,
+        "allowTerms": false,
+        "description": "stage of the disease at the time of sample collection, e.g. inoculation, penetration, infection, growth and reproduction, dissemination of pathogen"
+      },
+      "sample wet mass": {
+        "description": "measurement of wet mass at the time of sample collection; e.g. 0.23 g",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "required": false,
+        "allowTerms": false
+      },
+      "sample dry mass": {
+        "allowTerms": false,
+        "required": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "measurement of dry mass at the time of sample collection; e.g. 0.05g"
+      },
+      "sample height": {
+        "allowTerms": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "description": "height of subject at the time of sampling, if different from the length; e.g. 0.75m"
+      },
+      "sample length": {
+        "description": "length of subject at the time of sampling, if different from the height; e.g. 2m",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false
+      },
+      "growth facility": {
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "required": false,
+        "description": "type of facility where the sampled plant was grown"
+      },
+      "sample capture status": {
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowTerms": false,
+        "description": "Reason for the sample collection."
+      },
+      "genotype": {
+        "description": "name or code for genotype of organism",
+        "allowTerms": false,
+        "required": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "genetic modification": {
+        "required": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "description": "A genetic modification of the genome of an organism which may occur naturally by spontaneous mutation, or be introduced by some experimental means. Examples of genetic modification include specification of a transgene or the gene knocked-out or details of transient transfection."
+      },
+      "organism common name": {
+        "description": "common name of the subject organism, e.g. maize",
+        "allowTerms": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false
+      },
+      "subspecific genetic lineage rank": {
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowTerms": false,
+        "description": "further information about the genetic distinctness of this lineage by recording additional information i.e. variety, cultivar, ecotype, inbred line,; it can also contain alternative taxonomic information"
+      },
+      "subspecific genetic lineage name": {
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "name of the infraspecific rank, e.g ecotype Col-0"
+      },
+      "biological status": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false,
+        "description": "the level of genome modification; controlled vocabulary: wild, natural, semi-natural, inbred line, breeder's line, hybrid, clonal selection, mutant"
+      },
+      "organism phenotype": {
+        "required": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "description": "most relevant phenotypic traits of the subject; for Phenotypic quality Ontology (PATO) (v 2013-10-28) terms, please see http://purl.bioontology.org/ontology/PATO, e.g. bifurcated (PATO_0001784); terms from Trait Ontology (TO), Plant Ontology (PO) or Crop Ontology (CO) are also accepted; include name/method/scale for each trait; can include multiple traits"
+      },
+      "ancestral data": {
+        "description": "information about either pedigree or other description of ancestral information (e.g. parental variety in case of mutant or selection), e.g. A/3*B (meaning [(A x B) x B] x B)",
+        "required": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false
+      },
+      "source material description": {
+        "description": "further information to clarify the nature of the specimen or population used that is not collected elsewhere, e.g. if source was derived from accessioned stock, describe how it links to the original material",
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowTerms": false
+      },
+      "biotic relationship": {
+        "description": "free text description of relationship(s) between the subject organism and other organism(s) it is associate with, e.g., parasite on species X; mutualist with species Y, the target organism is the subject of the relationship, and the other organism(s) is the object",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "required": false,
+        "allowTerms": false
+      },
+      "growth habit": {
+        "description": "characteristic shape, appearance or growth form of a plant species",
+        "allowTerms": false,
+        "required": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "plant sex": {
+        "description": "sex of the reproductive parts on the whole plant, e.g. pistilate, staminate, monoecieous, hermaphrodite",
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "required": false
+      },
+      "climate environment": {
+        "description": "treatment involving an exposure to a particular climate; can include multiple climates",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false
+      },
+      "gaseous environment": {
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "required": false,
+        "description": "use of conditions with differing gaseous environments; should include the name of gaseous compound, amount administered, treatment duration, interval and total experimental duration; can include multiple gaseous environment regimens"
+      },
+      "seasonal environment": {
+        "description": "treatment involving an exposure to a particular season (e.g. winter, summer, rabi, rainy etc.)",
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowTerms": false
+      },
+      "soil_taxonomic/FAO classification": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "required": false,
+        "allowTerms": false,
+        "description": "soil classification from the FAO World Reference Database for Soil Resources"
+      },
+      "soil_taxonomic/local classification": {
+        "allowTerms": false,
+        "required": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "soil classification based on local soil classification system"
+      },
+      "soil_taxonomic/local classification method": {
+        "description": "reference or method used in determining the local soil classification",
+        "required": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false
+      },
+      "soil type": {
+        "description": "soil series name or other lower-level classification",
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "soil type method": {
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "required": false,
+        "description": "reference or method used in determining soil series name or other lower-level classification"
+      },
+      "drainage classification": {
+        "description": "drainage classification from a standard system such as the USDA system",
+        "allowTerms": false,
+        "required": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "texture": {
+        "description": "the relative proportion of different grain sizes of mineral particles in a soil, as described using a standard system; express as % sand (50 um to 2 mm), silt (2 um to 50 um), and clay (<2 um) with textural name (e.g., silty clay loam) optional.",
+        "allowTerms": false,
+        "required": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "texture method": {
+        "allowTerms": false,
+        "required": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "reference or method used in determining soil texture"
+      },
+      "soil water content": {
+        "description": "water content measurement; e.g. 13.6%",
+        "allowTerms": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false
+      },
+      "soil pH": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false,
+        "description": "pH measurement of the soil; e.g. 6.2"
+      },
+      "plant growth medium": {
+        "description": "specification of the media for growing the plants or tissue cultured samples, e.g. soil, aeroponic, hydroponic, in vitro solid culture medium, in vitro liquid culture medium, recommended value is a specific value from EO:plant growth medium or other controlled vocabulary",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "required": true,
+        "allowTerms": false
+      },
+      "rooting conditions": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "required": false,
+        "allowTerms": false,
+        "description": "relevant rooting conditions, such as field plot size, sowing density, container dimensions, number of plants per container"
+      },
+      "culture rooting medium": {
+        "description": "name or reference for the hydroponic or in vitro culture rooting medium, can be a name of a commonly used medium or reference to a specific medium; e.g. Murashige and Skoog medium, if the medium has not been formally published, use the rooting medium descriptors",
+        "allowTerms": false,
+        "required": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "rooting medium macronutrients": {
+        "required": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "description": "measurement of the culture rooting medium macronutrients (N,P, K, Ca, Mg, S); e.g. KH2PO4 (170mg/L)"
+      },
+      "rooting medium micronutrients": {
+        "description": "measurement of the culture rooting medium micronutrients (Fe, Mn, Zn, B, Cu, Mo); e.g. H3BO3 (6.2mg/L)",
+        "required": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false
+      },
+      "rooting medium organic supplements": {
+        "description": "organic supplements of the culture rooting medium, such as vitaimins, amino acids, organic acids, antibiotics activated charcoal; e.g. Nicotinic acid (0.5mg/L)",
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "rooting medium carbon": {
+        "description": "source of organic carbon in the culture rooting medium; e.g. sucrose",
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "required": false
+      },
+      "rooting medium regulators": {
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowTerms": false,
+        "description": "growth regulators in the culture rooting medium, such as cytokinins, auxins, gybberellins, abscisic acid; e.g. 0.5mg/L NAA"
+      },
+      "rooting medium solidifier": {
+        "description": "specification of the solidifying agent in the culture rooting medium; e.g. agar",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "required": false,
+        "allowTerms": false
+      },
+      "rooting medium pH": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "required": false,
+        "allowTerms": false,
+        "description": "pH measurement of the culture rooting medium; e.g. 5.5"
+      },
+      "air temperature regimen": {
+        "description": "information about treatment involving an exposure to varying temperatures; should include the temperature, treatment duration, interval and total experimental duration; can include different temperature regimens",
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "antibiotic regimen": {
+        "description": "information about treatment involving antibiotic administration; should include the name of antibiotic, amount administered, treatment duration, interval and total experimental duration; can include multiple antibiotic regimens",
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowTerms": false
+      },
+      "chemical mutagen": {
+        "description": "treatment involving use of mutagens; should include the name of mutagen, amount administered, treatment duration, interval and total experimental duration; can include multiple mutagen regimens",
+        "required": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false
+      },
+      "fertilizer regimen": {
+        "description": "information about treatment involving the use of fertilizers; should include the name fertilizer, amount administered, treatment duration, interval and total experimental duration; can include multiple fertilizer regimens",
+        "allowTerms": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false
+      },
+      "fungicide regimen": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "required": false,
+        "allowTerms": false,
+        "description": "information about treatment involving use of fungicides; should include the name of fungicide, amount administered, treatment duration, interval and total experimental duration; can include multiple fungicide regimens"
+      },
+      "gravity": {
+        "description": "information about treatment involving use of gravity factor to study various types of responses in presence, absence or modified levels of gravity; can include multiple treatments",
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowTerms": false
+      },
+      "growth hormone regimen": {
+        "required": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "description": "information about treatment involving use of growth hormones; should include the name of growth hormone, amount administered, treatment duration, interval and total experimental duration; can include multiple growth hormone regimens"
+      },
+      "herbicide regimen": {
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowTerms": false,
+        "description": "information about treatment involving use of herbicides; information about treatment involving use of growth hormones; should include the name of herbicide, amount administered, treatment duration, interval and total experimental duration; can include multiple regimens"
+      },
+      "humidity regimen": {
+        "description": "information about treatment involving an exposure to varying degree of humidity; information about treatment involving use of growth hormones; should include amount of humidity administered, treatment duration, interval and total experimental duration; can include multiple regimens",
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "mineral nutrient regimen": {
+        "allowTerms": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "description": "information about treatment involving the use of mineral supplements; should include the name of mineral nutrient, amount administered, treatment duration, interval and total experimental duration; can include multiple mineral nutrient regimens"
+      },
+      "non-mineral nutrient regimen": {
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "information about treatment involving the exposure of plant to non-mineral nutrient such as oxygen, hydrogen or carbon; should include the name of non-mineral nutrient, amount administered, treatment duration, interval and total experimental duration; can include multiple non-mineral nutrient regimens"
+      },
+      "pesticide regimen": {
+        "description": "information about treatment involving use of insecticides; should include the name of pesticide, amount administered, treatment duration, interval and total experimental duration; can include multiple pesticide regimens",
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "pH regimen": {
+        "description": "information about treatment involving exposure of plants to varying levels of pH of the growth media; can include multiple regimen",
+        "allowTerms": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false
+      },
+      "radiation regimen": {
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "required": false,
+        "description": "information about treatment involving exposure of plant or a plant part to a particular radiation regimen; should include the radiation type, amount or intensity administered, treatment duration, interval and total experimental duration; can include multiple radiation regimens"
+      },
+      "rainfall regimen": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "required": false,
+        "allowTerms": false,
+        "description": "information about treatment involving an exposure to a given amount of rainfall; can include multiple regimens"
+      },
+      "salt regimen": {
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "information about treatment involving use of salts as supplement to liquid and soil growth media; should include the name of salt, amount administered, treatment duration, interval and total experimental duration; can include multiple salt regimens"
+      },
+      "standing water regimen": {
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "required": false,
+        "description": "treatment involving an exposure to standing water during a plant's life span, types can be flood water or standing water; can include multiple regimens"
+      },
+      "watering regimen": {
+        "description": "information about treatment involving an exposure to watering frequencies; can include multiple regimens",
+        "allowTerms": false,
+        "required": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "water temperature regimen": {
+        "description": "information about treatment involving an exposure to water with varying degree of temperature; can include multiple regimens",
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "plant treatment": {
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowTerms": false,
+        "description": "ontology term(s) that describes the plant treatment or relevant environmental conditions, recommend use of Plant Environment Ontology (EO) or other ontology, such as XEML Environment Ontology (XEO) or Crop Ontology (CO), more specific fields in the treatment section can be used in addition to or in place of this field"
+      },
+      "light regimen": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false,
+        "description": "information about treatment involving an exposure to light, this includes both light intensity and quality"
+      },
+      "biotic regimen": {
+        "description": "information about treatment involving use of biotic factors, such as bacteria, viruses or fungi",
+        "required": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false
+      },
+      "mechanical damage": {
+        "description": "information about any mechanical damage exerted on the plant; can include multiple damages and sites",
+        "required": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false
+      },
+      "chemical administration": {
+        "description": "list of chemical compounds administered to the host or site where sampling occurred, and when (e.g. antibiotics, N fertilizer, air filter); can include multiple compounds. For Chemical Entities of Biological Interest ontology (CHEBI) (v111), please see http://purl.bioontology.org/ontology/CHEBI",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false
+      },
+      "perturbation": {
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowTerms": false,
+        "description": "type of perturbation, e.g. chemical administration, physical disturbance, etc., coupled with time that perturbation occurred; can include multiple perturbation types"
+      }
+    },
+    "defaultCapture": {
+      "allowTerms": false,
+      "required": false,
+      "allowUnits": false,
+      "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+    }
+  },
+  "dataTypeId": "samples"
+}

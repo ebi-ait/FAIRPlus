@@ -1,0 +1,48 @@
+{
+  "_id": "cramFileSequencingRuns",
+  "dataTypeId": "sequencingRuns",
+  "displayName": "Sequencing Run - CRAM file",
+  "description": "",
+  "spreadsheetTemplate": {
+    "columnCaptures": {
+      "alias": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "alias",
+        "fieldType": "String",
+        "required": false
+      },
+      "title": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "title",
+        "fieldType": "String",
+        "required": true
+      },
+      "description": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "description",
+        "fieldType": "String",
+        "required": false
+      },
+      "experiment alias": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.RefCapture",
+        "refKey": "assayRefs",
+        "required": true,
+        "asList": true
+      },
+      "CRAM file name": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FileCapture",
+        "required": false,
+        "allowLabel": false,
+        "allowType": false,
+        "defaultLabel": null,
+        "defaultType": "cram"
+      }
+    },
+    "defaultCapture": {
+      "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+      "required": false,
+      "allowUnits": true,
+      "allowTerms": true
+    }
+  }
+}

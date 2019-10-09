@@ -1,0 +1,520 @@
+{
+  "_id": "ERC000035",
+  "dataTypeId": "samples",
+  "displayName": "Crop Plant sample enhanced annotation checklist",
+  "description": "The ENA Crop sample enhanced checklist has been developed in collaboration with a number of EMBL-EBI teams to capture enriched annotation of published crop plant samples that lack sufficient reported metadata and are typically associated with systematic transcriptomic realignment-based analyses.",
+  "validationSchema": {
+    "#dollar#async": true,
+    "author": "ENA",
+    "required": [
+      "attributes"
+    ],
+    "version": "1.0.0",
+    "properties": {
+      "attributes": {
+        "properties": {
+          "cultivar": {
+            "description": "cultivar (cultivated variety) of plant from which sample was obtained",
+            "maxItems": 1,
+            "items": {}
+          },
+          "experimental factor 1": {
+            "items": {},
+            "maxItems": 1,
+            "description": "A variable that the experiment is based on."
+          },
+          "replicate": {
+            "items": {},
+            "maxItems": 1,
+            "description": "A role played by a a biological sample in the context of an experiment where the intent is that biological or technical variation is measured."
+          },
+          "ecotype": {
+            "description": "a population within a given species displaying genetically based, phenotypic traits that reflect adaptation to a local habitat.",
+            "maxItems": 1,
+            "items": {}
+          },
+          "immunoprecipitate": {
+            "items": {},
+            "maxItems": 1,
+            "description": "The precipitate antibody bound target molecules generated when precipitating an antigen out of a solution during the process of immunoprecipitation."
+          },
+          "ploidy": {
+            "description": "The ploidy level of the genome (e.g. allopolyploid, haploid, diploid, triploid, tetraploid). It has implications for the downstream study of duplicated gene and regions of the genomes (and perhaps for difficulties in assembly). For terms, please select terms listed under class ploidy (PATO:001374) of Phenotypic Quality Ontology (PATO), and for a browser of PATO (v 2013-10-28) please refer to http://purl.bioontology.org/ontology/PATO. Mandatory for MIGS of eukaryotes.",
+            "items": {},
+            "maxItems": 1
+          },
+          "organism part": {
+            "maxItems": 1,
+            "items": {},
+            "description": "The part of organism's anatomy or substance arising from an organism from which the biomaterial was derived, excludes cells."
+          },
+          "disease staging": {
+            "description": "The stage or progression of a disease in an organism. Includes pathological staging of cancers and other disease progression. E.g. Dukes C stage describing colon cancer (EFO_0000410).",
+            "maxItems": 1,
+            "items": {}
+          },
+          "experimental factor 2": {
+            "description": "A variable that the experiment is based on.",
+            "maxItems": 1,
+            "items": {}
+          },
+          "growth condition": {
+            "description": "A role that a material entity can play which enables particular conditions used to grow organisms or parts of the organism. This includes isolated environments such as cultures and open environments such as field studies.",
+            "items": {}
+          },
+          "genotype": {
+            "maxItems": 1,
+            "items": {},
+            "description": "name or code for genotype of organism"
+          },
+          "cellular component": {
+            "items": {},
+            "description": "The part of a cell or its extracellular environment in which a gene product is located."
+          },
+          "genetic modification": {
+            "items": {},
+            "description": "A genetic modification of the genome of an organism which may occur naturally by spontaneous mutation, or be introduced by some experimental means. Examples of genetic modification include specification of a transgene or the gene knocked-out or details of transient transfection."
+          },
+          "infect": {
+            "items": {},
+            "maxItems": 1,
+            "description": "The name of the disease causing/contaminating organism; the value can also be ‘control’."
+          },
+          "dev_stage": {
+            "maxItems": 1,
+            "items": {},
+            "description": "if the sample was obtained from an organism in a specific developmental stage, it is specified with this qualifier"
+          },
+          "sex": {
+            "description": "sex of the organism from which the sample was obtained",
+            "items": {},
+            "maxItems": 1
+          },
+          "individual": {
+            "maxItems": 1,
+            "items": {},
+            "description": "An individual used a specimen in an experiment, from which a material sample was derived."
+          },
+          "experimental factor 3": {
+            "description": "A variable that the experiment is based on.",
+            "maxItems": 1,
+            "items": {}
+          },
+          "block": {
+            "maxItems": 1,
+            "items": {},
+            "description": "A block or batch is an experimental unit arrangement into a group which is similar to one another. Typically, a blocking factor is a source of variability that is not of primary interest to the experimenter. An example of a blocking factor might be the sex of a patient; by blocking on sex, this source of variability is controlled for, thus leading to greater accuracy (EFO_0005067)."
+          },
+          "experimental factor 4": {
+            "maxItems": 1,
+            "items": {},
+            "description": "A variable that the experiment is based on."
+          },
+          "strain": {
+            "maxItems": 1,
+            "items": {},
+            "description": "Name of the strain from which the sample was obtained."
+          },
+          "chemical compound": {
+            "items": {},
+            "description": "A drug, solvent, chemical, etc., with a property that can be measured such as concentration (http://purl.obolibrary.org/obo/CHEBI_37577)."
+          },
+          "protocol": {
+            "description": "The laboratory method used to reveal the presence of the sample sequenced in the experiment.",
+            "items": {}
+          },
+          "phenotype": {
+            "items": {},
+            "description": "Where possible, please use the Experimental Factor Ontology (EFO) to describe your phenotypes."
+          },
+          "age": {
+            "maxItems": 1,
+            "items": {},
+            "description": "Age of the organism the sample was derived from."
+          },
+          "experimental factor 5": {
+            "maxItems": 1,
+            "items": {},
+            "description": "A variable that the experiment is based on."
+          },
+          "environmental stress": {
+            "description": "Environmental stress is a treatment where some aspect of the environment is perturbed in order to stress the organism or culture, e.g. change in temperature, change in watering regime.",
+            "items": {}
+          },
+          "environmental history": {
+            "items": {},
+            "description": "Information concerning the envinonrment a material entity has been exposed to, such as an organism from a lake."
+          },
+          "initial time point": {
+            "items": {},
+            "maxItems": 1,
+            "description": "The first time point measured at the start of some process."
+          },
+          "cell_line": {
+            "description": "cell line from which the sample was obtained",
+            "items": {},
+            "maxItems": 1
+          },
+          "time": {
+            "items": {},
+            "description": "The duration in which the treatment has occurred."
+          },
+          "dose": {
+            "description": "The total quantity or strength of a substance administered at one time.",
+            "items": {}
+          },
+          "sampling time point": {
+            "maxItems": 1,
+            "items": {},
+            "description": null
+          },
+          "cell_type": {
+            "description": "cell type from which the sample was obtained",
+            "maxItems": 1,
+            "items": {}
+          }
+        }
+      }
+    },
+    "id": "ERC000035",
+    "type": "object",
+    "title": "ENA Crop Plant sample enhanced annotation checklist",
+    "#dollar#schema": "http://json-schema.org/draft-07/schema#",
+    "description": "The ENA Crop sample enhanced checklist has been developed in collaboration with a number of EMBL-EBI teams to capture enriched annotation of published crop plant samples that lack sufficient reported metadata and are typically associated with systematic transcriptomic realignment-based analyses.",
+    "definitions": {
+      "properties": {
+        "attributes": {
+          "type": "object",
+          "description": "Attributes for describing a sample.",
+          "required": [],
+          "patternProperties": {
+            "^.*$": {
+              "#dollar#ref": "#/definitions/attribute"
+            }
+          },
+          "properties": {}
+        }
+      },
+      "attribute": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "required": [
+            "value"
+          ],
+          "properties": {
+            "units": {
+              "type": "string",
+              "minLength": 1
+            },
+            "value": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "terms": {
+              "#dollar#ref": "#/definitions/terms"
+            }
+          }
+        }
+      },
+      "terms": {
+        "type": "array",
+        "items": {
+          "required": [
+            "url"
+          ],
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "uri"
+            }
+          },
+          "type": "object"
+        }
+      }
+    }
+  },
+  "spreadsheetTemplate": {
+    "defaultCapture": {
+      "allowUnits": false,
+      "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+      "required": false,
+      "allowTerms": false
+    },
+    "columnCaptures": {
+      "alias": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldType": "String",
+        "fieldName": "alias",
+        "required": true
+      },
+      "title": {
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldType": "String",
+        "fieldName": "title"
+      },
+      "description": {
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldType": "String",
+        "fieldName": "description"
+      },
+      "release date": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldType": "String",
+        "fieldName": "releaseDate",
+        "required": true
+      },
+      "taxon": {
+        "required": true,
+        "fieldName": "taxon",
+        "fieldType": "String",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture"
+      },
+      "taxon id": {
+        "fieldName": "taxonId",
+        "fieldType": "IntegerNumber",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "required": true
+      },
+      "cell_type": {
+        "allowUnits": false,
+        "description": "cell type from which the sample was obtained",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowTerms": false
+      },
+      "dev_stage": {
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false,
+        "description": "if the sample was obtained from an organism in a specific developmental stage, it is specified with this qualifier",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "organism part": {
+        "allowTerms": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "The part of organism's anatomy or substance arising from an organism from which the biomaterial was derived, excludes cells.",
+        "allowUnits": false
+      },
+      "ploidy": {
+        "allowUnits": false,
+        "description": "The ploidy level of the genome (e.g. allopolyploid, haploid, diploid, triploid, tetraploid). It has implications for the downstream study of duplicated gene and regions of the genomes (and perhaps for difficulties in assembly). For terms, please select terms listed under class ploidy (PATO:001374) of Phenotypic Quality Ontology (PATO), and for a browser of PATO (v 2013-10-28) please refer to http://purl.bioontology.org/ontology/PATO. Mandatory for MIGS of eukaryotes.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowTerms": false
+      },
+      "infect": {
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false,
+        "description": "The name of the disease causing/contaminating organism; the value can also be ‘control’.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "protocol": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "The laboratory method used to reveal the presence of the sample sequenced in the experiment.",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false
+      },
+      "sampling time point": {
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowTerms": false
+      },
+      "initial time point": {
+        "allowUnits": false,
+        "description": "The first time point measured at the start of some process.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowTerms": false
+      },
+      "growth condition": {
+        "allowTerms": false,
+        "required": false,
+        "description": "A role that a material entity can play which enables particular conditions used to grow organisms or parts of the organism. This includes isolated environments such as cultures and open environments such as field studies.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false
+      },
+      "genotype": {
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "name or code for genotype of organism",
+        "required": false,
+        "allowTerms": false
+      },
+      "sex": {
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false,
+        "description": "sex of the organism from which the sample was obtained",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "age": {
+        "allowTerms": false,
+        "required": false,
+        "description": "Age of the organism the sample was derived from.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false
+      },
+      "genetic modification": {
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "A genetic modification of the genome of an organism which may occur naturally by spontaneous mutation, or be introduced by some experimental means. Examples of genetic modification include specification of a transgene or the gene knocked-out or details of transient transfection."
+      },
+      "phenotype": {
+        "allowTerms": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Where possible, please use the Experimental Factor Ontology (EFO) to describe your phenotypes.",
+        "allowUnits": false
+      },
+      "cellular component": {
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "The part of a cell or its extracellular environment in which a gene product is located."
+      },
+      "individual": {
+        "allowTerms": false,
+        "required": false,
+        "description": "An individual used a specimen in an experiment, from which a material sample was derived.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false
+      },
+      "disease staging": {
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "The stage or progression of a disease in an organism. Includes pathological staging of cancers and other disease progression. E.g. Dukes C stage describing colon cancer (EFO_0000410)."
+      },
+      "immunoprecipitate": {
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "The precipitate antibody bound target molecules generated when precipitating an antigen out of a solution during the process of immunoprecipitation.",
+        "required": false,
+        "allowTerms": false
+      },
+      "replicate": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "A role played by a a biological sample in the context of an experiment where the intent is that biological or technical variation is measured.",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false
+      },
+      "cultivar": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "cultivar (cultivated variety) of plant from which sample was obtained",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false
+      },
+      "ecotype": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "a population within a given species displaying genetically based, phenotypic traits that reflect adaptation to a local habitat.",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false
+      },
+      "cell_line": {
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "cell line from which the sample was obtained",
+        "required": false,
+        "allowTerms": false
+      },
+      "strain": {
+        "allowTerms": false,
+        "required": false,
+        "description": "Name of the strain from which the sample was obtained.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false
+      },
+      "time": {
+        "allowTerms": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "The duration in which the treatment has occurred.",
+        "allowUnits": false
+      },
+      "dose": {
+        "allowTerms": false,
+        "required": false,
+        "description": "The total quantity or strength of a substance administered at one time.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false
+      },
+      "chemical compound": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "A drug, solvent, chemical, etc., with a property that can be measured such as concentration (http://purl.obolibrary.org/obo/CHEBI_37577).",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false
+      },
+      "experimental factor 1": {
+        "allowTerms": false,
+        "required": false,
+        "description": "A variable that the experiment is based on.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false
+      },
+      "experimental factor 2": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "A variable that the experiment is based on.",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false
+      },
+      "experimental factor 3": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "A variable that the experiment is based on.",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false
+      },
+      "experimental factor 4": {
+        "description": "A variable that the experiment is based on.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowUnits": false,
+        "allowTerms": false,
+        "required": false
+      },
+      "experimental factor 5": {
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "A variable that the experiment is based on."
+      },
+      "block": {
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "A block or batch is an experimental unit arrangement into a group which is similar to one another. Typically, a blocking factor is a source of variability that is not of primary interest to the experimenter. An example of a blocking factor might be the sex of a patient; by blocking on sex, this source of variability is controlled for, thus leading to greater accuracy (EFO_0005067).",
+        "required": false,
+        "allowTerms": false
+      },
+      "environmental stress": {
+        "required": false,
+        "allowTerms": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Environmental stress is a treatment where some aspect of the environment is perturbed in order to stress the organism or culture, e.g. change in temperature, change in watering regime."
+      },
+      "environmental history": {
+        "allowTerms": false,
+        "required": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Information concerning the envinonrment a material entity has been exposed to, such as an organism from a lake.",
+        "allowUnits": false
+      }
+    }
+  }
+}

@@ -1,0 +1,512 @@
+{
+  "_id": "ERC000038",
+  "description": "Shellfish contextual information associated with molecular data. The checklist has been developed in collaboration with EMBRIC Project partners.",
+  "displayName": "ENA Shellfish Checklist",
+  "validationSchema": {
+    "id": "ERC000038",
+    "definitions": {
+      "attribute": {
+        "items": {
+          "properties": {
+            "value": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "terms": {
+              "#dollar#ref": "#/definitions/terms"
+            },
+            "units": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "value"
+          ]
+        },
+        "minItems": 1,
+        "type": "array"
+      },
+      "properties": {
+        "attributes": {
+          "required": [],
+          "properties": {},
+          "type": "object",
+          "patternProperties": {
+            "^.*$": {
+              "#dollar#ref": "#/definitions/attribute"
+            }
+          },
+          "description": "Attributes for describing a sample."
+        }
+      },
+      "terms": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "uri"
+            }
+          },
+          "required": [
+            "url"
+          ]
+        }
+      }
+    },
+    "title": "ENA Shellfish Checklist",
+    "required": [
+      "attributes"
+    ],
+    "description": "Shellfish contextual information associated with molecular data. The checklist has been developed in collaboration with EMBRIC Project partners.",
+    "type": "object",
+    "#dollar#async": true,
+    "version": "1.0.0",
+    "#dollar#schema": "http://json-schema.org/draft-07/schema#",
+    "properties": {
+      "attributes": {
+        "properties": {
+          "gonad weight": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "Total weight of entire gonad tissue",
+            "maxItems": 1
+          },
+          "shell width": {
+            "description": "width of shell (perpendicular angle to length)",
+            "maxItems": 1,
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "Depth": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "maxItems": 1,
+            "description": "The distance below the surface of the water at which a measurement was made or a sample was collected. Format: ####.##, Positive below the sea surface. SDN:P06:46:ULAA for m. Example: 14.71"
+          },
+          "shell length": {
+            "maxItems": 1,
+            "description": "length of shell (perpendicular to the hinge)",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "treatment agent": {
+            "items": {},
+            "description": "The name of the treatment agent used."
+          },
+          "Sampling Station": {
+            "items": {},
+            "description": "Refers to the site/station where data/sample collection is performed. Example: TARA_100.",
+            "maxItems": 1
+          },
+          "shell markings": {
+            "maxItems": 1,
+            "description": "Visible markings on outer shell",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "Sample Collection Device": {
+            "description": "The sampling device(s) used for the Event. Example: CTD(sbe9C)/Rosette with Niskin bottles.",
+            "maxItems": 1,
+            "items": {}
+          },
+          "sample disease status": {
+            "description": "list of diseases with which the subject has been diagnosed at the time of sample collection; can include multiple diagnoses; the value of the field depends on subject; e.g. Charcoal rot (Macrophomina phaseolina), Late wilt (Cephalosporium maydis)",
+            "maxItems": 1,
+            "items": {}
+          },
+          "storage conditions (fresh/frozen/other)": {
+            "maxItems": 1,
+            "description": "explain how and for how long the soil sample was stored before DNA extraction.",
+            "items": {}
+          },
+          "environment (biome)": {
+            "items": {},
+            "description": "Biomes are defined based on factors such as plant structures, leaf types, plant spacing, and other factors like climate. Biome should be treated as the descriptor of the broad ecological context of a sample. Examples include: desert, taiga, deciduous woodland, or coral reef. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO",
+            "maxItems": 1
+          },
+          "environment (feature)": {
+            "description": "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO",
+            "items": {}
+          },
+          "Sampling Campaign": {
+            "items": {},
+            "description": "Refers to a finite or indefinite activity aiming at collecting data/samples, e.g. a cruise, a time series, a mesocosm experiment. Example: TARA_20110401Z.",
+            "maxItems": 1
+          },
+          "age": {
+            "maxItems": 1,
+            "description": "Age of the organism the sample was derived from.",
+            "items": {}
+          },
+          "Event Date/Time": {
+            "items": {},
+            "maxItems": 1,
+            "description": "Date and time in UTC when the sampling event started and ended, e.g. each CTD cast, net tow, or bucket collection is a distinct event. Format: yyyy-mm-ddThh:mm:ssZ. Example: 2013-06-21T14:05:00Z/2013-06-21T14:46:00Z."
+          },
+          "shellfish soft tissue weight": {
+            "maxItems": 1,
+            "description": "Total weight of all soft tissue, i.e. weight of entire organism without shell, at the time of sampling",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "seabed habitat": {
+            "maxItems": 1,
+            "description": "Classification of the seabed where the organism has been found; for European seabed habitats please use terms from http://eunis.eea.europa.eu/habitats-code-browser.jsp; example: B3.4 : Soft sea-cliffs, often vegetated",
+            "items": {}
+          },
+          "environment (material)": {
+            "items": {},
+            "description": "The environmental material level refers to the material that was displaced by the sample, or material in which a sample was embedded, prior to the sampling event. Environmental material terms are generally mass nouns. Examples include: air, soil, or water. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO",
+            "maxItems": 1
+          },
+          "sample health state": {
+            "items": {},
+            "maxItems": 1,
+            "description": "health status of the subject at the time of sample collection"
+          },
+          "Latitude Start": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "maxItems": 1,
+            "description": "Latitude of the location where the sampling event started, e.g. each CTD cast, net tow, or bucket collection is a distinct event. Format: ##.####, Decimal degrees; North= +, South= -; Use WGS 84 for GPS data. Example: -24.6666."
+          },
+          "Sampling Platform": {
+            "items": {},
+            "description": "Refers to the unique stage from which the sampling device has been deployed. Includes Platform category from SDN:L06, http://seadatanet.maris2.nl/v_bodc_vocab_v2/search.asp?lib=L06, and Platform name. Example: Research Vessel Tara.",
+            "maxItems": 1
+          },
+          "adductor weight": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "maxItems": 1,
+            "description": "Total weight of striated muscle and smooth muscle"
+          },
+          "Protocol Label": {
+            "description": "Identifies the protocol used to produce the sample, e.g. filtration and preservation. Example: BACT_NUC_W0.22-1.6.",
+            "maxItems": 1,
+            "items": {}
+          },
+          "toxin burden": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "maxItems": 1,
+            "description": "Concentration of toxins in the organism at the time of sampling"
+          },
+          "aquaculture origin": {
+            "items": {},
+            "description": "Origin of stock and raised conditions",
+            "maxItems": 1
+          },
+          "Marine Region": {
+            "description": "The geographical origin of the sample as defined by the marine region name chosen from the Marine Regions vocabulary at http://www.marineregions.org/. Example: Aegean Sea.",
+            "maxItems": 1,
+            "items": {}
+          },
+          "shellfish total weight": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "Total weight of shellfish including shell at the time of sampling. Epifauna and epiphytes to be removed.",
+            "maxItems": 1
+          },
+          "Longitude Start": {
+            "description": "Longitude of the location where the sampling event started, e.g. each CTD cast, net tow, or bucket collection is a distinct event. Format: ###.####, Decimal degrees; East= +, West= -; Use WGS 84 for GPS data. Example: -096.1012.",
+            "maxItems": 1,
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "chemical compound": {
+            "items": {},
+            "description": "A drug, solvent, chemical, etc., with a property that can be measured such as concentration (http://purl.obolibrary.org/obo/CHEBI_37577)."
+          }
+        }
+      }
+    },
+    "author": "ENA"
+  },
+  "spreadsheetTemplate": {
+    "defaultCapture": {
+      "required": false,
+      "allowUnits": false,
+      "allowTerms": false,
+      "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+    },
+    "columnCaptures": {
+      "alias": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "alias",
+        "required": true,
+        "fieldType": "String"
+      },
+      "title": {
+        "fieldName": "title",
+        "fieldType": "String",
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture"
+      },
+      "description": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldType": "String",
+        "required": false,
+        "fieldName": "description"
+      },
+      "release date": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "releaseDate",
+        "fieldType": "String",
+        "required": true
+      },
+      "taxon": {
+        "fieldType": "String",
+        "required": true,
+        "fieldName": "taxon",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture"
+      },
+      "taxon id": {
+        "fieldName": "taxonId",
+        "required": true,
+        "fieldType": "IntegerNumber",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture"
+      },
+      "Event Date/Time": {
+        "description": "Date and time in UTC when the sampling event started and ended, e.g. each CTD cast, net tow, or bucket collection is a distinct event. Format: yyyy-mm-ddThh:mm:ssZ. Example: 2013-06-21T14:05:00Z/2013-06-21T14:46:00Z.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "required": true,
+        "allowUnits": false
+      },
+      "Latitude Start": {
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Latitude of the location where the sampling event started, e.g. each CTD cast, net tow, or bucket collection is a distinct event. Format: ##.####, Decimal degrees; North= +, South= -; Use WGS 84 for GPS data. Example: -24.6666.",
+        "required": true,
+        "allowUnits": false
+      },
+      "Longitude Start": {
+        "required": true,
+        "allowUnits": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Longitude of the location where the sampling event started, e.g. each CTD cast, net tow, or bucket collection is a distinct event. Format: ###.####, Decimal degrees; East= +, West= -; Use WGS 84 for GPS data. Example: -096.1012."
+      },
+      "Depth": {
+        "description": "The distance below the surface of the water at which a measurement was made or a sample was collected. Format: ####.##, Positive below the sea surface. SDN:P06:46:ULAA for m. Example: 14.71",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "allowUnits": false,
+        "required": true
+      },
+      "Sample Collection Device": {
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "The sampling device(s) used for the Event. Example: CTD(sbe9C)/Rosette with Niskin bottles.",
+        "allowUnits": false,
+        "required": false
+      },
+      "Protocol Label": {
+        "allowUnits": false,
+        "required": true,
+        "description": "Identifies the protocol used to produce the sample, e.g. filtration and preservation. Example: BACT_NUC_W0.22-1.6.",
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "environment (biome)": {
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Biomes are defined based on factors such as plant structures, leaf types, plant spacing, and other factors like climate. Biome should be treated as the descriptor of the broad ecological context of a sample. Examples include: desert, taiga, deciduous woodland, or coral reef. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO",
+        "required": true,
+        "allowUnits": false
+      },
+      "environment (feature)": {
+        "required": true,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "description": "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO"
+      },
+      "environment (material)": {
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "The environmental material level refers to the material that was displaced by the sample, or material in which a sample was embedded, prior to the sampling event. Environmental material terms are generally mass nouns. Examples include: air, soil, or water. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO",
+        "allowUnits": false,
+        "required": true
+      },
+      "Sampling Campaign": {
+        "allowUnits": false,
+        "required": true,
+        "description": "Refers to a finite or indefinite activity aiming at collecting data/samples, e.g. a cruise, a time series, a mesocosm experiment. Example: TARA_20110401Z.",
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "Sampling Station": {
+        "required": true,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "description": "Refers to the site/station where data/sample collection is performed. Example: TARA_100."
+      },
+      "Sampling Platform": {
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Refers to the unique stage from which the sampling device has been deployed. Includes Platform category from SDN:L06, http://seadatanet.maris2.nl/v_bodc_vocab_v2/search.asp?lib=L06, and Platform name. Example: Research Vessel Tara.",
+        "required": true,
+        "allowUnits": false
+      },
+      "storage conditions (fresh/frozen/other)": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "description": "explain how and for how long the soil sample was stored before DNA extraction.",
+        "required": false,
+        "allowUnits": false
+      },
+      "sample health state": {
+        "required": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "description": "health status of the subject at the time of sample collection"
+      },
+      "sample disease status": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "description": "list of diseases with which the subject has been diagnosed at the time of sample collection; can include multiple diagnoses; the value of the field depends on subject; e.g. Charcoal rot (Macrophomina phaseolina), Late wilt (Cephalosporium maydis)",
+        "required": false,
+        "allowUnits": false
+      },
+      "Marine Region": {
+        "required": false,
+        "allowUnits": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "description": "The geographical origin of the sample as defined by the marine region name chosen from the Marine Regions vocabulary at http://www.marineregions.org/. Example: Aegean Sea."
+      },
+      "seabed habitat": {
+        "required": true,
+        "allowUnits": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Classification of the seabed where the organism has been found; for European seabed habitats please use terms from http://eunis.eea.europa.eu/habitats-code-browser.jsp; example: B3.4 : Soft sea-cliffs, often vegetated"
+      },
+      "age": {
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Age of the organism the sample was derived from.",
+        "required": true,
+        "allowUnits": false
+      },
+      "aquaculture origin": {
+        "allowUnits": false,
+        "required": true,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Origin of stock and raised conditions"
+      },
+      "shellfish total weight": {
+        "description": "Total weight of shellfish including shell at the time of sampling. Epifauna and epiphytes to be removed.",
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": true,
+        "allowUnits": false
+      },
+      "shellfish soft tissue weight": {
+        "description": "Total weight of all soft tissue, i.e. weight of entire organism without shell, at the time of sampling",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "allowUnits": false,
+        "required": true
+      },
+      "shell length": {
+        "description": "length of shell (perpendicular to the hinge)",
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": true,
+        "allowUnits": false
+      },
+      "shell width": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "description": "width of shell (perpendicular angle to length)",
+        "required": true,
+        "allowUnits": false
+      },
+      "adductor weight": {
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Total weight of striated muscle and smooth muscle",
+        "allowUnits": false,
+        "required": false
+      },
+      "gonad weight": {
+        "allowUnits": false,
+        "required": false,
+        "description": "Total weight of entire gonad tissue",
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "shell markings": {
+        "description": "Visible markings on outer shell",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "allowUnits": false,
+        "required": false
+      },
+      "toxin burden": {
+        "description": "Concentration of toxins in the organism at the time of sampling",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "required": false,
+        "allowUnits": false
+      },
+      "treatment agent": {
+        "required": false,
+        "allowUnits": false,
+        "description": "The name of the treatment agent used.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false
+      },
+      "chemical compound": {
+        "required": false,
+        "allowUnits": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "A drug, solvent, chemical, etc., with a property that can be measured such as concentration (http://purl.obolibrary.org/obo/CHEBI_37577)."
+      }
+    }
+  },
+  "dataTypeId": "samples"
+}

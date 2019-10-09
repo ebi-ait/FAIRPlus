@@ -1,0 +1,493 @@
+{
+  "_id": "ERC000030",
+  "description": "Minimum information about a Tara Oceans sample. A checklist for reporting metadata of oceanic plankton samples associated with genomics data from the Tara Oceans Expedition.",
+  "displayName": "ENA Tara Oceans",
+  "dataTypeId": "samples",
+  "validationSchema": {
+    "properties": {
+      "attributes": {
+        "properties": {
+          "environment (feature)": {
+            "description": "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO",
+            "items": {}
+          },
+          "Citation": {
+            "items": {},
+            "description": "Citation of the Sample Registry (HTML version) at the PANGAEA. Example: doi.pangaea.de/10.1594/PANGAEA.76752."
+          },
+          "Longitude End": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "Longitude of the location where the sampling event ended, e.g. each CTD cast, net tow, or bucket collection is a distinct event. Format: ###.####, Decimal degrees; East= +, West= -; Use WGS 84 for GPS data. Example: -096.1171."
+          },
+          "Last Update Date": {
+            "items": {},
+            "description": "Date of the last update of this sample in the SAMPLES REGISTRY. Example: 2014-03-01Z."
+          },
+          "Nitrate Sensor": {
+            "description": "Nitrate concentration parameters in the water column measured in volts and converted to micromoles per litres. Format: ##.####, SDN:P02:75:NTRA, SDN:P06:46:UPOX for µmol/L. Example: 0.2259.",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "Further Details": {
+            "items": {},
+            "description": "Reference details related to a sample in form of an URI."
+          },
+          "Salinity Sensor": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "Salinity of water at the time of taking the sample. Format: ##.####, SDN:P02:75:PSAL, SDN:P06:46:UGKG for PSU. Example: 39.2268."
+          },
+          "Temperature": {
+            "description": "Temperature of water at the time of taking the sample. Format: ##.####, SDN:P02:75:TEMP, SDN:P06:46:UPAA for °C. Example: 17.7122.",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "Sample Status": {
+            "items": {},
+            "description": "Refers to the completness of sample metadata validation. Example: preliminary but can be used to provide data discovery services."
+          },
+          "Marine Region": {
+            "description": "The geographical origin of the sample as defined by the marine region name chosen from the Marine Regions vocabulary at http://www.marineregions.org/. Example: Aegean Sea.",
+            "items": {}
+          },
+          "Protocol Label": {
+            "description": "Identifies the protocol used to produce the sample, e.g. filtration and preservation. Example: BACT_NUC_W0.22-1.6.",
+            "items": {}
+          },
+          "Event Date/Time End": {
+            "items": {},
+            "description": "Date and time in UTC when the sampling event ended, e.g. each CTD cast, net tow, or bucket collection is a distinct event. Format: yyyy-mm-ddThh:mm:ssZ. Example: 2011-04-16T15:38:00Z."
+          },
+          "Longitude Start": {
+            "description": "Longitude of the location where the sampling event started, e.g. each CTD cast, net tow, or bucket collection is a distinct event. Format: ###.####, Decimal degrees; East= +, West= -; Use WGS 84 for GPS data. Example: -096.1012.",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "Sampling Station": {
+            "description": "Refers to the site/station where data/sample collection is performed. Example: TARA_100.",
+            "items": {}
+          },
+          "Size Fraction Lower Threshold": {
+            "description": "SAMPLE_PROTOCOL_Size-Fraction_Lower-Threshold_(µm) indicates the lower size threshold. Materials smaller than the size threshold are excluded from the sample. Example: 0.22 µm",
+            "items": {}
+          },
+          "Latitude End": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "Latitude of the location where the sampling event ended, e.g. each CTD cast, net tow, or bucket collection is a distinct event. Format: ##.####, Decimal degrees; North= +, South= -; Use WGS 84 for GPS data. Example: -24.6643."
+          },
+          "Latitude Start": {
+            "description": "Latitude of the location where the sampling event started, e.g. each CTD cast, net tow, or bucket collection is a distinct event. Format: ##.####, Decimal degrees; North= +, South= -; Use WGS 84 for GPS data. Example: -24.6666.",
+            "items": {
+              "required": [
+                "units"
+              ]
+            }
+          },
+          "Sample Collection Device": {
+            "description": "The sampling device(s) used for the Event. Example: CTD(sbe9C)/Rosette with Niskin bottles.",
+            "items": {}
+          },
+          "Oxygen Sensor": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "Oxygen concentration parameters in the water column measured in volts and converted to micromoles per kilogrammes. Format: ###.####, SDN:P02:75:DOXY, SDN:P06:46:KGUM for µmol/kg. Example: 217.7895."
+          },
+          "Size Fraction Upper Threshold": {
+            "items": {},
+            "description": "SAMPLE_PROTOCOL_Size-Fraction_Upper-Threshold_(µm) indicates the upper size threshold. Materials larger than the size threshold are excluded from the sample.Example: 1.6 µm"
+          },
+          "project name": {
+            "items": {},
+            "description": "Name of the project within which the sequencing was organized"
+          },
+          "environment (biome)": {
+            "items": {},
+            "description": "Biomes are defined based on factors such as plant structures, leaf types, plant spacing, and other factors like climate. Biome should be treated as the descriptor of the broad ecological context of a sample. Examples include: desert, taiga, deciduous woodland, or coral reef. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO"
+          },
+          "Event Label": {
+            "items": {},
+            "description": "An Event corresponds to the deployment of a sampling device. It is bound in space and time. The Event Label is a unique identifier composed of the project prefix \"TARA\", sampling date/time \"yyyymmddThh:mm:ssZ\", station number \"000\" and a short label to indicate the sampling device used, e.g. \"EVENT_CAST\", \"EVENT_NET\", \"EVENT_PUMP\". Example: TARA_20110416T1508Z_100_EVENT_CAST."
+          },
+          "environment (material)": {
+            "description": "The environmental material level refers to the material that was displaced by the sample, or material in which a sample was embedded, prior to the sampling event. Environmental material terms are generally mass nouns. Examples include: air, soil, or water. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO",
+            "items": {}
+          },
+          "Depth": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "The distance below the surface of the water at which a measurement was made or a sample was collected. Format: ####.##, Positive below the sea surface. SDN:P06:46:ULAA for m. Example: 14.71"
+          },
+          "environmental package": {
+            "items": {},
+            "description": "MIGS/MIMS/MIMARKS extension for reporting of measurements and observations obtained from one or more of the environments where the sample was obtained. All environmental packages listed here are further defined in separate subtables. By giving the name of the environmental package, a selection of fields can be made from the subtables and can be reported"
+          },
+          "Sampling Platform": {
+            "items": {},
+            "description": "Refers to the unique stage from which the sampling device has been deployed. Includes Platform category from SDN:L06, http://seadatanet.maris2.nl/v_bodc_vocab_v2/search.asp?lib=L06, and Platform name. Example: Research Vessel Tara."
+          },
+          "Event Date/Time Start": {
+            "items": {},
+            "description": "Date and time in UTC when the sampling event started, e.g. each CTD cast, net tow, or bucket collection is a distinct event. Format: yyyy-mm-ddThh:mm:ssZ. Example: 2011-04-16T15:05:30Z."
+          },
+          "Chlorophyll Sensor": {
+            "items": {
+              "required": [
+                "units"
+              ]
+            },
+            "description": "Fluorescence of the water measured in volts and converted to milligrammes of chlorophyll per cubic metre. Format: ##.####, SDN:P02:75:CPWC, SDN:P06:46:UMMC for mg Chl/m3. Example: 0.066."
+          },
+          "Sampling Campaign": {
+            "items": {},
+            "description": "Refers to a finite or indefinite activity aiming at collecting data/samples, e.g. a cruise, a time series, a mesocosm experiment. Example: TARA_20110401Z."
+          }
+        }
+      }
+    },
+    "id": "ERC000030",
+    "version": "1.0.0",
+    "#dollar#async": true,
+    "author": "ENA",
+    "definitions": {
+      "attribute": {
+        "minItems": 1,
+        "type": "array",
+        "items": {
+          "required": [
+            "value"
+          ],
+          "properties": {
+            "units": {
+              "type": "string",
+              "minLength": 1
+            },
+            "terms": {
+              "#dollar#ref": "#/definitions/terms"
+            },
+            "value": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      },
+      "properties": {
+        "attributes": {
+          "required": [],
+          "patternProperties": {
+            "^.*$": {
+              "#dollar#ref": "#/definitions/attribute"
+            }
+          },
+          "description": "Attributes for describing a sample.",
+          "properties": {},
+          "type": "object"
+        }
+      },
+      "terms": {
+        "items": {
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "uri"
+            }
+          },
+          "type": "object",
+          "required": [
+            "url"
+          ]
+        },
+        "type": "array"
+      }
+    },
+    "#dollar#schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "ENA Tara Oceans",
+    "description": "Minimum information about a Tara Oceans sample. A checklist for reporting metadata of oceanic plankton samples associated with genomics data from the Tara Oceans Expedition.",
+    "required": [
+      "attributes"
+    ]
+  },
+  "spreadsheetTemplate": {
+    "defaultCapture": {
+      "allowTerms": false,
+      "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+      "required": false,
+      "allowUnits": false
+    },
+    "columnCaptures": {
+      "alias": {
+        "fieldType": "String",
+        "required": true,
+        "fieldName": "alias",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture"
+      },
+      "title": {
+        "fieldType": "String",
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "title"
+      },
+      "description": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "description",
+        "required": false,
+        "fieldType": "String"
+      },
+      "release date": {
+        "fieldType": "String",
+        "required": true,
+        "fieldName": "releaseDate",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture"
+      },
+      "taxon": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "taxon",
+        "required": true,
+        "fieldType": "String"
+      },
+      "taxon id": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.FieldCapture",
+        "fieldName": "taxonId",
+        "fieldType": "IntegerNumber",
+        "required": true
+      },
+      "Event Label": {
+        "required": false,
+        "allowUnits": false,
+        "description": "An Event corresponds to the deployment of a sampling device. It is bound in space and time. The Event Label is a unique identifier composed of the project prefix \"TARA\", sampling date/time \"yyyymmddThh:mm:ssZ\", station number \"000\" and a short label to indicate the sampling device used, e.g. \"EVENT_CAST\", \"EVENT_NET\", \"EVENT_PUMP\". Example: TARA_20110416T1508Z_100_EVENT_CAST.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false
+      },
+      "Event Date/Time Start": {
+        "allowUnits": false,
+        "required": true,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Date and time in UTC when the sampling event started, e.g. each CTD cast, net tow, or bucket collection is a distinct event. Format: yyyy-mm-ddThh:mm:ssZ. Example: 2011-04-16T15:05:30Z."
+      },
+      "Event Date/Time End": {
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Date and time in UTC when the sampling event ended, e.g. each CTD cast, net tow, or bucket collection is a distinct event. Format: yyyy-mm-ddThh:mm:ssZ. Example: 2011-04-16T15:38:00Z.",
+        "allowUnits": false,
+        "required": false
+      },
+      "Latitude Start": {
+        "allowUnits": false,
+        "required": true,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Latitude of the location where the sampling event started, e.g. each CTD cast, net tow, or bucket collection is a distinct event. Format: ##.####, Decimal degrees; North= +, South= -; Use WGS 84 for GPS data. Example: -24.6666."
+      },
+      "Longitude Start": {
+        "description": "Longitude of the location where the sampling event started, e.g. each CTD cast, net tow, or bucket collection is a distinct event. Format: ###.####, Decimal degrees; East= +, West= -; Use WGS 84 for GPS data. Example: -096.1012.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "required": true,
+        "allowUnits": false
+      },
+      "Latitude End": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "description": "Latitude of the location where the sampling event ended, e.g. each CTD cast, net tow, or bucket collection is a distinct event. Format: ##.####, Decimal degrees; North= +, South= -; Use WGS 84 for GPS data. Example: -24.6643.",
+        "allowUnits": false,
+        "required": false
+      },
+      "Longitude End": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "description": "Longitude of the location where the sampling event ended, e.g. each CTD cast, net tow, or bucket collection is a distinct event. Format: ###.####, Decimal degrees; East= +, West= -; Use WGS 84 for GPS data. Example: -096.1171.",
+        "allowUnits": false,
+        "required": false
+      },
+      "Depth": {
+        "description": "The distance below the surface of the water at which a measurement was made or a sample was collected. Format: ####.##, Positive below the sea surface. SDN:P06:46:ULAA for m. Example: 14.71",
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": true,
+        "allowUnits": false
+      },
+      "Sample Collection Device": {
+        "required": false,
+        "allowUnits": false,
+        "description": "The sampling device(s) used for the Event. Example: CTD(sbe9C)/Rosette with Niskin bottles.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false
+      },
+      "Protocol Label": {
+        "allowUnits": false,
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "description": "Identifies the protocol used to produce the sample, e.g. filtration and preservation. Example: BACT_NUC_W0.22-1.6."
+      },
+      "Size Fraction Lower Threshold": {
+        "required": false,
+        "allowUnits": false,
+        "description": "SAMPLE_PROTOCOL_Size-Fraction_Lower-Threshold_(µm) indicates the lower size threshold. Materials smaller than the size threshold are excluded from the sample. Example: 0.22 µm",
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "Size Fraction Upper Threshold": {
+        "allowUnits": false,
+        "required": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "SAMPLE_PROTOCOL_Size-Fraction_Upper-Threshold_(µm) indicates the upper size threshold. Materials larger than the size threshold are excluded from the sample.Example: 1.6 µm"
+      },
+      "Sample Status": {
+        "required": false,
+        "allowUnits": false,
+        "description": "Refers to the completness of sample metadata validation. Example: preliminary but can be used to provide data discovery services.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false
+      },
+      "Last Update Date": {
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Date of the last update of this sample in the SAMPLES REGISTRY. Example: 2014-03-01Z.",
+        "allowUnits": false,
+        "required": false
+      },
+      "project name": {
+        "description": "Name of the project within which the sequencing was organized",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "required": true,
+        "allowUnits": false
+      },
+      "environmental package": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "description": "MIGS/MIMS/MIMARKS extension for reporting of measurements and observations obtained from one or more of the environments where the sample was obtained. All environmental packages listed here are further defined in separate subtables. By giving the name of the environmental package, a selection of fields can be made from the subtables and can be reported",
+        "allowUnits": false,
+        "required": true
+      },
+      "environment (biome)": {
+        "allowUnits": false,
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "description": "Biomes are defined based on factors such as plant structures, leaf types, plant spacing, and other factors like climate. Biome should be treated as the descriptor of the broad ecological context of a sample. Examples include: desert, taiga, deciduous woodland, or coral reef. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO"
+      },
+      "environment (feature)": {
+        "required": true,
+        "allowUnits": false,
+        "description": "Environmental feature level includes geographic environmental features. Compared to biome, feature is a descriptor of the more local environment. Examples include: harbor, cliff, or lake. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false
+      },
+      "environment (material)": {
+        "required": true,
+        "allowUnits": false,
+        "description": "The environmental material level refers to the material that was displaced by the sample, or material in which a sample was embedded, prior to the sampling event. Environmental material terms are generally mass nouns. Examples include: air, soil, or water. EnvO (v 2013-06-14) terms can be found via the link: www.environmentontology.org/Browse-EnvO",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false
+      },
+      "Sampling Campaign": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "description": "Refers to a finite or indefinite activity aiming at collecting data/samples, e.g. a cruise, a time series, a mesocosm experiment. Example: TARA_20110401Z.",
+        "allowUnits": false,
+        "required": true
+      },
+      "Sampling Station": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "description": "Refers to the site/station where data/sample collection is performed. Example: TARA_100.",
+        "allowUnits": false,
+        "required": true
+      },
+      "Sampling Platform": {
+        "allowUnits": false,
+        "required": true,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Refers to the unique stage from which the sampling device has been deployed. Includes Platform category from SDN:L06, http://seadatanet.maris2.nl/v_bodc_vocab_v2/search.asp?lib=L06, and Platform name. Example: Research Vessel Tara."
+      },
+      "Marine Region": {
+        "required": true,
+        "allowUnits": false,
+        "description": "The geographical origin of the sample as defined by the marine region name chosen from the Marine Regions vocabulary at http://www.marineregions.org/. Example: Aegean Sea.",
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture"
+      },
+      "Salinity Sensor": {
+        "description": "Salinity of water at the time of taking the sample. Format: ##.####, SDN:P02:75:PSAL, SDN:P06:46:UGKG for PSU. Example: 39.2268.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "required": true,
+        "allowUnits": false
+      },
+      "Oxygen Sensor": {
+        "description": "Oxygen concentration parameters in the water column measured in volts and converted to micromoles per kilogrammes. Format: ###.####, SDN:P02:75:DOXY, SDN:P06:46:KGUM for µmol/kg. Example: 217.7895.",
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false
+      },
+      "Nitrate Sensor": {
+        "allowUnits": false,
+        "required": false,
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "description": "Nitrate concentration parameters in the water column measured in volts and converted to micromoles per litres. Format: ##.####, SDN:P02:75:NTRA, SDN:P06:46:UPOX for µmol/L. Example: 0.2259."
+      },
+      "Temperature": {
+        "allowUnits": false,
+        "required": true,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "description": "Temperature of water at the time of taking the sample. Format: ##.####, SDN:P02:75:TEMP, SDN:P06:46:UPAA for °C. Example: 17.7122."
+      },
+      "Chlorophyll Sensor": {
+        "required": false,
+        "allowUnits": false,
+        "description": "Fluorescence of the water measured in volts and converted to milligrammes of chlorophyll per cubic metre. Format: ##.####, SDN:P02:75:CPWC, SDN:P06:46:UMMC for mg Chl/m3. Example: 0.066.",
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false
+      },
+      "Citation": {
+        "description": "Citation of the Sample Registry (HTML version) at the PANGAEA. Example: doi.pangaea.de/10.1594/PANGAEA.76752.",
+        "allowTerms": false,
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "required": false,
+        "allowUnits": false
+      },
+      "Further Details": {
+        "_class": "uk.ac.ebi.subs.repository.model.templates.AttributeCapture",
+        "allowTerms": false,
+        "description": "Reference details related to a sample in form of an URI.",
+        "allowUnits": false,
+        "required": false
+      }
+    }
+  }
+}
