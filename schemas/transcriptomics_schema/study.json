@@ -1,0 +1,127 @@
+{
+	"id": "Transcriptomics_study",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"title": "study schema in transcriptomics experiments",
+	"version": "1.0",
+	"description": "File details compliant with EBI DSP submission requirement https://www.ebi.ac.uk/submission and MINSEQE",
+	"type": "object",
+	"properties": {
+		"title": {
+			"description": "Title of the study.",
+			"type": "string"
+		},
+		"description": {
+			"description": "More extensive free-form description.",
+			"type": "string"
+		},
+		"attributes": {
+			"description": "Attributes for describing a study.",
+			"type": "object",
+			"properties": {
+				"title": {
+					"type": "array",
+					"minItems": 1.0,
+					"items": {
+						"type": "object",
+						"properties": {
+							"value": {
+								"type": "string",
+								"minLength": 1.0
+							}
+						}
+					}
+				},
+				"description": {
+					"type": "array",
+					"minItems": 1.0,
+					"items": {
+						"type": "object",
+						"properties": {
+							"value": {
+								"type": "string",
+								"minLength": 1.0
+							}
+						}
+					}
+				},
+
+
+				"study_abstract": {
+					"minItems": 1.0,
+					"maxItems": 1.0,
+					"type": "array",
+					"description": "Briefly describes the goals, purpose, and scope of the Study. This need not be listed if it can be inherited from a referenced publication.",
+					"items": {
+						"type": "object",
+						"properties": {
+							"value": {
+								"type": "string"
+							}
+						}
+					}
+				},
+				"study_type": {
+					"minItems": 1.0,
+					"maxItems": 1.0,
+					"type": "array",
+					"description": "Define the type of the study",
+					"items": {
+						"type": "object",
+						"properties": {
+							"value": {
+								"enum": ["Whole Genome Sequencing", "Metagenomics", "Transcriptome Analysis", "Resequencing", "Epigenetics", "Synthetic Genomics", "Forensic or Paleo-genomics", "Gene Regulation Study", "Cancer Genomics", "Population Genomics", "RNASeq", "Exome Sequencing", "Pooled Clone Sequencing", "Other"]
+							}
+						}
+					}
+				}
+			},
+			"studyDesign": {
+				"type": "array",
+				"minItems": 1.0,
+				"items": {
+					"type": "object",
+					"properties": {
+						"value": {
+							"type": "string",
+							"minLength": 1.0
+						}
+					}
+				}
+			},
+			"patternProperties": {
+				"^.*$": {
+					"type": "array",
+					"minItems": 1.0,
+					"items": {
+						"type": "object",
+						"properties": {
+							"value": {
+								"type": "string",
+								"minLength": 1.0
+							},
+							"units": {
+								"type": "string",
+								"minLength": 1.0
+							},
+							"terms": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"properties": {
+										"url": {
+											"type": "string",
+											"format": "uri",
+											"isValidTerm": true
+										}
+									},
+									"required": ["url"]
+								}
+							}
+						},
+						"required": ["value"]
+					}
+				}
+			}
+		}
+	}
+}

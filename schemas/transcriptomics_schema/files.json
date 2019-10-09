@@ -1,0 +1,45 @@
+{
+	"id": "Transcriptomics_files",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"title": "files schema in transcriptomics experiments",
+	"version": "1.0",
+	"description": "File details compliant with EBI DSP submission requirement https://www.ebi.ac.uk/submission",
+	"type": "object",
+	"properties": {
+		"files": {
+			"description": "The list of the associated files.",
+			"type": "array",
+			"items": {
+				"type": "object",
+				"required": ["name", "type"],
+				"properties": {
+					"name": {
+						"description": "The name of the file.",
+						"type": "string"
+					},
+					"checksum": {
+						"description": "The calculated checksum of the file.",
+						"type": "string"
+					},
+					"checksum_method": {
+						"description": "The method type of the checksum calculation.",
+						"type": "string"
+					},
+					"type": {
+						"description": "The type of the file.",
+						"type": "string",
+						"enum": ["bam", "cram", "fastq"]
+					},
+					"unencryptedChecksum": {
+						"description": "The unencrypted checksum of the file.",
+						"type": "string"
+					},
+					"label": {
+						"description": "The label of the file.",
+						"type": "string"
+					}
+				}
+			}
+		}
+	}
+}

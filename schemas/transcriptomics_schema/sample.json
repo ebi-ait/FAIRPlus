@@ -1,0 +1,72 @@
+{
+	"id": "Transcriptomics_sample",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"title": "samples schema in transcriptomics experiments",
+	"version": "1.0",
+	"description": "Samples description compliant with EBI DSP submission requirement https://www.ebi.ac.uk/submission/ and MINSEQE community standardhttp://fged.org/site_media/pdf/MINSEQE_draft_2008.pdf",
+	"type": "object",
+	"properties": {
+		"title": {
+			"description": "Title of the sample.",
+			"type": "string",
+			"minLength": 1.0
+		},
+		"description": {
+			"description": "A textual description of the biological sample",
+			"type": "string",
+			"minLength": 1.0
+		},
+		"taxonId": {
+			"description":"NCBI taxonID, some sub species are not allowed in DSP",
+			"type": "integer"
+		},
+		"taxon": {
+			"description":"Taxon name, strictly follow the name in the taxonId. Case-sensitive.",
+			"type": "string",
+			"minLength": 1.0
+		},
+		"releaseDate": {
+			"type": "string",
+			"format": "date"
+		},
+		"attributes": {
+			"description": "Attributes for describing a sample.",
+			"type": "object",
+			"properties": {},
+			"patternProperties": {
+				"^.*$": {
+					"type": "array",
+					"minItems": 1.0,
+					"items": {
+						"properties": {
+							"value": {
+								"type": "string",
+								"minLength": 1.0
+							},
+							"units": {
+								"type": "string",
+								"minLength": 1.0
+							},
+							"terms": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"properties": {
+										"url": {
+											"type": "string",
+											"format": "uri",
+											"isValidTerm": true
+										}
+									},
+									"required": ["url"]
+								}
+							}
+						},
+						"required": ["value"]
+					}
+				}
+			}
+		}
+	},
+	"required": ["title", "taxonId", "releaseDate"]
+}
