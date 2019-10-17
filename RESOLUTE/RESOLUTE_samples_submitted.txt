@@ -1,0 +1,274 @@
+1: JumpIN_3
+Identifiers: BioSample: SAMN11893690; Sample name: RS000P; SRA: SRS4847468
+Organism: Homo sapiens
+Attributes:
+    /isolate="cell line"
+    /age="fetus"
+    /biomaterial provider="ThermoFisher"
+    /sex="female"
+    /tissue="kidney"
+    /cell line="Jump In T-REx HEK 293"
+    /replicate="3"
+Accession: SAMN11893690	ID: 11893690
+
+2: HCT116_3
+Identifiers: BioSample: SAMN11893689; Sample name: RS000N; SRA: SRS4847458
+Organism: Homo sapiens
+Attributes:
+    /isolate="cell line"
+    /age="48"
+    /biomaterial provider="ATCC"
+    /sex="male"
+    /tissue="colon"
+    /cell line="HCT 116"
+    /replicate="3"
+Accession: SAMN11893689	ID: 11893689
+
+3: MDA-MB-468_3
+Identifiers: BioSample: SAMN11893688; Sample name: RS000M; SRA: SRS4847459
+Organism: Homo sapiens
+Attributes:
+    /isolate="cell line"
+    /age="51"
+    /biomaterial provider="ATCC"
+    /sex="female"
+    /tissue="breast"
+    /cell line="MDA-MB-468"
+    /replicate="3"
+Accession: SAMN11893688	ID: 11893688
+
+4: LS180_3
+Identifiers: BioSample: SAMN11893687; Sample name: RS000K; SRA: SRS4847464
+Organism: Homo sapiens
+Attributes:
+    /isolate="cell line"
+    /age="58"
+    /biomaterial provider="Sigma"
+    /sex="female"
+    /tissue="colon"
+    /cell line="LS 180"
+    /replicate="3"
+Accession: SAMN11893687	ID: 11893687
+
+5: SK-MEL-28_3
+Identifiers: BioSample: SAMN11893686; Sample name: RS000H; SRA: SRS4847465
+Organism: Homo sapiens
+Attributes:
+    /isolate="cell line"
+    /age="51"
+    /biomaterial provider="ATCC"
+    /sex="male"
+    /tissue="skin"
+    /cell line="SK-MEL-28"
+    /replicate="3"
+Accession: SAMN11893686	ID: 11893686
+
+6: 1321-N1_3
+Identifiers: BioSample: SAMN11893685; Sample name: RS000G; SRA: SRS4847466
+Organism: Homo sapiens
+Attributes:
+    /isolate="cell line"
+    /age="47"
+    /biomaterial provider="Sigma"
+    /sex="male"
+    /tissue="brain"
+    /cell line="1321-N1"
+    /replicate="3"
+Accession: SAMN11893685	ID: 11893685
+
+7: HuH-7_3
+Identifiers: BioSample: SAMN11893684; Sample name: RS000F; SRA: SRS4847467
+Organism: Homo sapiens
+Attributes:
+    /isolate="cell line"
+    /age="57"
+    /biomaterial provider="JCRB"
+    /sex="male"
+    /tissue="liver"
+    /cell line="HuH-7"
+    /replicate="3"
+Accession: SAMN11893684	ID: 11893684
+
+8: JumpIN_2
+Identifiers: BioSample: SAMN11893683; Sample name: RS000E; SRA: SRS4847460
+Organism: Homo sapiens
+Attributes:
+    /isolate="cell line"
+    /age="fetus"
+    /biomaterial provider="ThermoFisher"
+    /sex="female"
+    /tissue="kidney"
+    /cell line="Jump In T-REx HEK 293"
+    /replicate="2"
+Accession: SAMN11893683	ID: 11893683
+
+9: HCT116_2
+Identifiers: BioSample: SAMN11893682; Sample name: RS000C; SRA: SRS4847461
+Organism: Homo sapiens
+Attributes:
+    /isolate="cell line"
+    /age="48"
+    /biomaterial provider="ATCC"
+    /sex="male"
+    /tissue="colon"
+    /cell line="HCT 116"
+    /replicate="2"
+Accession: SAMN11893682	ID: 11893682
+
+10: MDA-MB-468_2
+Identifiers: BioSample: SAMN11893681; Sample name: RS000B; SRA: SRS4847462
+Organism: Homo sapiens
+Attributes:
+    /isolate="cell line"
+    /age="51"
+    /biomaterial provider="ATCC"
+    /sex="female"
+    /tissue="breast"
+    /cell line="MDA-MB-468"
+    /replicate="2"
+Accession: SAMN11893681	ID: 11893681
+
+11: LS180_2
+Identifiers: BioSample: SAMN11893680; Sample name: RS000A; SRA: SRS4847463
+Organism: Homo sapiens
+Attributes:
+    /isolate="cell line"
+    /age="58"
+    /biomaterial provider="Sigma"
+    /sex="female"
+    /tissue="colon"
+    /cell line="LS 180"
+    /replicate="2"
+Accession: SAMN11893680	ID: 11893680
+
+12: SK-MEL-28_2
+Identifiers: BioSample: SAMN11893679; Sample name: RS0009; SRA: SRS4847469
+Organism: Homo sapiens
+Attributes:
+    /isolate="cell line"
+    /age="51"
+    /biomaterial provider="ATCC"
+    /sex="male"
+    /tissue="skin"
+    /cell line="SK-MEL-28"
+    /replicate="2"
+Accession: SAMN11893679	ID: 11893679
+
+13: 1321-N1_2
+Identifiers: BioSample: SAMN11893678; Sample name: RS0008; SRA: SRS4847470
+Organism: Homo sapiens
+Attributes:
+    /isolate="cell line"
+    /age="47"
+    /biomaterial provider="Sigma"
+    /sex="male"
+    /tissue="brain"
+    /cell line="1321-N1"
+    /replicate="2"
+Accession: SAMN11893678	ID: 11893678
+
+14: HuH-7_2
+Identifiers: BioSample: SAMN11893677; Sample name: RS0007; SRA: SRS4847471
+Organism: Homo sapiens
+Attributes:
+    /isolate="cell line"
+    /age="57"
+    /biomaterial provider="JCRB"
+    /sex="male"
+    /tissue="liver"
+    /cell line="HuH-7"
+    /replicate="2"
+Accession: SAMN11893677	ID: 11893677
+
+15: JumpIN_1
+Identifiers: BioSample: SAMN11893676; Sample name: RS0006; SRA: SRS4847472
+Organism: Homo sapiens
+Attributes:
+    /isolate="cell line"
+    /age="fetus"
+    /biomaterial provider="ThermoFisher"
+    /sex="female"
+    /tissue="kidney"
+    /cell line="Jump In T-REx HEK 293"
+    /replicate="1"
+Accession: SAMN11893676	ID: 11893676
+
+16: HCT116_1
+Identifiers: BioSample: SAMN11893675; Sample name: RS0005; SRA: SRS4847473
+Organism: Homo sapiens
+Attributes:
+    /isolate="cell line"
+    /age="48"
+    /biomaterial provider="ATCC"
+    /sex="male"
+    /tissue="colon"
+    /cell line="HCT 116"
+    /replicate="1"
+Accession: SAMN11893675	ID: 11893675
+
+17: MDA-MB-468_1
+Identifiers: BioSample: SAMN11893674; Sample name: RS0004; SRA: SRS4847474
+Organism: Homo sapiens
+Attributes:
+    /isolate="cell line"
+    /age="51"
+    /biomaterial provider="ATCC"
+    /sex="female"
+    /tissue="breast"
+    /cell line="MDA-MB-468"
+    /replicate="1"
+Accession: SAMN11893674	ID: 11893674
+
+18: LS180_1
+Identifiers: BioSample: SAMN11893673; Sample name: RS0003; SRA: SRS4847475
+Organism: Homo sapiens
+Attributes:
+    /isolate="cell line"
+    /age="58"
+    /biomaterial provider="Sigma"
+    /sex="female"
+    /tissue="colon"
+    /cell line="LS 180"
+    /replicate="1"
+Accession: SAMN11893673	ID: 11893673
+
+19: SK-MEL-28_1
+Identifiers: BioSample: SAMN11893672; Sample name: RS0002; SRA: SRS4847476
+Organism: Homo sapiens
+Attributes:
+    /isolate="cell line"
+    /age="51"
+    /biomaterial provider="ATCC"
+    /sex="male"
+    /tissue="skin"
+    /cell line="SK-MEL-28"
+    /replicate="1"
+Accession: SAMN11893672	ID: 11893672
+
+20: 1321-N1_1
+Identifiers: BioSample: SAMN11893671; Sample name: RS0001; SRA: SRS4847477
+Organism: Homo sapiens
+Attributes:
+    /isolate="cell line"
+    /age="47"
+    /biomaterial provider="Sigma"
+    /sex="male"
+    /tissue="brain"
+    /cell line="1321-N1"
+    /replicate="1"
+Accession: SAMN11893671	ID: 11893671
+
+21: HuH-7_1
+Identifiers: BioSample: SAMN11893670; Sample name: RS0000; SRA: SRS4847478
+Organism: Homo sapiens
+Attributes:
+    /isolate="cell line"
+    /age="57"
+    /biomaterial provider="JCRB"
+    /sex="male"
+    /tissue="liver"
+    /cell line="HuH-7"
+    /replicate="1"
+Accession: SAMN11893670	ID: 11893670
+
+
