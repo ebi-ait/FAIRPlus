@@ -1,4 +1,10 @@
-{       "domain":"self.testDomain",
+{
+	"name": "RS0000",
+	"domain": "self.fairplus",
+	"accession":"SAMAE100023",
+	"release": "2019-07-26T09:47:20.003Z",
+	"update": "2019-10-21T09:47:20.003Z",
+	"taxId": "9606",
 	"contact": [{
 		"LastName": "Viollet",
 		"FirstName": "Coralie"
@@ -28,6 +34,24 @@
 		"Role": "EFPIA Project Leader"
 	}],
 	"characteristics": {
+		"INSDC center name" : [{
+      			"text" : "Research Center for Molecular Medicine of the Austrian Academy of Sciences"
+    		}],
+		"organism": [{
+			"text": "human"
+		}],
+		"sex": [{
+			"text": "Male"
+		}],
+		"age": [{
+			"text": "57Y"
+		}],
+		"tissue": [{
+			"text": "liver"
+		}],
+		"disease":[{
+			"text": "Hepatocellular carcinoma"
+		}],
 		"cell line strain": [{
 			"text": "HuH7"
 		}],
@@ -40,14 +64,14 @@
 		"cell line ID": [{
 			"text": "CVCL_0336"
 		}],
+		"cell line category":[{
+			"text":"cancer cell line"
+			}],
 		"cell line source": [{
 			"text": "JCRB"
 		}],
-		"cell line culture": [{
+		"cell culture": [{
 			"text": "DMEM; 10 % FCS; Pen-Strep"
-		}],
-		"cell line treatment": [{
-			"text": "NA"
 		}],
 		"cell line additionalInfo": [{
 			"text": "Quality control tested for mycoplasma,STR profiling was performed for all cell lines to confirm identity."
@@ -55,40 +79,26 @@
 		"cell line genotype": [{
 			"text": "WT"
 		}],
-		"sample name": [{
-			"text": "HuH-7-rep3"
-		}],
-		"sample organism": [{
-			"text": "human"
-		}],
-		"sample species": [{
-			"text": "homo sapiens"
-		}],
-		"sample sex": [{
-			"text": "M"
-		}],
-		"sample age": [{
-			"text": 57
-		}],
-		"sample disease status": [{
-			"text": "NA"
-		}],
-		"sample disease stage": [{
-			"text": "NA"
-		}],
-		"sample tissue": [{
-			"text": "liver"
-		}],
-		"sample source ref": [{
-			"text": "NA"
-		}],
-		"license url": [{
-			"text": "http://creativecommons.org/licenses/by/4.0/"
-		}],
 		"license": [{
 			"text": "CC BY 4.0"
 		}]
 	},
-	"name": "HuH_7-1",
-	"release": "2019-07-26T09:47:20.003Z"
+	"externalReferences": [{
+			"url": "https://www.ebi.ac.uk/ena/data/view/PRJNA545487",
+			"duo": null
+		},
+		{
+			"url": "https://www.ebi.ac.uk/ena/data/view/SRX5934291",
+			"duo": null
+		},
+		{
+			"url": "https://www.ebi.ac.uk/ena/data/view/SRS4847478",
+			"duo": null
+		},
+		{
+			"url": "https://www.ebi.ac.uk/ena/data/view/SRR9161237",
+			"duo": null
+		}
+	]
+
 }

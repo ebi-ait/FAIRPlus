@@ -1,0 +1,8 @@
+cell line strain,cellosaurus ID,organism,sex,age,tissue,disease,cell line category,cell line source,cell culture
+HuH-7,CVCL 0336,Homo sapiens,male,57Y,liver,Hepatocellular carcinoma,cancer cell line,JCRB,DMEM;10% FCS; Pen-Strep
+1321-N1,CVCL 0110,Homo sapiens,male,47Y,brain,Astrocytoma,cancer cell line,ECACC,DMEM;10% FCS; Pen-Strep
+SK-MEL-28,CVCL 0526,Homo sapiens,male,51Y,skin,Cutaneous melanoma,cancer cell line,ATCC,DMEM;10% FCS; Pen-Strep
+LS180,CVCL 0397,Homo sapiens,female,58Y,colon,Colon adenocarcinoma,Colorectal cell line,ECACC,RPMI;10% FCS; Pen-Strep
+MDA-MB-468,CVCL 0419,Homo sapiens,female,51Y,breast,Breast adenocarcinoma. Derived from metastatic site: Pleural effusion,cancer cell line,MD ANDERSON,RPMI;10% FCS; Pen-Strep
+HCT116,CVCL 0291,Homo sapiens,male,48Y,colon,Colon carcinoma,Colorectal cell line,ATCC,McCoys 5A;10% FCS; Pen-Strep
+JumpIn,CVCL D585,Homo sapiens,female,fetus,kidney,NA,transformed cell line,Thermo Fisher Sientific Jump In,DMEM;10% FCS; Pen-Strep
