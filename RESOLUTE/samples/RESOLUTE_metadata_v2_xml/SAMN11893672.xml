@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BioSample xmlns="http://www.ebi.ac.uk/biosamples/SampleGroupExport/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ebi.ac.uk/biosamples/SampleGroupExport/1.0 http://www.ebi.ac.uk/biosamples/assets/xsd/v1.0/BioSDSchema.xsd" id="SAMN11893672" submissionUpdateDate="2019-11-27T16:59:43.592+00:00" submissionReleaseDate="2019-07-26T09:47:20.003+00:00">
+  <Property class="Sample Name" characteristic="false" comment="false" type="STRING">
+    <QualifiedValue>
+      <Value>RS0002</Value>
+    </QualifiedValue>
+  </Property>
+  <Property class="INSDC center name" characteristic="false" comment="false" type="STRING">
+    <QualifiedValue>
+      <Value>Research Center for Molecular Medicine of the Austrian Academy of Sciences</Value>
+    </QualifiedValue>
+  </Property>
+  <Property class="age" characteristic="false" comment="false" type="STRING">
+    <QualifiedValue>
+      <Value>51Y</Value>
+    </QualifiedValue>
+  </Property>
+  <Property class="cell culture" characteristic="false" comment="false" type="STRING">
+    <QualifiedValue>
+      <Value>DMEM;10% FCS; Pen-Strep</Value>
+    </QualifiedValue>
+  </Property>
+  <Property class="cell line Cellosaurus ID" characteristic="false" comment="false" type="STRING">
+    <QualifiedValue>
+      <Value>CVCL 0526</Value>
+    </QualifiedValue>
+  </Property>
+  <Property class="cell line additional info" characteristic="false" comment="false" type="STRING">
+    <QualifiedValue>
+      <Value>Quality control tested for mycoplasma,STR profiling was performed for all cell lines to confirm identity.</Value>
+    </QualifiedValue>
+  </Property>
+  <Property class="cell line category" characteristic="false" comment="false" type="STRING">
+    <QualifiedValue>
+      <Value>cancer cell line</Value>
+    </QualifiedValue>
+  </Property>
+  <Property class="cell line genotype" characteristic="false" comment="false" type="STRING">
+    <QualifiedValue>
+      <Value>Wild type (WT)</Value>
+    </QualifiedValue>
+  </Property>
+  <Property class="cell line name" characteristic="false" comment="false" type="STRING">
+    <QualifiedValue>
+      <Value>SK-MEL-28_1</Value>
+    </QualifiedValue>
+  </Property>
+  <Property class="cell line replicate" characteristic="false" comment="false" type="STRING">
+    <QualifiedValue>
+      <Value>1</Value>
+    </QualifiedValue>
+  </Property>
+  <Property class="cell line source" characteristic="false" comment="false" type="STRING">
+    <QualifiedValue>
+      <Value>ATCC</Value>
+    </QualifiedValue>
+  </Property>
+  <Property class="cell line strain" characteristic="false" comment="false" type="STRING">
+    <QualifiedValue>
+      <Value>SK-MEL-28</Value>
+    </QualifiedValue>
+  </Property>
+  <Property class="disease" characteristic="false" comment="false" type="STRING">
+    <QualifiedValue>
+      <Value>Cutaneous melanoma</Value>
+    </QualifiedValue>
+  </Property>
+  <Property class="license" characteristic="false" comment="false" type="STRING">
+    <QualifiedValue>
+      <Value>CC BY 4.0</Value>
+    </QualifiedValue>
+  </Property>
+  <Property class="organism" characteristic="false" comment="false" type="STRING">
+    <QualifiedValue>
+      <Value>Homo sapiens</Value>
+    </QualifiedValue>
+  </Property>
+  <Property class="sex" characteristic="false" comment="false" type="STRING">
+    <QualifiedValue>
+      <Value>male</Value>
+    </QualifiedValue>
+  </Property>
+  <Property class="tissue" characteristic="false" comment="false" type="STRING">
+    <QualifiedValue>
+      <Value>skin</Value>
+    </QualifiedValue>
+  </Property>
+  <Database>
+    <Name>ENA</Name>
+    <URI>https://www.ebi.ac.uk/ena/data/view/PRJNA545487</URI>
+    <ID>PRJNA545487</ID>
+  </Database>
+  <Database>
+    <Name>ENA</Name>
+    <URI>https://www.ebi.ac.uk/ena/data/view/SRR9161239</URI>
+    <ID>SRR9161239</ID>
+  </Database>
+  <Database>
+    <Name>ENA</Name>
+    <URI>https://www.ebi.ac.uk/ena/data/view/SRS4847476</URI>
+    <ID>SRS4847476</ID>
+  </Database>
+  <Database>
+    <Name>ENA</Name>
+    <URI>https://www.ebi.ac.uk/ena/data/view/SRX5934289</URI>
+    <ID>SRX5934289</ID>
+  </Database>
+</BioSample>

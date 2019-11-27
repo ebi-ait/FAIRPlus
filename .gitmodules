@@ -1,3 +1,6 @@
 [submodule "RESOLUTE/transcriptomics/schemas/mircat_MINSEQE"]
 	path = RESOLUTE/transcriptomics/schemas/mircat_MINSEQE
 	url = https://github.com/FAIRsharing/mircat/
+[submodule "easyUSI"]
+	path = easyUSI
+	url = https://github.com/FuqiX/easyUSI
