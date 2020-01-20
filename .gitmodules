@@ -4,6 +4,3 @@
 [submodule "easyUSI"]
 	path = easyUSI
 	url = https://github.com/FuqiX/easyUSI
-[submodule "illustrations"]
-	path = illustrations
-	url = https://github.com/FuqiX/illustrations
